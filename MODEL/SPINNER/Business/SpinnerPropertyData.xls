@@ -1,0 +1,66 @@
+Schema Type	Schema Name	Property Name	Property Value	To Schema Type	To Schema Name
+dimension	PSS_CURRENCY	IPML.StorageUnit	EUR		
+dimension	PSS_CURRENCY	MKSFactors	M=1		
+dimension	PSS_CURRENCY	MKSUnit	EUR		
+dimension	PSS_CURRENCY	UUID	94A869CF5FFE3C65B2C01AA645DB8E08		
+dimension	PSS_CURRENCY	original name	PSS_CURRENCY		
+page	ERC_FPDM_OnePartInterfacesAttributes.properties	type	Part		
+policy	PSS_CAD_Object	RelatedPolicy		policy	Versioned Design Policy
+policy	PSS_CAD_Object	state_Approved	Approved		
+policy	PSS_CAD_Object	state_Obsolete	Obsolete		
+policy	PSS_CAD_Object	state_Preliminary	In Work		
+policy	PSS_CAD_Object	state_Release	Released		
+policy	PSS_CAD_Object	state_Review	Review		
+policy	PSS_CancelPart	PolicyClassification	Production		
+policy	PSS_Development_Part	PolicyClassification	Development		
+policy	PSS_EC_Part	PolicyClassification	Production		
+relationship	PSS_AffectedItem	installed date	Tue Mar 15 05:54:20 EDT 2016		
+relationship	PSS_AffectedItem	installer	ENOVIAEngineering		
+relationship	PSS_AffectedItem	original name	Affected Item		
+relationship	PSS_AffectedItem	version	R211		
+relationship	PSS_ConnectedPCMData	application	Framework		
+relationship	PSS_ConnectedPCMData	installed date	05-11-16		
+relationship	PSS_ConnectedPCMData	installer	Dassault Systemes Services		
+relationship	PSS_ConnectedPCMData	original name	PSS_ConnectedPCMData		
+relationship	PSS_ConnectedPCMData	version	R417		
+role	CATIA V5 Integration User	IEF-IntegrationAssignments	MxCATIAV5~PSS_CatiaV5NewArch		
+role	MicrosoftOffice User	IEF-IntegrationAssignments	MSOffice~PSS_MSOfficeNewArch_3DEXPERIENCE R2015x		
+role	NX User	IEF-IntegrationAssignments	MxUG~PSS_UGNewArch		
+role	PSS_Cost_Estimation_Engineer	IS_IMPACT_ANALYSIS_ASSESSMENT_ROLE	true		
+role	PSS_Global_Administrator	FAMILY	Admin		
+role	PSS_PCAndL	IS_IMPACT_ANALYSIS_ASSESSMENT_ROLE	true		
+role	PSS_PLM_Support_Team	FAMILY	Admin		
+role	PSS_Plant_Launch_Team_Leader	IS_IMPACT_ANALYSIS_ASSESSMENT_ROLE	true		
+role	PSS_Product_Development_Lead	IS_IMPACT_ANALYSIS_ASSESSMENT_ROLE	true		
+role	PSS_Program_Buyer	IS_IMPACT_ANALYSIS_ASSESSMENT_ROLE	true		
+role	PSS_Program_Manager	IS_IMPACT_ANALYSIS_ASSESSMENT_ROLE	true		
+role	PSS_Program_Manufacturing_Leader	IS_IMPACT_ANALYSIS_ASSESSMENT_ROLE	true		
+role	PSS_Program_Quality_Leader	IS_IMPACT_ANALYSIS_ASSESSMENT_ROLE	true		
+role	ProENGINEER User	IEF-IntegrationAssignments	MxPRO~PSS_ProENewArch		
+role	SolidWorks User	IEF-IntegrationAssignments	SolidWorks~PSS_SWNewArch		
+rule	ReleasedGBOM	application	Framework		
+rule	ReleasedGBOM	installed date	Wed Mar 30 12:35:15 EDT 2016		
+rule	ReleasedGBOM	installer	ENOVIAEngineering		
+rule	ReleasedGBOM	original name	ReleasedGBOM		
+rule	ReleasedGBOM	version	R216		
+type	FPDM_ExcelReport	DISALLOW_VERSIONING	true		
+type	PSS_CATDrawing	RelatedType to type PSS_CATDrawing	Exists		
+type	PSS_CATPart	RelatedType to type PSS_CATPart	Exists		
+type	PSS_CATProduct	RelatedType to type PSS_CATProduct	Exists		
+type	PSS_ProEAssembly	RelatedType to type PSS_ProEAssembly	Exists		
+type	PSS_ProEAssemblyFamilyTable	RelatedType to type PSS_ProEAssemblyFamilyTable	Exists		
+type	PSS_ProEAssemblyInstance	RelatedType to type PSS_ProEAssemblyInstance	Exists		
+type	PSS_ProEDrawing	RelatedType to type PSS_ProEDrawing	Exists		
+type	PSS_ProEPart	RelatedType to type PSS_ProEPart	Exists		
+type	PSS_ProEPartFamilyTable	RelatedType to type PSS_ProEPartFamilyTable	Exists		
+type	PSS_ProEPartInstance	RelatedType to type PSS_ProEPartInstance	Exists		
+type	PSS_SWAssembly	RelatedType to type PSS_SWAssembly	Exists		
+type	PSS_SWAssemblyFamily	RelatedType to type PSS_SWAssemblyFamily	Exists		
+type	PSS_SWAssemblyInstance	RelatedType to type PSS_SWAssemblyInstance	Exists		
+type	PSS_SWComponent	RelatedType to type PSS_SWComponent	Exists		
+type	PSS_SWComponentFamily	RelatedType to type PSS_SWComponentFamily	Exists		
+type	PSS_SWComponentInstance	RelatedType to type PSS_SWComponentInstance	Exists		
+type	PSS_SWDrawing	RelatedType to type PSS_SWDrawing	Exists		
+type	PSS_UGAssembly	RelatedType to type PSS_UGAssembly	Exists		
+type	PSS_UGDrawing	RelatedType to type PSS_UGDrawing	Exists		
+type	PSS_UGModel	RelatedType to type PSS_UGModel	Exists		

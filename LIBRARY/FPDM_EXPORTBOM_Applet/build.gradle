@@ -1,0 +1,11 @@
+apply from : '../../applet.gradle'
+
+dist.distDirectory = 'WebClient'
+
+dependencies {
+	compile ':FPDMCommon:'
+	compile project(':FPDM_COMMON_Applet')
+	compile project(':FPDM_CAD_Applet')
+	compile ':capsapi_classes:'
+	compile ':ieapi_classes:'
+}

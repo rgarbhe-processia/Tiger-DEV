@@ -1,0 +1,45 @@
+State	User	Login(boolean)	Key	Revoke(boolean)	Read	Modify	Delete	Checkout	Checkin	Schedule	Lock	Unlock	Execute	Freeze	Thaw	Create	Revise	MajorRevise	Promote	Demote	Grant	Enable	Disable	Override	ChangeName	ChangeType	ChangeOwner	ChangePolicy	Revoke	ChangeVault	FromConnect	ToConnect	FromDisconnect	ToDisconnect	ViewForm	Modifyform	Show	Approve	Reject	Ignore	Reserve	Unreserve	Organization(any|single|ancestor|descendant)	Project(any|single|ancestor|descendant)	Owner	Reserve(Context)	Maturity	Category	Filter	LocalFilter	Branch State
+Active	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Active	PSS_Change_Coordinator	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Active	PSS_Change_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	single	any	any	public	any			
+Active	PSS_Change_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			
+Active	PSS_Change_Coordinator_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Active	PSS_Change_Coordinator_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+Active	PSS_Global_Administrator	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Active	PSS_PLM_Support_Team	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Active	PSS_Program_Manager	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Active	PSS_Program_Manager	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	single	any	any	public	any			
+Active	PSS_Program_Manager	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			
+Active	PSS_Program_Manager_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Active	PSS_Program_Manager_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+Active	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Active	Public	FALSE		FALSE	-	-	Y	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Active	Public	TRUE	PSS_NotPrivateMaturityReadAccessForNotValidated	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any			
+Cancelled	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Cancelled	PSS_Change_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Cancelled	PSS_Change_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Cancelled	PSS_Change_Coordinator_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Cancelled	PSS_Global_Administrator	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Cancelled	PSS_PLM_Support_Team	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Cancelled	PSS_Program_Manager	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Cancelled	PSS_Program_Manager	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Cancelled	PSS_Program_Manager_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Cancelled	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Cancelled	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Cancelled	Public	TRUE	PSS_NotPrivateMaturityReadAccessForValidated	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any			
+Complete	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+Complete	PSS_Change_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Change_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Change_Coordinator_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_Global_Administrator	TRUE	PSS_AdminAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Complete	PSS_PLM_Support_Team	TRUE	PSS_AdminAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Complete	PSS_Program_Manager	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Program_Manager	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Program_Manager_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Complete	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Complete	Public	TRUE	PSS_NotPrivateMaturityReadAccessForValidated	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	public	any			
+allstate	Owner	FALSE		FALSE	Y	Y	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+allstate	Public	FALSE		FALSE	Y	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+allstate	Public	TRUE	PSS_NotPrivateShowAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any			
+allstate	Public	TRUE	PSS_PrivateMaturityReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			

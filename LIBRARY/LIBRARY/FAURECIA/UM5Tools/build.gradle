@@ -1,0 +1,21 @@
+
+sourceSets {
+	main {
+		java {
+			srcDirs = ['src/main/java']
+		}
+	}
+}
+
+
+dependencies {
+    // those will be included to compile the project (buildtime), but not in the distribution (runtime)
+    compileButExcludeFromDist(group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1')
+    compileButExcludeFromDist(group: 'javax', name: 'javaee-api', version: '7.0')
+
+    // from Artifactory
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3+'
+    compile(group: 'enovia', name: 'RestServicesInfra', version: '2015XFD13.1')
+    compile(group: 'enovia', name: 'framework', version: '2015XFD13.1')
+    compile(group: 'enovia', name: 'eMatrixServletRMI', version: '2015XFD13.1')
+}

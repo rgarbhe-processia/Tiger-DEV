@@ -1,0 +1,185 @@
+:--------------------------------------------------
+: Titleblock_Part_Info_Block.txt - Part info block
+:--------------------------------------------------
+
+[INIT]
+delta=2.375
+height=5.625
+[END]
+
+[MAIN]
+: FRAME
+POLL(0.35,1)
+LINE(-170,0,-170,4.375)
+LINE(0,0,0,4.375)
+: ------------------
+: PART NAME AND REV
+POLT(1.4,2.8,0.7,0.2)
+TEXT(-169,0.9,left,none,[0])
+POLL(0.15,1)
+LINE(-145,0,-145,4.375)
+: ------------------
+: MASS
+POLT(0.85,1.6,0.425,0.05)
+TEXT(-140,1.25,center,none,[2])
+POLL(0.15,1)
+LINE(-135,0,-135,4.375)
+: ------------------
+: SYMETRIC
+POLT(0.85,1.9,0.425,0.05)
+TEXT(-127.5,1.25,center,none,[3])
+POLL(0.15,1)
+LINE(-120,0,-120,4.375)
+: ------------------
+: INPAIR
+POLL(0.15,1)
+LINE(-117,0,-117,4.375)
+: ------------------
+: STATUS
+POLT(0.85,1.9,0.425,0.05)
+TEXT(-109.075,1.25,center,trad,[4])
+POLL(0.15,1)
+LINE(-102,0,-102,4.375)
+: ------------------
+:PART_SAFETY_CLASS_1
+POLL(0.15,1)
+LINE(-99,0,-99,4.375)
+: ------------------
+:PART_SAFETY_CLASS_2
+POLL(0.15,1)
+LINE(-96,0,-96,4.375)
+: ------------------
+: MATERIAL
+POLT(0.625,1.3,0.3125,0.05)
+TEXT(-95.5,1.25,left,none,[5])
+POLL(0.15,1)
+LINE(-58,0,-58,4.375)
+: ------------------
+:MATERIAL_SAFETY_CLASS_1
+POLL(0.15,1)
+LINE(-55,0,-55,4.375)
+: ------------------
+:MATERIAL_SAFETY_CLASS_2
+POLL(0.15,1)
+LINE(-52,0,-52,4.375)
+: ------------------
+: NORM
+POLT(0.625,1.3,0.3125,0.05)
+TEXT(-51.5,1.25,left,none,[6],24)
+POLL(0.15,1)
+LINE(-29.900,0,-29.900,4.375)
+: ------------------
+: TREATMENT
+POLT(0.625,1.3,0.3125,0.05)
+TEXT(-29.75,1.25,left,none,[7],26)
+POLL(0.15,1)
+LINE(-6,0,-6,4.375)
+:TREATMENT_SAFETY_CLASS_1
+POLL(0.15,1)
+LINE(-3,0,-3,4.375)
+:TREATMENT_SAFETY_CLASS_2
+[END]
+
+
+[INPAIR]
+POLL(0.15,1)
+LINE(-120,0,-117,4.375)
+LINE(-120,4.375,-117,0)
+[END]
+
+[PART_SAFETY_CLASS_1]
+POLL(0.15,1)
+LINE(-102,0,-99,4.375)
+LINE(-102,4.375,-99,0)
+[END]
+
+[PART_SAFETY_CLASS_2]
+POLL(0.15,1)
+LINE(-99,0,-96,4.375)
+LINE(-99,4.375,-96,0)
+[END]
+
+[MATERIAL_SAFETY_CLASS_1]
+POLL(0.15,1)
+LINE(-58,0,-55,4.375)
+LINE(-58,4.375,-55,0)
+[END]
+
+[MATERIAL_SAFETY_CLASS_2]
+POLL(0.15,1)
+LINE(-55,0,-52,4.375)
+LINE(-55,4.375,-52,0)
+[END]
+
+[TREATMENT_SAFETY_CLASS_1]
+POLL(0.15,1)
+LINE(-6,0,-3,4.375)
+LINE(-6,4.375,-3,0)
+[END]
+
+[TREATMENT_SAFETY_CLASS_2]
+POLL(0.15,1)
+LINE(-3,0,0,4.375)
+LINE(-3,4.375,0,0)
+[END]
+
+[SEPARATEUR]
+POLL(0.15,1)
+LINE(-170,4.375,0,4.375)
+[END]
+
+[HEADER]
+POLL(0.35,1)
+LINE(-170,0,-170,5.625)
+LINE(0,0,0,5.625)
+LINE(-170,5.625,0,5.625)
+POLT(1.4,2.8,0.7,0.1)
+POLL(0.15,1)
+TEXT(-157.5,2.125,center,none,<ARTICLE>)
+LINE(-145,0,-145,5.625)
+POLT(0.625,1.25,0.3125,0.05)
+POLL(0.15,1)
+TEXT(-140,3.625,center,none,<MASS>)
+LINE(-135,0,-135,5.625)
+TEXT(-127.5,3.625,center,none,<SYMETRIQUE>)
+LINE(-120,0,-120,5.625)
+TEXT(-118.5,3.625,center,none,<x2>)
+LINE(-117,0,-117,5.625)
+TEXT(-109.5,3.625,center,none,<ETAT>)
+LINE(-102,0,-102,5.625)
+LINE(-99.4,2.5,-101.6,2.5)
+LINE(-101.6,2.5,-100.5,5)
+LINE(-99.4,2.5,-100.5,5)
+TEXT(-100.5,2.625,center,none,<1>)
+LINE(-99,0,-99,5.625)
+LINE(-96.4,2.5,-98.6,2.5)
+LINE(-98.6,2.5,-97.5,5)
+LINE(-96.4,2.5,-97.5,5)
+TEXT(-97.5,2.625,center,none,<2>)
+LINE(-96,0,-96,5.625)
+TEXT(-78,3.625,center,none,<MATIERE>)
+LINE(-58,0,-58,5.625)
+LINE(-55.4,2.5,-57.6,2.5)
+LINE(-57.6,2.5,-56.5,5)
+LINE(-55.4,2.5,-56.5,5)
+TEXT(-56.5,2.625,center,none,<1>)
+LINE(-55,0,-55,5.625)
+LINE(-52.4,2.5,-54.61,2.5)
+LINE(-54.6,2.5,-53.5,5)
+LINE(-52.4,2.5,-53.5,5)
+TEXT(-53.5,2.625,center,none,<2>)
+LINE(-52,0,-52,5.625)
+TEXT(-40.800,3.625,center,none,<NORME MATIERE>)
+LINE(-29.900,0,-29.900,5.625)
+TEXT(-16.875,3.625,center,none,<TRAITEMENT>)
+LINE(-6,0,-6,5.625)
+LINE(-3.4,2.5,-5.6,2.5)
+LINE(-5.6,2.5,-4.5,5)
+LINE(-3.4,2.5,-4.5,5)
+TEXT(-4.5,2.625,center,none,<1>)
+LINE(-3,0,-3,5.625)
+LINE(-0.4,2.5,-2.6,2.5)
+LINE(-2.6,2.5,-1.5,5)
+LINE(-0.4,2.5,-1.5,5)
+TEXT(-1.5,2.625,center,none,<2>)
+[END]

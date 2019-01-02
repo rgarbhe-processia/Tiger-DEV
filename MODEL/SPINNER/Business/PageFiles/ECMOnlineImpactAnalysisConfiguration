@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Roles>
+<Role name="PSS_Product_Development_Lead">
+<View name="FASView">
+<DisplayAttribute title="PSS_Development_CS_Architecture" domain="PSS_Design_CS" />
+<DisplayAttribute title="PSS_Development_CS_Mitiers" domain="PSS_Design_CS" />
+<DisplayAttribute title="PSS_Development_CS_LCC" domain="PSS_Design_CS" />
+<DisplayAttribute title="PSS_Development_CS_Expert" domain="PSS_Design_CS" />
+<DisplayAttribute title="PSS_Development_CS_Trim_Lab" domain="PSS_Design_CS" />
+<DisplayAttribute title="PSS_Development_Accessories_Design" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Accessories_Design_LCC" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Accessories_Trim_Lab" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Cover_Trim_Lab" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Cover_Trim_Lab_LCC" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Foam_Design" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Foam_Design_LCC" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Foam_Trim_Lab" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Pneumatic_Design" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Pneumatic_Design_LCC" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Pneumatic_Trim_Lab" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Thermal" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Thermal_LCC" domain="PSS_Design_Soft" />
+<DisplayAttribute title="PSS_Development_Frame_Architecture" domain="PSS_Design_Frame" />
+<DisplayAttribute title="PSS_Development_Frame_LCC" domain="PSS_Design_Frame" />
+<DisplayAttribute title="PSS_Development_Frame_Expert" domain="PSS_Design_Frame" />
+<DisplayAttribute title="PSS_Development_Frame_Metal_Lab" domain="PSS_Design_Frame" />
+<DisplayAttribute title="PSS_Development_Frame_Calculation" domain="PSS_Design_Frame" />
+<DisplayAttribute title="PSS_Development_Frame_Calculation_LCC" domain="PSS_Design_Frame" />
+<DisplayAttribute title="PSS_Development_Frame_Mechanisms" domain="PSS_Design_Frame" />
+<DisplayAttribute title="PSS_Development_Electronics" domain="PSS_Electronics" />
+<DisplayAttribute title="PSS_Co_dev" domain="PSS_Co_development" />
+<DisplayAttribute title="PSS_Testing_Pilot" domain="PSS_Testing" />
+<DisplayAttribute title="PSS_Testing_CS_DV" domain="PSS_Testing" />
+<DisplayAttribute title="PSS_Testing_Frame_DV" domain="PSS_Testing" />
+<DisplayAttribute title="PSS_Testing_CS_PV" domain="PSS_Testing" />
+<DisplayAttribute title="PSS_Testing_Frame_PV" domain="PSS_Testing" />
+<DisplayAttribute title="PSS_Testing_Electronics" domain="PSS_Testing" />
+<DisplayAttribute title="PSS_Testing_Accessories" domain="PSS_Testing" />
+<DisplayAttribute title="PSS_Testing_Cover" domain="PSS_Testing" />
+<DisplayAttribute title="PSS_Testing_Foam" domain="PSS_Testing" />
+<DisplayAttribute title="PSS_Testing_Pneumatic" domain="PSS_Testing" />
+<DisplayAttribute title="PSS_Development_Prototypes_CS_DV" domain="PSS_Validation_Seats_Parts" />
+<DisplayAttribute title="PSS_Development_Prototypes_Frame_DV" domain="PSS_Validation_Seats_Parts" />
+<DisplayAttribute title="PSS_Preseries_CS_PV" domain="PSS_Validation_Seats_Parts" />
+<DisplayAttribute title="PSS_Preseries_Frame_PV" domain="PSS_Validation_Seats_Parts" />
+<DisplayAttribute title="PSS_Proto_toolings_CS" domain="PSS_Prototype_Toolings" />
+<DisplayAttribute title="PSS_Proto_toolings_Frame" domain="PSS_Prototype_Toolings" />
+<DisplayAttribute title="PSS_Proto_toolings_Soft" domain="PSS_Prototype_Toolings" />
+<DisplayAttribute title="PSS_Proto_toolings_Accessories" domain="PSS_Prototype_Toolings" />
+<DisplayAttribute title="PSS_Proto_toolings_Foam" domain="PSS_Prototype_Toolings" />
+<DisplayAttribute title="PSS_Proto_toolings_Pneumatic" domain="PSS_Prototype_Toolings" />
+<DisplayAttribute title="PSS_Customer_prototypes_Specific_Toolings" domain="PSS_Customer_Prototypes" />
+<DisplayAttribute title="PSS_Customer_prototypes_Raw_Material" domain="PSS_Customer_Prototypes" />
+<DisplayAttribute title="PSS_Customer_prototypes_CS" domain="PSS_Customer_Prototypes" />
+<DisplayAttribute title="PSS_Customer_prototypes_Frame" domain="PSS_Customer_Prototypes" />
+<DisplayAttribute title="PSS_Customer_prototypes_Foam" domain="PSS_Customer_Prototypes" />
+<DisplayAttribute title="PSS_Other_1" domain="PSS_Other" />
+<DisplayAttribute title="PSS_Other_2" domain="PSS_Other" />
+<DisplayAttribute title="PSS_Other_3" domain="PSS_Other" />
+</View>
+<View name="FISView">
+<DisplayAttribute title="PSS_Timing_feasibility" domain="" />
+<DisplayAttribute title="PSS_CAD" domain="PSS_CAD" />
+<DisplayAttribute title="PSS_CAD_3D_data" domain="PSS_CAD" />
+<DisplayAttribute title="PSS_CAD_2D_data_including_Fit_Finish_drawing" domain="PSS_CAD" />
+<DisplayAttribute title="PSS_Tolerance_stack_book" domain="" />
+<DisplayAttribute title="PSS_Dimensional_convergence" domain="" />
+<DisplayAttribute title="PSS_Perceived_quality" domain="" />
+<DisplayAttribute title="PSS_GTS_support" domain="" />
+<DisplayAttribute title="PSS_D_FMEA" domain="" />
+<DisplayAttribute title="PSS_Key_Characteristics" domain="" />
+<DisplayAttribute title="PSS_CAE" domain="PSS_CAE" />
+<DisplayAttribute title="PSS_CAE_Product" domain="PSS_CAE" />
+<DisplayAttribute title="PSS_CAE_Process" domain="PSS_CAE" />
+<DisplayAttribute title="PSS_DMU" domain="" />
+<DisplayAttribute title="PSS_DVP" domain="" />
+<DisplayAttribute title="PSS_PVP" domain="" />
+<DisplayAttribute title="PSS_Tool" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Tool_Injection_tool_and_related_IMM" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Tool_End_of_arm_tooling" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Tool_Foaming_tool" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Tool_Slush_tool" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Tool_Welding_tool" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Tool_Cutting_tool" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Tool_Covering_tool" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Tool_Thermocovering_tool" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Tool_Cross_car_beam_tool" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Tool_BOP_tool" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Tool_New_prototype_tool" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Tool_Other" domain="PSS_Tool" />
+<DisplayAttribute title="PSS_Material_yield" domain="" />
+<DisplayAttribute title="PSS_Parts_Prototypes_need" domain="PSS_Parts_Prototypes_need" />
+<DisplayAttribute title="PSS_Parts_Prototypes_need_For_engineering" domain="PSS_Parts_Prototypes_need" />
+<DisplayAttribute title="PSS_Parts_Prototypes_need_For_tool_process_tuning" domain="PSS_Parts_Prototypes_need" />
+<DisplayAttribute title="PSS_Parts_Prototypes_need_For_measurement" domain="PSS_Parts_Prototypes_need" />
+<DisplayAttribute title="PSS_Parts_Prototypes_need_For_DVP" domain="PSS_Parts_Prototypes_need" />
+<DisplayAttribute title="PSS_Parts_Prototypes_need_For_PVP" domain="PSS_Parts_Prototypes_need" />
+<DisplayAttribute title="PSS_Parts_Prototypes_need_For_appearance_validation" domain="PSS_Parts_Prototypes_need" />
+<DisplayAttribute title="PSS_Parts_Prototypes_need_For_packaging_validation" domain="PSS_Parts_Prototypes_need" />
+<DisplayAttribute title="PSS_Parts_Prototypes_need_SLA" domain="PSS_Parts_Prototypes_need" />
+<DisplayAttribute title="PSS_Parts_delivery_to_OEM" domain="" />
+<DisplayAttribute title="PSS_Mockup" domain="" />
+<DisplayAttribute title="PSS_Engineering_BOM" domain="PSS_BOM" />
+<DisplayAttribute title="PSS_BOM_new_part" domain="PSS_BOM" />
+<DisplayAttribute title="PSS_BOM_Make_or_Buy" domain="PSS_BOM" />
+<DisplayAttribute title="PSS_BOM_material_reference" domain="PSS_BOM" />
+<DisplayAttribute title="PSS_BOM_part_weight" domain="PSS_BOM" />
+<DisplayAttribute title="PSS_BOM_components_quantity" domain="PSS_BOM" />
+<DisplayAttribute title="PSS_BOM_product_diversity" domain="PSS_BOM" />
+<DisplayAttribute title="PSS_BOM_carry_over" domain="PSS_BOM" />
+<DisplayAttribute title="PSS_Engineering_level_follow_up" domain="" />
+<DisplayAttribute title="PSS_IMDS" domain="" />
+<DisplayAttribute title="PSS_Travel_expenses" domain="PSS_Travel_expenses" />
+<DisplayAttribute title="PSS_Other_1" domain="PSS_Other" />
+<DisplayAttribute title="PSS_Other_2" domain="PSS_Other" />
+<DisplayAttribute title="PSS_Other_3" domain="PSS_Other" />
+<DisplayAttribute title="PSS_Tuning_Costs" domain="" />
+</View>
+<View name="FCMView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+<View name="FASSummaryView">
+<DisplayAttribute title="PSS_Design_CS" domain="PSS_Design_Engineering" />
+<DisplayAttribute title="PSS_Design_Soft" domain="PSS_Design_Engineering" />
+<DisplayAttribute title="PSS_Design_Frame" domain="PSS_Design_Engineering" /> 
+<DisplayAttribute title="PSS_Electronics" domain="PSS_Design_Engineering" />
+<DisplayAttribute title="PSS_Co_development" domain="PSS_Design_Engineering" />
+<DisplayAttribute title="PSS_Testing" domain="PSS_Design_Engineering" />
+<DisplayAttribute title="PSS_Validation_Seats_Parts" domain="PSS_Design_Engineering" />
+<DisplayAttribute title="PSS_Prototype_Toolings" domain="PSS_Design_Engineering" />
+<DisplayAttribute title="PSS_Other" domain="PSS_Design_Engineering" />
+<DisplayAttribute title="PSS_Total" domain="PSS_Design_Engineering" />
+</View>
+<View name="FISSummaryView">
+<DisplayAttribute title="PSS_Design_Engineering" domain="PSS_Design_Engineering" />
+</View>
+<View name="FCMSummaryView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+</Role>
+<Role name="PSS_Program_Manager">
+<View name="FASView">
+<DisplayAttribute title="PSS_Core_Team_Budget" domain="PSS_Core_Team_Budget" />
+</View>
+<View name="FISView">
+<DisplayAttribute title="PSS_Core_Team_Budget" domain="PSS_Core_Team_Budget" />
+</View>
+<View name="FCMView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+<View name="FASSummaryView">
+<DisplayAttribute title="PSS_Core_Team_Budget" domain="PSS_Core_Team_Budget" />
+</View>
+<View name="FISSummaryView">
+<DisplayAttribute title="PSS_Core_Team_Budget" domain="PSS_Core_Team_Budget" />
+</View>
+<View name="FCMSummaryView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+</Role>
+<Role name="PSS_Cost_Estimation_Engineer">
+<View name="FASView">
+<DisplayAttribute title="PSS_Part_1" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_2" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_3" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_4" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_5" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_6" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_7" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_8" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_9" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_10" domain="PSS_Costing" />
+</View>
+<View name="FISView">
+<DisplayAttribute title="PSS_Part_1" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_2" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_3" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_4" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_5" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_6" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_7" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_8" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_9" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Part_10" domain="PSS_Costing" />
+<DisplayAttribute title="PSS_Direct_Labor_Cost" domain="PSS_Costing" />
+</View>
+<View name="FCMView"/>
+<View name="FASSummaryView">
+<DisplayAttribute title="PSS_Costing" domain="PSS_Costing" />
+</View>
+<View name="FISSummaryView">
+<DisplayAttribute title="PSS_Costing" domain="PSS_Costing" />
+</View>
+<View name="FCMSummaryView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+</Role>
+<Role name="PSS_Program_Buyer">
+<View name="FASView">
+<DisplayAttribute title="PSS_Part_1" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Part_2" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Part_3" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Part_4" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Part_5" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Part_6" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Part_7" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Part_8" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Part_9" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Part_10" domain="PSS_Purchasing" />
+</View>
+<View name="FISView">
+<DisplayAttribute title="PSS_New_BOP" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Current_BOP" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_SOW" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Supplier_PPAP" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Other_1" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Other_2" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_Other_3" domain="PSS_Purchasing" />
+<DisplayAttribute title="PSS_RM_Cost" domain="PSS_Purchasing" />
+</View>
+<View name="FCMView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+<View name="FASSummaryView">
+<DisplayAttribute title="PSS_Purchasing" domain="PSS_Purchasing" />
+</View>
+<View name="FISSummaryView">
+<DisplayAttribute title="PSS_Purchasing" domain="PSS_Purchasing" />
+</View>
+<View name="FCMSummaryView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+</Role>
+<Role name="PSS_PCAndL">
+<View name="FASView">
+<DisplayAttribute title="PSS_MIFA" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Work_content" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_MOD" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Production_transportation" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Stock" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Stock_Security_stock_for_modification" domain="PSS_Stock" />
+<DisplayAttribute title="PSS_Stock_Stock_FIFO" domain="PSS_Stock" />
+<DisplayAttribute title="PSS_Stock_Stock_destruction" domain="PSS_Stock" />
+<DisplayAttribute title="PSS_Spare_parts" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Spare_parts_Stock_destruction" domain="PSS_Spare_parts" />
+<DisplayAttribute title="PSS_Spare_parts_Stock_before_end_of_production" domain="PSS_Spare_parts" />
+<DisplayAttribute title="PSS_Product_end_of_life_file" domain="PSS_Spare_parts" />
+<DisplayAttribute title="PSS_One_time_shipment" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_One_time_shipment_Tools" domain="PSS_One_time_shipment" />
+<DisplayAttribute title="PSS_One_time_shipment_Gauges" domain="PSS_One_time_shipment" />
+<DisplayAttribute title="PSS_One_time_shipment_Parts" domain="PSS_One_time_shipment" />
+<DisplayAttribute title="PSS_Other_1" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Other_2" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Other_3" domain="PSS_Logistics" />
+</View>
+<View name="FISView" />
+<View name="FCMView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+<View name="FASSummaryView">
+<DisplayAttribute title="PSS_Logistics" domain="PSS_Logistics" />
+</View>
+<View name="FISSummaryView" />
+<View name="FCMSummaryView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+</Role>
+<Role name="PSS_Program_Manufacturing_Leader">
+<View name="FASView">
+<DisplayAttribute title="PSS_ME_CS" domain="PSS_Manufacturing_Development" />
+<DisplayAttribute title="PSS_ME_Frame" domain="PSS_Manufacturing_Development" />
+<DisplayAttribute title="PSS_ME_Frame_Advance" domain="PSS_Manufacturing_Development" />
+<DisplayAttribute title="PSS_ME_Accessories" domain="PSS_Manufacturing_Development" />
+<DisplayAttribute title="PSS_ME_Cover_Trim" domain="PSS_Manufacturing_Development" />
+<DisplayAttribute title="PSS_ME_Foam" domain="PSS_Manufacturing_Development" />
+<DisplayAttribute title="PSS_ME_Pneumatic" domain="PSS_Manufacturing_Development" />
+<DisplayAttribute title="PSS_ME_Electronics" domain="PSS_Manufacturing_Development" />
+<DisplayAttribute title="PSS_ME_Mecanisms" domain="PSS_Manufacturing_Development" />
+<DisplayAttribute title="PSS_ME_CS" domain="PSS_Cycle_Time_Impact" />
+<DisplayAttribute title="PSS_ME_Frame" domain="PSS_Cycle_Time_Impact" />
+<DisplayAttribute title="PSS_ME_Frame_Advance" domain="PSS_Cycle_Time_Impact" />
+<DisplayAttribute title="PSS_ME_Accessories" domain="PSS_Cycle_Time_Impact" />
+<DisplayAttribute title="PSS_ME_Cover_Trim" domain="PSS_Cycle_Time_Impact" />
+<DisplayAttribute title="PSS_ME_Foam" domain="PSS_Cycle_Time_Impact" />
+<DisplayAttribute title="PSS_ME_Pneumatic" domain="PSS_Cycle_Time_Impact" />
+<DisplayAttribute title="PSS_ME_Electronics" domain="PSS_Cycle_Time_Impact" />
+<DisplayAttribute title="PSS_ME_Mecanisms" domain="PSS_Cycle_Time_Impact" />
+<DisplayAttribute title="PSS_Schedule" domain="PSS_Schedule" />
+</View>
+<View name="FISView">
+<DisplayAttribute title="PSS_P_FMEA" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_KCC" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Manufacturing_BOM" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Process_flow_chart_MIFD" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Lead_Time" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Temporary_mock_up" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Work_content_for_production" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_MOD" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_SMED" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Takt_time" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Cycle_time" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Cavitation" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Scrap" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Batch_size" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Production_volume" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Production_capacity" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_CAPEX" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Equipment_machine" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Jig" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Assy_nest" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Work_station" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Industrial_lay_out" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Utilities_electricity" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Plant_surface" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Shopstock_size_and_equipment" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Packaging_internal_external" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Industrial_trial" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Parts_need_for_industrial_validation" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Specific_process_validation" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Process_Capability" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_HSE_validation" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Traceability" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Plant_training" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Industrial_timing_and_R@R" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Travel_expenses" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Other_1" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Other_2" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Other_3" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_MIFA" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Work_content" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_MOD" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Production_transportation" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Stock" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Stock_Security_stock_for_modification" domain="PSS_Stock" />
+<DisplayAttribute title="PSS_Stock_Stock_FIFO" domain="PSS_Stock" />
+<DisplayAttribute title="PSS_Stock_Stock_destruction" domain="PSS_Stock" />
+<DisplayAttribute title="PSS_Spare_parts" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Spare_parts_Stock_destruction" domain="PSS_Spare_parts" />
+<DisplayAttribute title="PSS_Spare_parts_Stock_before_end_of_production" domain="PSS_Spare_parts" />
+<DisplayAttribute title="PSS_Product_end_of_life_file" domain="PSS_Spare_parts" />
+<DisplayAttribute title="PSS_One_time_shipment" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_One_time_shipment_Tools" domain="PSS_One_time_shipment" />
+<DisplayAttribute title="PSS_One_time_shipment_Gauges" domain="PSS_One_time_shipment" />
+<DisplayAttribute title="PSS_One_time_shipment_Parts" domain="PSS_One_time_shipment" />
+<DisplayAttribute title="PSS_Other_1" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Other_2" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Other_3" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Freight_out_Costs" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Launch_Costs" domain="PSS_Plant_Manufacturing" />
+</View>
+<View name="FCMView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+<View name="FASSummaryView">
+<DisplayAttribute title="PSS_Manufacturing_Development" domain="PSS_Advanced_Manufacturing" />
+<DisplayAttribute title="PSS_Cycle_Time_Impact" domain="PSS_Advanced_Manufacturing" />
+<DisplayAttribute title="PSS_Total" domain="PSS_Advanced_Manufacturing" />
+<DisplayAttribute title="PSS_Schedule" domain="PSS_Program_Management" />
+</View>
+<View name="FISSummaryView">
+<DisplayAttribute title="PSS_Plant_Manufacturing" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Logistics" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Schedule" domain="PSS_Program_Management" />
+</View>
+<View name="FCMSummaryView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+</Role>
+<Role name="PSS_Program_Quality_Leader">
+<View name="FASView">
+<DisplayAttribute title="PSS_Gauge" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Gauge_Checking_fixture" domain="PSS_Guage" />
+<DisplayAttribute title="PSS_Gauge_Short_time_support" domain="PSS_Guage" />
+<DisplayAttribute title="PSS_Gauge_Testing_gauge" domain="PSS_Guage" />
+<DisplayAttribute title="PSS_Checking_fixture_R_R_analysis" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Control_report_template" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_CNC_program_measurement" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Dimensional_checks" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Control_Plan" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Control_Plan_Prototype_or_Pre_production_Control_Plan" domain="PSS_Control_Plan" />
+<DisplayAttribute title="PSS_Control_Plan_Production_Control_Plan" domain="PSS_Control_Plan" />
+<DisplayAttribute title="PSS_7_quality_basics_in_production" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Safety_Regulation" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Traceability" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Appearance_approval" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_PPAP" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Travel_expenses" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Other_1" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Other_2" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Other_3" domain="PSS_Quality" />
+</View>
+<View name="FISView">
+<DisplayAttribute title="PSS_Gauge" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Gauge_Checking_fixture" domain="PSS_Guage" />
+<DisplayAttribute title="PSS_Gauge_Short_time_support" domain="PSS_Guage" />
+<DisplayAttribute title="PSS_Gauge_Testing_gauge" domain="PSS_Guage" />
+<DisplayAttribute title="PSS_Checking_fixture_R_R_analysis" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Control_report_template" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_CNC_program_measurement" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Dimensional_checks" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Control_Plan" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Control_Plan_Prototype_or_Pre_production_Control_Plan" domain="PSS_Control_Plan" />
+<DisplayAttribute title="PSS_Control_Plan_Production_Control_Plan" domain="PSS_Control_Plan" />
+<DisplayAttribute title="PSS_7_quality_basics_in_production" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Safety_Regulation" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Traceability" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Appearance_approval" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_PPAP" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Travel_expenses" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Other_1" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Other_2" domain="PSS_Quality" />
+<DisplayAttribute title="PSS_Other_3" domain="PSS_Quality" />
+</View>
+<View name="FCMView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+<View name="FASSummaryView">
+<DisplayAttribute title="PSS_Quality" domain="PSS_Quality" />
+</View>
+<View name="FISSummaryView">
+<DisplayAttribute title="PSS_Quality" domain="PSS_Quality" />
+</View>
+<View name="FCMSummaryView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+</Role>
+<Role name="PSS_Plant_Launch_Team_Leader">
+<View name="FASView">
+<DisplayAttribute title="PSS_P_FMEA" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_KCC" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Manufacturing_BOM" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Process_flow_chart_MIFD" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Lead_Time" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Temporary_mock_up" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Work_content_for_production" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_MOD" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_SMED" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Takt_time" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Cycle_time" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Cavitation" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Scrap" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Batch_size" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Production_volume" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Production_capacity" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_CAPEX" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Equipment_machine" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Jig" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Assy_nest" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Work_station" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Industrial_lay_out" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Utilities_electricity" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Plant_surface" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Shopstock_size_and_equipment" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Packaging_internal_external" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Industrial_trial" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Parts_need_for_industrial_validation" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Specific_process_validation" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Process_Capability" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_HSE_validation" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Traceability" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Plant_training" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Industrial_timing_and_R@R" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Travel_expenses" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Transportation_Costs" domain="PSS_Plant_Manufacturing" />
+</View>
+<View name="FISView">
+<DisplayAttribute title="PSS_P_FMEA" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_KCC" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Manufacturing_BOM" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Process_flow_chart_MIFD" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Lead_Time" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Temporary_mock_up" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Work_content_for_production" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_MOD" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_SMED" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Takt_time" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Cycle_time" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Cavitation" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Scrap" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Batch_size" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Production_volume" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Production_capacity" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_CAPEX" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Equipment_machine" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Jig" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Assy_nest" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Work_station" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Industrial_lay_out" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Utilities_electricity" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Plant_surface" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Shopstock_size_and_equipment" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Packaging_internal_external" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Industrial_trial" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Parts_need_for_industrial_validation" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Specific_process_validation" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Process_Capability" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_HSE_validation" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Traceability" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Plant_training" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Industrial_timing_and_R@R" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Travel_expenses" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Other_1" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Other_2" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Other_3" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_MIFA" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Work_content" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_MOD" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Production_transportation" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Stock" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Stock_Security_stock_for_modification" domain="PSS_Stock" />
+<DisplayAttribute title="PSS_Stock_Stock_FIFO" domain="PSS_Stock" />
+<DisplayAttribute title="PSS_Stock_Stock_destruction" domain="PSS_Stock" />
+<DisplayAttribute title="PSS_Spare_parts" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Spare_parts_Stock_destruction" domain="PSS_Spare_parts" />
+<DisplayAttribute title="PSS_Spare_parts_Stock_before_end_of_production" domain="PSS_Spare_parts" />
+<DisplayAttribute title="PSS_Product_end_of_life_file" domain="PSS_Spare_parts" />
+<DisplayAttribute title="PSS_One_time_shipment" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_One_time_shipment_Tools" domain="PSS_One_time_shipment" />
+<DisplayAttribute title="PSS_One_time_shipment_Gauges" domain="PSS_One_time_shipment" />
+<DisplayAttribute title="PSS_One_time_shipment_Parts" domain="PSS_One_time_shipment" />
+<DisplayAttribute title="PSS_Other_1" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Other_2" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Other_3" domain="PSS_Logistics" />
+<DisplayAttribute title="PSS_Freight_out_Costs" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Launch_Costs" domain="PSS_Plant_Manufacturing" />
+</View>
+<View name="FCMView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+<View name="FASSummaryView">
+<DisplayAttribute title="PSS_Plant_Manufacturing" domain="PSS_Plant_Manufacturing" />
+</View>
+<View name="FISSummaryView">
+<DisplayAttribute title="PSS_Plant_Manufacturing" domain="PSS_Plant_Manufacturing" />
+<DisplayAttribute title="PSS_Logistics" domain="PSS_Logistics" />
+</View>
+<View name="FCMSummaryView">
+<DisplayAttribute title="NA" domain="NA" />
+</View>
+</Role>
+</Roles>

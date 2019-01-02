@@ -1,0 +1,3 @@
+Rule Name	Registry Name	Description	"Programs (use ""|"" delim)"	"Attributes (use ""|"" delim)"	"Relationships (use ""|"" delim)"	"Forms (use ""|"" delim)"	Hidden (boolean)	Enforce Reserve Access (boolean)	Icon File
+PSS_ProcessInstanceContinuous	PSS_ProcessInstanceContinuous	Rule to filter Material on assembly			ProcessInstanceContinuous		FALSE	FALSE	
+ReleasedGBOM	ReleasedGBOM	Rule to govern access on GBOM relationship			GBOM | Custom GBOM		FALSE	FALSE	

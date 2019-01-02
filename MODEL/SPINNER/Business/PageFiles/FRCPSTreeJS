@@ -1,0 +1,183 @@
+///////////////////////////////////////////
+// COMMON JS Tree
+///////////////////////////////////////////
+
+EnoviaObject.sortFunction = function(a,b) {
+	ra = parseFloat( a.att['attribute[PLMInstance.V_TreeOrder].value']);
+	rb = parseFloat( b.att['attribute[PLMInstance.V_TreeOrder].value']);
+	
+	if( ra < rb)
+		return -1;
+	if( ra > rb)
+		return 1;
+	
+	return 0;
+};
+
+window.filterTree = function() {
+	if( tree)
+		tree.reloadWithCustomArg();
+};
+
+DSTree.getCustomArgs = function( tree) {
+	var filterOID = 'null';
+	 
+	var myFrame = top.findFrame(top, 'content');
+	if (myFrame && myFrame.savedValuesGB)  {
+		  filterOID = myFrame.savedValuesGB.FRCExpressionFilterInput_OID;
+	}
+	
+	if( filterOID && filterOID!="null" && filterOID!="undefined") {
+	    var myGBFrame = top.findFrame(top, 'FRCPSTreeCmd');
+		if (myGBFrame)
+			myGBFrame.jQuery("img[src='./img/iconActionFilter.png']").attr("src", "./img/iconActionFiltersApplied.png");
+		return { filterExpr : filterOID };	
+	}
+	else {
+		var myGBFrame = top.findFrame(top, 'FRCPSTreeCmd');
+		if (myGBFrame)
+			myGBFrame.jQuery("img[src='./img/iconActionFiltersApplied.png']").attr("src", "./img/iconActionFilter.png");
+		return {};
+	}
+};
+
+///////////////////////////////////////////
+// PS JS Tree
+///////////////////////////////////////////
+
+window.getMBOMTree = function( ) {
+	var frame = top.findFrame(top,'FRCMBOMTreeCmd');
+	if (frame && frame.tree) { // if GB tab not yet initialized, tree is undefined! 
+		return frame.tree;
+	}
+	return undefined;
+};
+
+DSTree.prototype.getNodeEndingPathID = function( endPathLID, endPathPID) {
+	nodes = this.getMatchingNodes( function(data) {
+		return ( data.att.pathPID && data.att.pathPID.endsWith(endPathPID))
+		     ||( data.att.pathLID && data.att.pathLID.endsWith(endPathLID));
+	});
+	
+	return nodes;
+};
+
+
+/**
+ * BI Essential Functions
+ */
+ 
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Scope',
+	condition: function(node, data) {
+		if(node.id===1)window.launchMBOMLinksWhenOK();
+		if(node.isGroup()) return false;
+		return data.scopeStatus==="scopeOK";
+	},
+	css: 'rule-scope'
+});
+
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Scope - No Implement',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		return (data.scopeStatus==="scopeOK" && !data.implStatus && node.id!==1);
+	},
+	css: 'rule-scopeAndNoImplement'
+});
+
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Not implemented',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		return (data.scopeStatus!=="scopeOK" && !data.implStatus);
+	},
+	css: 'rule-noImplement'
+});
+
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Implemented Directly',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		return (data.scopeStatus!=="scopeOK" && data.implStatus==="implAssignDirect");
+	},
+	css: 'rule-implementDirect'
+});
+
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Implemented Directly',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		return (data.scopeStatus==="scopeOK" && data.implStatus==="implAssignDirect");
+	},
+	css: 'rule-scopeAndImplementDirect'
+});
+
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Implemented Indirectly',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		return data.implStatus==="implAssignIndirect";
+	},
+	css: 'rule-implementIndirect'
+});
+
+
+/**
+ * CrossHighlight Functions
+ */
+ 
+crossHighlight.addCrossHighlightHandler(function(tree, node){
+	var isSelectedNow=node._isSelected();
+	var mbomTree = getMBOMTree();
+	if(mbomTree){
+		var pathPS=node.data.att.pathPID;
+		var pathMBOM=top.um5c06SyncInfos.mapPSPath2MBOMPath[pathPS];
+		
+		if(typeof pathMBOM!=="undefined"){
+			var nodesMBOM=mbomTree.getNodesFromData('pathPID',pathMBOM);
+			for(var i=0;i<nodesMBOM.length;i++) {
+				var nodeMBOMHere=nodesMBOM[i];
+				nodeMBOMHere.getRep().isSelected = isSelectedNow;
+				if(isSelectedNow) {
+					nodeMBOMHere._setAncestorsExpanded();
+				}
+			}
+			if(nodesMBOM.length>0){
+				var nodeMBOMHere=nodesMBOM[0];
+				mbomTree.UpdateTree(true,nodeMBOMHere);
+				if(nodeMBOMHere._isExpanded() && isSelectedNow) {
+					mbomTree.focusOnNode(nodeMBOMHere);
+				}
+			}
+		}
+	}
+});
+
+
+/**
+ * OTHER Functions
+ */
+
+window.treeReady = false;
+window.launchMBOMLinksWhenOK = function(){
+	console.log("launchMBOMLinksWhenOK Called at "+new Date().getTime());
+
+	var mbomFrame = top.findFrame(top,'FRCMBOMTreeCmd');
+	if(!mbomFrame){
+		return;
+	}
+	
+	window.treeReady=true; //The other tree will be ready when this function is called the 2nd time
+	
+	if(window.treeReady && mbomFrame.treeReady && !mbomFrame.linksCalculated){
+		mbomFrame.linksCalculated=true;
+		mbomFrame.refreshMBOMLinks();
+	}
+};

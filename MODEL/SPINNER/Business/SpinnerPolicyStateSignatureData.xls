@@ -1,0 +1,119 @@
+Policy Name	State Name	Signature Name	Branch State	Filter
+Change Action	In Approval	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+Change Action	In Approval	GoToComplete	Complete	attribute[Branch To] == 'None'
+Change Action	In Work	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+Change Action	In Work	GoToInApproval	In Approval	attribute[Branch To] == 'None'
+Change Action	Pending	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+Change Action	Pending	GoToInWork	In Work	attribute[Branch To] == 'None'
+PSS_ChangeOrder	In Approval	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+PSS_ChangeOrder	In Approval	GoToComplete	Complete	attribute[Branch To] == 'None'
+PSS_ChangeOrder	In Work	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+PSS_ChangeOrder	In Work	GoToInApproval	In Approval	attribute[Branch To] == 'None'
+PSS_ChangeOrder	Prepare	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+PSS_ChangeOrder	Prepare	GoToInWork	In Work	attribute[Branch To] == 'None'
+PSS_ChangeRequest	Complete	GoToCompleteFromRejected	Rejected	attribute[Branch To] == 'None'	
+PSS_ChangeRequest	Create	AbstainCRFromCreate	Complete	attribute[Branch To] == 'Complete'	
+PSS_ChangeRequest	Create	GoToSubmitFromCreate	Submit	attribute[Branch To] == 'None'	
+PSS_ChangeRequest	Evaluate	GoToInReviewFromEvaluate	In Review	attribute[Branch To] == 'None'	
+PSS_ChangeRequest	Evaluate	RejectCRFromEvalute	Rejected	attribute[Branch To] == 'Rejected'	
+PSS_ChangeRequest	In Process	GoToCompleteFromInProcess	Complete	attribute[Branch To] == 'None'	
+PSS_ChangeRequest	In Process	RejectCRFromInProcess	Rejected	attribute[Branch To] == 'Rejected'	
+PSS_ChangeRequest	In Review	GoToInProcessFromInReview	In Process	attribute[Branch To] == 'None'	
+PSS_ChangeRequest	In Review	RejectCRFromInReview	Rejected	attribute[Branch To] == 'Rejected'	
+PSS_ChangeRequest	Submit	AbstainCRFromSubmit	Complete	attribute[Branch To] == 'Complete'	
+PSS_ChangeRequest	Submit	GoToEvaluateFromSubmit	Evaluate	attribute[Branch To] == 'None'	
+PSS_ChangeRequest	Submit	RejectCRFromSubmit	Rejected	attribute[Branch To] == 'Rejected'	
+PSS_Equipment	Review	ToApproved	Approved	
+PSS_Equipment	Review	ToInWork	In Work	
+PSS_EquipmentRequest	Create	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+PSS_EquipmentRequest	Create	GoToInWork		attribute[Branch To] == 'None'
+PSS_HarmonyRequest	Create	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+PSS_HarmonyRequest	Create	GoToInWork		attribute[Branch To] == 'None'
+PSS_Issue	Accepted	GoToClosed	Closed	attribute[Branch To]=='None'
+PSS_Issue	Active	GoToRejected	Rejected	attribute[Branch To]=='Rejected'
+PSS_Issue	Active	GoToReview	Review	attribute[Branch To]=='None'
+PSS_Issue	Assign	GoToActive	Active	attribute[Branch To]=='None'
+PSS_Issue	Assign	GoToRejected	Rejected	attribute[Branch To]=='Rejected'
+PSS_Issue	Create	GoToAssign	Assign	attribute[Branch To]=='None'
+PSS_Issue	Create	GoToRejected	Rejected	attribute[Branch To]=='Rejected'
+PSS_Issue	Review	GoToAccepted	Accepted	attribute[Branch To]=='None'
+PSS_Issue	Review	GoToRejected	Rejected	attribute[Branch To]=='Rejected'
+PSS_MBOM	Approved	ToCancelled	Cancelled	
+PSS_MBOM	Approved	ToReleased	Released	
+PSS_MBOM	Cancelled	ToCancelled	Cancelled	
+PSS_MBOM	Review	ToApproved	Approved	
+PSS_MBOM	Review	ToInWork	In Work	
+PSS_ManufacturingChangeOrder	In Review	GoToComplete	Complete	attribute[Branch To] == 'None'
+PSS_ManufacturingChangeOrder	In Review	GoToRejected	Rejected	attribute[Branch To] == 'Rejected'
+PSS_ManufacturingChangeOrder	In Work	GoToInReview	In Review	attribute[Branch To] == 'None'
+PSS_ManufacturingChangeOrder	In Work	GoToRejected	Rejected	attribute[Branch To] == 'Rejected'
+PSS_ManufacturingChangeOrder	Prepare	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+PSS_ManufacturingChangeOrder	Prepare	GoToInWork	In Work	attribute[Branch To] == 'None'
+PSS_Material	Approved	ToObsolete	Obsolete	
+PSS_Material	InWork	ToCancelled	Cancelled	
+PSS_Material	InWork	ToReleased	Approved	
+PSS_MaterialAssembly	Approved	ToCancelled	Cancelled	
+PSS_MaterialAssembly	Approved	ToReleased	Released	
+PSS_MaterialAssembly	Cancelled	ToCancelled	Cancelled	
+PSS_MaterialAssembly	Review	ToApproved	Approved	
+PSS_MaterialAssembly	Review	ToInWork	In Work	
+PSS_Material_Request	Create	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+PSS_Material_Request	Create	GoToInWork		attribute[Branch To] == 'None'
+PSS_Program_Project	Active	GoToNonAwarded	Non Awarded	attribute[Branch To] == 'Non Awarded'
+PSS_Program_Project	Active	GoToObsolete	Obsolete	attribute[Branch To] == 'Obsolete'
+PSS_Program_Project	Active	GoToPhase1	Phase 1	attribute[Branch To] == 'None'
+PSS_Program_Project	In Service	GoToNonAwarded	Non Awarded	attribute[Branch To] == 'Non Awarded'
+PSS_Program_Project	In Service	GoToObsolete	Obsolete	attribute[Branch To] == 'Obsolete'
+PSS_Program_Project	Obsolete	GoToNonAwarded	Non Awarded	attribute[Branch To] == 'Non Awarded'
+PSS_Program_Project	Phase 1	GoToNonAwarded	Non Awarded	attribute[Branch To] == 'Non Awarded'
+PSS_Program_Project	Phase 1	GoToObsolete	Obsolete	attribute[Branch To] == 'Obsolete'
+PSS_Program_Project	Phase 1	GoToPhase2a	Phase 2a	attribute[Branch To] == 'None'
+PSS_Program_Project	Phase 2a	GoToNonAwarded	Non Awarded	attribute[Branch To] == 'Non Awarded'
+PSS_Program_Project	Phase 2a	GoToObsolete	Obsolete	attribute[Branch To] == 'Obsolete'
+PSS_Program_Project	Phase 2a	GoToPhase2b	Phase 2b	attribute[Branch To] == 'None'
+PSS_Program_Project	Phase 2b	GoToNonAwarded	Non Awarded	attribute[Branch To] == 'Non Awarded'
+PSS_Program_Project	Phase 2b	GoToObsolete	Obsolete	attribute[Branch To] == 'Obsolete'
+PSS_Program_Project	Phase 2b	GoToPhase3	Phase 3	attribute[Branch To] == 'None'
+PSS_Program_Project	Phase 3	GoToNonAwarded	Non Awarded	attribute[Branch To] == 'Non Awarded'
+PSS_Program_Project	Phase 3	GoToObsolete	Obsolete	attribute[Branch To] == 'Obsolete'
+PSS_Program_Project	Phase 3	GoToPhase4	Phase 4	attribute[Branch To] == 'None'
+PSS_Program_Project	Phase 4	GoToNonAwarded	Non Awarded	attribute[Branch To] == 'Non Awarded'
+PSS_Program_Project	Phase 4	GoToObsolete	Obsolete	attribute[Branch To] == 'Obsolete'
+PSS_Program_Project	Phase 4	GoToPhase5	Phase 5	attribute[Branch To] == 'None'
+PSS_Program_Project	Phase 5	GoToInService	In Service	attribute[Branch To] == 'None'
+PSS_Program_Project	Phase 5	GoToNonAwarded	Non Awarded	attribute[Branch To] == 'Non Awarded'
+PSS_Program_Project	Phase 5	GoToObsolete	Obsolete	attribute[Branch To] == 'Obsolete'
+PSS_StandardMBOM	Approved	ToCancelled	Cancelled	
+PSS_StandardMBOM	Approved	ToReleased	Released	
+PSS_StandardMBOM	Cancelled	ToCancelled	Cancelled	
+PSS_StandardMBOM	Review	ToApproved	Approved	
+PSS_StandardMBOM	Review	ToInWork	In Work	
+PSS_Tool	InWork	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+PSS_Tool	InWork	GoToReview	Review	attribute[Branch To] == 'None'
+PSS_Tool	Obsolete	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+PSS_Tool	Review	GoToCancelled	Cancelled	attribute[Branch To] == 'Cancelled'
+PSS_Tool	Review	GoToReleased	Released	attribute[Branch To] == 'None'
+PSS_VPLM_SMB_Definition	Approved	ToCancelled	Cancelled	
+PSS_VPLM_SMB_Definition	Approved	ToReleased	Released	
+PSS_VPLM_SMB_Definition	InWork	ToReview	Review	
+PSS_VPLM_SMB_Definition	Released	ToObsolete	Obsolete	
+PSS_VPLM_SMB_Definition	Review	ToApproved	Approved	
+PSS_VPLM_SMB_Definition	Review	ToInWork	InWork	
+PSS_VPLM_SMB_Evaluation	Approved	ToCancelled	Cancelled	
+PSS_VPLM_SMB_Evaluation	Approved	ToReleased	Released	
+PSS_VPLM_SMB_Evaluation	InWork	ToReview	Review	
+PSS_VPLM_SMB_Evaluation	Released	ToObsolete	Obsolete	
+PSS_VPLM_SMB_Evaluation	Review	ToApproved	Approved	
+PSS_VPLM_SMB_Evaluation	Review	ToInWork	InWork	
+PSS_VPLM_SMB_Management	Approved	ToCancelled	Cancelled	
+PSS_VPLM_SMB_Management	Approved	ToReleased	Released	
+PSS_VPLM_SMB_Management	InWork	ToReview	Review	
+PSS_VPLM_SMB_Management	Released	ToObsolete	Obsolete	
+PSS_VPLM_SMB_Management	Review	ToApproved	Approved	
+PSS_VPLM_SMB_Management	Review	ToInWork	InWork	
+PSS_VPLM_SMB_Resource	Approved	ToCancelled	Cancelled	
+PSS_VPLM_SMB_Resource	Approved	ToReleased	Released	
+PSS_VPLM_SMB_Resource	InWork	ToReview	Review	
+PSS_VPLM_SMB_Resource	Released	ToObsolete	Obsolete	
+PSS_VPLM_SMB_Resource	Review	ToApproved	Approved	
+PSS_VPLM_SMB_Resource	Review	ToInWork	InWork	

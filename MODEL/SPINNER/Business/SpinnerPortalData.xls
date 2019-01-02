@@ -1,0 +1,62 @@
+Name	Registry Name	Description	Label	Href	Alt	Setting Name (use "|" delim)	Setting Value (use "|" delim)	Channels (use "," w/ "|" delims)	Hidden (boolean)	Icon File
+ECMChangePropertyPortal	ECMChangePropertyPortal					Registered Suite	EnterpriseChangeMgt	ECMChangePropertyChannel1,ECMChangePropertyChannel2	FALSE	
+ENCPartPropertyPortal	ENCPartPropertyPortal					Registered Suite	EngineeringCentral	ENCPartPropertyChannel1	FALSE	
+FPDM_CNItemsToTransferPortal		Contents Portal on CN Items to Transfer				Registered Suite	EnterpriseChangeMgt	FPDM_CNItemsToTransferChannel	FALSE	
+FPDM_MBOM100Portal			FRCMBOMCentral.MBOMPortalTitle			Registered Suite	FRCMBOMCentral	FPDM_MBOM150Channel,FPDM_MBOM100Channel,FPDM_MBOM100OthersChannel	FALSE	
+FRCMBOMPortal			FRCMBOMCentral.MBOMPortalTitle			Registered Suite	FRCMBOMCentral	FRCPSChannel,FRCMBOMChannel,FRCOthersChannel | FRC3DViewerChannel	FALSE	
+FRCMBOMPortalGB			FRCMBOMCentral.MBOMPortalTitle			Registered Suite	FRCMBOMCentral	FRCPSChannelGB,FRCMBOMChannelGB | FRC3DViewerChannel	FALSE	
+FRCPSPortal			FRCMBOMCentral.PSPortalTitle			Registered Suite	FRCMBOMCentral	FRCPSChannel | FRC3DViewerChannel	FALSE	
+GNVCompareStructure	GNVCompareStructure							GNVCompareStructure	FALSE	
+MCOPropertyPortal	MCOPropertyPortal	MCO property Portal				Registered Suite	EnterpriseChangeMgt	MCOPropertyChannel1,MCOPropertyChannel2	FALSE	
+PSS_CADBOMNavigatePortal	PSS_CADBOMNavigatePortal		Navigate CADBOM			Registered Suite	DesignerCentral	PSS_CADBOMNavigateChannel	FALSE	
+PSS_CAImplementedItemsPortal	PSS_CAImplementedItemsPortal		PSS_CAImplementedItemsPortal					PSS_CAAffectedItemContentChannel	FALSE	
+PSS_CATaskPortal	PSS_CATaskPortal		CA Task Portal					PSS_CAAffectedItemContentChannel | PSS_CRTaskContentChannel	FALSE	
+PSS_CNContentsPortal	PSS_CNContentsPortal	Contents Portal on CN				Registered Suite	EnterpriseChangeMgt	PSS_CNContentsChannel	FALSE	
+PSS_CRAffectedItemsAndTaskPortal	PSS_CRAffectedItemsAndTaskPortal					Registered Suite	EnterpriseChangeMgt	PSS_CRAffectedItemContentChannel | PSS_CRTaskContentChannel	FALSE	
+PSS_ChangeAffectedItemsPortal	PSS_ChangeAffectedItemsPortal					Registered Suite	EnterpriseChangeMgt	PSS_ChangeAffectedItemsChannel	FALSE	
+PSS_ColorCatalogCopyFromPortal	PSS_ColorCatalogCopyFromPortal	Color Catalog Copy From Portal				Registered Suite	Configuration	PSS_ColorCatalogCopyFromFirstStep | FTRConfigurationFeatureCopySecondStep	FALSE	
+PSS_ColorCatalogCopyToPortal	PSS_ColorCatalogCopyToPortal	Color Catalog Copy To Portal				Registered Suite	Configuration	PSS_ColorCatalogCopyToFirstStep | FTRConfigurationFeatureCopySecondStep	FALSE	
+PSS_ColorPortal	PSS_ColorPortal	Colorization Portal				Registered Suite	FRCMBOMCentral	PSS_ColorNameChannel | PSS_ColorOptionChannel	FALSE	
+PSS_DRContentPortal	PSS_DRContentPortal	DestinationRegion Portal for Content Screen				Registered Suite	Framework	PSS_DRContentChannel	FALSE	
+PSS_DestinationRegionPropertiesPortal	PSS_DestinationRegionPropertiesPortal	Destination Region Portal				Registered Suite	Framework	PSS_DestinationRegionPropertiesChannel,PSS_LifeCycleChannel	FALSE	
+PSS_DivisionContentPortal	PSS_DivisionContentPortal	Division Portal for Content Screen				Registered Suite	Framework	PSS_DivisionContentChannel	FALSE	
+PSS_DivisionPropertiesPortal	PSS_DivisionPropertiesPortal					Registered Suite	Framework	PSS_DivisionPropertiesChannel,PSS_LifeCycleChannel	FALSE	
+PSS_E2EBGEndToEndPortal	PSS_E2EBGEndToEndPortal	Portal for End to End command on BG Tree menu				Registered Suite	Framework	PSS_E2EBGEndToEndChannel	FALSE	
+PSS_E2EProjectEndToEndPortal	PSS_E2EProjectEndToEndPortal	Portal for End to End command on PSS_ProgramProject Tree menu				Registered Suite	Framework	PSS_E2EProjectEndToEndChannel	FALSE	
+PSS_ECMCAChangePropertyPortal	PSS_ECMCAChangePropertyPortal	ECM CA Change Property Portal						ECMChangePropertyChannel1,PSS_CAPropertyChannel2	FALSE	
+PSS_ECMCNItemsTransferAndTaskSignaturePortal	PSS_ECMCNItemsTransferAndTaskSignaturePortal		Items and Signatures			Registered Suite	EnterpriseChangeMgt	PSS_CNItemsToTransferChannel | PSS_CNContentsChannel	FALSE	
+PSS_ECMCOChangePropertyPortal	PSS_ECMCOChangePropertyPortal	CO Property Portal				Registered Suite	EnterpriseChangeMgt	ECMChangePropertyChannel1,PSS_ECMCOChangePropertyChannel	FALSE	
+PSS_ECMChangeContentPortal	PSS_ECMChangeContentPortal					Registered Suite	EnterpriseChangeMgt	PSS_ECMChangeContentChannel1	FALSE	
+PSS_ECMChangeNoticePortal	PSS_ECMChangeNoticePortal	Change Notice Portal				Registered Suite	EnterpriseChangeMgt	PSS_ECMChangeNoticeChannel1,PSS_ECMChangeNoticeChannel2	FALSE	
+PSS_ECMChangePortal	PSS_ECMChangePortal	ECM Change Portal						PSS_ECMChangeChannel	FALSE	
+PSS_ECMMfgCAAffectedItemsPortal	PSS_ECMMfgCAAffectedItemsPortal	Portal to contain Affected Items				Registered Suite	EnterpriseChangeMgt	PSS_ECMMfgCAAffectedItemsChannel	FALSE	
+PSS_ECMMfgChangePropertyPortal	PSS_ECMMfgChangePropertyPortal	Portal to contain Properties and Routes channel				Registered Suite	EnterpriseChangeMgt	PSS_ECMMfgChangePropertyChannel1,PSS_ECMMfgChangePropertyChannel2	FALSE	
+PSS_EngineContentPortal	PSS_EngineContentPortal	Engine Content Portal				Registered Suite	Framework	PSS_EngineULSChannel	FALSE	
+PSS_EnginePropertiesPortal	PSS_EnginePropertiesPortal	Engine Portal				Registered Suite	Framework	PSS_EnginePropertiesChannel,PSS_LifeCycleChannel	FALSE	
+PSS_FRCMBOMChangeManagementPortal	PSS_FRCMBOMChangeManagementPortal					Registered Suite	EnterpriseChangeMgt	PSS_FRCMBOMChangeManagementChannel	FALSE	
+PSS_FRCMBOMResourcePortal	PSS_FRCMBOMResourcePortal		PSS_FRCMBOMCentral.Portal.Label.Resources			Registered Suite	FRCMBOMCentral	PSS_FRCMBOMResourceChannel,PSS_FRCMBOMResourcePropertiesChannel	FALSE	
+PSS_FRCMBOMStructureComparePortal	PSS_FRCMBOMStructureComparePortal	FRC MBOM Structure Compare Portal				Registered Suite	Framework	PSS_FRCMBOMStructureCompareCriteria | PSS_FRCMBOMStructureCompareResults	FALSE	
+PSS_IssueAssigneeAndTaskPortal	PSS_IssueAssigneeAndTaskPortal					Registered Suite	EnterpriseChangeMgt	IssueChannel2 | PSS_IssueChannel4	FALSE
+PSS_IssuePortal	PSS_IssuePortal					Registered Suite	EnterpriseChangeMgt	IssueChannel1,IssueChannel3	FALSE	
+PSS_MCATaskPortal	PSS_MCATaskPortal		MCA Task Portal					PSS_MCAAffectedItemContentChannel | PSS_CRTaskContentChannel	FALSE	
+PSS_MCOChangeContentPortal	PSS_MCOChangeContentPortal					Registered Suite	EnterpriseChangeMgt	PSS_MCOChangeContentChannel1,PSS_MCOChangeContentChannel2	FALSE	
+PSS_MCORelatedChangesPortal	PSS_MCORelatedChangesPortal	CR CO tabs portal on MCO				Registered Suite	EnterpriseChangeMgt	PSS_MCORelatedChangesChannel	FALSE	
+PSS_MaterialRelatedCtegoryPortal	PSS_MaterialRelatedCtegoryPortal					Registered Suite	FRCMBOMCentral	PSS_MaterialRelatedCtegoryChannel1	FALSE	
+PSS_OEMContentPortal	PSS_OEMContentPortal	OEM Content Portal				Registered Suite	Framework	PSS_OEMContentChannel	FALSE	
+PSS_OEMGroupContentPortal	PSS_OEMGroupContentPortal	OEMGroup Content Portal				Registered Suite	Framework	PSS_OEMGroupContentChannel	FALSE	
+PSS_OEMGroupPropertiesPortal	PSS_OEMGroupPropertiesPortal					Registered Suite	Framework	PSS_OEMGroupPropertiesChannel,PSS_LifeCycleChannel	FALSE	
+PSS_OEMPropertiesPortal	PSS_OEMPropertiesPortal					Registered Suite	Framework	PSS_OEMPropertiesChannel,PSS_LifeCycleChannel	FALSE	
+PSS_PlantContentPortal	PSS_PlantContentPortal	Plant Portal for Content Screen				Registered Suite	Framework	PSS_PlantContentChannel	FALSE	
+PSS_PlantPropertiesPortal	PSS_PlantPropertiesPortal	Plant Portal				Registered Suite	Framework	PSS_PlantPropertiesChannel,PSS_LifeCycleChannel	FALSE	
+PSS_PlatformContentPortal	PSS_PlatformContentPortal	Platform Portal for Content Screen	emxFramework.Portal.PortalContent			Registered Suite	Framework	PSS_PlatformContentChannel	FALSE	
+PSS_PlatformPropertiesPortal	PSS_PlatformPropertiesPortal					Registered Suite	Framework	PSS_PlatformPropertiesChannel,PSS_LifeCycleChannel	FALSE	
+PSS_ProgProjPropertiesPortal	PSS_ProgProjPropertiesPortal					Registered Suite	Framework	PSS_ProgProjPropertiesChannel	FALSE	
+PSS_ProgramProjectContentPortal	PSS_ProgramProjectContentPortal	ProgramProject Portal for Content Screen				Registered Suite	Framework	PSS_ProgramProjectContentChannel	FALSE	
+PSS_ProgramProjectPCMPortal	PSS_ProgramProjectPCMPortal	ProgramProject Content Portal				Registered Suite	Framework	PSS_ProgramProjectPCMChannel		
+PSS_ProgramProjectPlantPortal	PSS_ProgramProjectPlantPortal	ProgramProject Plant Portal				Registered Suite	Framework	PSS_ProgramProjectPlantChannel | PSS_ProgramProjectPlantMemberChannel		
+PSS_RelatedCOsPortal	PSS_RelatedCOsPortal	PSS_RelatedCOsPortal contains channel PSS_RelatedCOsChannel				Registered Suite	EnterpriseChangeMgt	PSS_RelatedCOsChannel	FALSE	
+PSS_RelatedMCOsPortal	PSS_RelatedMCOsPortal	MCO list Portal				Registered Suite	EnterpriseChangeMgt	PSS_RelatedMCOsChannel	FALSE	
+PSS_RnDCenterContentPortal	PSS_RnDCenterContentPortal	RnDCenter Portal for Content Screen				Registered Suite	Framework	PSS_RnDCenterContentChannel	FALSE	
+PSS_RnDCenterPropertiesPortal	PSS_RnDCenterPropertiesPortal	RnD Center Portal				Registered Suite	Framework	PSS_RnDCenterPropertiesChannel,PSS_LifeCycleChannel	FALSE	
+PSS_VehicleContentPortal	PSS_VehicleContentPortal	Vehicle Content Portal				Registered Suite	Framework	PSS_VehicleContentChannel	FALSE	
+PSS_VehiclePropertiesPortal	PSS_VehiclePropertiesPortal	Vehicle Portal				Registered Suite	Framework	PSS_VehiclePropertiesChannel,PSS_LifeCycleChannel	FALSE	

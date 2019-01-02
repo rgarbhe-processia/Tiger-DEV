@@ -1,0 +1,5 @@
+dependencies {
+    compile(group: 'enovia', name: 'framework', version: '2015XFD13.1')
+    compile(group: 'enovia', name: 'effectivity', version: '2015XFD13.1')
+    compile(group: 'enovia', name: 'eMatrixServletRMI', version: '2015XFD13.1')
+}

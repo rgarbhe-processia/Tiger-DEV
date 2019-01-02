@@ -1,0 +1,1438 @@
+Attribute Name	Registry Name	Scope	Owner	Type	Description	Default	Ranges (use "|" delim)	Multiline (boolean)	Hidden (boolean)	Dimension	Max Length (int)	ResetonClone (boolean)	ResetonRevision (boolean)	Icon File	ValueType
+<<PSS_AddedManuallyOnCO>>															
+<<PSS_CAD_Calculated_Mass>>															
+<<PSS_COLORED_PART>>															
+<<PSS_DevOrProd>>															
+<<PSS_Developed_Surface_mm2>>															
+<<PSS_Dimension_X-Y-Z_mm>>															
+<<PSS_ESBG_PART_USE>>															
+<<PSS_ESBG_USAGE>>															
+<<PSS_FAST_PART>>															
+<<PSS_FPDM_Air_Vent_Type>>															
+<<PSS_FPDM_Airbag_Type>>															
+<<PSS_FPDM_Armrest_Type>>															
+<<PSS_FPDM_Ashtray_Type>>															
+<<PSS_FPDM_Badge_Type>>															
+<<PSS_FPDM_Bezel_Type>>															
+<<PSS_FPDM_Carrier_Type>>															
+<<PSS_FPDM_Cockpit_Type>>															
+<<PSS_FPDM_Console_Type>>															
+<<PSS_FPDM_Cover_Type>>															
+<<PSS_FPDM_Cross_Car_Beam_Type>>															
+<<PSS_FPDM_Door_Module_Type>>															
+<<PSS_FPDM_Door_Panel_Type>>															
+<<PSS_FPDM_Door_Type>>															
+<<PSS_FPDM_Duct_Type>>															
+<<PSS_FPDM_Electrical_Part_Type>>															
+<<PSS_FPDM_Foam_Type>>															
+<<PSS_FPDM_Gaiter_Type>>															
+<<PSS_FPDM_Grille_Type>>															
+<<PSS_FPDM_Handle_Type>>															
+<<PSS_FPDM_Holder_Type>>															
+<<PSS_FPDM_Instrument_panel_Type>>															
+<<PSS_FPDM_Mass>>															
+<<PSS_FPDM_Mat_Type>>															
+<<PSS_FPDM_Material_Type>>															
+<<PSS_FPDM_Mechanism_Type>>															
+<<PSS_FPDM_Opening_System_Type>>															
+<<PSS_FPDM_POC_Recommended_Family>>															
+<<PSS_FPDM_Packaging_Type>>															
+<<PSS_FPDM_Pad_Type>>															
+<<PSS_FPDM_Panel_Type>>															
+<<PSS_FPDM_Pseudo_Part_Type>>															
+<<PSS_FPDM_Seal_Type>>															
+<<PSS_FPDM_Skin_Type>>															
+<<PSS_FPDM_Soundproofing_Type>>															
+<<PSS_FPDM_Storage_Type>>															
+<<PSS_FPDM_Structure_Type>>															
+<<PSS_FPDM_Support_Type>>															
+<<PSS_FPDM_Trim_Type>>															
+<<PSS_FaureciaShortLenghtDescription>>															
+<<PSS_ISBG_ACORN_NUT_TYPE>>															
+<<PSS_ISBG_AIR_DAMPER_TYPE>>															
+<<PSS_ISBG_CAPTIVE_NUT_TYPE>>															
+<<PSS_ISBG_CAPTIVE_SCREW_TYPE>>															
+<<PSS_ISBG_CLAMP_TYPE>>															
+<<PSS_ISBG_CLASSIC_STOP_TYPE>>															
+<<PSS_ISBG_CLASSIC_STRAP_TYPE>>															
+<<PSS_ISBG_CLASSIC_STUD_TYPE>>															
+<<PSS_ISBG_CLEANER>>															
+<<PSS_ISBG_CLIP_FOR_SCREW_TYPE>>															
+<<PSS_ISBG_CLIP_TYPE>>															
+<<PSS_ISBG_COMPRESSION_SPRING_TYPE>>															
+<<PSS_ISBG_CRIMP_NUT_TYPE>>															
+<<PSS_ISBG_CRIMP_SCREW_TYPE>>															
+<<PSS_ISBG_DAMPER_FIXING_TYPE>>															
+<<PSS_ISBG_ELASTIC_STRAP_TYPE>>															
+<<PSS_ISBG_EYELET_TYPE>>															
+<<PSS_ISBG_FLEXION_SPRING_TYPE>>															
+<<PSS_ISBG_FORM>>															
+<<PSS_ISBG_FUNCTIONALITY>>															
+<<PSS_ISBG_GREASE_DAMPER_TYPE>>															
+<<PSS_ISBG_HEAD>>															
+<<PSS_ISBG_HEIGHT_mm>>															
+<<PSS_ISBG_HEXAGON_NUT_TYPE>>															
+<<PSS_ISBG_HINGE_DAMPER_TYPE>>															
+<<PSS_ISBG_IMPLANTED_LENGTH_mm>>															
+<<PSS_ISBG_INCLINED_THREAD_WELD_STUD_TYPE>>															
+<<PSS_ISBG_JACKET_TYPE>>															
+<<PSS_ISBG_LENGTH_mm>>															
+<<PSS_ISBG_LOCK_FUNCTION>>															
+<<PSS_ISBG_MAGNETIC_PULL_N>>															
+<<PSS_ISBG_MAGNET_TYPE>>															
+<<PSS_ISBG_METRIC_DIAMETER_mm>>															
+<<PSS_ISBG_METRIC_NUT_GRIPS_TYPE>>															
+<<PSS_ISBG_METRIC_SCREW_TYPE>>															
+<<PSS_ISBG_NO_RETURN_SYSTEM>>															
+<<PSS_ISBG_OUTER_LENGTH_mm>>															
+<<PSS_ISBG_PIN_TYPE>>															
+<<PSS_ISBG_PLASTIC_NUT_GRIPS_TYPE>>															
+<<PSS_ISBG_PLASTIC_RIVET_TYPE>>															
+<<PSS_ISBG_PLASTIC_SCREW_TYPE>>															
+<<PSS_ISBG_POINT_TYPE>>															
+<<PSS_ISBG_POP_RIVET_TYPE>>															
+<<PSS_ISBG_RECESS>>															
+<<PSS_ISBG_RETAINING_CLIP_TYPE>>															
+<<PSS_ISBG_RING_TYPE>>															
+<<PSS_ISBG_SCREW_CAP_TYPE>>															
+<<PSS_ISBG_SELF_LOCKED>>															
+<<PSS_ISBG_SHAFT_TYPE>>															
+<<PSS_ISBG_SHUTTER_TYPE>>															
+<<PSS_ISBG_SPACER_TYPE>>															
+<<PSS_ISBG_SPECIAL_CLIP_TYPE>>															
+<<PSS_ISBG_SPECIAL_NUT_TYPE>>															
+<<PSS_ISBG_SPECIAL_RIVET_TYPE>>															
+<<PSS_ISBG_SPECIAL_SCREW_TYPE>>															
+<<PSS_ISBG_SPECIAL_STOP_TYPE>>															
+<<PSS_ISBG_SPECIAL_STRAP_TYPE>>															
+<<PSS_ISBG_SPECIAL_STUD_TYPE>>															
+<<PSS_ISBG_SPRING_NUT_TYPE>>															
+<<PSS_ISBG_STAPLE_TYPE>>															
+<<PSS_ISBG_STAR_WASHER_TYPE>>															
+<<PSS_ISBG_STIFFNESS_N_per_mm>>															
+<<PSS_ISBG_STROKE_mm>>															
+<<PSS_ISBG_SUPPORT>>															
+<<PSS_ISBG_SUPPORTING_CLIP_TYPE>>															
+<<PSS_ISBG_TAPPING_NUT_GRIPS_TYPE>>															
+<<PSS_ISBG_TAPPING_SCREW_TYPE>>															
+<<PSS_ISBG_TECHNOLOGY>>															
+<<PSS_ISBG_THICKNESS_mm>>															
+<<PSS_ISBG_THREADED_INSERT_TYPE>>															
+<<PSS_ISBG_THREAD_FORMING>>															
+<<PSS_ISBG_TORQUE_Ncm>>															
+<<PSS_ISBG_TORSION_SPRING_TYPE>>															
+<<PSS_ISBG_TRACTION_SPRING_TYPE>>															
+<<PSS_ISBG_TRAVEL_STOP_TYPE>>															
+<<PSS_ISBG_TWINE_DAMPER_TYPE>>															
+<<PSS_ISBG_WASHER_TYPE>>															
+<<PSS_ISBG_WELD_NUT_TYPE>>															
+<<PSS_ISBG_WELD_SCREW_TYPE>>															
+<<PSS_ISBG_WELD_STUD_TYPE>>															
+<<PSS_ISBG_WIDTH_mm>>															
+<<PSS_ISBG_WITH_FOOLPROOFING>>															
+<<PSS_Mass_(g)>>															
+<<PSS_Mass_g>>															
+<<PSS_Originator>>															
+<<PSS_PlantType>>															
+<<PSS_Projected_Surface_mm2>>															
+<<PSS_Safety_Regulation>>															
+<<PSS_Volume_mm3>>															
+CAD Type	CAD Type			string	CAD World type		= userfile_V5R20 | = drawing | = component | = assembly | = assemblyInstance | = componentInstance | = assemblyFamily | = componentFamily | = sheetmetal | = weldment | = pcbdesignFamily | = pcbdesignVariant | = depDoc | = fpgadesignFamily | = fpgadesignVariant | = idf | = userfile_V5R19 | = userfile_V5R18 | = v4model | = shape | = designTable | = cgr | = iges | = multiCADstep | = multiCADsldasm | = multiCADsldprt | = multiCADsleasm | = multiCADslepsm | = multiCADsleprt | = multiCADinvasm | = multiCADinvprt | = vrml | = analysis | = analysisResults | = analysisComputations | = process | = catalog | = embeddedComponent | = image_jpg | = postscript | = cgrOutput | = igesOutput | = stepOutput | = dxfOutput | = dwgOutput | = cgmOutput | = svgOutput | = ig2Output | = catalogOutput | = gl2Output | = vpsOutput | = hcgOutput | = 3dmapOutput | = modelOutput | = stlOutput | = wrlOutput | = txtOutput | = hsfOutput | = exeOutput | = stbomOutput | = 3dxmlOutput | = pdfOutput | = material | = pngOutput | = tifOutput | = 3dxml | = tif | = gif | = cgm | = step203 | = pdf | = plt | = png | = format | = layout | = diagram | = manufacture | = dxf | = step_ap203 | = TXT | = note | = xpr | = xas | = msword | = msexcel | = mspowerpoint | = msoutlook | = outlookattachment | = mswin | = attachment | = document | = card | = eprt | = easm | = edrw | = markup | = jpg | = hwf | = xml | = userfile_JT	FALSE	FALSE		0	FALSE	FALSE		
+Country	Country			string	Country	Unassigned	= Mayotte | != ~~~AllowFreeFormEntry~~~ | = Afghanistan | = Aland Islands | = Albania | = Algeria | = American Samoa | = Andorra | = Angola | = Anguilla | = Antarctica | = Antigua And Barbuda | = Argentina | = Armenia | = Aruba | = Australia | = Austria | = Azerbaijan | = Bahamas | = Bahrain | = Bangladesh | = Barbados | = Belarus | = Belgium | = Belize | = Benin | = Bermuda | = Bhutan | = Bolivia | = Bosnia And Herzegovina | = Botswana | = Bouvet Island | = Brazil | = British Indian Ocean Territory | = Brunei Darussalam | = Bulgaria | = Burkina Faso | = Burundi | = Cambodia | = Cameroon | = Canada | = Cape Verde | = Cayman Islands | = Central African Republic | = Chad | = Chile | = China | = Christmas Island | = Cocos Islands | = Colombia | = Comoros | = Congo | = Cook Islands | = Costa Rica | = Cote D'Ivoire | = Croatia | = Cuba | = Cyprus | = Czech Republic | = Denmark | = Djibouti | = Dominica | = Dominican Republic | = Ecuador | = Egypt | = El Salvador | = Equatorial Guinea | = Eritrea | = Estonia | = Ethiopia | = Falkland Islands | = Faroe Islands | = Fiji | = Finland | = France | = French Guiana | = French Polynesia | = French Southern Territories | = Gabon | = Gambia | = Georgia | = Germany | = Ghana | = Gibraltar | = Greece | = Greenland | = Grenada | = Guadeloupe | = Guam | = Guatemala | = Guernsey | = Guinea | = Guinea-Bissau | = Guyana | = Haiti | = Heard Island And McDonald Islands | = Honduras | = Hong Kong | = Hungary | = Iceland | = India | = Indonesia | = Iran | = Iraq | = Ireland | = Isle Of Man | = Israel | = Italy | = Jamaica | = Japan | = Jersey | = Jordan | = Kazakhstan | = Kenya | = Kiribati | = Kuwait | = Kyrgyzstan | = Laos | = Latvia | = Lebanon | = Lesotho | = Liberia | = Libya | = Liechtenstein | = Lithuania | = Luxembourg | = Macao | = Macedonia | = Madagascar | = Malawi | = Malaysia | = Maldives | = Mali | = Malta | = Marshall Islands | = Martinique | = Mauritania | = Mauritius | = Mexico | = Micronesia | = Moldova | = Monaco | = Mongolia | = Montenegro | = Montserrat | = Morocco | = Mozambique | = Myanmar | = Namibia | = Nauru | = Nepal | = Netherlands | = New Caledonia | = New Zealand | = Nicaragua | = Niger | = Nigeria | = Niue | = Norfolk Island | = North Korea | = Northern Mariana Islands | = Norway | = Oman | = Pakistan | = Palau | = Palestine | = Panama | = Papua New Guinea | = Paraguay | = Peru | = Philippines | = Pitcairn | = Poland | = Portugal | = Puerto Rico | = Qatar | = Romania | = Russia | = Rwanda | = Saint Barthelemy | = Saint Helena | = Saint Kitts And Nevis | = Saint Lucia | = Saint Martin | = Saint Pierre And Miquelon | = Saint Vincent And The Grenadines | = Samoa | = San Marino | = Sao Tome And Principe | = Saudi Arabia | = Senegal | = Seychelles | = Sierra Leone | = Singapore | = Slovakia | = Slovenia | = Solomon Islands | = Somalia | = South Africa | = South Georgia | = South Korea | = Spain | = Sri Lanka | = Sudan | = Suriname | = Svalbard And Jan Mayen | = Swaziland | = Sweden | = Switzerland | = Syria | = Serbia | = Taiwan | = Tajikistan | = Zimbabwe | = Zambia | = Yemen | = Western Sahara | = Wallis And Futuna | = Virgin Islands, US | = Virgin Islands, British | = Vietnam | = Venezuela | = Vatican City State | = Vanuatu | = Uzbekistan | = Uruguay | = United States Minor Outlying Islands | = United States Of America | = United Kingdom | = United Arab Emirates | = Unassigned | = Ukraine | = Uganda | = Tuvalu | = Turks And Caicos Islands | = Turkmenistan | = Turkey | = Tunisia | = Trinidad And Tobago | = Tonga | = Tokelau | = Togo | = Timor-Leste | = Thailand | = Tanzania	FALSE	FALSE		0	FALSE	FALSE		
+FPDM_AlternativeDescription	FPDM_AlternativeDescription			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_ConvIndex	FPDM_ConvIndex			integer	Nb of conversion occurred			FALSE			0	FALSE	FALSE		
+FPDM_CustomerDescription	FPDM_CustomerDescription			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_CustomerPartNumber	FPDM_CustomerPartNumber			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_EffectivityDate	FPDM_EffectivityDate			timestamp				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_ExcelReportContext	FPDM_ExcelReportContext			string			Change Order | Change Request | Collection | Engine | Global | MBOM | MCAD Assembly | MCAD Component | Part | Part (EBOM page) | Part (MBOM page) | Product | Program-Project | Vehicle | Workspace | Manufacturing Change Order | Change Notice	false	false		0	false	false		multivalue
+FPDM_ExcelReportJPO	FPDM_ExcelReportJPO			string				false	false		0	false	false		
+FPDM_ExcelReportParameterDefault	FPDM_ExcelReportParameterDefault			string				false	false		0	false	false		
+FPDM_ExcelReportParameterMandatory	FPDM_ExcelReportParameterMandatory			boolean		FALSE	TRUE | FALSE	false	false		0	false	false		
+FPDM_ExcelReportParameterType	FPDM_ExcelReportParameterType			string		Static	Static | Dynamic | Date | Manual Entry | Consolidation	false	false		0	false	false		
+FPDM_ExcelReportParameterValues	FPDM_ExcelReportParameterValues			string				false	false		0	false	false		
+FPDM_FCSReference	FPDM_FCSReference			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_FaureciaShortLengthDescriptionFCS	FPDM_FaureciaShortLengthDescriptionFCS			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_FindNumber	FPDM_FindNumber			string	symbol used to identify a part on a drawing			FALSE	FALSE		0	FALSE	FALSE		
+FPDM_GenratedFrom	FPDM_GenratedFrom			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_GrossWeight	FPDM_GrossWeight			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_Harmony	FPDM_Harmony			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_NemoChains	FPDM_NemoChains			string				FALSE			0	FALSE	FALSE		
+FPDM_NemoConversionCADType	FPDM_NemoConversionCADType			string	CAD Type of Nemo conversion configuration			FALSE			0	FALSE	FALSE		multivalue
+FPDM_NemoConversionConfType	FPDM_NemoConversionConfType			string	Type of Nemo configuration		= QC | = CONV	FALSE			0	FALSE	FALSE		
+FPDM_NemoConversionForAssembly	FPDM_NemoConversionForAssembly			string	Is it a conversion for assembly			FALSE			0	FALSE	FALSE		
+FPDM_NemoConversionMultipleCheckout	FPDM_NemoConversionMultipleCheckout			boolean	Send multiple checkout for Nemo Conversion		TRUE | FALSE	FALSE			0	FALSE	FALSE		
+FPDM_NemoConversionName	FPDM_NemoConversionName			string	Name of the input conversion from Nemo			FALSE			0	FALSE	FALSE		
+FPDM_NemoConversionOptions	FPDM_NemoConversionOptions			string	Options for Nemo conversion configuration			FALSE			0	FALSE	FALSE		
+FPDM_NemoConversionPdmType	FPDM_NemoConversionPdmType			string	Type of conversion received from Nemo conversion type			FALSE			0	FALSE	FALSE		
+FPDM_NemoLimitOfCancelTrials	FPDM_NemoLimitOfCancelTrials			integer				FALSE			0	FALSE	FALSE		
+FPDM_NemoMaximumNumberOfCancelRequests	FPDM_NemoMaximumNumberOfCancelRequests			integer				FALSE			0	FALSE	FALSE		
+FPDM_NemoOptions	FPDM_NemoOptions			string				FALSE			0	FALSE	FALSE		
+FPDM_NemoUnzipFirst	FPDM_NemoUnzipFirst			boolean		FALSE	TRUE | FALSE	FALSE			0	FALSE	FALSE		
+FPDM_NemoViewableID	FPDM_NemoViewableID			string	Viewable ID of Nemo conversion configuration			FALSE			0	FALSE	FALSE		
+FPDM_NetWeight	FPDM_NetWeight			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_OldMaterialNumber	FPDM_OldMaterialNumber			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_PDMClass	FPDM_PDMClass			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_PhantomPart	FPDM_PhantomPart			string	To define if MBOM is a Phantom Part			FALSE	FALSE		0	FALSE	FALSE		
+FPDM_ProductConfigurationId	FPDM_ProductConfigurationId			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_Quantity	FPDM_Quantity			real		1.0		FALSE	FALSE		0	FALSE	FALSE		
+FPDM_QueueJobConversionPriority	FPDM_QueueJobConversionPriority			integer	Priority level of current job	0		FALSE	FALSE		0	FALSE	FALSE		
+FPDM_QueueJobId	FPDM_QueueJobId			string	The identifier returned by a program when the request has been acknowledge by it. If Empty, an error has occurred on and the request has not been sent correctly			FALSE			0	FALSE	FALSE		
+FPDM_QueueJobIsOnDemand	FPDM_QueueJobIsOnDemand			boolean	Is current job on demand	FALSE	TRUE | FALSE	FALSE	FALSE		0	FALSE	FALSE		
+FPDM_QueueJobIteration	FPDM_QueueJobIteration			integer	Number of times the job has tried			FALSE			0	FALSE	FALSE		
+FPDM_QueueJobMessage	FPDM_QueueJobMessage			string	The Message to display			FALSE			0	FALSE	FALSE		
+FPDM_QueueJobNemoAction	FPDM_QueueJobNemoAction			string	Conversion Configuration Name for conversion			FALSE			0	FALSE	FALSE		
+FPDM_QueueJobParams	FPDM_QueueJobParams			string	List of parameters to send to the job			FALSE			0	FALSE	FALSE		
+FPDM_QueueJobProcessStatus	FPDM_QueueJobProcessStatus			string	Status of the requests			FALSE			0	FALSE	FALSE		
+FPDM_QueueJobRequester	FPDM_QueueJobRequester			string	The requester of the job			FALSE			0	FALSE	FALSE		
+FPDM_RTDefault	FPDM_RTDefault			boolean		FALSE	TRUE | FALSE	FALSE	FALSE		0	FALSE	FALSE		
+FPDM_RTPurpose	FPDM_RTPurpose			string				FALSE	FALSE		0	FALSE	FALSE		multivalue
+FPDM_Synchronized	FPDM_Synchronized			string			Yes | No | Interim Corrective Action	FALSE	FALSE		0	FALSE	FALSE		
+FPDM_TreatmentQueueLimitObjectsAlert	FPDM_TreatmentQueueLimitObjectsAlert			integer	Limit of objects linked to Queue			FALSE			0	FALSE	FALSE		
+FPDM_TreatmentQueueLimitObjectsAlertNotificationTime	FPDM_TreatmentQueueLimitObjectsAlertNotificationTime			timestamp	Last notification Time value like System.currentTimeMillis			FALSE			0	FALSE	FALSE		
+FPDM_TreatmentQueueLimitRequestAge	FPDM_TreatmentQueueLimitRequestAge			integer	Determine if object must be unlinked when it is in queue for too long			FALSE			0	FALSE	FALSE		
+FPDM_TreatmentQueueLimitTimeOfTreatementRequested	FPDM_TreatmentQueueLimitTimeOfTreatementRequested			integer	Limit of time an object can be linked to the queue			FALSE			0	FALSE	FALSE		
+FPDM_TreatmentQueueLimitTimeOfTreatementRequestedLastNotificationTime	FPDM_TreatmentQueueLimitTimeOfTreatementRequestedLastNotificationTime			timestamp	Last notification Time of time an object is linked to the queue			FALSE			0	FALSE	FALSE		
+FPDM_TreatmentQueueMaximumRequestsNumber	FPDM_TreatmentQueueMaximumRequestsNumber			integer	Limit the number of submitted jobs	5		FALSE			0	FALSE	FALSE		
+FPDM_TreatmentQueueProcessInUse	FPDM_TreatmentQueueProcessInUse			string	Hidden attribute to prevent multiple process execution. This attribute value determines if the conversions requests are in use or not.		= TRUE | = FALSE | = LOCKED	FALSE			0	FALSE	FALSE		
+FPDM_TypeOfPart	FPDM_TypeOfPart			string				FALSE	FALSE		0	FALSE	FALSE		
+FPDM_Unit	FPDM_Unit			string	Unit of Measure for the Quantity			FALSE	FALSE		0	FALSE	FALSE		
+PSS_2K_type	PSS_2K_type			string	2K type		= Rotating embeded | = Rotating Platen IMM | = transfer | = sandwich	FALSE	FALSE		0	FALSE	FALSE		
+PSS_A-Surf-Finishing_Backing-type-material-weight	PSS_A-Surf-Finishing_Backing-type-material-weight			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ACTIVE_CORRESPONDING_STANDARD	PSS_ACTIVE_CORRESPONDING_STANDARD			string	ACTIVE CORRESPONDING STANDARD			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ACTIVE_CORRESPONDING_STANDARD_2	PSS_ACTIVE_CORRESPONDING_STANDARD_2			string	ACTIVE CORRESPONDING STANDARD2			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ACTIVE_DESCRIPTION	PSS_ACTIVE_DESCRIPTION			string	ACTIVE DESCRIPTION			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ACTIVE_OR_PASSIVE	PSS_ACTIVE_OR_PASSIVE			string	ACTIVE OR PASSIVE	UNASSIGNED	= ACTIVE | = PASSIVE | = UNASSIGNED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ADJUSTER_LUMBAR_TYPE	PSS_ADJUSTER_LUMBAR_TYPE			string	ADJUSTER-LUMBAR TYPE	UNASSIGNED	= UNASSIGNED | = STRIP YES | = STRIP NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ADJUSTMENT	PSS_ADJUSTMENT			string	ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = DISCONTINUOUS | = CONTINUOUS	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ADJUSTMENT2	PSS_ADJUSTMENT2			string	ADJUSTMENT2	UNASSIGNED	= CONTINUOUS | = DISCONTINUOUS | = UNASSIGNED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_AIRBAG_TYPE	PSS_AIRBAG_TYPE			string	AIRBAG TYPE	UNASSIGNED	= UNASSIGNED | = ACTIVE ANTI-SUBMARINING | = LATERAL AIRBAG	FALSE	FALSE		0	FALSE	FALSE		
+PSS_AXIS_INTERVAL_Y_mm	PSS_AXIS_INTERVAL_Y_mm			real	AXIS INTERVAL Y - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_ActionComments	PSS_ActionComments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ActiveFoamingAgentMaterial	PSS_ActiveFoamingAgentMaterial			real	Attribute for Material Classification			FALSE	FALSE	DSDim_Ratio	0	FALSE	FALSE		
+PSS_Active_Foaming_Agent(per)	PSS_Active_Foaming_Agent(per)			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ActualImplementationDate	PSS_ActualImplementationDate			timestamp	PSS_ActualImplementationDate			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Actual_Effectivity_Date	PSS_Actual_Effectivity_Date			timestamp	Actual Effectivity Date			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Additional_Description	PSS_Additional_Description			string	Additional Description			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Amount_of_thread	PSS_Amount_of_thread			integer	Amount of thread			FALSE	FALSE		0	FALSE	FALSE		
+PSS_AmountofResin-g_m2	PSS_AmountofResin-g_m2			real	Attribute for Material Classification			FALSE	FALSE	Mass/Weight	0	FALSE	FALSE		
+PSS_AngularTolerance	PSS_AngularTolerance			real	Angular Tolerance			FALSE	FALSE		0	FALSE	FALSE		
+PSS_AssessmentDevtCost	PSS_AssessmentDevtCost			integer	PSS_AssessmentDevtCost	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_AssessmentToolingCost_Gauges	PSS_AssessmentToolingCost_Gauges			integer	PSS_AssessmentToolingCost_Gauges	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Assessment_PC_L	PSS_Assessment_PC_L			integer	PSS_Assessment_PC_L	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Assessment_PartCost	PSS_Assessment_PartCost			integer	PSS_Assessment_PartCost	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Assessment_ProcessRisk	PSS_Assessment_ProcessRisk			string	PSS_Assessment_ProcessRisk	Low	= High | = Medium | = Low	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Assessment_ProductRisk	PSS_Assessment_ProductRisk			string	PSS_Assessment_ProductRisk	Low	= High | = Medium | = Low	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Assessment_Risk	PSS_Assessment_Risk			string			= High | = Medium | = Low	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Auto_eject	PSS_Auto_eject			string	Auto eject	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Auto_eject_angle	PSS_Auto_eject_angle			real	Auto eject angle			FALSE	FALSE	DSDim_ANGLE	0	FALSE	FALSE		
+PSS_Auto_eject_stroke	PSS_Auto_eject_stroke			real	Auto eject stroke			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_B-Surf-Finishing-type-material-weight	PSS_B-Surf-Finishing-type-material-weight			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_BACKREST_SHOULDER_ADJUSTMENT	PSS_BACKREST_SHOULDER_ADJUSTMENT			string	BACKREST SHOULDER ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_BACKREST_TILT_ADJUSTMENT	PSS_BACKREST_TILT_ADJUSTMENT			string	BACKREST TILT ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_BACKREST_WIDTH_ADJUSTMENT	PSS_BACKREST_WIDTH_ADJUSTMENT			string	BACKREST WIDTH ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_BACK_OFFSET_mm	PSS_BACK_OFFSET_mm			real	BACK OFFSET - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_BACK_TRIMMED_TYPE	PSS_BACK_TRIMMED_TYPE			string	BACK-TRIMMED TYPE	UNASSIGNED	= 1/3 | = 2/3 | = UNASSIGNED | = 1/1	FALSE	FALSE		0	FALSE	FALSE		
+PSS_BELT_LOCKING	PSS_BELT_LOCKING			string	BELT LOCKING	UNASSIGNED	= NO | = YES | = UNASSIGNED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_BENCH_TRIMMED_TYPE	PSS_BENCH_TRIMMED_TYPE			string	BENCH-TRIMMED TYPE	UNASSIGNED	= UNASSIGNED | = 1/1 | = 1/3 - 2/3	FALSE	FALSE		0	FALSE	FALSE		
+PSS_BGType	PSS_BGType			string		Faurecia	= Faurecia | = JV	FALSE	FALSE		0	FALSE	FALSE
+PSS_BOLSTER	PSS_BOLSTER			string	BOLSTER	NO	= YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_BOLT_TYPE	PSS_BOLT_TYPE			string	BOLT TYPE	UNASSIGNED	= WITHOUT HEAD | = WITH SHOULDER | = WITH HEAD AND THREADED END | = UNASSIGNED | = THREADED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_BOPCost	PSS_BOPCost			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_BOPCost_Comments	PSS_BOPCost_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_BOPToolingCost	PSS_BOPToolingCost			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_BOPToolingCost_Comments	PSS_BOPToolingCost_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_BPUpdateDate	PSS_BPUpdateDate			timestamp	PSS_BPUpdateDate			FALSE	FALSE		0	FALSE	FALSE		
+PSS_BaseQuantity	PSS_BaseQuantity			integer		1000		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Base_plates_dimensions_Lxlx_th	PSS_Base_plates_dimensions_Lxlx_th			real	Base plates dimensions Lxlx th (mm)			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_BeforeCheckinExecuted	PSS_BeforeCheckinExecuted			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_BicomponentFibersContent	PSS_BicomponentFibersContent			real	Attribute for Material Classification			FALSE	FALSE	DSDim_Ratio	0	FALSE	FALSE		
+PSS_Blank_Length	PSS_Blank_Length			real	Blank Length			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Blank_Surfacic_Weight	PSS_Blank_Surfacic_Weight			real	Blank Surfacic Weight (g/m2)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Blank_Width_of_Production	PSS_Blank_Width_of_Production			real	Blank Width of Production (mm)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_BoostType	PSS_BoostType			string		NONE	= TURBO | = SUPERCHARGER | = NONE | = HYBRID	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Bumper_Type	PSS_Bumper_Type			string	Bumper Type	Empty	= Full | = Empty	FALSE	FALSE		0	FALSE	FALSE		
+PSS_BusinessTripTravelExpenseBudget	PSS_BusinessTripTravelExpenseBudget			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CABLE_DIAMETER_mm	PSS_CABLE_DIAMETER_mm			real	CABLE DIAMETER - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_CADCustomerReference	PSS_CADCustomerReference			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CADCustomerRevision	PSS_CADCustomerRevision			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CADDescription	PSS_CADDescription			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CADFileFormat	PSS_CADFileFormat			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CADMass	PSS_CADMass			real	CAD Mass attribute used for 3D Models	0.0	>=0.0	FALSE	FALSE	PSS_Mass_g	0	FALSE	FALSE		
+PSS_CADMaterial	PSS_CADMaterial			string	CAd Material			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CADSoftware	PSS_CADSoftware			string	CAD Software			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CADSoftwareRevision	PSS_CADSoftwareRevision			string	CAD Software Revision			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CADTemplate	PSS_CADTemplate			string	CAD Template			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CADThickness	PSS_CADThickness			string	CAD Thickness			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CAD_Parameter_Mass	PSS_CAD_Parameter_Mass			String	Hidden attribute to Store CAD Parameter Mass			FALSE	TRUE		0	FALSE	FALSE		
+PSS_CAD_System_Mass	PSS_CAD_System_Mass			String	Hidden attribute to Store CAD system Mass			FALSE	TRUE		0	FALSE	FALSE		
+PSS_CARGO_FUNCTION	PSS_CARGO_FUNCTION			string	CARGO FUNCTION	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CAType	PSS_CAType			string	PSS_CAType		= CAD | = Part | = Standard	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CLAMPING_TYPE	PSS_CLAMPING_TYPE			string	CLAMPING TYPE	UNASSIGNED	= UNASSIGNED | = TAPPED | = WITH COLLAR | = CONIC | = RETAINING RING	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CLAMP_INTERVAL	PSS_CLAMP_INTERVAL			real	CLAMP INTERVAL	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_CLAMP_INTERVAL2	PSS_CLAMP_INTERVAL2			real	CLAMP INTERVAL2	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_CLIMATE_CONTROL	PSS_CLIMATE_CONTROL			string	CLIMATE CONTROL	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CLOTH_TYPE	PSS_CLOTH_TYPE			string	CLOTH TYPE	UNASSIGNED	= SOUNDPROOF | = UNASSIGNED | = COVER	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CNReasonForCancellation	PSS_CNReasonForCancellation			string	String value Reason for cancellation			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CN_Transfer_Date	PSS_CN_Transfer_Date			timestamp	CN Transfer Date			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CN_Type	PSS_CN_Type			string	String value CN Type	Parts and BOM	= Tools | = Parts and BOM | = Parts	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CO2Emission	PSS_CO2Emission			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_COLOR	PSS_COLOR			string	COLOR			FALSE	FALSE		0	FALSE	FALSE		
+PSS_COMMAND	PSS_COMMAND			string	COMMAND	UNASSIGNED	= SLOTTED | = UNASSIGNED | = WITHOUT | = HEXALOBULAR | = HEXAGON SOCKET | = CROSS RECESS | = PHILIPS DRIVE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_COMMAND_TYPE	PSS_COMMAND_TYPE			string	COMMAND TYPE	UNASSIGNED	= MEMO KEYBOARD | = UNASSIGNED | = ADJUSTMENT | = THERMOSTATED HEATER-SUSPENSION | = COMMUNICATION BUS | = BUTTONS | = COMMUNICATION BUS AND BUTTONS	FALSE	FALSE		0	FALSE	FALSE		
+PSS_COMPANY_MAKE_OR_BUY	PSS_COMPANY_MAKE_OR_BUY			string		Unassigned	= Unassigned | = Make | = Buy	FALSE	FALSE		0	FALSE	FALSE		
+PSS_COMPARABLE_DESCRIPTION	PSS_COMPARABLE_DESCRIPTION			string	COMPARABLE DESCRIPTION			FALSE	FALSE		0	FALSE	FALSE		
+PSS_COMPRESSION_DEFLECTION_STRESS-N	PSS_COMPRESSION_DEFLECTION_STRESS-N			string	COMPRESSION DEFLECTION STRESS - N	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_CONNECTOR	PSS_CONNECTOR			string	CONNECTOR	UNASSIGNED	= YES | = UNASSIGNED | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CONNECTOR_TYPE	PSS_CONNECTOR_TYPE			string	CONNECTOR TYPE	UNASSIGNED	= UNASSIGNED | = MATERIAL | = WITH FIXING | = SOCKET HOUSING | = SEAL | = PIN HOUSING | = HEADER	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CONTACT_SYSTEM	PSS_CONTACT_SYSTEM			string	CONTACT SYSTEM		= 0,5 | = 0,63 | = 1,5 | = 2,8 | = 3,5 | = 4,8 | = 6,3 | = 9,5 | = OTHER	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CONTROL_WHEEL_TYPE	PSS_CONTROL_WHEEL_TYPE			string	CONTROL WHEEL TYPE	UNASSIGNED	= UNASSIGNED | = POSITION CONTROL WHEEL | = LUMBAR CONTROL WHEEL | = RECLINER CONTROL WHEEL | = DUMP LATCH CONTROL	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CORPUS_LENGHT-mm	PSS_CORPUS_LENGHT-mm			real	CORPUS LENGHT - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_CORRESPONDING_STANDARD	PSS_CORRESPONDING_STANDARD			string	CORRESPONDING STANDARD			FALSE	FALSE		0	FALSE	FALSE		
+PSS_COStartDate	PSS_COStartDate			timestamp	PSS_COStartDate			FALSE	FALSE		0	FALSE	FALSE		
+PSS_COTTER_PIN_TYPE	PSS_COTTER_PIN_TYPE			string	COTTER PIN TYPE	UNASSIGNED	= UNASSIGNED | = CYLINDRICAL COTTER PIN | = EXTRACTABLE COTTER PIN | = SPLIT PIN	FALSE	FALSE		0	FALSE	FALSE		
+PSS_COVirtualImplementationDate	PSS_COVirtualImplementationDate			timestamp	PSS_COVirtualImplementationDate			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CRBillable	PSS_CRBillable			string	CR Billable	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CRCustomerAgreementDate	PSS_CRCustomerAgreementDate			timestamp	CR Customer Agreement Date			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CRCustomerChangeNumber	PSS_CRCustomerChangeNumber			string	Customer Change Number			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CRCustomerInvolvement	PSS_CRCustomerInvolvement			string	CR Customer Involvement		= Not informed | = New Release | = Information | = Approval	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CRDateOfLastTransferToChangeManager	PSS_CRDateOfLastTransferToChangeManager			timestamp	CR Date of Last Transfer to Change Manager			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CROriginSubType	PSS_CROriginSubType			string	CR Origin Sub Type		= Styling | = Sales | = Quality | = Purchasing | = Plant | = PC&L | = Manufacturing Engineering | = Engineering	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CROriginType	PSS_CROriginType			string	CR Origin Type		= Supplier | = Internal | = Customer	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CRReasonForChange	PSS_CRReasonForChange			string	CR Reason for Change		= VA/VE | = Safety | = Regulation | = Quality | = Profitability | = Product | = Process | = HSE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CRRequestedAssessmentEndDate	PSS_CRRequestedAssessmentEndDate			timestamp	PSS_CRRequestedAssessmentEndDate			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CRTargetChangeImplementationComment	PSS_CRTargetChangeImplementationComment			string	CR Target Change Implementation Comment			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CRTargetChangeImplementationDate	PSS_CRTargetChangeImplementationDate			timestamp	CR Target Change Implementation Date			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CRTitle	PSS_CRTitle			string	CR Title			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CRType	PSS_CRType			string	CR Type	Engineering CR	= Program CR | = Manufacturing CR | = Engineering CR	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CUSTOMER	PSS_CUSTOMER			string	CUSTOMER	UNASSIGNED	= BMW | = FIAT | = NISSAN | = SEAT | = RENAULT | = TOYOTA | = PEUGEOT | = UNASSIGNED | = MCC | = FORD | = DAIMLER CHRYSLER | = CITROEN | = GM | = AUDI | = VW | = SAAB	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CUSTOMER_ACCEPTANCE_NUMBER	PSS_CUSTOMER_ACCEPTANCE_NUMBER			string	CUSTOMER ACCEPTANCE NUMBER			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CUSTOMER_MATERIAL_NORM	PSS_CUSTOMER_MATERIAL_NORM			string	CUSTOMER MATERIAL NORM			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CUTTING_TOOLS_TYPE	PSS_CUTTING_TOOLS_TYPE			string	CUTTING TOOLS TYPE	UNASSIGNED	= UNASSIGNED | = CUTTING OTHER | = CUTTING BLANKS | = CUTTING BARETTE | = CUTTING BALLFIX | = CUTTING  MEMORY SUPPORT | = CUTTING BRACKETS	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Calculated_Compliances	PSS_Calculated_Compliances			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Calculated_Exemptions	PSS_Calculated_Exemptions			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Calculated_Substance_Classifications	PSS_Calculated_Substance_Classifications			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Calculated_Substances	PSS_Calculated_Substances			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Capex	PSS_Capex			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_CapexContrib_LaunchCost	PSS_CapexContrib_LaunchCost			integer	PSS_CapexContrib_LaunchCost	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Capex_Comments	PSS_Capex_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CarClass	PSS_CarClass			string		Unassigned	= E | = F | = S | = SUV | = MPV | = LCV | = PU | = Unassigned | = A | = B | = B-MPV | = C | = C-MPV | = D	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Carry_over	PSS_Carry_over			string	Carry over	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Cavities_Parts_cycle	PSS_Cavities_Parts_cycle			integer	Cavities ( Parts / cycle)	1		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Chassis	PSS_Chassis			string		Unassigned	= Cabrio | = Convertible | = Coupe | = Coupe-Convertible | = Hatchback | = Limousine | = MPV | = Sedan/Saloon | = Station wagon/Estate | = SUV | = LCV | = Truck | = Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CheckApproveOrAbstain	PSS_CheckApproveOrAbstain			boolean	PSS_CheckApproveOrAbstain			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CheckFlagForPassedTrigger	PSS_CheckFlagForPassedTrigger			boolean	Check Flag For Passed Trigger			FALSE	TRUE		0	FALSE	FALSE		
+PSS_ChemicalBase	PSS_ChemicalBase			string	Attribute for Material Classification	Others	= PUR | = PO | = Others	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ChemicalNature	PSS_ChemicalNature			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Chemical_reaction	PSS_Chemical_reaction			string			= Endothermic | = Exothermic	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ChemicalreactionMaterial	PSS_ChemicalreactionMaterial			string	Attribute for Material Classification	TBD	= TBD | = Endothermic | = Exothermic	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Clamping_force	PSS_Clamping_force			real	Clamping force kN			FALSE	FALSE	DSDim_FORCE	0	FALSE	FALSE		
+PSS_Clamping_system	PSS_Clamping_system			string	Clamping system		= MAG2 | = MAG 3 | = MAG4 | = MAG5 | = CLO | = CRO-MAG	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Clamping_thickness	PSS_Clamping_thickness			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CloneColorDiversity	PSS_CloneColorDiversity			string			= Yes | =	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CloneTechnicalDiversity	PSS_CloneTechnicalDiversity			string			= Yes | =	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Closed_tool_dimensions	PSS_Closed_tool_dimensions			real	Closed tool dimensions  L x w x h [mm]			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Coating	PSS_Coating			string	Coating	Unassigned	= Unassigned | = Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Coil_Band_Gross_Width	PSS_Coil_Band_Gross_Width			real				FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Coil_Band_Net_Width	PSS_Coil_Band_Net_Width			real				FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Coil_Step_Band	PSS_Coil_Step_Band			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Coil_diameter_mm	PSS_Coil_diameter_mm			real	Coil diamete mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ColorCode	PSS_ColorCode			string	Defines the 3 character color code value.			FALSE	FALSE		0	TRUE	FALSE		
+PSS_ColorName	PSS_ColorName			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ColorPID	PSS_ColorPID			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Color_cap	PSS_Color_cap			string	Color cap			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Colorable	PSS_Colorable			string			= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Comment	PSS_Comment			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Comments	PSS_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CommercialName	PSS_CommercialName			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Communication_standard	PSS_Communication_standard			string	Communication standard	Net bus	= Profibus | = Net bus	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ComparableDescription	PSS_ComparableDescription			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Complexity	PSS_Complexity			string			= Low | = Medium | = High	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ConditioningAtDelivery	PSS_ConditioningAtDelivery			string		TBC	= TBC | = Rolls | = Bales | = Paletts | = IBC | = Cuves | = Bags | = Big_Bag	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Connector_Header_Mounting_Type	PSS_Connector_Header_Mounting_Type			string	Connector Header Mounting Type		= Solder_wave | = Pin_in_paste | = Press_fit | = SMD	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Connector_Header_Type	PSS_Connector_Header_Type			string	Connector Header Type		= Right_angle | = Vertical	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Connector_Hybrid	PSS_Connector_Hybrid			string	Connector Hybrid	Unassigned	=Yes | = No | = Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Connectors_type	PSS_Connectors_type			string	Connectors type			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Contact_Type	PSS_Contact_Type			string	Contact Type		= 0,5 | = 0,63 | = 1,5 | = 2,8 | = 3,5 | = 4,8 | = 6,3 | = 9,5 | = Other	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ContainsHazardousSubstances	PSS_ContainsHazardousSubstances			string	Attribute to store Contains Hazardous Substances attribute value.	UNASSIGNED	= UNASSINGED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ControlPlan	PSS_ControlPlan			string	PSS_ControlPlan	NA	= NA | = Y | = N	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ControlPlanFinalGuage	PSS_ControlPlanFinalGuage			string			= | = No | = Yes	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ControlPlanFinalGuage_Comments	PSS_ControlPlanFinalGuage_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CorrespondingStandard	PSS_CorrespondingStandard			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Count	PSS_Count			integer	Count	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Countermeasure	PSS_Countermeasure			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Covered_Surface_m2	PSS_Covered_Surface_m2			real	Covered surface (m2)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Crosslinking	PSS_Crosslinking			string	Attribute for Material Classification	TBD	= TBD | = UV Monocure | = UV Dualcure | = Thermic	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Currency	PSS_Currency			string			= | = CND | = CNY | = EURO | = JPY | = KRW | = SEK | = USD	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CustomEffectivityExpression	PSS_CustomEffectivityExpression			string	Store the Custom effectivity expression to rebuild update effectivity on eBOM view			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CustomerAcceptanceNumber	PSS_CustomerAcceptanceNumber			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_CustomerCode	PSS_CustomerCode			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CustomerCompany	PSS_CustomerCompany			string	Attribute to store the Customer Company.	UNASSIGNED	uses program pss.cadbom.externalReference with input PSS_CustomerCompany	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CustomerEngineeringLevel	PSS_CustomerEngineeringLevel			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CustomerMaterial	PSS_CustomerMaterial			string	Attribute for Material Classification	Unassigned	uses program pss.cadbom.Material with input PSS_CustomerMaterial	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CustomerPartNumber	PSS_CustomerPartNumber			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CustomerPlantFinance	PSS_CustomerPlantFinance			string			= | = No | = Yes	FALSE	FALSE		0	FALSE	FALSE		
+PSS_CustomerPlantFinance_Comments	PSS_CustomerPlantFinance_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Customer_Number	PSS_Customer_Number			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_CycleTime	PSS_CycleTime			integer				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Cycle_time_target_BP	PSS_Cycle_time_target_BP			integer	Cycle time target ( BP)			FALSE	FALSE	DSDim_TIME	0	FALSE	FALSE		
+PSS_CylinderNumber	PSS_CylinderNumber			string		Unassigned	= Unassigned | = 16 | = 12 | = 10 | = 8 | = 6 | = 5 | = 4 | = 3 | = 2 | = 1	FALSE	FALSE		0	FALSE	FALSE		
+PSS_DAndEGM	PSS_DAndEGM			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_DENSITY	PSS_DENSITY			real	Attribute for Material Classification			FALSE	FALSE	DSDim_DENSITY	0	FALSE	FALSE		
+PSS_DENSITY-Kg_per_m3	PSS_DENSITY-Kg_per_m3			real	DENSITY - Kg per m3	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_DIAMETER-mm	PSS_DIAMETER-mm			string	DIAMETER - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_DIAMETER2-mm	PSS_DIAMETER2-mm			real	DIAMETER2 - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_DIAMETER_3	PSS_DIAMETER_3			real	DIAMETER 3	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_DIAMETER_AND_THREAD_TYPE	PSS_DIAMETER_AND_THREAD_TYPE			string	DIAMETER AND THREAD TYPE	UNASSIGNED		FALSE	FALSE		0	FALSE	FALSE		
+PSS_DLCost	PSS_DLCost			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_DLCost_Comments	PSS_DLCost_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_DOUBLE_COMMUTATOR	PSS_DOUBLE_COMMUTATOR			string	DOUBLE COMMUTATOR		= YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_DRAWER_TYPE	PSS_DRAWER_TYPE			string	DRAWER TYPE	UNASSIGNED	= TRACK | = UNASSIGNED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_DRILL_DIAMETER-mm	PSS_DRILL_DIAMETER-mm			real	DRILL DIAMETER - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_DRIVE_SHAFT_TYPE	PSS_DRIVE_SHAFT_TYPE			string	DRIVE SHAFT TYPE	UNASSIGNED	= STAR | = UNASSIGNED | = GEAR | = SQUARE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_DVP_PVP	PSS_DVP_PVP			string	PSS_DVP_PVP	NA	= NA | = Y | = N	FALSE	FALSE		0	FALSE	FALSE		
+PSS_DandEHours	PSS_DandEHours			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_DandEHours_Comments	PSS_DandEHours_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_DandESales	PSS_DandESales			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_Decision	PSS_Decision			string		No Decision	= Go | = No Go | = Abstain | = No Decision	FALSE	FALSE		0	FALSE	FALSE		
+PSS_DecisionCashPayment	PSS_DecisionCashPayment			string	PSS_DecisionCashPayment		= | = None | = PPA | = Cash | = Cash+PPA	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Decision_Comments	PSS_Decision_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Decision_CustomerStatus	PSS_Decision_CustomerStatus			string	PSS_Decision_CustomerStatus	Pending	= OK | = Pending | = NOK | = Not Quoted | = In Negotiation | = Agreed | = Closed | = Unsold	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Decision_Date	PSS_Decision_Date			timestamp	PSS_Decision_Date			FALSE	FALSE		0	FALSE	FALSE		
+PSS_DeliverableType	PSS_DeliverableType			string	Deliverable Type		= | = PMS | = Supplier | = OEM | = PPAPSynthesis | = PPAPContributor		false		0	false	false		multivalue
+PSS_Delivered_to_Tier2	PSS_Delivered_to_Tier2			string	Delivered to Tier2	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Demoulding_Axis_-_Direction	PSS_Demoulding_Axis_-_Direction			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Density	PSS_Density			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Density_Classification	PSS_Density_Classification			real	Density Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Depth_mm	PSS_Depth_mm			real	Depth mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Description	PSS_Description			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Design	PSS_Design			string			= | = No | = Yes	FALSE	FALSE		0	FALSE	FALSE		
+PSS_DesignReviewDate	PSS_DesignReviewDate			timestamp	PSS_DesignReviewDate			FALSE	FALSE		0	FALSE	FALSE		
+PSS_DesignReviewStatus	PSS_DesignReviewStatus			string	PSS_DesignReviewStatus	NA	= NA | = Pending | = OK | = NOK	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Design_Comments	PSS_Design_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Desolvatation	PSS_Desolvatation			string	Attribute for Material Classification	TBD	= Slow | = Medium | = Quick | = TBD	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Destination_Harbour	PSS_Destination_Harbour			string	Destination Harbour			FALSE	FALSE		0	FALSE	FALSE		
+PSS_DetailSheetInfo	PSS_DetailSheetInfo			string	Attribute which holds details about the detail sheets of Drawing filled by macro			FALSE	TRUE		0	FALSE	FALSE		
+PSS_Development_responsability	PSS_Development_responsability			string	Development responsability	Internal	= Internal | = BOP supplier Other | = OEM | = Third party | = Other	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Developped_Surface_m2	PSS_Developped_Surface_m2			real	Developed Surface (m2)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Diameter	PSS_Diameter			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Diameter-FCM	PSS_Diameter-FCM			real	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_DilourDensity-stiches_cm2	PSS_DilourDensity-stiches_cm2			integer	Attribute for Material Classification			FALSE	FALSE	DSDim_DENSITY	0	FALSE	FALSE		
+PSS_DilourHeight	PSS_DilourHeight			integer	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Dimension_X-Y-Z	PSS_Dimension_X-Y-Z			string	Dimension (X-Y-Z)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Dimension_in_vehicle_direction_-_X	PSS_Dimension_in_vehicle_direction_-_X			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Dimension_in_vehicle_direction_-_Y	PSS_Dimension_in_vehicle_direction_-_Y			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Dimension_in_vehicle_direction_-_Z	PSS_Dimension_in_vehicle_direction_-_Z			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Dimension_inch	PSS_Dimension_inch			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Dimension_mm	PSS_Dimension_mm			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_DimensioningStandards1	PSS_DimensioningStandards1			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_DimensioningStandards2	PSS_DimensioningStandards2			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_DimensioningStandards3	PSS_DimensioningStandards3			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_DimensioningStandards4	PSS_DimensioningStandards4			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Displacement	PSS_Displacement			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_DocumentCategory	PSS_DocumentCategory			string	Document Category		= | = CAEDocument | = CustomerDocument | = DesignDocument | = CRDocument | = EngineeringDocument | = ExchangeDocument | = LogisticDocument | = ManufacturingDocument | = MiscellaneousDocument | = ProgramDocument | = PurchasingDocument | = QualityDocument | = QuotationDocument | = ToolingDocument		false		0	false	false		
+PSS_Domain	PSS_Domain			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_DosageRecommandedforWeightReduction	PSS_DosageRecommandedforWeightReduction			real	Attribute for Material Classification			FALSE	FALSE	DSDim_Ratio	0	FALSE	FALSE		
+PSS_Dosage_recommanded_for_weight_reduction(per)	PSS_Dosage_recommanded_for_weight_reduction(per)			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Downstream_Scrap_rate	PSS_Downstream_Scrap_rate			real	Downstream Scrap rate			FALSE	FALSE	DSDim_DIMENSIONLESS	0	FALSE	FALSE		
+PSS_Downstream_product_definition_specified_CAD_link	PSS_Downstream_product_definition_specified_CAD_link			string	Downstream product definition specified ( CAD link )			FALSE	FALSE		0	FALSE	FALSE		
+PSS_DrawingFormat	PSS_DrawingFormat			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_DrawingViewConvention	PSS_DrawingViewConvention			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Dry_thickness_recommended	PSS_Dry_thickness_recommended			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_DueDate	PSS_DueDate			timestamp				FALSE	FALSE		0	FALSE	FALSE		
+PSS_E2ECODurationAtPrepareState	PSS_E2ECODurationAtPrepareState			integer	Attribute used for CO duration at Prepare State and to be stored on PSS_ProgramProject type and interface PSS_E2ENotificationsForBG	99		FALSE	FALSE		0	TRUE	TRUE		
+PSS_E2ECRDurationAtSubmitState	PSS_E2ECRDurationAtSubmitState			integer	Attribute used for notification frequency for Opened Changes and to be stored on PSS_ProgramProject type and interface PSS_E2ENotificationsForBG	99		FALSE	FALSE		0	TRUE	TRUE		
+PSS_E2EEscalationDelayedChgsFrequency	PSS_E2EEscalationDelayedChgsFrequency			string	Attribute used for notification frequency for Delayed Changes and to be stored on PSS_ProgramProject type	Weekly	= Daily | = Weekly | = None	FALSE	FALSE		0	TRUE	TRUE		
+PSS_E2EEscalationOpenedChgsFrequency	PSS_E2EEscalationOpenedChgsFrequency			string	Attribute used for notification frequency for Opened Changes and to be stored on PSS_ProgramProject type	Weekly	= Daily | = Weekly | = None	FALSE	FALSE		0	TRUE	TRUE		
+PSS_E2EMCODurationAtPrepareState	PSS_E2EMCODurationAtPrepareState			integer	Attribute used for MCO duration at Prepare State and to be stored PSS_ProgramProject type and interface PSS_E2ENotificationsForBG	99		FALSE	FALSE		0	TRUE	TRUE		
+PSS_E2EManagerEmailId	PSS_E2EManagerEmailId			string	Attribute used for storing Manager Email Id for each team member and to be added on PSS_ConnectedMembers relationship			FALSE	FALSE		0	TRUE	TRUE		
+PSS_E2EManagerName	PSS_E2EManagerName			string	Attribute used for storing Manager Name for each team member and to be added on PSS_ConnectedMembers relationship			FALSE	FALSE		0	TRUE	TRUE		
+PSS_E2ENotificationDelayedChgsFrequency	PSS_E2ENotificationDelayedChgsFrequency			string	Attribute used for notification frequency for Delayed Changes and to be stored on PSS_ProgramProject type and interface PSS_E2ENotificationsForBG	Weekly	= Daily | = Weekly | = None	FALSE	FALSE		0	TRUE	TRUE		
+PSS_E2ENotificationOpenedChgsFrequency	PSS_E2ENotificationOpenedChgsFrequency			string	Attribute used for notification frequency for Opened Changes and to be stored on PSS_ProgramProject type and interface PSS_E2ENotificationsForBG	Weekly	= Daily | = Weekly | = None	FALSE	FALSE		0	TRUE	TRUE		
+PSS_E2ENotificationRemainderFrequency	PSS_E2ENotificationRemainderFrequency			string	Attribute used for notification frequency for Remainder and to be stored on PSS_ProgramProject type and interface PSS_E2ENotificationsForBG	Weekly	= Daily | = Weekly | = None	FALSE	FALSE		0	TRUE	TRUE		
+PSS_E2EOpenedCNDuration	PSS_E2EOpenedCNDuration			integer	Attribute used for Opened CN duration and to be stored on PSS_ProgramProject type and interface PSS_E2ENotificationsForBG	99		FALSE	FALSE		0	TRUE	TRUE		
+PSS_E2EProjectNotificationActivation	PSS_E2EProjectNotificationActivation			boolean	Attribute used for storing Notification Active or Not and to be added on PSS_ProgramProject relationship	TRUE		FALSE	FALSE		0	TRUE	TRUE		
+PSS_EASY_ENTRY	PSS_EASY_ENTRY			string	EASY ENTRY	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_EASY_ENTRY_SWITCH	PSS_EASY_ENTRY_SWITCH			string	EASY ENTRY SWITCH			FALSE	FALSE		0	FALSE	FALSE		
+PSS_EASY_EXIT_FUNCTION	PSS_EASY_EXIT_FUNCTION			string	EASY EXIT FUNCTION	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_EBOM_CADMass	PSS_EBOM_CADMass			real	Replacement of the OOTB Weight attribute	0.0	>=0.0	FALSE	FALSE	PSS_Mass_g	0	FALSE	FALSE		
+PSS_EBOM_Mass1	PSS_EBOM_Mass1			real	Mass classification attribute	0.0	>=0.0	FALSE	FALSE	PSS_Mass_g	0	FALSE	FALSE		
+PSS_EBOM_Mass2	PSS_EBOM_Mass2			real	Mass classification attribute	0.0	>=0.0	FALSE	FALSE	PSS_Mass_g	0	FALSE	FALSE		
+PSS_EBOM_Mass3	PSS_EBOM_Mass3			real	Mass classification attribute	0.0	>=0.0	FALSE	FALSE	PSS_Mass_g	0	FALSE	FALSE		
+PSS_ELECTRICAL_CONNECTION	PSS_ELECTRICAL_CONNECTION			string	ELECTRICAL CONNECTION		= PIG TAIL | = DIRECT CONTACT	FALSE	FALSE		0	FALSE	FALSE		
+PSS_EMC_PROTECTION	PSS_EMC_PROTECTION			string	EMC PROTECTION			FALSE	FALSE		0	FALSE	FALSE		
+PSS_EMISSION_CUSTOMER_STANDARD	PSS_EMISSION_CUSTOMER_STANDARD			string	EMISSION CUSTOMER STANDARD			FALSE	FALSE		0	FALSE	FALSE		
+PSS_EMISSION_CUSTOMER_STANDARD_COMPLIANCE	PSS_EMISSION_CUSTOMER_STANDARD_COMPLIANCE			string	EMISSION CUSTOMER STANDARD COMPLIANCE	NO	= YES | = NO | = NOT MANDATORY	FALSE	FALSE		0	FALSE	FALSE		
+PSS_EQUIPMENT	PSS_EQUIPMENT			string	added few range values based on RFC-065	UNASSIGNED	= POWERED 3M | = MEMORY + INSTANT LOCKING | = MEMORY + 6 TEETH LATCH - EXTERN CMD | = 14 TEETH LATCH - EXTERN CMD | = POWERED  FRONT | = MEMORY + 6 TEETH LATCH - INTERN CMD | = 10 TEETH LATCH - EXTERN CMD | = UNASSIGNED | = POWERED FRONT REINFORCED | = 6 TEETH LATCH - EXTERN CMD | = INSTANT LOCKING - EXTERN CMD | = 6 TEETH LATCH - INTERN CMD | = OTHER PRODUCT	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_ACOUSTIC	PSS_ESBG_ACOUSTIC			string	ACOUSTIC		= PHASE 8 | = U | = Z | = - | = DIRECT	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_ACOUSTIC_MATERIAL	PSS_ESBG_ACOUSTIC_MATERIAL			string	ESBG ACOUSTIC MATERIAL	UNASSIGNED	= BASALT WOOL | = - | = BASALT-STAINLESS STEEL | = GLASS WOOL | = STAINLESS STEEL | = STEEL WOOL | = UNASSIGNED | = WIRE-MESH	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_ACOUSTIC_VOLUME-l	PSS_ESBG_ACOUSTIC_VOLUME-l			real	ESBG ACOUSTIC VOLUME - l			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_ACTUAL_MASS	PSS_ESBG_ACTUAL_MASS			real	ESBG ACTUAL MASS	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_ANGLE	PSS_ESBG_ANGLE			string	ESBG ANGLE			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_APPLICATION	PSS_ESBG_APPLICATION			string	ESBG APPLICATION	-	= - | = DISTANCE HOLDER | = MAT PROTECTION | = OTHER | = SLIDING SEAT | = TIGHTNESS	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_ASSEMBLY_TYPE	PSS_ESBG_ASSEMBLY_TYPE			string	ESBG ASSEMBLY TYPE	-	= RADIAL | = AXIAL | = 180 | = -	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_ATD_TYPE	PSS_ESBG_ATD_TYPE			string	ESBG ATD TYPE	-	= SCR | = DOC/DPF | = SINGLE MODULE | = BURNER | = CONVERTER | = UNASSIGNED | = -	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_BEND_NUMBER	PSS_ESBG_BEND_NUMBER			integer	ESBG BEND NUMBER			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_BEND_RADIUS-mm	PSS_ESBG_BEND_RADIUS-mm			real	BEND RADIUS - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CANNING_PROCESS	PSS_ESBG_CANNING_PROCESS			string	ESBG CANNING PROCESS	-	= - | = BASE | = CALIBRATE | = GBD | = GBD CONTROL	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CAP_USE	PSS_ESBG_CAP_USE			string	PLUG USE		= UNASSIGNED | = flange | = - | = protection | = sensor cover | = air gap pipe	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CAST_PRODUCT_GRADE	PSS_ESBG_CAST_PRODUCT_GRADE			string	ESBG CAST PRODUCT GRADE	Unassigned	= other - fill material grade remarks | = Unassigned | = gs si-mo | = gs 450-12	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CAST_PRODUCT_MATERIAL_SPECIFICATION	PSS_ESBG_CAST_PRODUCT_MATERIAL_SPECIFICATION			string	ESBG CAST PRODUCT MATERIAL SPECIFICATION	Unassigned	= 1-390 | = 1-391 | = Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CATEGORY	PSS_ESBG_CATEGORY			string	ESBG CATEGORY	Unassigned	= Unassigned | = recommended | = prohibited	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CLAMPING_SLEEVE	PSS_ESBG_CLAMPING_SLEEVE			string	ESBG CLAMPING SLEEVE	-	= - | = CONVERTER | = COLD END	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CLAMP_TYPE	PSS_ESBG_CLAMP_TYPE			string	ESBG CLAMP TYPE	-	= - | = BAND CLAMP | = OTHER | = SPHERICAL CLAMP | = V-CLAMP	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_COATED_FLAT_PRODUCT_GRADE	PSS_ESBG_COATED_FLAT_PRODUCT_GRADE			string	ESBG COATED FLAT PRODUCT GRADE	Unassigned	= 1.4512 | = 409 | = 439 | = AS100-1 | = AS100-2 | = AS100-3 | = AS100-4 | = AS100-5 | = AS120-1 | = AS120-2 | = AS120-3 | = AS120-4 | = AS120-05 | = AS120-06 | = AS120-11 | = AS80-01 | = AS80-02 | = AS80-03 | = AS80-04 | = AS80-05 | = OTHER - fill MATERIAL GRADE REMARKS | = SA1D | = SA1EH | = Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_COATED_TUBE_GRADE	PSS_ESBG_COATED_TUBE_GRADE			string	ESBG COATED TUBE GRADE	Unassigned	= AS120-4 | = AS120-5 | = AS120-6 | = AS120-7 | = AS120-11 | = other - fill material grade remarks | = Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_COATING_SUPPLIER	PSS_ESBG_COATING_SUPPLIER			string	ESBG COATING SUPPLIER		= Unassigned | = - | = ace | = asec | = basf | = cataler | = degussa | = engelhard | = jm | = other | = umicore	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_COLLECTOR_TYPE	PSS_ESBG_COLLECTOR_TYPE			string	ESBG COLLECTOR TYPE	-	= - | = 2 - 1 | = 3 - 1 | = 4 - 1 | = 4 - 2 | = 4 - 2 - 1 | = 5 - 1 | = 6 - 1 | = 6 - 2 - 1 | = 8 - 4 - 1	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_COMMENTS	PSS_ESBG_COMMENTS			string	ESBG COMMENTS			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_COMPONENT_LOCATION	PSS_ESBG_COMPONENT_LOCATION			string	COMPONENT LOCATION		= - | = BAFFLE | = CABLE | = CAR BODY | = CLAMP | = CONVERTER | = ENGINE | = FLANGE | = FLEX COUPLING | = GEAR | = HANGER | = HEAT-SHIELD | = MANIFOLD | = PIPE | = SCREW | = SILENCER | = UNASSIGNED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CONE_LOCATION	PSS_ESBG_CONE_LOCATION			string	ESBG CONE LOCATION	-	= Unassigned | = intermediate | = outlet | = - | = inlet	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CONE_TECHNOLOGY	PSS_ESBG_CONE_TECHNOLOGY			string	ESBG CONE TECHNOLOGY	-	= - | = CASTING | = FORGING | = IHU | = OTHER | = SHELL | = SPINNING | = STAMPING	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CONE_TYPE	PSS_ESBG_CONE_TYPE			string	ESBG CONE TYPE	-	= - | = CAST CONE | = CONE WITH AIR GAP INSULATION | = CONE WITH INSULATION | = OTHER | = SIMPLE CONE | = TWIN CONE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CONNECTION_TYPE	PSS_ESBG_CONNECTION_TYPE			string	ESBG CONNECTION TYPE	-	= - | = BRAZE | = CLAMP ASSEMBLY | = CLIP | = CRIMPING | = FOLDING | = NOT FIXED | = OTHER | = RIDGE LOCK | = RIVETED | = SCREWING | = SPOT WELDING | = WELDING	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CREATED_FOR	PSS_ESBG_CREATED_FOR			string	FPDM Created For for ESBG			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CUSTOMER_NUMBER	PSS_ESBG_CUSTOMER_NUMBER			string	FPDM Customer Number for ESBG			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_CUSTOMER_REVISION	PSS_ESBG_CUSTOMER_REVISION			string	FPDM Customer Revision for ESBG			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_DCS_APPLICATION	PSS_ESBG_DCS_APPLICATION			string	ESBG DCS APPLICATION	Unassigned	= Unassigned | = CONFORM to DCS | = DCS DEVIATION | = NO DCS EXISTING | = NO DCS APPLIED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_DIAMETER-mm	PSS_ESBG_DIAMETER-mm			string	ESBG DIAMETER - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_DOUBLE_CONE_TYPE	PSS_ESBG_DOUBLE_CONE_TYPE			string	DOUBLE CONE TYPE		= tube | = spherical tube | = machined | = spherical machined | = -	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_EXTERNAL_DIAMETER-mm	PSS_ESBG_EXTERNAL_DIAMETER-mm			string	ESBG EXTERNAL DIAMETER - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_EXTERNAL_SHELL_THICKNESS-mm	PSS_ESBG_EXTERNAL_SHELL_THICKNESS-mm			string	ESBG EXTERNAL SHELL THICKNESS - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_EXTERNAL_SIZE_DIAMETER_OR_WIDTHxHEIGHT-mm	PSS_ESBG_EXTERNAL_SIZE_DIAMETER_OR_WIDTHxHEIGHT-mm			string	ESBG EXTERNAL SIZE DIAMETER OR WIDTHxHEIGHT - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_FLANGE_LOCATION	PSS_ESBG_FLANGE_LOCATION			string	FLANGE LOCATION		= UNASSIGNED | = OUTLET | = - | = INLET	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_FLANGE_PROCESS	PSS_ESBG_FLANGE_PROCESS			string	ESBG FLANGE PROCESS		= - | = CAST | = FORGED | = INVESTMENT CASTING | = MACHINED | = MACHINING | = OTHER | = STAMPED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_FLANGE_SIZE_DIAMETER_OR_WIDTHxHEIGHT-mm	PSS_ESBG_FLANGE_SIZE_DIAMETER_OR_WIDTHxHEIGHT-mm			string	ESBG FLANGE SIZE DIAMETER OR WIDTHxHEIGHT - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_FLANGE_TYPE	PSS_ESBG_FLANGE_TYPE			string	FLANGE TYPE	-	= - | = BALL JOINT FLANGE | = DISH FLANGE | = MANIFOLD FLANGE | = UNASSIGNED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_FLARE_SHAPE	PSS_ESBG_FLARE_SHAPE			string	FLARE SHAPE		= - | = ANGLED | = DOWN SIZING | = SPHERICAL | = SPHERICAL AND UP SIZING | = UP SIZING	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_FLAT_PRODUCT_MATERIAL_SPECIFICATION	PSS_ESBG_FLAT_PRODUCT_MATERIAL_SPECIFICATION			string	ESBG FLAT PRODUCT MATERIAL SPECIFICATION	Unassigned	= 01-120 | = 01-123 | = 01-124 | = 01-125 | = 01-130 | = 01-131 | = 01-132 | = 01-140 | = 01-141 | = 01-142 | = 01-143 | = 01-145 | = 01-146 | = 01-147 | = 01-148 | = 01-149 | = 409-00116461 | = 409-00118315 | = 439-00117062 | = 441-00117098 | = 468-00118410 | = AL409-00117714 | = AL409-00118303 | = Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_FLEX_COUPLING_TYPE	PSS_ESBG_FLEX_COUPLING_TYPE			string	ESBG FLEX COUPLING TYPE	-	= - | = BALL JOINT | = EXOTIC | = FLEX LESS 150mm | = LONG FLEX MORE 150mm	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_FORGED_PRODUCT_GRADE	PSS_ESBG_FORGED_PRODUCT_GRADE			string	ESBG FORGED PRODUCT GRADE	Unassigned	= OTHER - fill MATERIAL GRADE REMARKS | = Unassigned | = 1.0038	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_FORGED_PRODUCT_MATERIAL_SPECIFICATION	PSS_ESBG_FORGED_PRODUCT_MATERIAL_SPECIFICATION			string	ESBG FORGED PRODUCT MATERIAL SPECIFICATION			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_GASKET_MATERIAL	PSS_ESBG_GASKET_MATERIAL			string	ESBG GASKET MATERIAL	-	= - | = METAL | = OTHER	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_GAS_PASSAGE_NUMBER	PSS_ESBG_GAS_PASSAGE_NUMBER			string	GAS PASSAGE NUMBER			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_GAS_PASSAGE_SIZE_DIAMETER_OR_WIDTHxHEIGHT-mm	PSS_ESBG_GAS_PASSAGE_SIZE_DIAMETER_OR_WIDTHxHEIGHT-mm			string	ESBG GAS PASSAGE SIZE DIAMETER OR WIDTHxHEIGHT - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_GAUGE_PLANE-mm	PSS_ESBG_GAUGE_PLANE-mm			string	GAUGE PLANE - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_GBD	PSS_ESBG_GBD			real	ESBG GBD			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_GROSS_MASS	PSS_ESBG_GROSS_MASS			real	ESBG GROSS MASS	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_HALF_SHELL_LOCATION	PSS_ESBG_HALF_SHELL_LOCATION			string	ESBG HALF SHELL LOCATION		= - | = FRONT | = FRONT AND REAR | = REAR | = FRONT MUFFLER | = OTHER | = UDF	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_HANGER_SHAPE	PSS_ESBG_HANGER_SHAPE			string	HANGER SHAPE		= - | = L | = U	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_HANGER_TUBE_GRADE	PSS_ESBG_HANGER_TUBE_GRADE			string	ESBG HANGER TUBE GRADE	Unassigned	= OTHER - fill MATERIAL GRADE REMARKS | = Unassigned | = AS120-07	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_HANGER_TYPE	PSS_ESBG_HANGER_TYPE			string	ESBG HANGER TYPE	-	= - | = HANGER ROD | = STAMPED HANGER | = STAMPED HANGER ROD | = STAMPED TUBULAR HANGER | = TUBULAR HANGER	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_HANGER_WIRE_GRADE	PSS_ESBG_HANGER_WIRE_GRADE			string	ESBG HANGER WIRE GRADE	Unassigned	= OTHER - fill MATERIAL GRADE REMARKS | = Unassigned | = 1.0304	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_HEAD_SHAPE	PSS_ESBG_HEAD_SHAPE			string	HEAD SHAPE		= - | = FLAT | = HEXAGONAL | = SQUARE | = SPHERICAL	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_HEAT_SHIELD_TECHNOLOGY	PSS_ESBG_HEAT_SHIELD_TECHNOLOGY			string	ESBG HEAT SHIELD TECHNOLOGY	-	= - | = STAMPING | = ROLLED | = COILED | = OTHER	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_IDENTIFICATION_TYPE	PSS_ESBG_IDENTIFICATION_TYPE			string	ESBG IDENTIFICATION TYPE		= STICKER | = - | = ENGRAVE | = STICKER WITH BAR CODE | = PLATE | = MIXED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_INLET_DIAMETER-mm	PSS_ESBG_INLET_DIAMETER-mm			string	ESBG INLET DIAMETER - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_INSIDE_THREAD-mm	PSS_ESBG_INSIDE_THREAD-mm			real	ESBG INSIDE THREAD - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_INTERNAL_DIAMETER-mm	PSS_ESBG_INTERNAL_DIAMETER-mm			real	INTERNAL DIAMETER - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_INTERNAL_SHELL_THICKNESS-mm	PSS_ESBG_INTERNAL_SHELL_THICKNESS-mm			real	ESBG INTERNAL SHELL THICKNESS - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_INTERNAL_SIZE_DIAMETER_OR_WIDTHxHEIGHT-mm	PSS_ESBG_INTERNAL_SIZE_DIAMETER_OR_WIDTHxHEIGHT-mm			string	ESBG INTERNAL SIZE DIAMETER OR WIDTHxHEIGHT - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_ISOLATION_TYPE	PSS_ESBG_ISOLATION_TYPE			string	ESBG ISOLATION TYPE	-	= - | = NOT ISOLATED | = TWIN WALL | = AIR GAP | = MAT	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_LEAKAGE_l_by_mn	PSS_ESBG_LEAKAGE_l_by_mn			real	ESBG LEAKAGE l by mn			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_LENGTH-mm	PSS_ESBG_LENGTH-mm			string	ESBG LENGTH - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_LOCATION_FRONT_TO_REAR	PSS_ESBG_LOCATION_FRONT_TO_REAR			string	ESBG LOCATION FRONT TO REAR		= UNASSIGNED | = TRANSVERSAL | = REAR | = INTERMEDIATE AND REAR | = INTERMEDIATE | = FRONT AND INTERMEDIATE | = FRONT | = DOWN | = -	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_LOCATION_LEFT_TO_RIGHT	PSS_ESBG_LOCATION_LEFT_TO_RIGHT			string	ESBG LOCATION LEFT TO RIGHT		= UNASSIGNED | = RIGHT | = IN LINE | = LEFT | = -	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_MANIFOLD_TYPE	PSS_ESBG_MANIFOLD_TYPE			string	MANIFOLD TYPE	-	= - | = CAST MANIFOLD | = STAMPED MANIFOLD | = STAMPED/TUBULAR MANIFOLD | = TUBULAR MANIFOLD	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_MARKING	PSS_ESBG_MARKING			string	MARKING			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_MATERIAL_GRADE_REMARKS	PSS_ESBG_MATERIAL_GRADE_REMARKS			string	ESBG MATERIAL GRADE REMARKS	Unassigned		FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_MATERIAL_SHAPE	PSS_ESBG_MATERIAL_SHAPE			string	ESBG MATERIAL SHAPE		= - | = IN BAG | = LOOSE | = MAT | = PREFORMED | = SLEEVE | = UNASSIGNED | = NEEDLED | = LOOSE IN PLASTIC BAG	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_MAT_DENSITY-g	PSS_ESBG_MAT_DENSITY-g			real	MAT DENSITY - g			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_MAT_SUPPLIER	PSS_ESBG_MAT_SUPPLIER			string	ESBG MAT SUPPLIER		= - | = 3M | = ASGLAWO | = DBW Gmbh | = BIFIRE | = KLINGERSIL | = IBIDEN | = MAFTEC | = MCC | = MPI | = OTHER | = SAFFIL | = UNASSIGNED | = UNIFRAX	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_MAT_TYPE	PSS_ESBG_MAT_TYPE			string	MAT TYPE		= - | = BASALT WOOL | = FIBER | = GLASS WOOL | = INTUMESCENT | = STEEL WOOL | = WIRE-MESH	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_METALLIC_MATERIAL_GRADE	PSS_ESBG_METALLIC_MATERIAL_GRADE			string	ESBG METALLIC MATERIAL GRADE	Unassigned		FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_NON_COATED_FLAT_PRODUCT_GRADE	PSS_ESBG_NON_COATED_FLAT_PRODUCT_GRADE			string	ESBG NON COATED FLAT PRODUCT GRADE	Unassigned	= 1.0114 | = 1.0312 | = 1.0330 | = 1.0332 | = 1.0335 | = 1.0338 | = 1.0347 | = 1.0980 | = 1.0984 | = 1.4016 | = 1.4113 | = 1.4301 | = 1.4509 | = 1.4510 | = 1.4512 | = 1.4513 | = 1.4520 | = 1.4526 | = 1.4541 | = 1.4828 | = 304 | = 309 | = 321 | = 409 | = 429 | = 430 | = 434 | = 436 | = 439 | = 441 | = 1.0972 (COLD ROLLED) | = 1.0972 (HOT ROLLED) | = 1.0976 (COLD ROLLED) | = 1.0976 (HOT ROLLED) | = 1.4301 (DEEP DRAWING) | = 1.8945 (COLD ROLLED) | = 1.8945 (HOT ROLLED) | = 430 Ti | = OTHER - fill MATERIAL GRADE REMARKS | = Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_NON_COATED_TUBE_GRADE	PSS_ESBG_NON_COATED_TUBE_GRADE			string	ESBG NON COATED TUBE GRADE	Unassigned	= 1.0330 | = 1.0332 | = 1.0335 | = 1.0338 | = 1.0347 | = 1.4301 | = 1.4509 | = 1.4510 | = 1.4512 | = 1.4520 | = 1.4541 | = 1.4828 | = 409 SS | = 439 SS | = 441 SS | = AL 409 SS | = OTHER - fill MATERIAL GRADE REMARKS | = Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_NUMBER_OF_FIXING_HOLE	PSS_ESBG_NUMBER_OF_FIXING_HOLE			string	NUMBER OF FIXING HOLE			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_NUT_SCREW_CHARACTERISTIC	PSS_ESBG_NUT_SCREW_CHARACTERISTIC			string	ESBG NUT SCREW CHARACTERISTIC		= WITH COLLAR | = TO WELD | = TO CRIMP | = FOR FASTENING	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_OLD_REFERENCE	PSS_ESBG_OLD_REFERENCE			string	Old Reference			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_ORIGIN	PSS_ESBG_ORIGIN			string	ESBG ORIGIN			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_OUTLET_DIAMETER-mm	PSS_ESBG_OUTLET_DIAMETER-mm			string	ESBG OUTLET DIAMETER - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_PACKAGING	PSS_ESBG_PACKAGING			string	ESBG PACKAGING			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_PACKAGING_SPECIFICATION	PSS_ESBG_PACKAGING_SPECIFICATION			string	ESBG PACKAGING SPECIFICATION			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_PERFORATION_NUMBER	PSS_ESBG_PERFORATION_NUMBER			string	ESBG PERFORATION NUMBER			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_PIPE_MATERIAL_SPECIFICATION	PSS_ESBG_PIPE_MATERIAL_SPECIFICATION			string	ESBG PIPE MATERIAL SPECIFICATION	Unassigned	= 01-109 | = 01-170 | = 01-171 | = 01-172 | = 01-173 | = 01-175 | = 01-177 | = 441-00117098 | = 468-00118410 | = AL409-00118303 | = Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_PIPE_PROCESS	PSS_ESBG_PIPE_PROCESS			string	PIPE PROCESS		= STAMPED | = BENT | = HYDROFORMING | = -	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_PIPE_TYPE	PSS_ESBG_PIPE_TYPE			string	ESBG PIPE TYPE	-	= - | = BY PASS PIPE | = DEPRESSION PIPE | = DOUBLE SKIN PIPE | = DOWN PIPE | = EGR PIPE | = FRONT PIPE | = FUEL PIPE | = INTERMEDIATE PIPE | = FRONT INTERMEDIATE PIPE | = REAR INTERMEDIATE PIPE | = PIPE | = REAR PIPE | = RESONATOR PIPE | = RUNNER | = TRANSVERSAL PIPE | = TULIP PIPE | = UNASSIGNED | = WATER PIPE | = H-PIPE | = Y-PIPE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_PRECIOUS_METAL_COMPOSITION_PtPdRh	PSS_ESBG_PRECIOUS_METAL_COMPOSITION_PtPdRh			string	ESBG PRECIOUS METAL COMPOSITION PtPdRh			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_PROCESS	PSS_ESBG_PROCESS			string	ESBG PROCESS		= - | = EXTRUDED | = HYDROFORMING | = ROLLED | = SPINNED | = STAMPED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_RADIUS-mm	PSS_ESBG_RADIUS-mm			real	RADIUS - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SEAL_SHAPE	PSS_ESBG_SEAL_SHAPE			string	ESBG SEAL SHAPE		= - | = L | = O | = T | = V | = Z	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SEAL_SUPPLIER	PSS_ESBG_SEAL_SUPPLIER			string	ESBG SEAL SUPPLIER		= - | = ACS | = CSS | = DUBOIS | = UMFOTEC | = METEX | = OTHER | = UNASSIGNED | = KLINGERSIL | = REINZ | = WACKER | = WOCO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SENSOR_TECHNOLOGY	PSS_ESBG_SENSOR_TECHNOLOGY			string	ESBG SENSOR TECHNOLOGY	-	= - | = CASTING | = FORGING | = INVESTMENT CASTING | = MACHINING | = OTHER | = SINTER | = STAMPING	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SENSOR_TYPE	PSS_ESBG_SENSOR_TYPE			string	ESBG SENSOR TYPE	-	= PRESSURE | = OTHER | = EGR | = HEGO/LAMBDA | = TEMPERATURE | = NOX TRAP | = SCR INJECTOR | = -	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SHEET_TYPE	PSS_ESBG_SHEET_TYPE			string	ESBG SHEET TYPE	-	= - | = SANDWICH SHEET | = SIMPLE SHEET | = TWIN SHEET	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SHELL_LOCATION	PSS_ESBG_SHELL_LOCATION			string	ESBG SHELL LOCATION	-	= INNER | = OUTER | = OTHER | = -	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SHELL_TYPE	PSS_ESBG_SHELL_TYPE			string	ESBG SHELL TYPE		= - | = CONVERTER | = UDF | = NOX TRAP | = SCR | = DPF | = DOC	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SHELL_USE	PSS_ESBG_SHELL_USE			string	SHELL USE		= - | = RESONATOR | = SILENCER | = UNASSIGNED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SHOP_NUMBER	PSS_ESBG_SHOP_NUMBER			string	ESBG SHOP NUMBER	Unassigned	= 124 | = 128 | = 131 | = 137 | = 144 | = 161 | = 180 | = 181 | = 184 | = 210 | = 211 | = 280 | = 281 | = 680 | = 681 | = 710 | = 720 | = 760 | = 770 | = M02 | = MBR | = MP2 | = MTU | = RO3 | = Unassigned | = XXX	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SHORE	PSS_ESBG_SHORE			real	ESBG SHORE			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SILENCER_ASSEMBLY_PROCESS	PSS_ESBG_SILENCER_ASSEMBLY_PROCESS			string	ESBG SILENCER ASSEMBLY PROCESS		= DOUBLE -WRAPPED | = WELDED | = CLINCHED | = SPUN | = WRAPPED | = -	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SINTERED_PRODUCT_GRADE	PSS_ESBG_SINTERED_PRODUCT_GRADE			string	ESBG SINTERED PRODUCT GRADE			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SINTERED_PRODUCT_MATERIAL_SPECIFICATION	PSS_ESBG_SINTERED_PRODUCT_MATERIAL_SPECIFICATION			string	ESBG SINTERED PRODUCT MATERIAL SPECIFICATION			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SIZE_DIAMETER_OR_WIDTHxHEIGHT-mm	PSS_ESBG_SIZE_DIAMETER_OR_WIDTHxHEIGHT-mm			string	ESBG SIZE DIAMETER OR WIDTHxHEIGHT - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SIZE_OF_FIXING_HOLE_DIAMETER_OR_WIDTHxHEIGHT-mm	PSS_ESBG_SIZE_OF_FIXING_HOLE_DIAMETER_OR_WIDTHxHEIGHT-mm			string	ESBG SIZE OF FIXING HOLE DIAMETER OR WIDTHxHEIGHT - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SIZE_SPECIFICATION	PSS_ESBG_SIZE_SPECIFICATION			string	ESBG SIZE SPECIFICATION	Unassigned	= 00116888-Imp-Form | = 01-040 | = 01-041 | = 01-050 | = 01-051 | = 01-052 | = 01-177 | = 00116890-High-Freq | = 00118433-Perf-Tube | = Unassigned | = 01-170 | = 01-171 | = 01-172 | = 01-173	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SPECIAL_SPECIFICATION	PSS_ESBG_SPECIAL_SPECIFICATION			string	ESBG SPECIAL SPECIFICATION			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_STANDARD_NORM	PSS_ESBG_STANDARD_NORM			string	ESBG STANDARD NORM			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_STEP	PSS_ESBG_STEP			string	ESBG STEP			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_STIFFENER_TYPE	PSS_ESBG_STIFFENER_TYPE			string	STIFFENER TYPE		= - | = PIPE | = PLATE | = ROD | = SHELL	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SUB-ASSEMBLY_TYPE	PSS_ESBG_SUB-ASSEMBLY_TYPE			string	ESBG SUB-ASSEMBLY TYPE	-	= - | = CONE SUB-ASSEMBLY | = CONNECTION SUB-ASSEMBLY | = CONNECTOR ASSEMBLY | = FLANGE-FLEX COUPLING SUB- ASSEMBLY | = FLANGE-FLEX-PIPE COUPLING SUB-ASSEMBLY | = HALF SHELL SUB-ASSEMBLY | = HALF SHELL-INSULATION MAT SUB-ASSEMBLY | = HEAD-SLEEVE SUB-ASSEMBLY | = HEAD SUB-ASSEMBLY | = HEAD-TULIP SUB-ASSEMBLY | = HEAT SHIELD SUB-ASSEMBLY | = SHELL SUB-ASSEMBLY | = RESONATOR - SLEEVE SUB-ASSEMBLY | = N0x TRAP SUB-ASSEMBLY | = PIPE SUB-ASSEMBLY | = SHELL HANGER SUB-ASSEMBLY | = SHELL SUB-ASSEMBLY | = DAMPER  SUB-ASSEMBLY | = TAIL PIPE SUB-ASSEMBLY | = UNASSIGNED | = VALVE SUB-ASSEMBLY | = BAFFLE SUB-ASSEMBLY | = FLANGE-PIPE SUB-ASSEMBLY | = DAMPER SUB-ASSEMBLY | = FLANGE SUB-ASSEMBLY | = ISOLATOR SUB-ASSEMBLY | = CLAMP SUB-ASSEMBLY | = BRACKET SUB-ASSEMBLY | = DOME  SUB-ASSEMBLY | = HANGER SUB-ASSEMBLY	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SUBSTRATE_CELL_DENSITY	PSS_ESBG_SUBSTRATE_CELL_DENSITY			real	SUBSTRATE CELL DENSITY			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SUBSTRATE_SECTION-cm2	PSS_ESBG_SUBSTRATE_SECTION-cm2			real	SUBSTRATE SECTION - cm2			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SUBSTRATE_SIZE_DIAMETER_OR_WIDTHxHEIGHT-mm	PSS_ESBG_SUBSTRATE_SIZE_DIAMETER_OR_WIDTHxHEIGHT-mm			string	ESBG SUBSTRATE SIZE DIAMETER OR WIDTHxHEIGHT - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SUBSTRATE_SUPPLIER	PSS_ESBG_SUBSTRATE_SUPPLIER			string	ESBG SUBSTRATE SUPPLIER		= UNASSIGNED | = IBIDEN | = CORNING | = OTHER | = DENSO | = - | = EMITEC | = NGK	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SUBSTRATE_WALL_THICKNESS-mils	PSS_ESBG_SUBSTRATE_WALL_THICKNESS-mils			real	SUBSTRATE WALL THICKNESS - mils			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SUPPLIER	PSS_ESBG_SUPPLIER			string	SUPPLIER			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_SUPPLIER_REFERENCE	PSS_ESBG_SUPPLIER_REFERENCE			string	SUPPLIER REFERENCE			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_TECHNOLOGY_TYPE	PSS_ESBG_TECHNOLOGY_TYPE			string	ESBG TECHNOLOGY TYPE	-	= - | = CLAMSHELL | = OTHER | = SIZING DOWN | = STUFFING | = TOURNIQUET	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_THICKNESS-mm	PSS_ESBG_THICKNESS-mm			string	ESBG THICKNESS - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_THREAD_DIAMETER-mm	PSS_ESBG_THREAD_DIAMETER-mm			real	ESBG THREAD DIAMETER - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_THREAD_TYPE	PSS_ESBG_THREAD_TYPE			string	ESBG THREAD TYPE	-	= - | = i | = o	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_TUNING_TUBE_TYPE	PSS_ESBG_TUNING_TUBE_TYPE			string	ESBG TUNING TUBE TYPE	-	= - | = ELBOW TUBE | = INLET NIPPLE | = INTERMEDIATE TUBE | = OUTLET TUBE | = PASSAGE TUBE | = RESONATOR TUBE | = RETURN PASSAGE TUBE | = TUNING TUBE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_VALVE_BODY_TYPE	PSS_ESBG_VALVE_BODY_TYPE			string	ESBG VALVE BODY TYPE	-	= - | = PIPE | = CASTING | = OTHER	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_VALVE_FUNCTION	PSS_ESBG_VALVE_FUNCTION			string	ESBG VALVE FUNCTION	-	= - | = ACOUSTICS | = ACOUSTICS - INSIDE MUFFLER | = ACOUSTICS - MAIN PIPE | = ACOUSTICS - TAIL PIPE | = EGR - HIGH PRESSURE | = EGR - LOW PRESSURE | = EHRS | = PRESSURE RELIEF | = OTHER	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_VALVE_POSITION	PSS_ESBG_VALVE_POSITION			string	ESBG VALVE POSITION	-	= - | = ANGLE CONTROLLED VALVE | = POSITION ON/OFF	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_VALVE_TYPE	PSS_ESBG_VALVE_TYPE			string	ESBG VALVE TYPE	-	= ACTUATED | = SELF-ACTUATED | = PRESSURE PILOTED | = OTHER | = -	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_VERTICAL_LOCATION	PSS_ESBG_VERTICAL_LOCATION			string	VERTICAL LOCATION		= UPPER | = - | = LOWER | = UPPER AND LOWER | = UNASSIGNED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_VOLUME-l	PSS_ESBG_VOLUME-l			string	VOLUME - l			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_VOLUME_SHAPE	PSS_ESBG_VOLUME_SHAPE			string	ESBG VOLUME SHAPE		= - | = OTHER | = OVAL | = RACETRACK | = ROUND | = SQUARE | = TRAPEZOIDAL | = TRIANGULAR	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_WASHCOAT_DENSITY-g	PSS_ESBG_WASHCOAT_DENSITY-g			string	WASHCOAT DENSITY - g			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_WELDING_TYPE	PSS_ESBG_WELDING_TYPE			string	ESBG WELDING TYPE	-	= - | = WELDING | = BRAZING | = BRAZE WELDING	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_WELDING_WIRE_GRADE	PSS_ESBG_WELDING_WIRE_GRADE			string	ESBG WELDING WIRE GRADE	Unassigned	= 1.4370 | = OTHER - fill MATERIAL GRADE REMARKS | = Unassigned | = 1.4332 | = 1.4511 | = 1.4828 | = FN55 (2.4066) | = GS1 | = Ni-rod.44(A5.15EniFeMn-C)	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_WIDTH-mm	PSS_ESBG_WIDTH-mm			string	ESBG WIDTH - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_WIRE_MATERIAL_SPECIFICATION	PSS_ESBG_WIRE_MATERIAL_SPECIFICATION			string	ESBG WIRE MATERIAL SPECIFICATION	Unassigned	= 01-023 | = 01-153 | = 01-154 | = 01-155 | = 01-652 | = Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_WITH_COATING	PSS_ESBG_WITH_COATING			string	ESBG WITH COATING	-	= - | = UNCOATED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ESBG_WITH_PERFORATION_SLOT	PSS_ESBG_WITH_PERFORATION_SLOT			string	ESBG WITH PERFORATION SLOT	-	= - | = LOUVER | = NO | = PERFORATION | = SLOT	FALSE	FALSE		0	FALSE	FALSE		
+PSS_EXTERNAL_DIAMETER-mm	PSS_EXTERNAL_DIAMETER-mm			string	EXTERNAL DIAMETER - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_EXTERNAL_DIAMETER2-mm	PSS_EXTERNAL_DIAMETER2-mm			string	EXTERNAL DIAMETER2 - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_EXTERNAL_REFERENCE	PSS_EXTERNAL_REFERENCE			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Edge_folding_length	PSS_Edge_folding_length			real	Edge folding length			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Effectivity_Date	PSS_Effectivity_Date			timestamp	CN Effectivity Date			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Electrical_connection_LowerOrCavity	PSS_Electrical_connection_LowerOrCavity			integer	Electrical connection Lower / Cavity	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Electrical_connection_UpperOrCore	PSS_Electrical_connection_UpperOrCore			integer	Electrical connection Upper / Core	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_EngineType	PSS_EngineType			string		Unassigned	= Unassigned | = WANKEL | = W | = V | = LINE | = BOXER LINE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Engineering_responsibility	PSS_Engineering_responsibility			string	Engineering responsibility	Unassigned	= Internal | = Customer | = Supplier Manufacturer | = Supplier Designer | = Supplier Expert | = Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Equipment.PSS_ReUsedAsset	PSS_Equipment.PSS_ReUsedAsset	interface	PSS_Equipment	real		0.0		FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_EquipmentType	PSS_EquipmentType			string			= Generic | = Specific	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ExhaustEmissionStandard	PSS_ExhaustEmissionStandard			string		Unassigned	= ZEV | = Unassigned | = EURO 2 | = EC96 | = EC2000 | = CAT.US83 | = ULEV - II | = ULEV | = TZEV | = TLEV | = TIER2-BIN5 | = TIER2-BIN4 | = SULEV | = PZEV | = LEV-II | = LEV | = EURO 6 | = EURO 5 | = EURO 4 | = EURO 3	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Export_harbour	PSS_Export_harbour			string	Export harbour			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ExternalName	PSS_ExternalName			string	Attribute to store the ExternalName			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ExternalRemarks	PSS_ExternalRemarks			string	Attribute to store the external remarks.			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ExternalRevision	PSS_ExternalRevision			string	Attribute to store the External Revision.			FALSE	FALSE		0	FALSE	FALSE		
+PSS_External_Material_Version	PSS_External_Material_Version			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_External_Revision_Date	PSS_External_Revision_Date			timestamp				FALSE	FALSE		0	FALSE	FALSE		
+PSS_External_Revision_Level	PSS_External_Revision_Level			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ExtraCost	PSS_ExtraCost			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_FLAMMABILITY-mm_per_min	PSS_FLAMMABILITY-mm_per_min			string	FLAMMABILITY - mm per min			FALSE	FALSE		0	FALSE	FALSE		
+PSS_FLANGE_DIAMETER-mm	PSS_FLANGE_DIAMETER-mm			real	FLANGE DIAMETER - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_FLANGE_DIAMETER2-mm	PSS_FLANGE_DIAMETER2-mm			real	FLANGE DIAMETER2 - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_FLOOR_LIGHT	PSS_FLOOR_LIGHT			string	FLOOR LIGHT			FALSE	FALSE		0	FALSE	FALSE		
+PSS_FMEA_D_P_L	PSS_FMEA_D_P_L			string	PSS_FMEA_D_P_L	NA	= NA | = Y | = N	FALSE	FALSE		0	FALSE	FALSE		
+PSS_FORCE_FOR_LA_N	PSS_FORCE_FOR_LA_N			real	FORCE FOR LA N	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_FOTOrT_out_date_forecast	PSS_FOTOrT_out_date_forecast			date	FOT / T.out date forecast			FALSE	FALSE		0	FALSE	FALSE		
+PSS_FOTOrT_out_date_initial	PSS_FOTOrT_out_date_initial			date	FOT / T.out date initial			FALSE	FALSE		0	FALSE	FALSE		
+PSS_FOTOrT_out_real_date	PSS_FOTOrT_out_real_date			date	FOT / T.out Real date			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Faurecia_Machine_type_intent	PSS_Faurecia_Machine_type_intent			string	Faurecia Machine type intent			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Faurecia_Make_or_Buy	PSS_Faurecia_Make_or_Buy			string		Buy	= Make | = Buy	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Faurecia_Tool_Machine_applied_RefOrIndex	PSS_Faurecia_Tool_Machine_applied_RefOrIndex			string	Faurecia Machine standard applied ( Ref / Index)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Faurecia_Tool_standard_applied_RefOrIndex	PSS_Faurecia_Tool_standard_applied_RefOrIndex			string	Faurecia Tool standard applied ( Ref / Index)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_FiberSection	PSS_FiberSection			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_FiberThickness-dTex_denier	PSS_FiberThickness-dTex_denier			integer	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_FiberWeight-g_m2	PSS_FiberWeight-g_m2			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_FillerConten	PSS_FillerConten			real	Attribute for Material Classification			FALSE	FALSE	DSDim_Ratio	0	FALSE	FALSE		
+PSS_FillerContentMaterial	PSS_FillerContentMaterial			string		TBD	= TBD | =  Up to 7 | =  8 to 12 | =  13 to 17 | =  18 to 22 | =  23 to 27 | =  28 to 32 | =  33 to 37  | =  38 to 42  | =  43 to 47 | =  48 to 52 | =  53 to 57 | =  58 to 62	FALSE	FALSE		0	FALSE	FALSE		
+PSS_FillerNatureMaterial	PSS_FillerNatureMaterial			string	Attribute for Material Classification	TBD	= TBD | = No | = Mineral Powder | = Short Glass Fibre | = Long Glass Fibre | = Natural Fibres	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Filler_Nature	PSS_Filler_Nature			string			= No | = Mineral_powder | = Short_glass_fibre | = Long_glass_fibre | = Natural_fibres	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Filler_content	PSS_Filler_content			string			= Up to 7 | = 8 to 12 | = 13 to 17 | = 18 to 22 | = 23 to 27 | = 28 to 32 | = 33 to 37 | = 38 to 42 | = 43 to 47 | = 48 to 52 | = 53 to 57 | = 58 to 62	FALSE	FALSE		0	FALSE	FALSE		
+PSS_FinalPaymentAgreementConfirmed	PSS_FinalPaymentAgreementConfirmed			string	PSS_FinalPaymentAgreementConfirmed		=| = Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_FinishOilContent	PSS_FinishOilContent			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Fixing_Type	PSS_Fixing_Type			string	Fixing Type	Screw	= Screw | = clip | = quarter-turn | = Stamp | = adhesive tape | = glue	FALSE	FALSE		0	FALSE	FALSE		
+PSS_FlagForPromoteCO	PSS_FlagForPromoteCO			boolean	Check Flag For promote Trigger	false		FALSE	TRUE		0	FALSE	FALSE		
+PSS_Flammability-mm_min	PSS_Flammability-mm_min			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Flange_diameter	PSS_Flange_diameter			real	Flange Diameter			FALSE	FALSE		0	FALSE	FALSE		
+PSS_FoamingProcess	PSS_FoamingProcess			string	Attribute for Material Classification	TBC	= Closed Pooring | = Open Pooring | = Cloved-Open Pooring | =Front Foaming | = Foam Pad | = TBC	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Foaming_head_type	PSS_Foaming_head_type			string	Foaming head type			FALSE	FALSE		0	FALSE	FALSE		
+PSS_FoilDescription	PSS_FoilDescription			string	Attribute for Material Classification	TBC	= TBC | = Adhesive; Adhesive | = Barrier; Adhesive | = Barrier | = Adhesive; NA	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Foil_feed	PSS_Foil_feed			string	Foil feed		= Roll feed | = Pattern feed | = N.A.	FALSE	FALSE		0	FALSE	FALSE		
+PSS_FolioNumber	PSS_FolioNumber			integer	Folio Number			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Form	PSS_Form			string	Form	Conical	= Hexagonal | = Square | = Rectangular | = Round | = Conical | = Oblong	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Format	PSS_Format			string	Attribute for Material Classification	TBC	= Rolls | = Blancks | = Chips | = NA | = TBC	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Forming_aids	PSS_Forming_aids			string	Forming aids	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Free_Description	PSS_Free_Description			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_FreightAndPackaging	PSS_FreightAndPackaging			string			= | = No | = Yes	FALSE	FALSE		0	FALSE	FALSE		
+PSS_FreightAndPackaging_Comments	PSS_FreightAndPackaging_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Fuel	PSS_Fuel			string			= GAS | = DIESEL	FALSE	FALSE		0	FALSE	FALSE		
+PSS_FunctionForMaterial	PSS_FunctionForMaterial			string	Attribute for Material Classification	TBD	= Background Coloring | = Conductivity | = Adhesion | = Other : open text | = TBD	FALSE	FALSE		0	FALSE	FALSE		
+PSS_GEAR_RATIO	PSS_GEAR_RATIO			string	GEAR RATIO			FALSE	FALSE		0	FALSE	FALSE		
+PSS_GENERIC-SPECIFIC_TOOL	PSS_GENERIC-SPECIFIC_TOOL			string	GENERIC - SPECIFIC TOOL	UNASSIGNED	= UNASSIGNED | = GENERIC TOOL | = SPECIFIC TOOL	FALSE	FALSE		0	FALSE	FALSE		
+PSS_GOLD_PLATED_TERMINALS	PSS_GOLD_PLATED_TERMINALS			string	GOLD PLATED TERMINALS			FALSE	FALSE		0	FALSE	FALSE		
+PSS_GTSRecommandedDilutionWithFollowingPolypropyleneTradeNames	PSS_GTSRecommandedDilutionWithFollowingPolypropyleneTradeNames			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_GTSTechnicalFamilyMaterial	PSS_GTSTechnicalFamilyMaterial			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_GTS_Technical_Family	PSS_GTS_Technical_Family			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_GTS_recommended_Family	PSS_GTS_recommended_Family			string	GTS recommended Family			FALSE	FALSE		0	FALSE	FALSE		
+PSS_GTS_recommended_dilution_with_polypropylene_trade_names	PSS_GTS_recommended_dilution_with_polypropylene_trade_names			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_GUIDE-HEADREST	PSS_GUIDE-HEADREST			string	GUIDE-HEADREST	UNASSIGNED	= UNASSIGNED | = GUIDE | = TOP	FALSE	FALSE		0	FALSE	FALSE		
+PSS_GUIDING_TYPE	PSS_GUIDING_TYPE			string	GUIDING TYPE	UNASSIGNED	= UNASSIGNED | = WITHOUT BEARING HOUSING | = WITH BEARING HOUSING	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Gage	PSS_Gage			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_GeneralClassType	PSS_GeneralClassType			string		Others	= Material | = Tooling | = Others	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Generic_tool_cost	PSS_Generic_tool_cost			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_GeometryType	PSS_GeometryType			string	This attribute defines the type  of geometry for all CAD types	MG	= TD | = SF | = SD | = R3 | = R2 | = QD | = PF | = OF | = NF | = N3 | = MZ | = MG | = MD | = FF | = F3 | = F2 | = EX | = ED | = DG | = CP | = CA | = C3 | = C2 | = BD | = AS | = AM	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Geometry_Convergence	PSS_Geometry_Convergence			string	Geometry Convergence	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_GlassFibreContentForMaterial	PSS_GlassFibreContentForMaterial			real	Attribute for Material Classification			FALSE	FALSE	DSDim_Ratio	0	FALSE	FALSE		
+PSS_Glass_fibre_content(per)	PSS_Glass_fibre_content(per)			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_GlobalSurfacicWeight-g_m2	PSS_GlobalSurfacicWeight-g_m2			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Gloss	PSS_Gloss			string	Gloss			FALSE	FALSE		0	FALSE	FALSE		
+PSS_GlossForMaterial	PSS_GlossForMaterial			string	Attribute for Material Classification	TBD	= Matt | = High Gloss | = Satin | = TBD	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Grain	PSS_Grain			string	Grain			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Grain_1_type	PSS_Grain_1_type			string	Grain 1 type			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Grain_2_type	PSS_Grain_2_type			string	Grain 2 type			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Grain_3_type	PSS_Grain_3_type			string	Grain 3 type			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Grainning_supplier	PSS_Grainning_supplier			string	Grainning supplier			FALSE	FALSE		0	FALSE	FALSE		
+PSS_GranuleColorMaterial	PSS_GranuleColorMaterial			string	Attribute for Material Classification	TBD	= TBD | = Tailor Made | = Precolored | = Natural Color	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Granule_color	PSS_Granule_color			string			= Tailor_made | = Precolored | = Natuaral_color	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Granulometry-range	PSS_Granulometry-range			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_GrossWeight	PSS_GrossWeight			real	Weight	0.0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_HCBudget	PSS_HCBudget			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEADFORM	PSS_HEADFORM			string	HEADFORM	UNASSIGNED	= FLAT | = UNASSIGNED | = SQUARE | = PAN HEAD WITH FLANGE | = HEXAGON | = CYLINDER | = COUNTERSUNK | = PAN	FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEADREST_HORIZONTAL_ADJUSTMENT	PSS_HEADREST_HORIZONTAL_ADJUSTMENT			string	HEADREST HORIZONTAL ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEADREST_VERTICAL_ADJUSTMENT	PSS_HEADREST_VERTICAL_ADJUSTMENT			string	HEADREST VERTICAL ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEAD_DIAMETER-mm	PSS_HEAD_DIAMETER-mm			real	HEAD DIAMETER - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEAD_DIAMETER2-mm	PSS_HEAD_DIAMETER2-mm			real	HEAD DIAMETER2 - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEAD_HEIGHT-mm	PSS_HEAD_HEIGHT-mm			real	HEAD HEIGHT - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEAD_HEIGHT2-mm	PSS_HEAD_HEIGHT2-mm			real	HEAD HEIGHT2 - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEAD_MATERIAL	PSS_HEAD_MATERIAL			string	HEAD MATERIAL			FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEAD_SURFACE	PSS_HEAD_SURFACE			real	HEAD SURFACE	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEATER-SUSPENSION_TYPE	PSS_HEATER-SUSPENSION_TYPE			string	HEATER-SUSPENSION TYPE	UNASSIGNED	= CUSHION | = UNASSIGNED | = BACK	FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEATING_CONTROL	PSS_HEATING_CONTROL			string	HEATING CONTROL		= HEATING ECU | = RELAY | = SEAT ECU	FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEATING_FUNCTION	PSS_HEATING_FUNCTION			string	HEATING FUNCTION		= YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEATING_SWITCH	PSS_HEATING_SWITCH			string	HEATING SWITCH			FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEATING_TECHNOLOGY	PSS_HEATING_TECHNOLOGY			string	HEATING TECHNOLOGY		= WIRE | = CARBON	FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEAT_TREATMENT	PSS_HEAT_TREATMENT			string	HEAT TREATMENT			FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEIGHT-mm	PSS_HEIGHT-mm			string	HEIGHT - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEIGHT2-mm	PSS_HEIGHT2-mm			string	HEIGHT2 - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEIGHT3-mm	PSS_HEIGHT3-mm			string	HEIGHT3 - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_HEIGHT_ADJUSTMENT	PSS_HEIGHT_ADJUSTMENT			string	HEIGHT ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = NON-PARALLEL | = PARALLEL	FALSE	FALSE		0	FALSE	FALSE		
+PSS_HR_Heating_zones_Number	PSS_HR_Heating_zones_Number			string	HR Heating zones Number			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Half_tool_Mass_CavityOrLower_tool	PSS_Half_tool_Mass_CavityOrLower_tool			real	Half tool Mass Cavity / Lower tool			FALSE	FALSE	DSDim_MASS	0	FALSE	FALSE		
+PSS_Half_tool_Mass_CoreOrupper_tool	PSS_Half_tool_Mass_CoreOrupper_tool			real	Half tool Mass Core / upper tool			FALSE	FALSE	DSDim_MASS	0	FALSE	FALSE		
+PSS_Hardness	PSS_Hardness			real	Hardness			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Head_diameter	PSS_Head_diameter			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Head_form	PSS_Head_form			string	Head form	Button	= Hexagon | = Pan | = Button | = Cheese | = Socket | = Round | = Truss | = Flanged | = Flat | = Oval	FALSE	FALSE		0	FALSE	FALSE		
+PSS_HeatResistance	PSS_HeatResistance			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Heat_Resistance_Level	PSS_Heat_Resistance_Level			string			= Low_heat | = Standard_heat | = Hugh_heat	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Heating_zones	PSS_Heating_zones			string	Heating zones			FALSE	FALSE		0	FALSE	FALSE		
+PSS_HeavyLayerApplication	PSS_HeavyLayerApplication			string	Attribute for Material Classification	TBC	= TBC | = Carpet | = High Elongation Carpet | = Stiff Carpet | = Dash | = High Weight Dash | = Tunnel | = Patch | = NA	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Height	PSS_Height			string	Height			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Hole_Dimension	PSS_Hole_Dimension			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Hole_Dimension_2	PSS_Hole_Dimension_2			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Hole_Type	PSS_Hole_Type			string		UNASSIGNED	= Diameter | = Square | = Rectangle	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Hot_Runner_Color_change_compatible	PSS_Hot_Runner_Color_change_compatible			string	Hot Runner Color change compatible			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Hot_runner_Number_of_sequenced_Nozzles	PSS_Hot_runner_Number_of_sequenced_Nozzles			string	Hot runner - Number of sequenced Nozzles			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Hot_runner_supplier	PSS_Hot_runner_supplier			string	Hot runner supplier			FALSE	FALSE		0	FALSE	FALSE		
+PSS_HourlyRateAverage	PSS_HourlyRateAverage			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Hours	PSS_Hours			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_HoursCoreTeam	PSS_HoursCoreTeam			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_HumidityRate	PSS_HumidityRate			integer	Attribute for Material Classification			FALSE	FALSE	DSDim_Ratio	0	FALSE	FALSE		
+PSS_Hydraulic_connection_LowerOrCavity	PSS_Hydraulic_connection_LowerOrCavity			integer	Hydraulic connection Lower / Cavity	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Hydraulic_connection_UpperOrCore	PSS_Hydraulic_connection_UpperOrCore			integer	Hydraulic connection Upper / Core	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_IDENTATION_HARDNESS-N	PSS_IDENTATION_HARDNESS-N			real	IDENTATION HARDNESS - N	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_IGNITER_RESISTANCE_OHM	PSS_IGNITER_RESISTANCE_OHM			real	IGNITER RESISTANCE OHM	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_IGNITER_RESISTANCE_WITH_PIG_TAIL	PSS_IGNITER_RESISTANCE_WITH_PIG_TAIL			real	IGNITER RESISTANCE WITH PIG TAIL	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_IMDSID	PSS_IMDSID			string	Attribute to store the IMDS ID.			FALSE	FALSE		0	FALSE	FALSE		
+PSS_IMDSStatus	PSS_IMDSStatus			string	Attribute to store the IMDS Status.		= ACCEPTED | = NOT_YET_BROWSED | = IN_WORK | = RELATED | = REJECTED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_IMDS_Application_Code	PSS_IMDS_Application_Code			string	IMDS Application Code			FALSE	FALSE		0	FALSE	FALSE		
+PSS_IMDS_ID-EDIT_SIGMA_ID	PSS_IMDS_ID-EDIT_SIGMA_ID			string	IMDS ID - EDIT SIGMA ID			FALSE	FALSE		0	FALSE	FALSE		
+PSS_IMDS_IDs_Saved_State	PSS_IMDS_IDs_Saved_State			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_IMDS_IDs_Status	PSS_IMDS_IDs_Status			string		Unset	= Unset | = Module | = Nested | = Collapsed | = Invalidated	FALSE	FALSE		0	FALSE	FALSE		
+PSS_IMDS_Material_Module_ID	PSS_IMDS_Material_Module_ID			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_IMDS_Material_Node_ID	PSS_IMDS_Material_Node_ID			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_IMDS_Material_Version	PSS_IMDS_Material_Version			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_IMDS_Miscellaneous_Substance_Remark	PSS_IMDS_Miscellaneous_Substance_Remark			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_IMDS_Number	PSS_IMDS_Number			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_IMDS_Status	PSS_IMDS_Status			string			Edit | Internal | Send | Publish | Propose | Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_INTERFACE_WITH_CAR	PSS_INTERFACE_WITH_CAR			string	INTERFACE WITH CAR		= IN CAR | = IN SEAT	FALSE	FALSE		0	FALSE	FALSE		
+PSS_INTERNAL_DIAMETER	PSS_INTERNAL_DIAMETER			real	INTERNAL DIAMETER	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_IP_PROTECTION_DEGREE	PSS_IP_PROTECTION_DEGREE			string	IP PROTECTION DEGREE			FALSE	FALSE		0	FALSE	FALSE		
+PSS_IRR	PSS_IRR			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_IR_techno	PSS_IR_techno			string	IR techno		= Lamp | = bulbs | = Ceramics | =Hot wire	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISBG_COLOR	PSS_ISBG_COLOR			string	ISBG COLOR	UNASSIGNED	= G | = Y | = B	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISBG_COMMENT_1	PSS_ISBG_COMMENT_1			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISBG_COMMENT_2	PSS_ISBG_COMMENT_2			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISBG_Cockpit_Assembly_Time	PSS_ISBG_Cockpit_Assembly_Time			real	ISBG Cockpit Assembly Time			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISBG_DIAMETER_mm	PSS_ISBG_DIAMETER_mm			string	DIAMETER - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISBG_INFO_COLOR	PSS_ISBG_INFO_COLOR			string	INFO COLOR			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISBG_INTERIOR_DIAMETER_mm	PSS_ISBG_INTERIOR_DIAMETER_mm			real	INTERIOR DIAMETER - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISBG_POSITION	PSS_ISBG_POSITION			string	ISBG POSITION	UNASSIGNED	= UPRH | = UPLH | = UPC | = UP | = UNASSIGNED  | = RH | = RRH | = RLH | = RR | = PAS | = OUT | = LWRH | = LPS | = LWLH | = LDS | = LWC | = LW | = LH | = LRH | = LLH | = IN | = FRH | = FLH | = FRT | = DRV | = CRH | = CLH | = CTR	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISBG_SHANK_DIAMETER_mm	PSS_ISBG_SHANK_DIAMETER_mm			real	SHANK DIAMETER - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISBG_SPECIFICITY	PSS_ISBG_SPECIFICITY			string	SPECIFICITY			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISBG_SUB_HEAD_LENGTH_mm	PSS_ISBG_SUB_HEAD_LENGTH_mm			real	SUB HEAD LENGTH - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISBG_SURFACE_FINISH	PSS_ISBG_SURFACE_FINISH			string	SURFACE FINISH			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ISOCYANAT	PSS_ISOCYANAT			string	ISOCYANAT	UNASSIGNED	= UNASSIGNED | = TDI | = MDI | = ANY	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Identification_Number	PSS_Identification_Number			string				FALSE	FALSE		8	FALSE	FALSE		
+PSS_Impact	PSS_Impact			string			= | = No | = Yes	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ImpactOnActBP	PSS_ImpactOnActBP			string	PSS_ImpactOnActBP	Neutral	= Improve | = Neutral | = Degrade	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ImpactOnProcess	PSS_ImpactOnProcess			string			= | = No | = Yes	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ImpactOnProcess_Comments	PSS_ImpactOnProcess_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Impact_Heat_Resistance_Balance	PSS_Impact_Heat_Resistance_Balance			string		TBD	= TBD | = Medium_heat_Medium_impact | = Heat_Low_impact | = Heat_Impact	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Impact_Resistance	PSS_Impact_Resistance			string		TBD	= TBD | = Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ImpactedArea	PSS_ImpactedArea			string			=  | = Customer - Sales | = Planning |= Economics | = Resources | = Project organisation | = Product - R&D | = Process - Quality | = Supplier - Purchasing | = Other	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Impacted_regions	PSS_Impacted_regions			string	Impacted regions			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Import_Date	PSS_Import_Date			timestamp				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Import_File	PSS_Import_File			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_InWorkCONewCRTag	PSS_InWorkCONewCRTag			string	CO New CRTag	NO	= YES | = NO	FALSE	TRUE		0	FALSE	FALSE		
+PSS_InductionType	PSS_InductionType			string		NATURALLY ASPIRATED	= NATURALLY ASPIRATED | = BOOSTED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_IndustrialRegion	PSS_IndustrialRegion			string		-	IS SOUTH EUROPE REGION | IS NORTH EUROPE REGION | IS DIV NORTH AMERICA | IS DIV SOUTH AMERICA | IS DIV CHINA | FIS DIV INDIA JAPAN KOREA THAILAND | SEVERAL PLANTS	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Injection_type	PSS_Injection_type			string	Injection type		= Standard | = inverted | = Bic | = Gas | = Stack | = Multiplates | = Microject	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Inner_Diameter	PSS_Inner_Diameter			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Installation	PSS_Installation			string		Unassigned	= Unassigned | = REAR TRANSVERSAL | = REAR LONGITUDINAL | = MIDDLE TRANSVERSAL | = MIDDLE LONGITUDINAL | = FRONT TRANSVERSAL | = FRONT LONGITUDINAL	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Integrated_PY_drillingOrcutting	PSS_Integrated_PY_drillingOrcutting			string	Integrated PY drillingOrcutting	No		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Integrated_edge_folding	PSS_Integrated_edge_folding			string	Integrated edge folding	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Integrated_trimming	PSS_Integrated_trimming			string	Integrated trimming	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Interchangeability	PSS_Interchangeability			string	Interchangeability	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_InterchangeabilityPropagationStatus	PSS_InterchangeabilityPropagationStatus			string	Interchangability Propagation Staus	Incomplete	= Incomplete | = Complete	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Investment_per_tool_or_device	PSS_Investment_per_tool_or_device			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_IsFromTemplate	PSS_IsFromTemplate			string		No	= Yes | = No	FALSE	FALSE		0	TRUE	FALSE		
+PSS_IsItCompatibleWithPaintedorCoveredFinish	PSS_IsItCompatibleWithPaintedorCoveredFinish			string	Attribute for Material Classification	TBD	= TBD | = Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_IsIterationsRequired	PSS_IsIterationsRequired			string	Keep all iterations after Released		= No | = Yes	FALSE	false		0	TRUE	false		
+PSS_IsLGFMBDesignedtoPassLongTermHeatAgeingOEMRequirements	PSS_IsLGFMBDesignedtoPassLongTermHeatAgeingOEMRequirements			string	Attribute for Material Classification	TBD	= TBD | = Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_IsLGFMBImprovedforSmell_EmissionsOEMRequirements	PSS_IsLGFMBImprovedforSmell_EmissionsOEMRequirements			string	Attribute for Material Classification	TBD	= TBD | = Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Isocyanat	PSS_Isocyanat			string	Attribute for Material Classification	Unassigned	= Unassigned | = TDI | = MDI | = Any	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Issue_Description	PSS_Issue_Description			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_JigOrmasks_duplicates	PSS_JigOrmasks_duplicates			string	Jig / masks duplicates	1		FALSE	FALSE		0	FALSE	FALSE		
+PSS_KCC_KPC	PSS_KCC_KPC			string	PSS_KCC_KPC	NA	= NA | = Y | = N	FALSE	FALSE		0	FALSE	FALSE		
+PSS_KeepReferenceDocument	PSS_KeepReferenceDocument			string			= Yes | =	FALSE	FALSE		0	FALSE	FALSE		
+PSS_LADefaultValue	PSS_LADefaultValue			string		false	= false | = true	FALSE	FALSE		0	FALSE	FALSE		
+PSS_LCCMCC	PSS_LCCMCC			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_LENGHT3-mm	PSS_LENGHT3-mm			string	LENGHT 3 - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_LENGHT_LOWER_SLIDE-mm	PSS_LENGHT_LOWER_SLIDE-mm			real	LENGHT LOWER SLIDE - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_LENGHT_SLIDING_MOTION-mm	PSS_LENGHT_SLIDING_MOTION-mm			real	LENGHT SLIDING MOTION - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_LENGHT_UPPER_SLIDE-mm	PSS_LENGHT_UPPER_SLIDE-mm			real	LENGHT UPPER SLIDE - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_LENGTH	PSS_LENGTH			integer	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_LENGTH-mm	PSS_LENGTH-mm			string	LENGTH - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_LENGTH2-mm	PSS_LENGTH2-mm			string	LENGTH2 - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_LGF_MB_designed_to_pass_Long_term_heat_ageing	PSS_LGF_MB_designed_to_pass_Long_term_heat_ageing			string			= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_LGF_MB_improved_for_smell_emissions	PSS_LGF_MB_improved_for_smell_emissions			string			= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_LOCKING_SYSTEM	PSS_LOCKING_SYSTEM			string	LOCKING SYSTEM		= YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_LUMBAR_HORIZONTAL_ADJUSTMENT	PSS_LUMBAR_HORIZONTAL_ADJUSTMENT			string	LUMBAR HORIZONTAL ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_LUMBAR_SWITCH	PSS_LUMBAR_SWITCH			string	LUMBAR SWITCH			FALSE	FALSE		0	FALSE	FALSE		
+PSS_LUMBAR_VERTICAL_ADJUSTMENT	PSS_LUMBAR_VERTICAL_ADJUSTMENT			string	LUMBAR VERTICAL ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_L_mm_Total	PSS_L_mm_Total			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_LaserEtching	PSS_LaserEtching			string	Attribute for Material Classification	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Last_Rollup_Timestamp	PSS_Last_Rollup_Timestamp			timestamp				FALSE	FALSE		0	FALSE	FALSE		
+PSS_LatexTg	PSS_LatexTg			real	Attribute for Material Classification			FALSE	FALSE	DSDim_TEMPRTRE	0	FALSE	FALSE		
+PSS_LatexWeight-g_m2	PSS_LatexWeight-g_m2			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Leader	PSS_Leader			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Length	PSS_Length			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Length_mm	PSS_Length_mm			real	Length_mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_LinearTolerance	PSS_LinearTolerance			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ListofAssessorSelectedRoles	PSS_ListofAssessorSelectedRoles			string				FALSE	TRUE		0	FALSE	FALSE		multivalue
+PSS_Location	PSS_Location			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Lower_toolOrCavity_thermo_reguationOrcooling_nipples_Number_of	PSS_Lower_toolOrcore_thermo_reguationOrcooling_nipples_Number_of			integer	Lower tool / Cavity thermo reguation /cooling nipples Number of	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_M-F_TYPE	PSS_M-F_TYPE			string	M - F TYPE	UNASSIGNED	= UNASSIGNED | = MALE | = FEMALE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MAIN_SWITCH	PSS_MAIN_SWITCH			string	MAIN SWITCH			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MAKE_OR_BUY	PSS_MAKE_OR_BUY			string		Unassigned	= Unassigned | = Make | = Buy | = Non Valuated	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MANDREL_MATERIAL	PSS_MANDREL_MATERIAL			string	MANDREL MATERIAL			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MANDREL_SURFACE	PSS_MANDREL_SURFACE			real	MANDREL SURFACE	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_MARKING	PSS_MARKING			real	MARKING			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MASSAGE_FUNCTION	PSS_MASSAGE_FUNCTION			string	MASSAGE FUNCTION		= YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MATERIAL	PSS_MATERIAL			string	MATERIAL	UNASSIGNED		FALSE	FALSE		0	FALSE	FALSE		
+PSS_MATERIAL_NUMBER	PSS_MATERIAL_NUMBER			string	MATERIAL NUMBER			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MATERIAL_SAFETY_CLASSIFICATION	PSS_MATERIAL_SAFETY_CLASSIFICATION			string	MATERIAL SAFETY CLASSIFICATION	NO	= 2 | = NO | = 1	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MATERIAL_THICKNESS-mm	PSS_MATERIAL_THICKNESS-mm			real	MATERIAL THICKNESS - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_MATERIAL_WIDTH-mm	PSS_MATERIAL_WIDTH-mm			real	MATERIAL WIDTH - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MATERIAL_WIDTH_TOLERANCES	PSS_MATERIAL_WIDTH_TOLERANCES			string	MATERIAL WIDTH TOLERANCES			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MAXIMAL_CURRENT-A	PSS_MAXIMAL_CURRENT-A			real	MAXIMAL CURRENT -A	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_MCO_Start_Date	PSS_MCO_Start_Date			timestamp	Start date of the MCO			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MECHANIC_OR_ELECTRIC	PSS_MECHANIC_OR_ELECTRIC			string	MECHANIC OR ELECTRIC	UNASSIGNED	= UNASSIGNED | = MANUAL | = POWER	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MECHANIC_OR_ELECTRIC2	PSS_MECHANIC_OR_ELECTRIC2			string	MECHANIC OR ELECTRIC2	UNASSIGNED	= UNASSIGNED | = MANUAL | = POWER	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MECHANISM_PRODUCTION_SITE	PSS_MECHANISM_PRODUCTION_SITE			string	MECHANISM PRODUCTION SITE	UNASSIGNED	= UNASSIGNED | = BRADFORD | = CALIGNY | = GROJEC | = ICF | = SAN LUIS POTOSI | = SAO JOAO DE MADERA | = STADTHAGEN | = VIPOND | = WALBRZYCH | = WUXI	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MEMORY	PSS_MEMORY			string	MEMORY	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MEMO_SWITCH	PSS_MEMO_SWITCH			string	MEMO SWITCH			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MFI	PSS_MFI			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MICRO_SWITCH_AND_SENSORS	PSS_MICRO_SWITCH_AND_SENSORS			string	MICRO SWITCH AND SENSORS			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MINIMAL_CURRENT	PSS_MINIMAL_CURRENT			real	MINIMAL CURRENT	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_MIRRORS	PSS_MIRRORS			string	MIRRORS	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MOULD_MASS	PSS_MOULD_MASS			real	MOULD MASS	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_MOULD_SIZE	PSS_MOULD_SIZE			string	MOULD SIZE			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MOUNTING_POSITION	PSS_MOUNTING_POSITION			string	MOUNTING POSITION			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Magnetic_Pull_N_mm	PSS_Magnetic_Pull_N_mm			real	Magnetic Pull - N -mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MandatoryCR	PSS_MandatoryCR			string		Mandatory	= Mandatory | = Optional	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MandatoryDeliverable	PSS_MandatoryDeliverable			string	Mandatory Deliverable	No	= No | = Yes		false		0	false	false		
+PSS_Manufacturer	PSS_Manufacturer			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Marketing_Name	PSS_Marketing_Name			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Masking	PSS_Masking			string	Masking	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MasterBatchUseFor	PSS_MasterBatchUseFor			string		TBD	= TBD | = Polypropylenes | = Styrenics	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Master_RnD_Center	PSS_Master_RnD_Center			string		No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MasterbatchMatrixNature	PSS_MasterbatchMatrixNature			string	Attribute for Material Classification	TBD	= TBD | = Polypropylene homopolymer | = Polypropylene Copolymer | = ABS	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Masterbatch_matrix_nature	PSS_Masterbatch_matrix_nature			string			= Polypropylene_homopolymer | = Polypropylene_Copolymer | = ABS	FALSE	FALSE		0	FALSE	FALSE		
+PSS_MaterialDiameter	PSS_MaterialDiameter			real	Material Diameter attribute for FIS and FCM Material classifications	0.0		FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_MaterialGrade-FCM	PSS_MaterialGrade-FCM			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MaterialWidth	PSS_MaterialWidth			real	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_MaterialWidthTolerances	PSS_MaterialWidthTolerances			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Material_Additionnal_Description	PSS_Material_Additionnal_Description			string	Material Additionnal Description			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Material_ISO_code	PSS_Material_ISO_code			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Material_Name_Grade_Reference	PSS_Material_Name_Grade_Reference			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Material_Node_ID	PSS_Material_Node_ID			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Material_Symbol	PSS_Material_Symbol			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Material_Thickness	PSS_Material_Thickness			real				FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Material_Yield	PSS_Material_Yield			real	Material Yield (%)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Material_quantity	PSS_Material_quantity			real	Material quantity (g/m2)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Matrix	PSS_Matrix			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Max_Foil_stretch_considered	PSS_Max_Foil_stretch_considered			real	Max Foil stretch considered			FALSE	FALSE	DSDim_DIMENSIONLESS	0	FALSE	FALSE		
+PSS_Max_width	PSS_Max_width			real	Max width			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Mc_Load_Tool_mix	PSS_Mc_Load_Tool_mix			real	Mc Load Tool mix	100		FALSE	FALSE	DSDim_DIMENSIONLESS	0	FALSE	FALSE		
+PSS_MeltingTemperature	PSS_MeltingTemperature			real	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_MineralFillerContent	PSS_MineralFillerContent			real	Attribute for Material Classification			FALSE	FALSE	DSDim_Ratio	0	FALSE	FALSE		
+PSS_Molding-Box_-_H_mm	PSS_Molding-Box_-_H_mm			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Molding-Box_-_L_mm	PSS_Molding-Box_-_L_mm			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Molding-Box_-_W_mm	PSS_Molding-Box_-_W_mm			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Mould_Type	PSS_Mould_Type			string			= Single | = Multi-Cavities | = Stack | = Back Injection | = Microjet Single | = Microjet 1+1	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Movements	PSS_Movements			string	Movements ( Number )	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_NOMINAL_CURRENT-A	PSS_NOMINAL_CURRENT-A			real	NOMINAL CURRENT - A	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_NOMINAL_FORCE-daN	PSS_NOMINAL_FORCE-daN			real	NOMINAL FORCE - daN	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_NOMINAL_TORQUE-Nm	PSS_NOMINAL_TORQUE-Nm			real	NOMINAL TORQUE - Nm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_NORM	PSS_NORM			string	NORM			FALSE	FALSE		0	FALSE	FALSE		
+PSS_NORM2	PSS_NORM2			string	NORM2			FALSE	FALSE		0	FALSE	FALSE		
+PSS_NTC	PSS_NTC			string	NTC		= YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_NUMBER_OF_CAVITIES	PSS_NUMBER_OF_CAVITIES			real	NUMBER OF CAVITIES			FALSE	FALSE		0	FALSE	FALSE		
+PSS_NUMBER_OF_CONVOLUTION	PSS_NUMBER_OF_CONVOLUTION			integer	NUMBER OF CONVOLUTION	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_NUMBER_OF_PINS	PSS_NUMBER_OF_PINS			integer	NUMBER OF PINS			FALSE	FALSE		0	FALSE	FALSE		
+PSS_NUMBER_OF_POSITION	PSS_NUMBER_OF_POSITION			integer	NUMBER OF POSITION	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_NUMBER_OF_WAYS	PSS_NUMBER_OF_WAYS			integer	NUMBER OF WAYS	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_NUT_HEADFORM	PSS_NUT_HEADFORM			string	NUT HEADFORM	UNASSIGNED	= UNASSIGNED | = SQUARE | = HEXAGON | = CYLINDRICAL	FALSE	FALSE		0	FALSE	FALSE		
+PSS_NatureofPowder	PSS_NatureofPowder			string	Attribute for Material Classification	NA	= NA | = PELD | = PEHD | = PU | = Adhesive	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Nb_of_cavities_per_ref	PSS_Nb_of_cavities_per_ref			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Nb_of_ref_per_cycle	PSS_Nb_of_ref_per_cycle			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_NeededExperts	PSS_NeededExperts			string			=  | = DFMEA | = PFMEA | = Design review | = PRC | = Function review | = DV & PV | = Customer issues | = Supplier issues | = Perceived quality review | = Others	FALSE	FALSE		0	FALSE	FALSE		
+PSS_NeedlingDensity-stiches_cm2	PSS_NeedlingDensity-stiches_cm2			integer	Attribute for Material Classification			FALSE	FALSE	DSDim_DENSITY	0	FALSE	FALSE		
+PSS_NetMass-FCM	PSS_NetMass-FCM			real				FALSE	FALSE	Mass/Weight	0	FALSE	FALSE		
+PSS_NetWeight	PSS_NetWeight			real	Weight	0.0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_NetWidth-FCM	PSS_NetWidth-FCM			real	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Net_Length	PSS_Net_Length			real				FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Net_Mass	PSS_Net_Mass			real				FALSE	FALSE	Mass/Weight	0	FALSE	FALSE		
+PSS_Next_Message	PSS_Next_Message			integer	Next Message			FALSE	FALSE		0	FALSE	FALSE		
+PSS_NonwovenDescription	PSS_NonwovenDescription			string	Attribute for Material Classification	TBC	= TBC | = Spunbond | = Needlepunched | = SMS | = Other	FALSE	FALSE		0	FALSE	FALSE		
+PSS_NumberOfPartOnLevel1	PSS_NumberOfPartOnLevel1			integer	Number of parts on the level 1 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel10	PSS_NumberOfPartOnLevel10			integer	Number of parts on the level 10 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel11	PSS_NumberOfPartOnLevel11			integer	Number of parts on the level 11 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel12	PSS_NumberOfPartOnLevel12			integer	Number of parts on the level 12 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel13	PSS_NumberOfPartOnLevel13			integer	Number of parts on the level 13 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel14	PSS_NumberOfPartOnLevel14			integer	Number of parts on the level 14 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel15	PSS_NumberOfPartOnLevel15			integer	Number of parts on the level 15 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel2	PSS_NumberOfPartOnLevel2			integer	Number of parts on the level 2 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel3	PSS_NumberOfPartOnLevel3			integer	Number of parts on the level 3 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel4	PSS_NumberOfPartOnLevel4			integer	Number of parts on the level 4 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel5	PSS_NumberOfPartOnLevel5			integer	Number of parts on the level 5 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel6	PSS_NumberOfPartOnLevel6			integer	Number of parts on the level 6 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel7	PSS_NumberOfPartOnLevel7			integer	Number of parts on the level 7 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel8	PSS_NumberOfPartOnLevel8			integer	Number of parts on the level 8 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_NumberOfPartOnLevel9	PSS_NumberOfPartOnLevel9			integer	Number of parts on the level 9 in the current EBOM				FALSE		0	TRUE	FALSE		
+PSS_Number_of_Feeler_gage_points	PSS_Number_of_Feeler_gage_points			string	Number of Feeler gage points			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_Installed_generators	PSS_Number_of_Installed_generators			string	Number of Installed generators			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_Max_generators	PSS_Number_of_Max_generators			string	Number of Max generators			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_Part_per_Cycle	PSS_Number_of_Part_per_Cycle			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_Steps	PSS_Number_of_Steps			string	Number of Steps	1		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_Welding_ares_points	PSS_Number_of_Welding_ares_points			string	Number of Welding ares / points			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_Welding_heads_1_changes_cycle	PSS_Number_of_Welding_heads_1_changes/cycle			string	Number of Welding heads 1 changes/cycle			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_Welding_heads_2_changes_cycle	PSS_Number_of_Welding_heads_2_changes/cycle			string	Number of Welding heads 2 changes/cycle			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_connectors	PSS_Number_of_connectors			string	Number of connectors			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_control_points	PSS_Number_of_control_points			string	Number of control points			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_dial_gauge	PSS_Number_of_dial_gauge			string	Number of dial gauge			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_layers	PSS_Number_of_layers			string	Number of layers			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_points_head_1	PSS_Number_of_points_head_1			string	Number of points head 1			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_points_head_2	PSS_Number_of_points_head_2			string	Number of points head 2			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_points_head_3	PSS_Number_of_points_head_3			string	Number of points head 3			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_points_head_4	PSS_Number_of_points_head_4			string	Number of points head 4			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Number_of_points_head_5	PSS_Number_of_points_head_5			string	Number of points head 5			FALSE	FALSE		0	FALSE	FALSE		
+PSS_NumberofComponents	PSS_NumberofComponents			string	Attribute for Material Classification	Other	= 1 | = 2 | = Other	FALSE	FALSE		0	FALSE	FALSE		
+PSS_OCCUPANT_DETECTION	PSS_OCCUPANT_DETECTION			string	OCCUPANT DETECTION		= YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_OEM	PSS_OEM			string	Customer Company			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OEMCode	PSS_OEMCode			string	Color code defined by customer company			FALSE	FALSE		0	TRUE	FALSE		
+PSS_OEMForMaterial	PSS_OEMForMaterial			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OEMSupplierName	PSS_OEMSupplierName			string	OEM/Supplier Name				false		0	false	false		
+PSS_OEM_Tool_ID_Reference	PSS_OEM_Tool_ID_Reference			string	OEM Tool ID Reference			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OEM_specification	PSS_OEM_specification			string	OEM specification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OI	PSS_OI			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_OPERATION_LEVER_TYPE	PSS_OPERATION_LEVER_TYPE			string	OPERATION LEVER TYPE	UNASSIGNED	= KNOB/BUTTON | = GEAR | = UNASSIGNED | = FLEXIBLE CABLE | = CABLE | = BELT | = LEVER- HANDLE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ORIENTATION_PLANE_ANGLE	PSS_ORIENTATION_PLANE_ANGLE			string	ORIENTATION PLANE ANGLE	UNASSIGNED		FALSE	FALSE		0	FALSE	FALSE		
+PSS_OTHER_COMPARABLE_DESCRIPTION	PSS_OTHER_COMPARABLE_DESCRIPTION			string	OTHER COMPARABLE DESCRIPTION			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OTHER_CORRESPONDING_STANDARD	PSS_OTHER_CORRESPONDING_STANDARD			string	OTHER CORRESPONDING STANDARD			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OTHER_DIMENSION-mm	PSS_OTHER_DIMENSION-mm			real	OTHER DIMENSION - mm	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_OTHER_TOLERANCES	PSS_OTHER_TOLERANCES			real	OTHER TOLERANCES	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_OUTSIDE_DIAMETER-mm	PSS_OUTSIDE_DIAMETER-mm			string	OUTSIDE DIAMETER - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OUTSIDE_DIAMETER_TOLERANCES	PSS_OUTSIDE_DIAMETER_TOLERANCES			string	OUTSIDE DIAMETER TOLERANCES			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OUTSIDE_LENGTH-mm	PSS_OUTSIDE_LENGTH-mm			string	OUTSIDE LENGTH - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OUTSIDE_LENGTH_TOLERANCES	PSS_OUTSIDE_LENGTH_TOLERANCES			string	OUTSIDE LENGTH TOLERANCES			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OUTSIDE_WIDTH-mm	PSS_OUTSIDE_WIDTH-mm			string	OUTSIDE WIDTH - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OUTSIDE_WIDTH_TOLERANCES	PSS_OUTSIDE_WIDTH_TOLERANCES			string	OUTSIDE WIDTH TOLERANCES			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OldMaterialNumber	PSS_OldMaterialNumber			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Open_tool_dimensions_CavityOrlower_tool	PSS_Open_tool_dimensions_CavityOrlower_tool			real	Open tool dimensions Cavity / lower tool L x w x h			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Open_tool_dimensions_CoreOrupper_tool	PSS_Open_tool_dimensions_CoreOrupper_tool			real	Open tool dimensions Core / upper tool L x w x h			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_OriginalFileName	PSS_OriginalFileName			string					FALSE		0	TRUE			
+PSS_OtherComments	PSS_OtherComments			string	Other Comments for the Purpose of Relaese is Other			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OtherComparableDescription	PSS_OtherComparableDescription			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OtherCorrespondingStandard	PSS_OtherCorrespondingStandard			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OtherDimension	PSS_OtherDimension			real	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_OtherFunction	PSS_OtherFunction			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OtherTolerances	PSS_OtherTolerances			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OutsideDiameter	PSS_OutsideDiameter			real	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_OutsideDiameterTolerances	PSS_OutsideDiameterTolerances			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OutsideLength	PSS_OutsideLength			real	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_OutsideLengthTolerances	PSS_OutsideLengthTolerances			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_OutsideWidth	PSS_OutsideWidth			real	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_OutsideWidthTolerances	PSS_OutsideWidthTolerances			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Overmoulding_feed	PSS_Overmoulding_feed			string	Overmoulding feed		= Robot | = continuous	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Overmoulding_type	PSS_Overmoulding_type			string	Overmoulding type		= film | = Skin | = Fabric | = Insert | = other	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Ownership	PSS_Ownership			string		Faurecia	= Faurecia | = JV	FALSE	FALSE		0	FALSE	FALSE
+PSS_PAMCandidate	PSS_PAMCandidate			string	Attribute for Material Classification	TBD	= TBD | = Validated | = Standard | = Not PAM	FALSE	FALSE		0	FALSE	FALSE		
+PSS_PAM_Candidate	PSS_PAM_Candidate			string		No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_PCB_Finishing	PSS_PCB_Finishing			string	PCB Finishing	Unassigned	= OSP | = Nickel_Gold | = Hal | = Hasl | = Tin_immersion | = Silver_immersion	FALSE	FALSE		0	FALSE	FALSE		
+PSS_PCB_class_IPCA600	PSS_PCB_class_IPCA600			string	PCB class-IPCA600			FALSE	FALSE		0	FALSE	FALSE		
+PSS_PCHarmonyIdentification	PSS_PCHarmonyIdentification			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_PDM_TOOL_TYPE	PSS_PDM_TOOL_TYPE			string	PDM TOOL TYPE	UNASSIGNED	= UNASSIGNED | = TOP ASSEMBLY | = SUB ASSEMBLY | = COMPONENT	FALSE	FALSE		0				
+PSS_PEDALS_ADJUSTMENT	PSS_PEDALS_ADJUSTMENT			string	PEDALS ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0				
+PSS_PIN_LEADER_TYPE	PSS_PIN_LEADER_TYPE			string	PIN LEADER TYPE	UNASSIGNED	= UNASSIGNED | = CYLINDRICAL LEADER PIN | = OBLONG LEADER PIN | = SPECIFIC LEADER PIN	FALSE	FALSE		0				
+PSS_PITCH_OF_THE_SPINDEL_mm	PSS_PITCH_OF_THE_SPINDEL_mm			integer	PITCH OF THE SPINDEL mm	0		FALSE	FALSE		0				
+PSS_PLANT_TYPE	PSS_PLANT_TYPE			string	Plant Type	UNASSIGNED	= UNASSIGNED | = JIT | = MECHANISM | = STRUCTURE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_PMSITEM	PSS_PMSITEM			string	PMS Item				false		0	false	false		
+PSS_PMSScenario	PSS_PMSScenario			string		Full Product / Process Development	= Full Service Supplier | = Pull Ahead Production Tools | = Full Product / Process Development | = Development Program | = Build To Print	FALSE	FALSE		0	FALSE	FALSE		
+PSS_PNEUMATIC_CONNECTION	PSS_PNEUMATIC_CONNECTION			string	PNEUMATIC CONNECTION	UNASSIGNED	= UNASSIGNED | = MALE | = FEMALE | = MALE REMOVABLE | = FEMALE REMOVABLE	FALSE	FALSE		0				
+PSS_PNEUMATIC_CONNECTOR_TYPE	PSS_PNEUMATIC_CONNECTOR_TYPE			string	PNEUMATIC CONNECTOR TYPE	UNASSIGNED	= UNASSIGNED | = TULIP | = Y | = T | = ELBOW | = POT	FALSE	FALSE		0				
+PSS_PNEUMATIC_FUNCTION	PSS_PNEUMATIC_FUNCTION			string	PNEUMATIC FUNCTION	NO	= YES | = NO	FALSE	FALSE		0				
+PSS_POWER_PRESS	PSS_POWER_PRESS			string	POWER PRESS	UNASSIGNED	= UNASSIGNED | = 1100 T | = 800 T | = 630 T | = 400 T | = 320 T | = 315 T | = 300 T | = 250 T | = 200 T | = 180 T | = 160 T | = 125 T | = 100 T | = 80 T	FALSE	FALSE		0				
+PSS_POWER_W	PSS_POWER_W			integer	POWER W	0		FALSE	FALSE		0				
+PSS_PO_date	PSS_PO_date			date	PO date			FALSE	FALSE		0	FALSE	FALSE		
+PSS_PO_references	PSS_PO_references			string	PO references			FALSE	FALSE		0	FALSE	FALSE		
+PSS_PPAP_Intern_Or_Cust_Date	PSS_PPAP_Intern_Or_Cust_Date			timestamp	PSS_PPAP_Intern_Or_Cust_Date			FALSE	FALSE		0	FALSE	FALSE		
+PSS_PPAP_Intern_Or_Cust_Status	PSS_PPAP_Intern_Or_Cust_Status			string	PSS_PPAP_Intern_Or_Cust_Status	NA	= NA | = Pending | = OK | = NOK	FALSE	FALSE		0	FALSE	FALSE		
+PSS_PRESS_COMPONENT	PSS_PRESS_COMPONENT			string		UNASSIGNED	= UNASSIGNED | = STANDARD PRESS | = SPACER PLATE | = ADDITIONAL BOLSTER PLATE | = OTHER PRESS ACCESSORIES | = HANDLING EQUIPMENT | = EVACUATION EQUIPMENT | = HYDROLIC EQUIPMENT	FALSE	FALSE		0				
+PSS_PRETENSIONNER_TYPE	PSS_PRETENSIONNER_TYPE			string	PRETENSIONNER TYPE	UNASSIGNED	= BUCKLE | = UNASSIGNED | = VENTRAL PYROTECHNIC | = BUCKLE WARNING FOR NON-BUCKLING | = VENTRAL | = BUCKLE PYROTECHNIC	FALSE	FALSE		0				
+PSS_PREVIOUS_INTERNAL_MATERIAL_NUMBER	PSS_PREVIOUS_INTERNAL_MATERIAL_NUMBER			string	PREVIOUS INTERNAL MATERIAL NUMBER			FALSE	FALSE		0	FALSE	FALSE		
+PSS_PREVIOUS_PART_NUMBER	PSS_PREVIOUS_PART_NUMBER			string	PREVIOUS PART NUMBER			FALSE	FALSE		0	FALSE	FALSE		
+PSS_PRODUCT_NAME	PSS_PRODUCT_NAME			string	PRODUCT NAME			FALSE	FALSE		0	FALSE	FALSE		
+PSS_PROFILE_TYPE	PSS_PROFILE_TYPE			string	PROFILE TYPE	UNASSIGNED	= JS NOTCHED | = UNASSIGNED | = J NOTCHED | = JS | = J | = FLAT	FALSE	FALSE		0				
+PSS_PROPERTY_CLASS	PSS_PROPERTY_CLASS			string	PROPERTY CLASS			FALSE	FALSE		0				
+PSS_PROTECTION	PSS_PROTECTION			string	PROTECTION			FALSE	FALSE		0	FALSE	FALSE		
+PSS_PROTOTYPE_PRESS_TOOL	PSS_PROTOTYPE_PRESS_TOOL			string	PROTOTYPE PRESS TOOL	UNASSIGNED	= UNASSIGNED | = CRIMPING TOOL | = BENDING TOOL | = PUNCHING TOOL | = CUTTING TOOL | = JOGGLING TOOL | = COLLAR TOOL | = OTHER	FALSE	FALSE		0				
+PSS_PROTOTYPE_PRODUCT_TYPE	PSS_PROTOTYPE_PRODUCT_TYPE			string	PROTOTYPE PRODUCT TYPE	UNASSIGNED	= UNASSIGNED | = MALE SLIDE AND COMPONENT | = FEMALE SLIDE AND COMPONENT | = RECLINER | = PUMPING COMMAND | = HANDLE BAR | = OTHER COMPONENT	FALSE	FALSE		0				
+PSS_PROTOTYPE_TEST_TOOL	PSS_PROTOTYPE_TEST_TOOL			string	PROTOTYPE TEST TOOL	UNASSIGNED	= UNASSIGNED | = PULLING TEST | = TORQUE TEST | = DURABILITY TEST | = OTHER TEST	FALSE	FALSE		0				
+PSS_PROTOTYPE_WELDING_TOOL	PSS_PROTOTYPE_WELDING_TOOL			string	PROTOTYPE WELDING TOOL	UNASSIGNED	= UNASSIGNED | = LASER | = RESISTANCE | = MIG-TIG	FALSE	FALSE		0				
+PSS_PR_date	PSS_PR_date			date	PR date			FALSE	FALSE		0	FALSE	FALSE		
+PSS_PR_references	PSS_PR_references			string	PR references			FALSE	FALSE		0	FALSE	FALSE		
+PSS_PUNCHES_TYPE	PSS_PUNCHES_TYPE			string	PUNCHES TYPE	UNASSIGNED	= UNASSIGNED | = CYLINDRICAL PUNCH | = OBLONG PUNCH | = RECTANGULAR PUNCH | = RAW PUNCH | = SPECIFIC SHAPE PUNCH | = BENDING PUNCH	FALSE	FALSE		0				
+PSS_PWM	PSS_PWM			string	PWM	NO	= YES | = NO	FALSE	FALSE		0				
+PSS_Painted_surface_-_cm2	PSS_Painted_surface_-_cm2			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Palm_oil_base	PSS_Palm_oil_base			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ParallelTrack	PSS_ParallelTrack			string	CR Parallel Track	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ParallelTrackComment	PSS_ParallelTrackComment			string	CR Parallel Track Comment			FALSE	FALSE		0	FALSE	FALSE		
+PSS_PartCost	PSS_PartCost			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_PartPrice	PSS_PartPrice			integer	PSS_PartPrice	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_PartSalesPrice	PSS_PartSalesPrice			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_Part_Dimension_(Mini-Box)_-_H_mm	PSS_Part_Dimension_(Mini-Box)_-_H_mm			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Part_Dimension_(Mini-Box)_-_L_mm	PSS_Part_Dimension_(Mini-Box)_-_L_mm			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Part_Dimension_(Mini-Box)_-_W_mm	PSS_Part_Dimension_(Mini-Box)_-_W_mm			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Part_detection_Lower_tool	PSS_Part_detection_Lower_tool			string	Part detection Lower tool	Yes	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Part_detection_Upper_tool	PSS_Part_detection_Upper_tool			string	Part detection Upper tool	Yes	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Parts	PSS_Parts			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_PaymentTerm	PSS_PaymentTerm			string			= | = Cash | = PPA	FALSE	FALSE		0	FALSE	FALSE		
+PSS_PeakSpeed	PSS_PeakSpeed			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_PeakTorque	PSS_PeakTorque			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_PercentDiversity	PSS_PercentDiversity			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Percent_Measured_Contained_Recyclate	PSS_Percent_Measured_Contained_Recyclate			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Percent_Post_Consumer_Recyclate	PSS_Percent_Post_Consumer_Recyclate			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Percent_Post_Industrial_Recyclate	PSS_Percent_Post_Industrial_Recyclate			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Percent_Released_Contained_Recyclate	PSS_Percent_Released_Contained_Recyclate			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Percentage_of_use	PSS_Percentage_of_use			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Physical_Implementation_Planned_Date	PSS_Physical_Implementation_Planned_Date			timestamp	Physical Implementation Planned Date			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Pin_material	PSS_Pin_material			string	Pin material	Plastic	= Metal | = Plastic	FALSE	FALSE		0	FALSE	FALSE		
+PSS_PlannedEndDate	PSS_PlannedEndDate			timestamp	PSS_PlannedEndDate			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Plant	PSS_Plant			string	Display the list of plants related to the Project			FALSE	FALSE		0	FALSE	FALSE		
+PSS_PlantName	PSS_PlantName			string	Plant Name			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Plant_End_Item	PSS_Plant_End_Item			string	Plant End Item	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Plant_inventory_Tool_ID_Reference	PSS_Plant_inventory_Tool_ID_Reference			string	Plant inventory Tool ID Reference			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Plastic_Family	PSS_Plastic_Family			string	Plastic Family			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Platable	PSS_Platable			string		No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_PlatableForMaterial	PSS_PlatableForMaterial			string	Attribute for Material Classification	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Platform	PSS_Platform			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Plating_type	PSS_Plating_type			string	Plating type		= electro | = plasma | = chemical | = Other	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Pneumatic_connection_LowerOrcore	PSS_Pneumatic_connection_LowerOrcore			integer	Pneumatic connection Lower / core	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Pneumatic_connection_UpperOrCavity	PSS_Pneumatic_connection_UpperOrCavity			integer	Pneumatic connection Upper / Cavity	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Pneumatical_columns_clamps	PSS_Pneumatical_columns_clamps			string	Pneumatical columns clamps	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Poka_Yoke_Locking_system	PSS_Poka_Yoke_Locking_system			string	Poka Yoke Locking system	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Polishable	PSS_Polishable			string	Attribute for Material Classification	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Position	PSS_Position			string	Position of Person in Program-Project	Member	= Lead | = Member	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Pouring_heads	PSS_Pouring_heads			string	Pouring heads (Number)	Single	= Single | = 2 heads	FALSE	FALSE		0	FALSE	FALSE		
+PSS_PowderBacking	PSS_PowderBacking			string	Attribute for Material Classification	TBC	= TBC | = Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Powder_Quantity-g_m2	PSS_Powder_Quantity-g_m2			real				FALSE	FALSE	Mass/Weight	0	FALSE	FALSE		
+PSS_Presing_force	PSS_Presing_force			real	Presing force kN			FALSE	FALSE	DSDim_FORCE	0	FALSE	FALSE		
+PSS_Process	PSS_Process			string	Attribute to filter level of CAD to be open		= | = Process	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProcessDefinition	PSS_ProcessDefinition			string			= | = No | = Yes	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProcessDefinition_Comments	PSS_ProcessDefinition_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProcessRisk	PSS_ProcessRisk			string		3	= 3 | = 1 | = 2	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProcessRiskFinalPMDecision	PSS_ProcessRiskFinalPMDecision			string		3	= 3 | = 1 | = 2	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProcessRiskFinalPMDecision_Comments	PSS_ProcessRiskFinalPMDecision_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProcessRisk_Comments	PSS_ProcessRisk_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProcessValidation	PSS_ProcessValidation			string			= | = No | = Yes	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProcessValidation_Comments	PSS_ProcessValidation_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProcesstoAddtheBacking	PSS_ProcesstoAddtheBacking			string	Attribute for Material Classification	TBC	= TBC | = Needling | = Clandering | = Adding PE Powder | = NA	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProdGM	PSS_ProdGM			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProductConfigurationPID	PSS_ProductConfigurationPID			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProductFamily	PSS_ProductFamily			string		-	- | Instrument Panel | Center Console | Door Panel | Cockpit | Frame | Complete seat |  Trim cover | Foam pad | Accessories | Plastic parts | Electrical & Electronics | Pneumatics | Mechanisms | Other | Hot End | Cold End | Complete Exhaust System | AST | FAD	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProductName	PSS_ProductName			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProductRisk	PSS_ProductRisk			string		3	= 3 | = 1 | = 2	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProductRiskFinalPMDecision	PSS_ProductRiskFinalPMDecision			string		3	= 3 | = 1 | = 2	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProductRiskFinalPMDecision_Comments	PSS_ProductRiskFinalPMDecision_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProductRisk_Comments	PSS_ProductRisk_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProductionCity	PSS_ProductionCity			string	Attribute for Material Classification	Other	= Rubi | = Lemforde | = Shanghai | =Mitry-Mory | = Burzaco | = Lerma | = Wyandotte | = Correggio | = Guanghzou | = Dormagen | = Krefeld-Uerdingen | = New Martinsville | =Santa Clara | = Baytown | = Other	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProductionQuantity	PSS_ProductionQuantity			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Production_type	PSS_Production_type			string	Production type		= Internal | = BOP | = Subcontracted	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProgProjName	PSS_ProgProjName			string	Program Project Name			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProgramProject	PSS_ProgramProject			string			= Project | = Program	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProgramRiskLevel	PSS_ProgramRiskLevel			string			=  | =1-Low | =2-Medium | =3-High or HSE | =4-S/R or HSE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProgramType	PSS_ProgramType			string		Local	= Local | = Global	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Project_Code	PSS_Project_Code			string	Project code value auto populated from the users default project code.			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Project_Description	PSS_Project_Description			string	Users default projects description			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Project_Phase_at_Creation	PSS_Project_Phase_at_Creation			string	Project Phase at Creation			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Projected_Surface_m2	PSS_Projected_Surface_m2			real	Projected Surface (m2)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Projected_surface_in_molding_direction_-_cm2	PSS_Projected_surface_in_molding_direction_-_cm2			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Protection	PSS_Protection			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProtoCosts	PSS_ProtoCosts			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_ProtoCosts_Comments	PSS_ProtoCosts_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProtoSalesPrice	PSS_ProtoSalesPrice			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_ProtoToolingCost	PSS_ProtoToolingCost			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_ProtoToolingCost_Comments	PSS_ProtoToolingCost_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ProtoToolingSalesPrice	PSS_ProtoToolingSalesPrice			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_PublishedPart.PSS_PP_CADMass	PSS_PublishedPart.PSS_PP_CADMass	interface	PSS_PublishedPart	real		0.0		FALSE	FALSE	PSS_Mass_g	0	FALSE	FALSE		
+PSS_Pulling_Force_N	PSS_Pulling_Force_N			real	Pulling Force - N			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Purpose	PSS_Purpose			string	Purpose	Series	= Series | = Preseries | = Prototype	FALSE	FALSE		0	FALSE	FALSE		
+PSS_PurposeOfRelease_DEVPart	PSS_PurposeOfRelease_DEVPart			string			= | = Acquisition | = Design_Study	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Purpose_Of_Release	PSS_Purpose_Of_Release			string			= | = Other | = Design study | = Serial Tool Launch/Modification | = Prototype Tool Launch/Modification | = Commercial Update | = Acquisition	FALSE	FALSE		0	FALSE	FALSE		
+PSS_QRCINumberOrNA	PSS_QRCINumberOrNA			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_QUALITY_RATING	PSS_QUALITY_RATING			string	QUALITY RATING	UNASSIGNED		FALSE	FALSE		0				
+PSS_Qty_of_color	PSS_Qty_of_color			Integer	Qty of color			FALSE	FALSE		0	FALSE	FALSE		
+PSS_QuantityofGlue-g_m2	PSS_QuantityofGlue-g_m2			real	Attribute for Material Classification			FALSE	FALSE	Mass/Weight	0	FALSE	FALSE		
+PSS_RADIATED_EMISSIONS	PSS_RADIATED_EMISSIONS			string	RADIATED EMISSIONS			FALSE	FALSE		0				
+PSS_RARole	PSS_RARole			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_RECLINER_PRODUCT_FAMILY	PSS_RECLINER_PRODUCT_FAMILY			string	RECLINER PRODUCT FAMILY	UNASSIGNED	= UNASSIGNED | = Diam 60 | = PUMPING MODULE | = Diam 76 | = REAR SEAT ACCESS BOX | = Diam 83 | = Diam 85 | = Diam 93 | = Diam 95 | = Diam 115 | = SPACER PLATE | = OTHER FAMILY	FALSE	FALSE		0				
+PSS_RECLINER_PRODUCT_TYPE	PSS_RECLINER_PRODUCT_TYPE			string	RECLINER PRODUCT TYPE	UNASSIGNED	= UNASSIGNED | = RING | = UNIVERSAL JOINT | = LINEMAN | = BOX | = CAM | = CONTROL ELEMENT | = GEAR RING | = CAP | = OTHER FLANGE | = FIX FLANGE | = MOBILE FLANGE | = GUSSET | = GEAR SEGMENT | = MASK | = INTERLOCK | = GEAR WHEEL | = PLATE | = PLANET GEAR | = GEAR SECTOR | = SUPPORT PLATE | = OTHER PRODUCT | = BAR LIFT	FALSE	FALSE		0				
+PSS_REDUCER_TYPE	PSS_REDUCER_TYPE			string	REDUCER TYPE	UNASSIGNED	= GEAR | = UNASSIGNED | = ENDLESS SCREW	FALSE	FALSE		0				
+PSS_REDUCTION_RATIO	PSS_REDUCTION_RATIO			real	REDUCTION RATIO	0.00		FALSE	FALSE		0				
+PSS_RELAY_MODULE	PSS_RELAY_MODULE			string	RELAY MODULE		= YES | = NO	FALSE	FALSE		0				
+PSS_REMARKS-SPECIAL_OBSERVATION	PSS_REMARKS-SPECIAL_OBSERVATION			string	REMARKS - SPECIAL OBSERVATION			FALSE	FALSE		0	FALSE	FALSE		
+PSS_RESISTANCE_FASTENED	PSS_RESISTANCE_FASTENED			real	RESISTANCE FASTENED	0.00		FALSE	FALSE		0				
+PSS_RESISTANCE_NOT_FASTENED	PSS_RESISTANCE_NOT_FASTENED			real	RESISTANCE NOT FASTENED	0.00		FALSE	FALSE		0				
+PSS_REVOLUTION_PER_MINUTE	PSS_REVOLUTION_PER_MINUTE			integer	REVOLUTION PER MINUTE	0		FALSE	FALSE		0				
+PSS_RatedPower	PSS_RatedPower			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_RatedSpeed	PSS_RatedSpeed			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Reaction	PSS_Reaction			string	Attribute for Material Classification	TBD	= Reactive | = NotReactive | = TBD	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Reactive_glue_compatible	PSS_Reactive_glue_compatible			string	Reactive glue compatible Y/N	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ReadyForDecesion	PSS_ReadyForDecesion			boolean		FALSE		FALSE	TRUE		0	FALSE	FALSE
+PSS_RealCheckDate	PSS_RealCheckDate			date				FALSE	FALSE		0	FALSE	FALSE		
+PSS_RealCompletionDate	PSS_RealCompletionDate			date				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Real_Cycle_time	PSS_Real_Cycle_time			integer	Real cycle time			FALSE	FALSE	DSDim_TIME	0	FALSE	FALSE		
+PSS_Real_life_time_parts_produced	PSS_Real_life_time_parts_produced			real	Real life time ( parts produced)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Real_scrap_rate	PSS_Real_scrap_rate			real	Real scrap rate			FALSE	FALSE	DSDim_DIMENSIONLESS	0	FALSE	FALSE		
+PSS_Recliner_Product_Type	PSS_Recliner_Product_Type			string	Recliner Product Type	Interlock	= Interlock	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Recommended_Material	PSS_Recommended_Material			string	Recommended Material			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Recyclate	PSS_Recyclate			string		No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_RecyclateForMaterial	PSS_RecyclateForMaterial			string	Attribute for Material Classification	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ReferenceEBOMGenerated	PSS_ReferenceEBOMGenerated			boolean	Check Reference EBOM is already created for this Relationship	FALSE		FALSE	TRUE		0	TRUE	TRUE		
+PSS_RegisterNumber	PSS_RegisterNumber			integer	Incremental number for a given structure node				FALSE		0	TRUE	FALSE		
+PSS_Related_MBOM_150%	PSS_Related_MBOM_150			string	Display the related 150% MBOM Object name			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Release_agent_dispensing_unit	PSS_Release_agent_dispensing_unit			string	Release agent dispensing unit	No		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Remarks_Specialobservation	PSS_Remarks_Specialobservation			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Removed_Mass	PSS_Removed_Mass			real	Removed Mass			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ReplacedWithLatestRevision	PSS_ReplacedWithLatestRevision			boolean	Check Latest revision is already connected to Parent Part	FALSE		FALSE	TRUE		0	TRUE	TRUE		
+PSS_Requested_Change	PSS_Requested_Change			string	Requested Change	For Release	= For Release | = None	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Requested_for_PPAP	PSS_Requested_for_PPAP			string	Requested for PPAP	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Reserved	PSS_Reserved			string		No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Resp	PSS_Resp			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ResponsibilityOrEscalationlevel	PSS_ResponsibilityOrEscalationlevel			string			=  | = Product Group  | = Division | = Core Team	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Reviewer	PSS_Reviewer			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_RevisionReason	PSS_RevisionReason			string	Store the Reason of the Revision Creation				false		0	true	true		
+PSS_Role	PSS_Role			string	Role of Person on Project			FALSE	FALSE		0	FALSE	FALSE		
+PSS_RootCauses	PSS_RootCauses			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Rotating_positions	PSS_Rotating_positions			string	Rotating positions			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Rotation_system_acceptable_load	PSS_Rotation_system_acceptable_load			real	Rotation system acceptable load			FALSE	FALSE	DSDim_FORCE	0	FALSE	FALSE		
+PSS_Rotative_system	PSS_Rotative_system			string	Rotative system	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_RouteTemplateType	PSS_RouteTemplateType			string	Type of Route Template		= Default Evaluation Review Route Template for CR | = Default Impact Analysis Route Template for CR | = Approval List for Commercial update on CO | = Approval List for Prototype on CO | = Approval List for Serial Launch on CO | =  Approval List for Design study on CO | = Approval List for Other Parts on CO | =  Approval List for CAD on CO | = Approval List for Standard Parts on CO | = Approval List for Commercial update on MCO | =  Approval List for Prototype on MCO | = Approval List for Serial Launch on MCO | = Approval List for Design study on MCO | = Approval List for Other Parts on MCO | = Default CN Reviewer on CN | = Approval List for Acquisition on CO | = Approval List for Acquisition on MCO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_S/R	PSS_S/R			string			= - | = S | = R | S & R	FALSE	FALSE		0	FALSE	FALSE		
+PSS_SAFETY_CLASSIFICATION	PSS_SAFETY_CLASSIFICATION			string	SAFETY CLASSIFICATION	NO	= NO | = 2 | = 1	FALSE	FALSE		0				
+PSS_SAPDescription	PSS_SAPDescription			string	Auto generated SAP Description = OEM Code + Short Description			FALSE	FALSE		0	FALSE	FALSE		
+PSS_SAPDescriptionMandatory	PSS_SAPDescriptionMandatory			string	Auto generated SAP Description = OEM Code + Short Description			FALSE	FALSE		0	FALSE	FALSE		
+PSS_SAPOrTool_Billing_ID_Reference	PSS_SAPOrTool_Billing_ID_Reference			string	SAP /Tool Billing ID Reference			FALSE	FALSE		0	FALSE	FALSE		
+PSS_SAP_Response	PSS_SAP_Response			string	SAP Response			FALSE	FALSE		0	FALSE	FALSE		
+PSS_SEAL	PSS_SEAL			string		UNASSIGNED	= With | = Without	FALSE	FALSE		0	FALSE	FALSE		
+PSS_SEALED	PSS_SEALED			string	SEALED		= YES | = NO	FALSE	FALSE		0				
+PSS_SEAT_BELT_BUCKLE_TYPE	PSS_SEAT_BELT_BUCKLE_TYPE			string	SEAT BELT BUCKLE TYPE	UNASSIGNED	= UNASSIGNED | = WITHOUT SWITCH | = SWITCH	FALSE	FALSE		0				
+PSS_SEAT_BELT_HEIGHT_ADJUSTMENT	PSS_SEAT_BELT_HEIGHT_ADJUSTMENT			string	SEAT BELT HEIGHT ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0				
+PSS_SEAT_BELT_REMINDER	PSS_SEAT_BELT_REMINDER			string	SEAT BELT REMINDER		= YES | = NO	FALSE	FALSE		0				
+PSS_SEAT_DEPTH_ADJUSTMENT	PSS_SEAT_DEPTH_ADJUSTMENT			string	SEAT DEPTH ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0				
+PSS_SEAT_HEIGHT_ADJUSTMENT	PSS_SEAT_HEIGHT_ADJUSTMENT			string	SEAT HEIGHT ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0				
+PSS_SEAT_LENGTH_ADJUSTMENT	PSS_SEAT_LENGTH_ADJUSTMENT			string	SEAT LENGTH ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0				
+PSS_SEAT_TILT_ADJUSTMENT	PSS_SEAT_TILT_ADJUSTMENT			string	SEAT TILT ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0				
+PSS_SEAT_WIDTH_ADJUSTMENT	PSS_SEAT_WIDTH_ADJUSTMENT			string	SEAT WIDTH ADJUSTMENT	UNASSIGNED	= UNASSIGNED | = YES | = NO	FALSE	FALSE		0				
+PSS_SEMI_MANUFACTURED_PRODUCT_STANDARD	PSS_SEMI_MANUFACTURED_PRODUCT_STANDARD			string	SEMI MANUFACTURED PRODUCT STANDARD			FALSE	FALSE		0	FALSE	FALSE		
+PSS_SENSOR_TYPE	PSS_SENSOR_TYPE			string	SENSOR TYPE	UNASSIGNED	= RESISTOR TYPE | = STRAIN GAGE | = UNASSIGNED | = EXTENSOMETER | = HALL EFFECT | = MAGNETIC | = OPTICAL	FALSE	FALSE		0				
+PSS_SHIELD_SIDE_TYPE	PSS_SHIELD_SIDE_TYPE			string	SHIELD-SIDE TYPE	UNASSIGNED	= SKI DOOR | = EASY ENTRY HANDLE-CONTROL HUBCAP | = EXTERNAL | = EXTERNAL RECLINER | = INTERNAL | = INTERNAL RECLINER | = LATCH CAP | = PRETENSIONER | = CUSHION HEAD | = SHUTTER | = CARRIER | = SKI DOOR HUBCAP | = TOP TETHER HUBCAP | = TRACK CAP | = UNASSIGNED | = UPPER BEAM | = BALLFIX | = HYGIENE | = SASH GUIDE | = AIRBAG HUBCAP | = DYNAMIC CHAIN | = CAP | = BELT RETRACTOR | = BELT PROTECTION | = BELT GUIDE | = ARMREST HUBCAP | = ARMREST BOTTOM	FALSE	FALSE		0				
+PSS_SLCBOPCosts	PSS_SLCBOPCosts			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCBPLifetime	PSS_SLCBPLifetime			integer				FALSE	FALSE		0	FALSE	FALSE		
+PSS_SLCBPStatus	PSS_SLCBPStatus			string			= booked | = not booked	FALSE	FALSE		0	FALSE	FALSE		
+PSS_SLCCapex	PSS_SLCCapex			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCCapexContribution	PSS_SLCCapexContribution			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_SLCCapexCustomerCashContribution	PSS_SLCCapexCustomerCashContribution			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCComments	PSS_SLCComments			string	PSS_SLCComments			FALSE	FALSE		0	FALSE	FALSE		
+PSS_SLCContribution	PSS_SLCContribution			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_SLCDevelopmentContribution	PSS_SLCDevelopmentContribution			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_SLCDirectLaborCost	PSS_SLCDirectLaborCost			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCDndDProtoSales	PSS_SLCDndDProtoSales			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCFreightOutCosts	PSS_SLCFreightOutCosts			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCImpactOnPPAPaidByCustomerPerPart	PSS_SLCImpactOnPPAPaidByCustomerPerPart			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCLaunchCosts	PSS_SLCLaunchCosts			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCLaunchCostsCustomerParticipation	PSS_SLCLaunchCostsCustomerParticipation			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCProtoCosts	PSS_SLCProtoCosts			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCRMCost	PSS_SLCRMCost			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCScrap	PSS_SLCScrap			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCSubsidies	PSS_SLCSubsidies			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_SLCTakeRate	PSS_SLCTakeRate			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_SLCToolingCosts	PSS_SLCToolingCosts			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCToolingSales	PSS_SLCToolingSales			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SLCTuningCosts	PSS_SLCTuningCosts			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_SOCKET_TYPE	PSS_SOCKET_TYPE			string	SOCKET TYPE	UNASSIGNED	= WITH SHOULDER THREADED | = CYLINDER THREADED | = ELASTIC | = UNASSIGNED | = WITH SHOULDER UNTHREADED | = CYLINDER UNTHREADED	FALSE	FALSE		0				
+PSS_SOPDate	PSS_SOPDate			timestamp				FALSE	FALSE		0	FALSE	FALSE		
+PSS_SOURCING_REFERENCE	PSS_SOURCING_REFERENCE			string	SOURCING REFERENCE	UNASSIGNED		FALSE	FALSE		0				
+PSS_SPEED_mm_sec	PSS_SPEED_mm_sec			real	SPEED mm sec	0.00		FALSE	FALSE		0				
+PSS_SPINDEL_LENGTH_mm	PSS_SPINDEL_LENGTH_mm			real	SPINDEL LENGTH mm	0.00		FALSE	FALSE		0				
+PSS_SPLICE_TYPE	PSS_SPLICE_TYPE			string	SPLICE TYPE		= WELDING SPLICE | = CRIMP SPLICE | = SOLDERING SPLICE	FALSE	FALSE		0				
+PSS_SPRING_LENGTH_UNDALEN_mm	PSS_SPRING_LENGTH_UNDALEN_mm			real	SPRING LENGTH UNDALEN - mm	0.00		FALSE	FALSE		0				
+PSS_STALL_TORQUE_Nm	PSS_STALL_TORQUE_Nm			real	STALL TORQUE - Nm	0.00		FALSE	FALSE		0				
+PSS_STAMPS_TYPE	PSS_STAMPS_TYPE			string	STAMPS TYPE	UNASSIGNED	= UNASSIGNED | = CYLINDRICAL STAMP | = OBLONG STAMP | = RECTANGULAR STAMP | = SPECIFIC STAMP | = FORMING STAMP	FALSE	FALSE		0				
+PSS_STANDARD_NUMBER	PSS_STANDARD_NUMBER			string	STANDARD NUMBER	UNASSIGNED		FALSE	FALSE		0				
+PSS_STANDARD_STRUCTURE	PSS_STANDARD_STRUCTURE			string	STANDARD STRUCTURE	UNASSIGNED	= UNASSIGNED | = STANDARD BASE | = NEWFROM STANDARD | = STANDARD TOOL	FALSE	FALSE		0				
+PSS_STAPLE_TYPE	PSS_STAPLE_TYPE			string	STAPLE TYPE	UNASSIGNED	= UNASSIGNED | = OMEGA | = NONE | = FIR | = SEDAD | = METAL	FALSE	FALSE		0				
+PSS_STATOR_DIAMETER_mm	PSS_STATOR_DIAMETER_mm			real	STATOR DIAMETER mm	0.00		FALSE	FALSE		0				
+PSS_STEERING_COLUMN_ADJUSTMENT	PSS_STEERING_COLUMN_ADJUSTMENT			string	STEERING COLUMN ADJUSTMENT			FALSE	FALSE		0				
+PSS_STIFFNESS_N_per_mm	PSS_STIFFNESS_N_per_mm			real	STIFFNESS - N per mm	0.00		FALSE	FALSE		0				
+PSS_STROKE	PSS_STROKE			string	STROKE	UNASSIGNED		FALSE	FALSE		0				
+PSS_SUPPLIER	PSS_SUPPLIER			string	SUPPLIER	UNASSIGNED		FALSE	FALSE		0	FALSE	FALSE		
+PSS_SUPPLIER_REFERENCE	PSS_SUPPLIER_REFERENCE			string	SUPPLIER REFERENCE	UNASSIGNED		FALSE	FALSE		0				
+PSS_SURFACE_COATING	PSS_SURFACE_COATING			string	SURFACE COATING	UNASSIGNED		FALSE	FALSE		0				
+PSS_SURFACE_FINISH	PSS_SURFACE_FINISH			string	SURFACE FINISH			FALSE	FALSE		0	FALSE	FALSE		
+PSS_SURFACE_TREATMENT	PSS_SURFACE_TREATMENT			string	SURFACE TREATMENT			FALSE	FALSE		0	FALSE	FALSE		
+PSS_SURFACE_cm2	PSS_SURFACE_cm2			string	SURFACE - cm2			FALSE	FALSE		0				
+PSS_SUSPENSION_TYPE	PSS_SUSPENSION_TYPE			string	SUSPENSION TYPE	UNASSIGNED	= MASSAGE SYSTEM | = UNASSIGNED | = ELECTRIC LUMBAR | = MECHANICAL LUMBAR | = CUSHION | = BACK | = PNEUMATIC	FALSE	FALSE		0				
+PSS_SWITCH_RESISTANCE_BACKWARD_DOWN_OHM	PSS_SWITCH_RESISTANCE_BACKWARD_DOWN_OHM			real	SWITCH RESISTANCE BACKWARD DOWN OHM	0.00		FALSE	FALSE		0				
+PSS_SWITCH_RESISTANCE_FORWARD_UP_OHM	PSS_SWITCH_RESISTANCE_FORWARD_UP_OHM			real	SWITCH RESISTANCE FORWARD UP OHM	0.00		FALSE	FALSE		0				
+PSS_SWITCH_TYPE	PSS_SWITCH_TYPE			string	SWITCH TYPE	UNASSIGNED	= UNASSIGNED | = SIGNAL SWITCH | = POWER SWITCH	FALSE	FALSE		0				
+PSS_SW_Application	PSS_SW_Application			string	SW Application			FALSE	FALSE		0	FALSE	FALSE		
+PSS_SW_Bootloader	PSS_SW_Bootloader			string	SW Bootloader	Unassigned	= Unassigned | = Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_SW_Diagnostic	PSS_SW_Diagnostic			string	SW Diagnostic	Unassigned	= Unassigned | = No | = UDS | = KW2000 | = OBD | = Other	FALSE	FALSE		0	FALSE	FALSE		
+PSS_SalesStatus	PSS_SalesStatus			string	PSS_SalesStatus	Pending	= OK | = Pending | = NOK | = Not Quoted | = In Negotiation | = Agreed | = Closed | = Unsold	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Scale	PSS_Scale			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ScratchResistanceMaterial	PSS_ScratchResistanceMaterial			string	Attribute for Material Classification	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Scratch_Resistance	PSS_Scratch_Resistance			string		No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_SemiManufacturedProductStandard	PSS_SemiManufacturedProductStandard			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Sensor_types	PSS_Sensor_types			string	Sensor types			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ShortDescription	PSS_ShortDescription			string	Description of color code which will be concatenated with the OEM code to build the SAP Description			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Shrinkage_considered	PSS_Shrinkage_considered			real	Shrinkage considered			FALSE	FALSE	DSDim_DIMENSIONLESS	0	FALSE	FALSE		
+PSS_SimplerEffectivityExpression	PSS_SimplerEffectivityExpression			string	Store the simple effectivity expression			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Soft	PSS_Soft			string	Attribute for Material Classification	No	= Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_SolidContent	PSS_SolidContent			real	Attribute for Material Classification			FALSE	FALSE	DSDim_Ratio	0	FALSE	FALSE		
+PSS_Solid_Content(volume)	PSS_Solid_Content(volume)			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Sourcing	PSS_Sourcing			string			= | = No | = Yes	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Sourcing_Comments	PSS_Sourcing_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Specific_Gravity	PSS_Specific_Gravity			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Specific_tool_cost	PSS_Specific_tool_cost			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Specification_signed	PSS_Specification_signed			string	Specification signed	No	= N/A | = Yes | = No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Specificity	PSS_Specificity			string	Specificity			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Standard_Material_Number	PSS_Standard_Material_Number			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Start_of_decomposition_temperature	PSS_Start_of_decomposition_temperature			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_StartofdecompositiontemperatureMaterial	PSS_StartofdecompositiontemperatureMaterial			real	Attribute for Material Classification			FALSE	FALSE	DSDim_TEMPRTRE	0	FALSE	FALSE		
+PSS_Status	PSS_Status			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Step_2_supplier	PSS_Step_2_supplier			string	Step 2 supplier			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Step_3_supplier	PSS_Step_3_supplier			string	Step 3 supplier			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Step_Band_FCM	PSS_Step_Band_FCM			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Stiches	PSS_Stiches			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_StichesDensity	PSS_StichesDensity			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Stiffness_N_mm_or_N_degree	PSS_Stiffness_N_mm_or_N_degree			real	Stiffness - N/mm or N.mm/			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Stroke_mm	PSS_Stroke_mm			real	Stroke - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_StructureNode	PSS_StructureNode			string			Yes | No	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Substrate	PSS_Substrate			string	Substrate			FALSE	FALSE		0	FALSE	FALSE		
+PSS_SubstrateCompatible	PSS_SubstrateCompatible			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Substrate_loading	PSS_Substrate_loading			string	Substrate loading		= Upper tool | = Lower tool	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Supplier	PSS_Supplier			string	indicate the supplier for buy			FALSE	FALSE		0	FALSE	FALSE		
+PSS_SupplierCompany	PSS_SupplierCompany			string	Attribute to store the name of Supplier company.			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Supplier_Team_Feasibility_Commitment	PSS_Supplier_Team_Feasibility_Commitment			string	PSS_Supplier_Team_Feasibility_Commitment	NA	= NA | = Y | = N	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Supplier_Tool_ID_Reference	PSS_Supplier_Tool_ID_Reference			string	Supplier Tool ID Reference			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Surface	PSS_Surface			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Surface_treatment_or_structure	PSS_Surface_treatment_or_structure			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_SymmetricalPartsIdenticalMass	PSS_SymmetricalPartsIdenticalMass			string	Attribute to indicate if the Symmetrical and original parts weights are to be synchronized i.e. to keep same.	No	= No | = Yes	FALSE	FALSE		0	TRUE	TRUE		
+PSS_SymmetricalPartsManageInPairs	PSS_SymmetricalPartsManageInPairs			string	Attribute used by SAP and to be stored on PSS_HasSymmetricalPart relationship	No	= No | = Yes	FALSE	FALSE		0	TRUE	TRUE		
+PSS_TCU_required_quantity	PSS_TCU_required_quantity			string	TCU required quantity			FALSE	FALSE		0	FALSE	FALSE		
+PSS_TG1_USE	PSS_TG1_USE			string	TG1 USE	UNASSIGNED	= UNASSIGNED | = WITH TG1 | = WITHOUT TG1	FALSE	FALSE		0	FALSE	FALSE		
+PSS_THERMOSWITCH	PSS_THERMOSWITCH			string			= YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_THICKNESS2_-_mm	PSS_THICKNESS2_-_mm			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_THICKNESS_-_mm	PSS_THICKNESS_-_mm			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_THICKNESS_TOLERANCES	PSS_THICKNESS_TOLERANCES			string	THICKNESS TOLERANCES			FALSE	FALSE		0	FALSE	FALSE		
+PSS_THICKNESS_UPHOLSTERY-mm	PSS_THICKNESS_UPHOLSTERY-mm			string	THICKNESS UPHOLSTERY - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_THREAD LENGTH_-_mm	PSS_THREAD LENGTH_-_mm			real		0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_TLOrMod_date_forecast	PSS_TLOrMod_date_forecast			date	TL/ Mod date forecast			FALSE	FALSE		0	FALSE	FALSE		
+PSS_TLOrMod_date_initial	PSS_TLOrMod_date_initial			date	TL / Mod date initial			FALSE	FALSE		0	FALSE	FALSE		
+PSS_TLOrMod_real_date	PSS_TLOrMod_real_date			date	TL /mod real date			FALSE	FALSE		0	FALSE	FALSE		
+PSS_TOOLING_COMPONENT_TYPE	PSS_TOOLING_COMPONENT_TYPE			string		UNASSIGNED	= UNASSIGNED | = SPECIFIC COMPONENT | = GENERIC COMPONENT | = BOUGHT COMPONENT	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TOOLING_NUT_TYPE	PSS_TOOLING_NUT_TYPE			string		UNASSIGNED	= UNASSIGNED | = NUT H | = FLANGE NUT | = WING NUT | = OTHER NUT	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TOOLING_SCREW_TYPE	PSS_TOOLING_SCREW_TYPE			string		UNASSIGNED	= UNASSIGNED | = SCREW CHC | = SCREW FHC | = SCREW HC | = OTHER SCREW	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TOOLING_WASHER_TYPE	PSS_TOOLING_WASHER_TYPE			string		UNASSIGNED	= UNASSIGNED | = FLAT WASHER | = WAVE SPRING WASHER | = SLOTTED SPRING WASHER | = TOOTH LOCK WASHER | = OTHER	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TOOL_DIAMETER3	PSS_TOOL_DIAMETER3			real	DIAMETER 3	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_TOOL_NUMBER	PSS_TOOL_NUMBER			string		UNASSIGNED		FALSE	FALSE		0	FALSE	FALSE		
+PSS_TOOL_TYPE	PSS_TOOL_TYPE			string		UNASSIGNED		FALSE	FALSE		0	FALSE	FALSE		
+PSS_TORQUE_-_N.m	PSS_TORQUE_-_N.m			real		0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_TOTAL_THICKNESS-mm	PSS_TOTAL_THICKNESS-mm			string	TOTAL THICKNESS - mm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_TOTAL_WEIGHT_PER_UNIT_AREA-g_per_m2	PSS_TOTAL_WEIGHT_PER_UNIT_AREA-g_per_m2			string	TOTAL WEIGHT PER UNIT AREA - g per m2			FALSE	FALSE		0	FALSE	FALSE		
+PSS_TOTAL_WEIGHT_PER_UNIT_AREA_2-g_per_m2	PSS_TOTAL_WEIGHT_PER_UNIT_AREA_2-g_per_m2			string	TOTAL WEIGHT PER UNIT AREA 2 - g per m2			FALSE	FALSE		0	FALSE	FALSE		
+PSS_TRACKS_FAMILY	PSS_TRACKS_FAMILY			string		UNASSIGNED	= ULTIMA | = 4CBL | = 4CB | = 449 | = UNASSIGNED | = AT36 | = MODULE T | = 4 CB II	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TRACKS_FAMILY_2	PSS_TRACKS_FAMILY_2			string	Tracks Family 2	UNASSIGNED		FALSE	FALSE		0				
+PSS_TRACKS_MACHINE_TYPE	PSS_TRACKS_MACHINE_TYPE			string		UNASSIGNED	= UNASSIGNED | = PRESS LINE | = PRESS | = PRESS TRANSFER | = PRESS ENVIRONMENT	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TRADE_NAME	PSS_TRADE_NAME			string	TRADE NAME			FALSE	FALSE		0	FALSE	FALSE		
+PSS_TREATMENT_SAFETY_CLASSIFICATION	PSS_TREATMENT_SAFETY_CLASSIFICATION			string		NO	= 2 | = NO | = 1	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TYPE_OF_BAG	PSS_TYPE_OF_BAG			string		UNASSIGNED	= UNASSIGNED | = FOR VALVE BLOCK | = FOR CONTROL UNIT	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TYPE_OF_BLADDER	PSS_TYPE_OF_BLADDER			string		UNASSIGNED	= UNASSIGNED | = LUMBAR | = SIDE | = MASSAGE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TYPE_OF_CABLE	PSS_TYPE_OF_CABLE			string			= TWISTED WIRES | = SINGLE WIRE	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TYPE_OF_CONTROL_UNIT	PSS_TYPE_OF_CONTROL_UNIT			string			= SEAT | = UNASSIGNED | = MEMORY | = HEATING | = AIR-CONDITIONING | = MASTER | = SLAVE | = PNEUMATIC | = VENTILATION | = HMI SWITCHES	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TYPE_OF_DATA_BUS	PSS_TYPE_OF_DATA_BUS			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_TYPE_OF_DETECTION	PSS_TYPE_OF_DETECTION			string			= WEIGHT DETECTION | = OC3 MAT | = BLADDER MAT | = BIO VOLUME | = UNASSIGNED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TYPE_OF_FIXATION	PSS_TYPE_OF_FIXATION			string			= SCREWED | = CLIPED | = WELDED | = GLUED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TYPE_OF_HALL_SENSOR	PSS_TYPE_OF_HALL_SENSOR			string			= 2 PIN | = 3 PIN	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TYPE_OF_ISOLATION	PSS_TYPE_OF_ISOLATION			string		UNASSIGNED	= ISOLATION TUBE | = CORRUGATED TUBE | = MESHWORK TUBE | = ISOLATION TAPE | = TEXTILE ISOLATION	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TYPE_OF_MAGNET	PSS_TYPE_OF_MAGNET			string			= 2-POL. | = 8-POL.	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Target_Family	PSS_Target_Family			string	Target Family			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Targeted_lifetime_Parts_produced	PSS_Targeted_lifetime_Parts_produced			real	Targeted lifetime ( Parts produced)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Targeted_scrap_rate	PSS_Targeted_scrap_rate			real	Targeted scrap rate	0		FALSE	FALSE	DSDim_DIMENSIONLESS	0	FALSE	FALSE		
+PSS_TechnicalDescription	PSS_TechnicalDescription			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Technology	PSS_Technology			string		Unassigned	= CNG | = DIESEL | = ELECTRIC | = ETHANOL | = FLEX-FUEL | = GASOLINE | = HYBRID: DIESEL/ELECTRIC | = HYBRID PETROL/ELECTRIC | = HYDROGEN | = LPG | = RANGE EXTENDER | = Unassigned	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TechnologyForMaterial	PSS_TechnologyForMaterial			string	Attribute for Material Classification	TBD	= TBD | = Powder | = Solvent Borne | = Water Borne	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Technology_Classification	PSS_Technology_Classification			string	TECHNOLOGY	UNASSIGNED	= ASSEMBLY | = AST - COVERING | = AST - EDGE WRAPPING  | = AST - FOAMING | = AST - IMG | = AST - THERMOFORMING | = _BLOW MOLDING | = _BRUSHING | = COMPRESSION | = _COVERING | = _CUTTING | = _CUTTING SKIN | = CRIMPING | = DRILLING | = FOAMING | = _GLUING | = HEATING | = LAMINATING | = _MOLDING | = _MASKING | = _PRESS | = _PURCHASED | = _PU SPRAY | = _SEWING | = SHAPE MAINTAINING | = _SKIVING | = _SLUSH | = _SPLITTING | = STAMPING | = _SURFACE FINISH | = _SURFACE TREATMENT | = _THERMOFORMING | = _THERMOCOVERING | = _WEAKENING | = WELDING | = UNASSIGNED	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Technology_Type	PSS_Technology_Type			string	TECHNOLOGY TYPE	-	= AUTOMATIC | = MANUAL | = MANUAL+AUTOMATIC | = LINEAR BRUSH | = SELECTIVE BRUSH | = SPIN BRUSH | = EDGE WRAP AUTO | = EDGE WRAP-MANUAL | = MANUAL COVERING | = VACUUM MEMBRANE  | = LASER | = MILLING | = PUNCHING | = TRIMMING | = WATER JET | = BLADE-ROBOT | = CNC CUTTER | = CASSETTE | = LASER | = MANUAL | = ROBOT | = CLOSED MOLD | = OPENED MOLD | = HOT MELT | = ROLLER COAT | = SPRAY MANUAL | = SPRAY ROBOT | = DRYING | = HEATING | = REACTIVATION | = THERMAL CURING | = UV CURING | = ADHESION PROMOTER B-SIDE | = PROTECTIVE FILM A-SIDE | = BACK INJECTION | = BI-INJECTION | = INJECTION | = INJECTION CHEMICAL W/O CBE | = INJECTION CHEMICAL WITH CBE | = INJECTION GAS ASSIST | = INJECTION PHYSICAL W/O CBE | = INJECTION PHYSICAL WITH CBE | = INSERT   | = STACK   | = TWO SHOT | = BI-INJECTION DECO | = PUR CAST | = HARD | = TAPE | = END FORMING | = FORMING-COLD TOOL W/O INSERT | = FORMING-COLD TOOL WITH INSERT | = FORMING-HOT TOOL | = LAMINATING | = DECORATIVE | = DECORATIVE CNC | = FUNCTIONAL | = BUFFING | = CHROMING | = EGDE SEALING | = EMBOSSING | = FLEXOGRAPHY PRINTING | = FLOCKING | = HAPTIC / TEXTURE PRINTING | = HOT STAMPING | = LASER ENGRAVING | = PAINT-MANUAL | = PAINT-ROBOT | = PATINA | = PLATE DECORATION | = POLISHING | = ROLLER COATING | = SCREEN PRINTING | = TAMPO PRINTING | = WIPPING | = ADPRO | = ANTI SQUEAK TREATMENT | = ANTIOX TREATMENT | = CLEANING | = DEDUSTING | = DEIONISING | = FLAMING | = PLASMA | = SANDING | = SURFACING | = TEXTURING | = THERMOFORMING NEGATIVE/IMG | = THERMOFORMING POSITIVE  | = THERMO-COVERED NEGATIVE/IMG | = THERMO-COVERED POSITIVE | = COLD KNIFE | = HOT KNIFE | = LASER | = MILLING | = US KNIFE | = HEAT STAKE | = HIGH FREQUENCY | = INFRARED | = METAL - ARC/MIG | = METAL - PROJECTION | = METAL - SPOT | = MIRROR (HOT PLATE) | = US 3 AXIS MACHINE | = US CASSETTE | = US MANUAL | = US ROBOT | = US SPECIFIC MACHINE | = VIBRATION | = -	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Template	PSS_Template			string	Template	No	= No | = Yes		false		0	true	false		
+PSS_TestCosts	PSS_TestCosts			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_TestCosts_Comments	PSS_TestCosts_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ThermoformingScrapRatio	PSS_ThermoformingScrapRatio			integer	Attribute for Material Classification			FALSE	FALSE	DSDim_Ratio	0	FALSE	FALSE		
+PSS_Thickness	PSS_Thickness			real	Attribute for Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Thickness-FCM	PSS_Thickness-FCM			real	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_ThicknessMaterial	PSS_ThicknessMaterial			real				FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_ThicknessTolerances	PSS_ThicknessTolerances			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ThicknessUpholstery-mm	PSS_ThicknessUpholstery-mm			real	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Thickness_Real	PSS_Thickness_Real			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Thread_Diameter	PSS_Thread_Diameter			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Thread_Length	PSS_Thread_Length			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Thread_type	PSS_Thread_type			string			= - | = METRIC | = INCH	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Thumbnail	PSS_Thumbnail			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Title	PSS_Title			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_TitleBlockCompleted	PSS_TitleBlockCompleted			boolean	Flag for Title Block Generated	false		FALSE	FALSE		0	TRUE	TRUE		
+PSS_Tool_FPDM_Mass	PSS_Tool_FPDM_Mass			real	FPDM Mass	0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Tool_maker_subcontractors	PSS_Tool_maker_subcontractors			string	Tool maker subcontractors			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Tool_mass	PSS_Tool_mass			real	Tool mass			FALSE	FALSE	DSDim_MASS	0	FALSE	FALSE		
+PSS_Tool_supplier_Name	PSS_Tool_supplier_Name			string	Tool supplier Name			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Tool_supplier_country_location	PSS_Tool_supplier_country_location			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Tool_transfer_to_plant_date_forecast	PSS_Tool_transfer_to_plant_date_forecast			date	Tool transfer to plant date forecast			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Tool_transfer_to_plant_date_real	PSS_Tool_transfer_to_plant_date_real			date	Tool transfer to plant date real			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Tool_transfer_to_plant_date_target	PSS_Tool_transfer_to_plant_date_target			date	Tool transfer to plant date target			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ToolingCost	PSS_ToolingCost			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_ToolingCost_Comments	PSS_ToolingCost_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ToolingKickOffDate	PSS_ToolingKickOffDate			timestamp	PSS_ToolingKickOffDate			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ToolingKickOffStatus	PSS_ToolingKickOffStatus			string	PSS_ToolingKickOffStatus	NA	= NA | = Pending | = OK | = NOK	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ToolingPrice	PSS_ToolingPrice			integer	PSS_ToolingPrice	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_ToolingReviewDate	PSS_ToolingReviewDate			timestamp	PSS_ToolingReviewDate			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ToolingReviewStatus	PSS_ToolingReviewStatus			string	PSS_ToolingReviewStatus	NA	= NA | = Pending | = OK | = NOK	FALSE	FALSE		0	FALSE	FALSE		
+PSS_ToolingSalesPrice	PSS_ToolingSalesPrice			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_Tooling_Additional_Description	PSS_Tooling_Additional_Description			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Tooling_category	PSS_Tooling_category			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Tooling_comment	PSS_Tooling_comment			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Tooling_description	PSS_Tooling_description			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Torque_Ncm	PSS_Torque_Ncm			real	Torque -Ncm			FALSE	FALSE		0	FALSE	FALSE		
+PSS_TotalDevelopmentLaborCost	PSS_TotalDevelopmentLaborCost			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_TotalThickness-mm	PSS_TotalThickness-mm			real	Attribute for Material Classification			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_TotalWeightPerUnitArea-g_m2	PSS_TotalWeightPerUnitArea-g_m2			real	Attribute for Material Classification			FALSE	FALSE	Mass/Weight	0	FALSE	FALSE		
+PSS_TotalWeightPerUnitArea2-g_m2	PSS_TotalWeightPerUnitArea2-g_m2			real	Attribute for Material Classification			FALSE	FALSE	Mass/Weight	0	FALSE	FALSE		
+PSS_Trade_Name_Description	PSS_Trade_Name_Description			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_TransferFromCRFlag	PSS_TransferFromCRFlag			string	Transfer from CR	Yes	= No | = Yes	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Transfer_To_SAP_Expected	PSS_Transfer_To_SAP_Expected			string	String value Transfer to SAP	Yes	= No | = Yes	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TypeOfPlant	PSS_TypeOfPlant			string	Type of plant		= | = PSS_FaureciaSerialProductionPlantJIT | = PSS_FaureciaSerialProductionPlantNonJIT | = PSS_FaureciaJVSerialProductionPlant | = PSS_FaureciaPrototypeShop_PilotPlant | = PSS_FaureciaCBUTooling	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TypeofBinder	PSS_TypeofBinder			string	Attribute for Material Classification	TBC	= TBC | = Epoxy Resin | = BICO Fiber | = Phenolic Resin | = PP Fibers | = Water Based Resin | = NA	FALSE	FALSE		0	FALSE	FALSE		
+PSS_TypeofCarrierforLigneos	PSS_TypeofCarrierforLigneos			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_TypeofReinforcer	PSS_TypeofReinforcer			string	Attribute for Material Classification	TBC	= TBC | = Honeycomb | = Flat Reinforcer | = Tube | = Local Reinforcer | = Foam | = Other	FALSE	FALSE		0	FALSE	FALSE		
+PSS_UVResistanceForMaterial	PSS_UVResistanceForMaterial			string	Attribute for Material Classification	TBD	= TBD | = nUV | = UV int | = UV ext	FALSE	FALSE		0	FALSE	FALSE		
+PSS_UV_Resistance	PSS_UV_Resistance			string			= Non_visible_applications | = Aesthetical_interior_applications | = Aesthetical_exterior_applications	FALSE	FALSE		0	FALSE	FALSE		
+PSS_UndimensionedRadius	PSS_UndimensionedRadius			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_UnitOfThickness	PSS_UnitOfThickness			string		mm	= mm | = inches | = micron	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Unit_of_measure_category	PSS_Unit_of_measure_category			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_UpdateTimeStamp	PSS_UpdateTimeStamp			string	On publish object creation type			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Upfront	PSS_Upfront			real				FALSE	FALSE	PSS_CURRENCY	0	FALSE	FALSE		
+PSS_Upper_base_plate_dimensions	PSS_Upper_base_plate_dimensions			real	Upper base plate dimensions(Lxhxth)			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Upper_toolOrcore_thermo_reguationOrcooling_nipples_Number_of	PSS_Upper_toolOrcore_thermo_reguationOrcooling_nipples_Number_of			integer	Upper tool /core thermo reguation /cooling nipples Number of	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Upstream_product_definition_specified_CAD_link	PSS_Upstream_product_definition_specified_CAD_link			string	Upstream product definition specified ( CAD link )			FALSE	FALSE		0	FALSE	FALSE		
+PSS_UseForMaterial	PSS_UseForMaterial			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_UserType	PSS_UserType			string		Faurecia	= Faurecia | = JV	FALSE	FALSE		0	FALSE	FALSE
+PSS_Use_for	PSS_Use_for			string			= Polypropylenes | = Styrenics	FALSE	FALSE		0	FALSE	FALSE		
+PSS_VENTILATION_FUNCTION	PSS_VENTILATION_FUNCTION			string			= YES | = NO	FALSE	FALSE		0	FALSE	FALSE		
+PSS_VM	PSS_VM			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_VOLUME_-_dm3	PSS_VOLUME_-_dm3			string		0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_VOLUME_dm3	PSS_VOLUME_dm3			real	Volume (dm3)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Vaccum_connection_LowerOrcore	PSS_Vaccum_connection_LowerOrcore			integer	Vaccum connection Lower / Core	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Vaccum_connection_UpperOrcore	PSS_Vaccum_connection_UpperOrcore			integer	Vaccum connection Upper / core	0		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Validation_MVP_R_R	PSS_Validation_MVP_R_R			string	PSS_Validation_MVP_R_R	NA	= NA | = Y | = N	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Validations	PSS_Validations			string			= | = No | = Yes	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Validations_Comments	PSS_Validations_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_ValidityDateFrom	PSS_ValidityDateFrom			date	Validity Date From				false		0	false	false		
+PSS_ValidityDateUntil	PSS_ValidityDateUntil			date	Validity Date until				false		0	false	false		
+PSS_VariantAssemblyPID	PSS_VariantAssemblyPID			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_VariantID	PSS_VariantID			string	Variant ID				FALSE		0	TRUE	FALSE		
+PSS_VariantOptions	PSS_VariantOptions			string	Variant Options				FALSE		0	TRUE	FALSE		
+PSS_View	PSS_View			string				FALSE	TRUE		0	FALSE	FALSE		
+PSS_Virgin_Recycled	PSS_Virgin_Recycled			string	Attribute for Material Classification	TBC	= TBC | = Virgin | = Recycled | = Refrayed | = NA	FALSE	FALSE		0	FALSE	FALSE		
+PSS_Volume	PSS_Volume			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Volume_-_cm3	PSS_Volume_-_cm3			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_WASHER_TYPE	PSS_WASHER_TYPE			string		UNASSIGNED	= UNASSIGNED | = TOOTHED | = FLAT | = ELASTIC	FALSE	FALSE		0	FALSE	FALSE		
+PSS_WIDTH2_-_mm	PSS_WIDTH2_-_mm			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_WIDTH_-_mm	PSS_WIDTH_-_mm			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_WIRE_GAUGE_-_mm2	PSS_WIRE_GAUGE_-_mm2			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_WITH_EJECTOR	PSS_WITH_EJECTOR			string		UNASSIGNED	= UNASSIGNED | = E	FALSE	FALSE		0	FALSE	FALSE		
+PSS_WORKING_SECTION_DIMENSION_1	PSS_WORKING_SECTION_DIMENSION_1			real		0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_WORKING_SECTION_DIMENSION_2	PSS_WORKING_SECTION_DIMENSION_2			real		0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_WORKING_SECTION_LENGHT	PSS_WORKING_SECTION_LENGHT			real		0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_WORKING_SECTION_RADIUS	PSS_WORKING_SECTION_RADIUS			string		UNASSIGNED		FALSE	FALSE		0	FALSE	FALSE		
+PSS_WRENCH_WIDTH	PSS_WRENCH_WIDTH			real		0.00		FALSE	FALSE		0	FALSE	FALSE		
+PSS_Wall_Thickness_(mm)	PSS_Wall_Thickness_(mm)			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_WeakeningProcess	PSS_WeakeningProcess			string	Attribute for Material Classification	TBC	= Cold Knife | = Hot Knife | = Laser | = Milling | = US Knife | = NA | = TBC	FALSE	FALSE		0	FALSE	FALSE		
+PSS_WeightAfterDrying-g_m2	PSS_WeightAfterDrying-g_m2			real	Attribute for Material Classification			FALSE	FALSE	Mass/Weight	0	FALSE	FALSE		
+PSS_Welding_Wire_Grade	PSS_Welding_Wire_Grade			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Welding_Wire_Length	PSS_Welding_Wire_Length			real				FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Welding_Wire_Weight	PSS_Welding_Wire_Weight			real				FALSE	FALSE	Mass/Weight	0	FALSE	FALSE		
+PSS_Welding_head_type_1	PSS_Welding_head_type_1			string	Welding head type 1			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Welding_head_type_2	PSS_Welding_head_type_2			string	Welding head type 2			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Welding_head_type_3	PSS_Welding_head_type_3			string	Welding head type 3			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Welding_head_type_4	PSS_Welding_head_type_4			string	Welding head type 4			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Welding_head_type_5	PSS_Welding_head_type_5			string	Welding head type 5			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Welding_seams_length	PSS_Welding_seams_length			real	Welding seams length			FALSE	FALSE	DSDim_LENGTH	0	FALSE	FALSE		
+PSS_Width	PSS_Width			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_Width_mm	PSS_Width_mm			real	Width (mm)			FALSE	FALSE		0	FALSE	FALSE		
+PSS_WoodName	PSS_WoodName			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_WoodType	PSS_WoodType			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_Workshop_floor_dimensions	PSS_Workshop_floor_dimensions			real	Workshop floor dimensions W x Depth x Height			FALSE	FALSE		0	FALSE	FALSE		
+PSS_XMLStructure	PSS_XMLStructure			string	XML Structure				FALSE		0	TRUE	FALSE		
+PSS_YarnOrFilament	PSS_YarnOrFilament			string	Attribute for Material Classification			FALSE	FALSE		0	FALSE	FALSE		
+PSS_ZIP_TYPE	PSS_ZIP_TYPE			string		UNASSIGNED	= WITHOUT CURSOR | = ZIP FASTENER | = UNASSIGNED | = NON DETACHABLE CURSOR | = INVERTED CURSOR | = DETACHABLE CURSOR	FALSE	FALSE		0	FALSE	FALSE		
+PSS_e-RULES	PSS_e-RULES			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_fromGoToDesignFreeze	PSS_fromGoToDesignFreeze			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_fromGoToDesignFreeze_Comments	PSS_fromGoToDesignFreeze_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_fromGoToDesignPPAP	PSS_fromGoToDesignPPAP			real				FALSE	FALSE		0	FALSE	FALSE		
+PSS_fromGoToDesignPPAP_Comments	PSS_fromGoToDesignPPAP_Comments			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_internal_Release_agent	PSS_internal_Release_agent			string				FALSE	FALSE		0	FALSE	FALSE		
+PSS_mould_carrier_type_ElectOrhydraulic	PSS_mould_carrier_type_ElectOrhydraulic			string	mould carrier type ( Elect / hydraulic)	Hydraulic		FALSE	FALSE		0	FALSE	FALSE		
+PSS_used_per_pn	PSS_used_per_pn			real	% used per p/n			FALSE	FALSE		0	FALSE	FALSE		
+Part Family Name Generator On	Part Family Name Generator On			boolean	Allows the administrator the ability to turn on or off part family naming	FALSE		FALSE	FALSE		0	FALSE	FALSE		
+PnO Visibility	PnO Visibility			string	Classify projects as Private/Protected/Public for project data visibility		= Private | = Public	FALSE	FALSE		0	FALSE	FALSE		
+Requested Change	Requested Change			string	Defines the  expected change in the Affected Item of an Engineering Change.	None	= For Release | = For Revise | = For Obsolescence | = None | = For Clone | = For Replace	FALSE	FALSE		0	FALSE	FALSE		
+PSS_BGType	PSS_BGType			string		Faurecia	= Faurecia | = JV	FALSE	FALSE		0	FALSE	FALSE
+Unit of Measure	Unit of Measure			string	the inventories unit of measure	EA (each)	= EA (each) | = G (gram) | = MM (millimeter) | = MM^3 (cubic millimeter)	FALSE	FALSE		0	FALSE	FALSE		
+isVPMVisible	isVPMVisible			boolean		FALSE	= FALSE | = TRUE	FALSE	FALSE		0	FALSE	FALSE		

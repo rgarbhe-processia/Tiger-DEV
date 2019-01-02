@@ -1,0 +1,148 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: "com.jfrog.artifactory"
+apply plugin: 'org.hidetake.ssh'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+artifactory {
+    contextUrl = artifactory_contextUrl   //The base Artifactory URL if not overridden by the publisher/resolver
+    resolve {
+        repository {
+            repoKey = 'libs-release'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            maven = true
+        }
+    }
+}
+
+def eclipseProjectName = 'TIGER_' + project.name
+
+eclipse.project.name=eclipseProjectName
+
+project.ext.jdk = 'jdk1.8.0_152'
+project.ext.jdkexecutable = '//plm-clearcase.sel.fr.corp/JDK/'+project.jdk+'/bin/javac.exe'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+compileJava.options.fork = true
+compileJava.options.forkOptions.executable = project.jdkexecutable
+compileJava.options.forkOptions.jvmArgs = ['-Xlint:unchecked', '-Xlint:deprecation']
+
+sourceSets {
+    main { java { srcDir 'JPO' } }
+}
+
+dependencies {
+	compile fileTree(dir: '../../08_LIBRARY/dist', include:'*.jar')
+	compile fileTree(dir: '../../08_CSR/3dspace/linux_a64/docs/custom', include:'*.jar')
+	compile fileTree(dir: '../../08_CSR/3dspace/linux_a64/docs/javacommon', include:'*.jar')
+	compile fileTree(dir: '../../08_CSR/3dspace/linux_a64/docs/javaserver', include:'*.jar')
+	compile(group: 'org.fpdm', name: 'FPDMJxls', version: '2.2.8-201611')
+}
+
+task buildTigerLibrary(type: GradleBuild) {
+	dir = "../../08_LIBRARY"
+	tasks = ["deliver"]
+}
+
+ssh.settings {
+	knownHosts = allowAnyHosts
+	jschLog = true
+}
+
+task sendJPO {
+	doLast {
+		project.ext.environment = project.hasProperty('env') ? env : 'UNKNOWN'
+		project.ext.productgroup = project.hasProperty('bg') ? bg : 'UNKNOWN'
+		project.ext.gatewayuser = project.hasProperty('gwuser') ? gwuser : 'UNKNOWN' 
+		project.ext.gatewayidentityfile = project.hasProperty('gwidentity') ? gwidentity : 'UNKNOWN'
+
+		if ('UNKNOWN' == project.ext.environment) {
+			throw new GradleException('Required -Penv argument for gradle command, please edit your Run Configuration in Eclipse')
+		}
+			
+		if ('UNKNOWN' == project.ext.productgroup) {
+			throw new GradleException('Required -Pbg argument for gradle command, please edit your Run Configuration in Eclipse')
+		}
+
+		if ('UNKNOWN' == project.ext.gatewayuser) {
+			throw new GradleException('Required -Pgwuser argument for gradle command, please edit your Run Configuration in Eclipse')
+		}
+			
+		if ('UNKNOWN' == project.ext.gatewayidentityfile) { 
+			if ('sup' == project.ext.environment.toLowerCase()) {
+				throw new GradleException('Required -Pgwidentity argument for gradle command, please edit your Run Configuration in Eclipse')
+			}
+		}
+
+		if ( project.ext.environment.toLowerCase().startsWith('dev') ) {
+			project.ext.appuser='devspace'
+		} else {
+			project.ext.appuser=project.ext.environment.toLowerCase() + 'space'
+		}
+		project.ext.server=project.ext.environment.toLowerCase() + '-tiger-3dbatch-001.app.corp'
+
+		if ('sup' == project.ext.environment.toLowerCase()) {
+			remotes {
+				Gateway {
+					host = 'euedcapp0022.edc.eu.corp'
+					user = project.ext.gatewayuser
+					identity = file(project.ext.gatewayidentityfile)
+				}
+				Target {
+					host = project.ext.server
+					user = project.ext.appuser
+					gateway = remotes.Gateway
+					identity = file('//plm-clearcase.sel.fr.corp/TOOLS/rsa/id_rsa')
+				}
+			}
+		} else {
+			remotes {
+				Target {
+					host = project.ext.server
+					user = project.ext.appuser
+					identity = file('//plm-clearcase.sel.fr.corp/TOOLS/rsa/id_rsa')
+				}
+			}
+		}
+
+	
+		if (project.hasProperty('jpo')) {
+			def currentjpoloc =  jpo
+			println 'Send the JPO : ' + currentjpoloc + ' to ' + project.appuser+'@'+project.server+':/tmp'
+			def relativepathjpo = currentjpoloc.replace(project.rootDir.absolutePath + File.separator + 'JPO'+ File.separator,'')
+			def jpopathunix = '/tmp/' + relativepathjpo.replace('\\','/')
+			ssh.run {
+				session(remotes.Target) {
+				
+					File fJPOPathUnix = file(jpopathunix)
+					def targetdir=fJPOPathUnix.getParent().replace(project.rootDir.absolutePath,'').replace(File.separator,'/')
+					execute 'mkdir -p ' + targetdir
+					put from: currentjpoloc, into: targetdir
+					execute "cd /tmp;/appli/" + project.ext.environment.toUpperCase() + "_" + project.ext.productgroup.toUpperCase() + "/3dbatch/NODE01/3dbatch-server/server/scripts/mql -c 'set context user creator;insert program " + relativepathjpo.replace('\\','/') + ";compile program " + relativepathjpo.replace('\\','/').replace('_mxJPO.java','').replace('/','.') + " force update;'"
+					
+				}
+			}
+		} else {
+			println 'Required -Pjpo=${resource_loc} argument for gradle command, please edit your Run Configuration in Eclipse'
+		}
+	}
+}
+
+
+tasks.eclipse.dependsOn buildTigerLibrary
+
+configure(buildTigerLibrary) {
+	group = 'Dev'
+	description = 'Build Tiger Libraries jar'
+}
+
+configure(sendJPO) {
+	group = 'Dev'
+	description = 'Send JPO to 3DExperience'
+}

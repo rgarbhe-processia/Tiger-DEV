@@ -1,0 +1,255 @@
+Policy Name	State Name	State Registry Name	Version (boolean)	Promote (boolean)	Checkout History (boolean)	Notify Users (use "|" delim)	Notify Message	Route User	Route Message	Minor Revision (boolean)	Major Revision (boolean)	Published (boolean)	Enforce Reserve Access (boolean)	Before State Name	Icon File
+CAD Drawing	Approved	Approved	TRUE	FALSE	TRUE					TRUE	TRUE	FALSE	FALSE	Release	
+CAD Drawing	Preliminary	Preliminary	TRUE	FALSE	TRUE					TRUE	TRUE	FALSE	FALSE	Review	
+CAD Drawing	Release	Release	TRUE	FALSE	TRUE					TRUE	TRUE	FALSE	FALSE		
+CAD Drawing	Review	Review	TRUE	FALSE	TRUE					TRUE	TRUE	FALSE	FALSE	Approved	
+CAD Model	Approved	Approved	TRUE	FALSE	TRUE					TRUE	TRUE	FALSE	FALSE	Release	
+CAD Model	Preliminary	Preliminary	TRUE	FALSE	TRUE					TRUE	TRUE	FALSE	FALSE	Review	
+CAD Model	Release	Release	TRUE	FALSE	TRUE					TRUE	TRUE	FALSE	FALSE		
+CAD Model	Review	Review	TRUE	FALSE	TRUE					TRUE	TRUE	FALSE	FALSE	Approved	
+Change Action	<<On Hold>>														
+Change Action	Cancelled	Cancelled	false	false	true					false	true	false	FALSE		
+Change Action	Complete	Complete	false	false	true					false	true	false	FALSE	Cancelled	
+Change Action	In Approval	InApproval	false	false	true					false	true	false	FALSE	Complete	
+Change Action	In Work	InWork	false	false	true					false	true	false	FALSE	In Approval	
+Change Action	Pending	Pending	false	false	true					false	true	false	FALSE	In Work	
+Design TEAM Definition	FROZEN	Review	true	false	false					true	true	true	FALSE	RELEASED	
+Design TEAM Definition	IN_WORK	Preliminary	false	false	false					true	true	false	FALSE	FROZEN	
+Design TEAM Definition	OBSOLETE	Obsolete	false	false	false					true	true	false	FALSE		
+Design TEAM Definition	RELEASED	Release	false	false	false					true	true	true	FALSE	OBSOLETE	
+Development Part	Complete	Complete	true	false	true					true	true	false	FALSE	Obsolete	
+Development Part	Create	Create	true	false	true					true	true	false	FALSE	Peer Review	
+Development Part	Obsolete	Obsolete	true	false	true					true	true	false	FALSE		
+Development Part	Peer Review	PeerReview	true	false	true					true	true	false	FALSE	Complete	
+EC Part	Approved	Approved	true	false	true					true	true	false	FALSE	Release	
+EC Part	Obsolete	Obsolete	false	false	true					true	true	false	FALSE		
+EC Part	Preliminary	Preliminary	false	false	true					true	true	false	FALSE	Review	
+EC Part	Release	Release	false	false	true					true	true	false	FALSE	Obsolete	
+EC Part	Review	Review	false	false	true					true	true	false	FALSE	Approved	
+ECR Supporting Document	Complete	Complete	false	false	true					false	true	false	FALSE		
+ECR Supporting Document	Preliminary	Preliminary	false	false	true					false	true	false	FALSE	Complete	
+FPDM_ExcelReport	In Work	In Work	false	true	false					true	false	false	false	Review	
+FPDM_ExcelReport	Obsolete	Obsolete	false	false	false					true	false	false	false		
+FPDM_ExcelReport	Released	Released	false	true	false					true	false	false	false	Obsolete	
+FPDM_ExcelReport	Review	Review	false	true	false					true	false	false	false	Released	
+FPDM_ExcelReportParameter	Exists	Exists	false	true	false					false	false	false	false		
+FPDM_ExcelReportResult	Exists	Exists	false	true	false					false	false	false	false		
+FPDM_History	Exists	Exists	false	false	false					false	false	false	false		
+FPDM_MBOM100	Exists	Exists	false	false	false					false	false	false	FALSE		
+FPDM_MBOM100Cancelled	Cancelled	Cancelled	false	false	false					false	false	false	FALSE		
+FPDM_NemoConversionConfiguration	Active	Active	false	false	false					false	false	false	false		
+FPDM_NemoConversionConfiguration	Inactive	Inactive	false	true	false					false	false	false	false	Active	
+FPDM_TreatmentQueue	Exists	Exists	false	false	false					false	false	false	false	Review	
+Organization	Active	Active	false	false	true			Corporate	move to corporate ownership	true	true	false	FALSE		
+Organization	Inactive	Inactive	false	false	true					true	true	false	FALSE	Active	
+PSS_CAD_Object	Approved	Approved	FALSE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Released	
+PSS_CAD_Object	In Work	Preliminary	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Review	
+PSS_CAD_Object	Obsolete	Obsolete	FALSE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE		
+PSS_CAD_Object	Released	Release	FALSE	FALSE	TRUE					TRUE	TRUE	FALSE	FALSE	Obsolete	
+PSS_CAD_Object	Review	Review	FALSE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Approved	
+PSS_CancelCAD	Cancelled	Cancelled	false	false	false					true	true	false	FALSE		
+PSS_CancelPart	Cancelled	Cancelled	false	false	false					true	true	false	FALSE		
+PSS_ChangeNotice	Cancelled	Cancelled	false	false	true					false	false	false	FALSE		
+PSS_ChangeNotice	Fully Integrated	FullyIntegrated	false	false	true					false	false	false	FALSE	Not Fully Integrated	
+PSS_ChangeNotice	In Review	InReview	false	true	true					false	false	false	FALSE	In Transfer	
+PSS_ChangeNotice	In Transfer	InTransfer	false	true	true					false	false	false	FALSE	Fully Integrated	
+PSS_ChangeNotice	Not Fully Integrated	NotFullyIntegrated	false	false	true					false	false	false	FALSE	Transfer Error	
+PSS_ChangeNotice	Prepare	Prepare	false	true	true					false	false	false	FALSE	In Review	
+PSS_ChangeNotice	Transfer Error	TransferError	false	false	true					false	false	false	FALSE	Cancelled	
+PSS_ChangeOrder	<<On Hold>>														
+PSS_ChangeOrder	Cancelled	Cancelled	false	false	true					false	true	false	false		
+PSS_ChangeOrder	Complete	Complete	false	false	true					false	true	false	false	Implemented	
+PSS_ChangeOrder	Implemented	Implemented	false	false	true					false	true	false	false	Cancelled	
+PSS_ChangeOrder	In Approval	In Approval	false	false	true					false	true	false	false	Complete	
+PSS_ChangeOrder	In Work	In Work	false	false	true					false	true	false	false	In Approval	
+PSS_ChangeOrder	Prepare	Prepare	false	false	true					false	true	false	false	In Work	
+PSS_ChangeRequest	Complete	Complete	false	false	true					false	true	false	FALSE	Rejected	
+PSS_ChangeRequest	Create	Create	false	false	true					false	true	false	FALSE	Submit	
+PSS_ChangeRequest	Evaluate	Evaluate	false	false	true					false	true	false	FALSE	In Review	
+PSS_ChangeRequest	In Process	In Process	false	false	true					false	true	false	FALSE	Complete	
+PSS_ChangeRequest	In Review	InReview	false	false	true					false	true	false	FALSE	In Process	
+PSS_ChangeRequest	Rejected	Rejected	false	false	true					false	true	false	FALSE		
+PSS_ChangeRequest	Submit	Submit	false	false	true					false	true	false	FALSE	Evaluate	
+PSS_ColorCatalog	Invisible	Invisible	false	false	true					false	true	false	FALSE	Visible	
+PSS_ColorCatalog	Obsolete	Obsolete	false	false	true					false	true	false	FALSE		
+PSS_ColorCatalog	Release	Release	false	false	true					false	true	false	FALSE	Obsolete	
+PSS_ColorCatalog	Visible	Visible	false	false	true					false	true	false	FALSE	Release	
+PSS_ColorOption	Active	Active	false	false	true					false	true	false	FALSE	Inactive	
+PSS_ColorOption	In Work	InWork	false	false	true					false	true	false	FALSE	Active	
+PSS_ColorOption	Inactive	Inactive	false	false	true					false	true	false	FALSE		
+PSS_DestinationRegion	Active	Active	false	false	false					false	true	false	FALSE	Inactive	
+PSS_DestinationRegion	Inactive	Inactive	false	false	false					false	true	false	FALSE		
+PSS_Development_Part	Complete	Complete	true	false	true					true	true	false	FALSE	Obsolete	
+PSS_Development_Part	Create	Create	true	false	true					true	true	false	FALSE	Peer Review	
+PSS_Development_Part	Obsolete	Obsolete	true	false	true					true	true	false	FALSE		
+PSS_Development_Part	Peer Review	PeerReview	true	false	true					true	true	false	FALSE	Complete	
+PSS_Division	Active	Active	false	false	false					false	false	false	FALSE	Inactive	
+PSS_Division	Inactive	Inactive	false	false	false					false	false	false	FALSE		
+PSS_Document	Cancelled	Cancelled	true	false	true					false	true				
+PSS_Document	InWork	InWork	true	false	true					false	true			Review	
+PSS_Document	Released	Released	true	false	true					true	true			Cancelled	
+PSS_Document	Review	Review	true	false	true					false	true			Released	
+PSS_DocumentObsolete	Cancelled	Cancelled	true	false	true					true	true				
+PSS_DocumentObsolete	Obsolete	Obsolete	true	false	true					true	true			Cancelled	
+PSS_EC_Part	Approved	Approved	true	false	true					true	true	false	FALSE	Release	
+PSS_EC_Part	Obsolete	Obsolete	false	false	true					true	true	false	FALSE		
+PSS_EC_Part	Preliminary	Preliminary	false	false	true					true	true	false	FALSE	Review	
+PSS_EC_Part	Release	Release	false	false	true					true	true	false	FALSE	Obsolete	
+PSS_EC_Part	Review	Review	false	false	true					true	true	false	FALSE	Approved	
+PSS_Engine	Active	Active	false	false	false					false	false	false	FALSE	Inactive	
+PSS_Engine	Inactive	Inactive	false	false	false					false	false	false	FALSE		
+PSS_Equipment	Approved	Approved	false	false	true					false	false	false	FALSE	Obsolete	
+PSS_Equipment	In Work	In Work	false	false	true					false	false	false	FALSE	Review	
+PSS_Equipment	Obsolete	Obsolete	false	false	true					false	false	false	FALSE		
+PSS_Equipment	Review	Review	false	false	true					false	false	false	FALSE	Approved	
+PSS_EquipmentRequest	Cancelled	Cancelled	false	false	true					false	false	false	FALSE		
+PSS_EquipmentRequest	Closed	Closed	false	false	true					false	false	false	FALSE	Cancelled	
+PSS_EquipmentRequest	Create	Create	false	false	true					false	false	false	FALSE	InWork	
+PSS_EquipmentRequest	InWork	InWork	false	false	true					false	false	false	FALSE	Closed	
+PSS_ExternalReference	Cancelled	Cancelled	false	false	false					false	true	false	FALSE		
+PSS_ExternalReference	Frozen	Frozen	false	false	false					true	true	false	FALSE	Cancelled	
+PSS_ExternalReference	InDefinition	InDefinition	false	false	false					false	true	false	FALSE	Frozen	
+PSS_Harmony	Exists	Exists	false	false	true					false	false	false	FALSE		
+PSS_HarmonyRequest	Cancelled	Cancelled	false	false	true					false	false	false	FALSE		
+PSS_HarmonyRequest	Closed	Closed	false	false	true					false	false	false	FALSE	Cancelled	
+PSS_HarmonyRequest	Create	Create	false	false	true					false	false	false	FALSE	InWork	
+PSS_HarmonyRequest	InWork	InWork	false	false	true					false	false	false	FALSE	Closed	
+PSS_ImpactAnalysis	Active	Active	true	false	true					true	true	false	FALSE	Complete	
+PSS_ImpactAnalysis	Cancelled	Cancelled	true	false	true					true	true	false	FALSE		
+PSS_ImpactAnalysis	Complete	Complete	true	false	true					true	true	false	FALSE	Cancelled		
+PSS_Issue	Accepted	Accepted	false	false	true					false	true	false	FALSE	Closed	
+PSS_Issue	Active	Active	true	false	true					true	true	false	FALSE	Review	
+PSS_Issue	Assign	Assign	true	false	true					true	true	false	FALSE	Active	
+PSS_Issue	Closed	Closed	false	false	true					false	true	false	FALSE	Rejected	
+PSS_Issue	Create	Create	true	false	true					true	true	false	FALSE	Assign	
+PSS_Issue	Rejected	Rejected	false	false	true					false	true	false	FALSE		
+PSS_Issue	Review	Review	true	false	true					true	true	false	FALSE	Accepted	
+PSS_Legacy_CAD	Approved	Approved	FALSE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Released	
+PSS_Legacy_CAD	In Work	Preliminary	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Review	
+PSS_Legacy_CAD	Obsolete	Obsolete	FALSE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE		
+PSS_Legacy_CAD	Released	Release	FALSE	FALSE	TRUE					TRUE	TRUE	FALSE	FALSE	Obsolete	
+PSS_Legacy_CAD	Review	Review	FALSE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Approved	
+PSS_ListOfAssessors	Active	Active	true	false	true					true	true	false	FALSE		
+PSS_ListOfAssessors	Inactive	Inactive	true	false	true					true	true	false	FALSE	Active	
+PSS_MBOM	Approved	Approved	false	false	true					false	false	false	FALSE	Cancelled	
+PSS_MBOM	Cancelled	Cancelled	false	false	true					false	false	false	FALSE	Released	
+PSS_MBOM	In Work	In Work	false	false	true					false	false	false	FALSE	Review	
+PSS_MBOM	Obsolete	Obsolete	false	false	true					false	false	false	FALSE		
+PSS_MBOM	Released	Released	true	false	true					true	true	false	FALSE	Obsolete	
+PSS_MBOM	Review	Review	false	false	true					false	false	false	FALSE	Approved	
+PSS_ManufacturingChangeAction	Cancelled	Cancelled	false	false	true					false	true	false	FALSE		
+PSS_ManufacturingChangeAction	Complete	Complete	false	false	true					false	true	false	FALSE	Cancelled	
+PSS_ManufacturingChangeAction	In Review	InReview	false	false	true					false	true	false	FALSE	Complete	
+PSS_ManufacturingChangeAction	In Work	InWork	false	false	true					false	true	false	FALSE	In Review	
+PSS_ManufacturingChangeAction	Prepare	Prepare	false	false	true					false	true	false	FALSE	In Work	
+PSS_ManufacturingChangeOrder	Cancelled	Cancelled	false	false	true					false	true	false	FALSE	Rejected	
+PSS_ManufacturingChangeOrder	Complete	Complete	false	true	true					false	true	false	FALSE	Implemented	
+PSS_ManufacturingChangeOrder	Implemented	Implemented	false	true	true					false	true	false	FALSE	Cancelled	
+PSS_ManufacturingChangeOrder	In Review	InReview	false	true	true					false	true	false	FALSE	Complete	
+PSS_ManufacturingChangeOrder	In Work	InWork	false	true	true					false	true	false	FALSE	In Review	
+PSS_ManufacturingChangeOrder	Prepare	Prepare	false	true	true					false	true	false	FALSE	In Work	
+PSS_ManufacturingChangeOrder	Rejected	Rejected	false	false	true					false	true	false	FALSE		
+PSS_Material	Approved	Approved	false	false	true					true	true	false	FALSE	Cancelled	
+PSS_Material	Cancelled	Cancelled	false	false	true					false	true	false	FALSE		
+PSS_Material	InWork	InWork	false	false	true					false	true	false	FALSE	Approved	
+PSS_Material	Obsolete	Obsolete	false	false	true					false	true	false	FALSE		
+PSS_MaterialAssembly	Approved	Approved	false	false	true					false	false	false	FALSE	Cancelled	
+PSS_MaterialAssembly	Cancelled	Cancelled	false	false	true					false	false	false	FALSE	Released	
+PSS_MaterialAssembly	In Work	In Work	false	false	true					false	false	false	FALSE	Review	
+PSS_MaterialAssembly	Obsolete	Obsolete	false	false	true					false	false	false	FALSE		
+PSS_MaterialAssembly	Released	Released	true	false	true					true	true	false	FALSE	Obsolete	
+PSS_MaterialAssembly	Review	Review	false	false	true					false	false	false	FALSE	Approved	
+PSS_Material_Request	Cancelled	Cancelled	false	false	true					false	true	false	FALSE		
+PSS_Material_Request	Closed	Closed	false	false	true					true	true	false	FALSE	Cancelled	
+PSS_Material_Request	Create	Create	false	false	true					false	true	false	FALSE	InWork	
+PSS_Material_Request	InWork	InWork	false	false	true					false	true	false	FALSE	Closed	
+PSS_NoHarmony	Exists	Exists	false	false	true					true	false	false	FALSE		
+PSS_OEM	Active	Active	false	false	false					false	false	false	FALSE	Inactive	
+PSS_OEM	Inactive	Inactive	false	false	false					false	false	false	FALSE		
+PSS_OEMGroup	Active	Active	false	false	false					false	false	false	FALSE	Inactive	
+PSS_OEMGroup	Inactive	Inactive	false	false	false					false	false	false	FALSE		
+PSS_OperationLineData	Exists	Exists	true	false	true					true	true	false	FALSE		
+PSS_PDFArchive	Exists	Exists	false	false	true					false	true	false	FALSE		
+PSS_PhysicalProduct	FROZEN	FROZEN	true	false	false					true	true	false	TRUE	RELEASED	
+PSS_PhysicalProduct	IN_WORK	IN_WORK	true	false	false					true	true	false	TRUE	FROZEN	
+PSS_PhysicalProduct	OBSOLETE	OBSOLETE	true	false	false					true	true	true	TRUE		
+PSS_PhysicalProduct	RELEASED	RELEASED	true	false	false					true	true	true	TRUE	OBSOLETE	
+PSS_Plant	Active	Active	false	false	false					false	false	false	FALSE	Inactive	
+PSS_Plant	Inactive	Inactive	false	false	false					false	false	false	FALSE		
+PSS_Platform	Active	Active	false	false	false					false	true	false	FALSE	Inactive	
+PSS_Platform	Inactive	Inactive	false	false	false					false	true	false	FALSE		
+PSS_Portfolio	InWork	InWork	true	false	true					true	true			Review	
+PSS_Portfolio	Obsolete	Obsolete	true	false	true					true	true				
+PSS_Portfolio	Released	Released	true	false	true					true	true			Obsolete	
+PSS_Portfolio	Review	Review	true	false	true					true	true			Released	
+PSS_Program_Project	Active	Active	false	false	false					false	true	false	FALSE	Phase 1	
+PSS_Program_Project	In Service	InService	false	false	false					false	true	false	FALSE	Obsolete	
+PSS_Program_Project	Non Awarded	NonAwarded	false	false	false					false	true	false	FALSE		
+PSS_Program_Project	Obsolete	Obsolete	false	false	false					false	true	false	FALSE	Non Awarded	
+PSS_Program_Project	Phase 1	Phase1	false	false	false					false	true	false	FALSE	Phase 2a	
+PSS_Program_Project	Phase 2a	Phase2a	false	false	false					false	true	false	FALSE	Phase 2b	
+PSS_Program_Project	Phase 2b	Phase2b	false	false	false					false	true	false	FALSE	Phase 3	
+PSS_Program_Project	Phase 3	Phase3	false	false	false					false	true	false	FALSE	Phase 4	
+PSS_Program_Project	Phase 4	Phase4	false	false	false					false	true	false	FALSE	Phase 5	
+PSS_Program_Project	Phase 5	Phase5	false	false	false					false	true	false	FALSE	In Service	
+PSS_PublishControlObject	Exists	Exists	false	false	true					true	true	false	FALSE		
+PSS_RDCenter	Active	Active	false	false	false					false	true	false	FALSE	Inactive	
+PSS_RDCenter	Inactive	Inactive	false	false	false					false	true	false	FALSE		
+PSS_RoleAssessment	Active	Active	true	false	true					true	true	false	FALSE	Complete	
+PSS_RoleAssessment	Cancelled	Cancelled	true	false	true					true	true	false	FALSE		
+PSS_RoleAssessment	Complete	Complete	true	false	true					true	true	false	FALSE	Cancelled	
+PSS_RoleAssessmentEvaluation	Exists	Exists	true	false	true					true	true	false	FALSE		
+PSS_StandardMBOM	Approved	Approved	false	false	true					false	false	false	FALSE	Cancelled	
+PSS_StandardMBOM	Cancelled	Cancelled	false	false	true					false	false	false	FALSE	Released	
+PSS_StandardMBOM	In Work	In Work	false	false	true					false	false	false	FALSE	Review	
+PSS_StandardMBOM	Obsolete	Obsolete	false	false	true					false	false	false	FALSE		
+PSS_StandardMBOM	Released	Released	true	false	true					true	true	false	FALSE	Obsolete	
+PSS_StandardMBOM	Review	Review	false	false	true					false	false	false	FALSE	Approved	
+PSS_Tool	Cancelled	Cancelled	false	false	true					false	false	false	FALSE		
+PSS_Tool	InWork	InWork	false	false	true					false	false	false	FALSE	Review	
+PSS_Tool	Obsolete	Obsolete	false	false	true					false	false	false	FALSE	Cancelled	
+PSS_Tool	Released	Released	false	false	true					true	true	false	FALSE	Obsolete	
+PSS_Tool	Review	Review	false	false	true					false	false	false	FALSE	Released	
+PSS_VPLM_SMB_Definition	Approved	Approved	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Released	
+PSS_VPLM_SMB_Definition	Cancelled	Cancelled	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Obsolete	
+PSS_VPLM_SMB_Definition	InWork	InWork	TRUE	FALSE	TRUE					TRUE	TRUE	FALSE	FALSE	Review	
+PSS_VPLM_SMB_Definition	Obsolete	Obsolete	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE		
+PSS_VPLM_SMB_Definition	Released	Released	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Cancelled	
+PSS_VPLM_SMB_Definition	Review	Review	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Approved	
+PSS_VPLM_SMB_Evaluation	Approved	Approved	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Released	
+PSS_VPLM_SMB_Evaluation	Cancelled	Cancelled	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Obsolete	
+PSS_VPLM_SMB_Evaluation	InWork	InWork	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Review	
+PSS_VPLM_SMB_Evaluation	Obsolete	Obsolete	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE		
+PSS_VPLM_SMB_Evaluation	Released	Released	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Cancelled	
+PSS_VPLM_SMB_Evaluation	Review	Review	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Approved	
+PSS_VPLM_SMB_Management	Approved	Approved	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Released	
+PSS_VPLM_SMB_Management	Cancelled	Cancelled	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Obsolete	
+PSS_VPLM_SMB_Management	InWork	InWork	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Review	
+PSS_VPLM_SMB_Management	Obsolete	Obsolete	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE		
+PSS_VPLM_SMB_Management	Released	Released	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Cancelled	
+PSS_VPLM_SMB_Management	Review	Review	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Approved	
+PSS_VPLM_SMB_Resource	Approved	Approved	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Released	
+PSS_VPLM_SMB_Resource	Cancelled	Cancelled	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Obsolete	
+PSS_VPLM_SMB_Resource	InWork	InWork	TRUE	FALSE	TRUE					TRUE	TRUE	FALSE	FALSE	Review	
+PSS_VPLM_SMB_Resource	Obsolete	Obsolete	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE		
+PSS_VPLM_SMB_Resource	Released	Released	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Cancelled	
+PSS_VPLM_SMB_Resource	Review	Review	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Approved	
+PSS_VPLM_SMB_Scenario	Approved	Approved	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Released	
+PSS_VPLM_SMB_Scenario	Cancelled	Cancelled	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Obsolete	
+PSS_VPLM_SMB_Scenario	InWork	InWork	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Review	
+PSS_VPLM_SMB_Scenario	Obsolete	Obsolete	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE		
+PSS_VPLM_SMB_Scenario	Released	Released	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Cancelled	
+PSS_VPLM_SMB_Scenario	Review	Review	TRUE	FALSE	TRUE					FALSE	TRUE	FALSE	FALSE	Approved	
+PSS_VariantAssembly	Exist	Exist	FALSE	FALSE	TRUE					TRUE	FALSE	FALSE	FALSE		
+PSS_Vehicle	Active	Active	false	false	false					false	true	false	FALSE	Inactive	
+PSS_Vehicle	Inactive	Inactive	false	false	false					false	true	false	FALSE		
+VPLM_SMB_PostIt_Management	Completed	Released	TRUE	FALSE	FALSE					FALSE	TRUE	TRUE	TRUE		
+VPLM_SMB_PostIt_Management	In_work	InWork	TRUE	FALSE	FALSE					FALSE	TRUE	TRUE	TRUE	Completed	
+VPLM_SMB_PostIt_Management	Unspec	Removed	TRUE	FALSE	FALSE					FALSE	TRUE	TRUE	TRUE	In_work	
+VPLM_SMB_Task_Management	Completed	Released	TRUE	FALSE	FALSE					FALSE	TRUE	TRUE	FALSE	Obsolete	
+VPLM_SMB_Task_Management	Obsolete	Obsolete	TRUE	FALSE	FALSE					FALSE	TRUE	TRUE	FALSE	WIP_Suspended	
+VPLM_SMB_Task_Management	Unspecified	Removed	TRUE	FALSE	FALSE					FALSE	TRUE	TRUE	TRUE	WIP_Active	
+VPLM_SMB_Task_Management	WIP_Active		TRUE	FALSE	FALSE					FALSE	TRUE	TRUE	TRUE	Completed	
+VPLM_SMB_Task_Management	WIP_Run		TRUE	FALSE	FALSE					FALSE	TRUE	TRUE	TRUE	WaitApproval	
+VPLM_SMB_Task_Management	WIP_Suspended		TRUE	FALSE	FALSE					FALSE	TRUE	TRUE	FALSE	WIP_Run	
+VPLM_SMB_Task_Management	WaitApproval	UnderEvaluation	TRUE	FALSE	FALSE					FALSE	TRUE	TRUE	TRUE		

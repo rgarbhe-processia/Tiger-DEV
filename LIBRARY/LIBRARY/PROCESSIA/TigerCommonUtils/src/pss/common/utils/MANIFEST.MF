@@ -1,0 +1,6 @@
+Manifest-Version: 2.0.7_5
+Bundle-Version: 2.0.7.S3
+Bundle-Name: TigerCommonUtils
+Built-By: Processia Solutions
+Build-Jdk: 1.8.0_60 (Oracle Corporation)
+Build-Comments: 1. Added 3 utility method to reterive Active CS, Role & Organization. 2. method to retun Integration contexts to manage Auto/Manual TB generation conflicts.

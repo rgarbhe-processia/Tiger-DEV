@@ -1,0 +1,169 @@
+:---------------------------------------------------------
+: Titleblock_Plan_Block.txt - ULS + other characteristics
+:---------------------------------------------------------
+
+[INIT]
+delta=3.75
+height=33
+[END]
+
+[PLAN_EU]
+: Description du symbole de plan EU
+POLL(0.15,1)
+LINE(-78.5,25.5,-94.5,25.5)
+LINE(-82.5,22,-82.5,29)
+LINE(-87.5,22.5,-87.5,28.5)
+LINE(-93.5,23.5,-93.5,27.5)
+LINE(-87.5,22.5,-93.5,23.5)
+LINE(-87.5,28.5,-93.5,27.5)
+CIRC(-82.5,25.5,2.5)
+CIRC(-82.5,25.5,3)
+[END]
+
+[PLAN_US]
+: Description du symbole de plan US
+POLL(0.15,1)
+LINE(-78.5,25.5,-94.5,25.5)
+LINE(-90.5,22,-90.5,29)
+CIRC(-90.5,25.5,2.5)
+CIRC(-90.5,25.5,3)
+LINE(-85.5,23.5,-85.5,27.5)
+LINE(-79.5,22.5,-79.5,28.5)
+LINE(-79.5,22.5,-85.5,23.5)
+LINE(-79.5,28.5,-85.5,27.5)
+[END]
+
+[LOGO]
+DITO(-105,4.625,site,LOGO)
+[END]
+
+[MAIN]
+POLL(0.35,1)
+LINE(0,0,-170,0)
+:LINE(0,47,-170,47)
+LINE(0,0,0,47)
+LINE(-170,0,-170,47)
+POLL(0.25,1)
+LINE(0,6,-170,6)
+LINE(0,19,-170,19)
+LINE(0,32,-170,32)
+LINE(0,25.5,-78,25.5)
+LINE(-32,19,-32,25.5)
+LINE(-78,19,-78,32)
+LINE(-95,19,-95,32)
+LINE(-140,19,-140,32)
+POLL(0.15,1)
+LINE(-56,0,-56,6)
+LINE(-47,19,-47,25.5)
+LINE(-62,19,-62,25.5)
+LINE(-110,19,-110,32)
+LINE(-125,19,-125,32)
+: -----------------------
+: LINE FOR PROGRAM
+LINE(-110,6,-110,19)
+: -----------------------
+: LINE FOR STATE AND DATE
+POLL(0.15,1)
+LINE(-16,19,-16,25.5)
+LINE(0,25.5,-32,25.5)
+POLT(0.625,1.25,0.3125,0.05)
+TEXT(-113,1.25,center2,none,<NI UTILISE.>)
+TEXT(-113,3.75,center2,none,<CE PLAN EST.>)
+TEXT(-132.5,28.75,center2,none,<RAYONS>)
+TEXT(-132.5,26.875,center2,none,<NON COTES>)
+TEXT(-117.5,28.75,center2,none,<TOLERANCE_ANG>)
+TEXT(-117.5,26.875,center2,none,<ANGULAIRE>)
+TEXT(-102.5,28.75,center2,none,<TOLERANCE_LIN>)
+TEXT(-102.5,26.875,center2,none,<LINEAIRE>)
+TEXT(-70,23,center2,none,<ECHELLE>)
+TEXT(-55,23,center2,none,<FORMAT>)
+: -----------------------
+: DEPT ADDRESS
+POLT(1,2,0.5,0.05)
+TEXT(-70,15.9375,left,addr,[14])
+TEXT(-70,13.125,left,addr,[15])
+TEXT(-70,10.3125,left,addr,[16])
+TEXT(-70,7.5,left,addr,[17])
+: -----------------------
+: VALUE DIMENSIONING STD
+POLT(0.625,1.25,0.3125,0.05)
+TEXT(-155,30,center2,none,<DIMENSIONING STANDARD>)
+POLT(0.75,1.5,0.375,0.05)
+TEXT(-155,27.66,center2,none,[0])
+TEXT(-155,25,center2,none,[1])
+TEXT(-155,22.33,center2,none,[2])
+TEXT(-155,19.66,center2,none,[3])
+: -----------------------
+: RADIUS
+POLT(1,2,0.5,0.05)
+TEXT(-132.5,23.125,center2,none,[4])
+: -----------------------
+: TOL_ANGULAIRE
+POLT(1,2,0.5,0.05)
+TEXT(-117.5,23.125,center2,deg+,±[5])
+: -----------------------
+: TOL_LINEAIRE
+POLT(1,2,0.5,0.05)
+TEXT(-102.5,23.125,center2,mm+,±[6])
+: -----------------------
+: ECHELLE
+POLT(1,2,0.5,0.05)
+TEXT(-70,20,center2,none,[7])
+: -----------------------
+: FORMAT_PAPIER
+POLT(1,2,0.5,0.05)
+TEXT(-55,20,center2,none,[8])
+: -----------------------
+: NB FOLIO
+POLT(0.625,1.25,0.3125,0.05)
+TEXT(-40,23,center2,none,<FOLIO>)
+POLT(1,2,0.5,0.05)
+TEXT(-39.5,20,center2,folio,[9])
+: -----------------------
+: TYPE NOM REV DU CAD MODEL
+POLT(1.5,3.2,0.3125,0.05)
+TEXT(-77,27.75,left,trad,[10])
+:TEXT(-12,26.25,left,none,<REVISION:>) 
+POLT(1.3,3.4,0.5,0.35)
+:TEXT(-32,27,left,none,[12])
+TEXT(-77,27.75,left,none,[12])
+:TEXT(-7,26.25,left,none,[13])
+: -----------------------
+: ETAT ET DATE DU CAD MODEL
+POLT(0.625,1.25,0.3125,0.05)
+TEXT(-24,23,center2,none,<ETAT>)
+TEXT(-8,23,center2,none,<PROMDATE>)
+POLT(1,2,0.5,0.05)
+TEXT(-23.5,20,center2,none,[20])
+TEXT(-8,20,center2,date,[21])
+: -----------------------
+: PROGRAM, VEHICLE AND PROJECT
+POLT(0.625,1.25,0.3125,0.05)
+TEXT(-161.5,14,right,none,<PROGRAM:>)
+TEXT(-159.5,14,left,none,[18],55)
+TEXT(-160.7,11,right,none,<VEHICLE:>)
+TEXT(-159.5,11,left,none,[19],55)
+[END]
+
+[CAO]
+POLT(0.625,1.25,0.3125,0.05)
+TEXT(-28,1.25,center2,none,<INFORMATION NUM.>)
+TEXT(-28,3.75,center2,none,<PLAN REAL.>)
+[END]
+
+[MANUEL]
+POLT(0.625,1.25,0.3125,0.05)
+TEXT(-28,1.25,center2,none,<PAS INFO NUM.>)
+TEXT(-28,3.75,center2,none,<PLAN MAN.>)
+[END]
+
+[DESCRIPTION]
+POLT(2.2,4.4,1,0.35)
+TEXT(-84.5,2.1,center2,none,[0])
+[END]
+
+[LAST_LINE]
+POLL(0.35,1)
+LINE(-170,0,0,0)
+[END]
+

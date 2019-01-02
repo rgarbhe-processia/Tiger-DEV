@@ -1,0 +1,57 @@
+Role Name	Registry Name	Description	"Parent Roles (use ""|"" delim)"	"Child Roles (use ""|"" delim)"	"Assignments (use ""|"" delim)"	Site	Hidden (boolean)	Role Type (Project/Org)	maturity (none/public/protected/private)	category (none/oem/goldpartner/partner/supplier/customer/contractor)	Icon File
+Administration Manager	Administration Manager	has priviledge to create administration business objects like AutoName, etc.	Employee	VPLM Matrix Administrator			TRUE				
+CATIA V5 Integration User	CATIA V5 Integration User	CATIA V5 Integration User	Integration User	PSS_CAD_Designer | PSS_CAE_Engineer | PSS_Development_Engineer | PSS_GTS_Engineer | PSS_Global_Administrator | PSS_PLM_Support_Team | PSS_Product_Design_Engineer | PSS_Product_Development_Lead | PSS_Product_Engineer | PSS_SPDE_And_DL | VPLMViewer			FALSE				
+FPDM_CADConversion	FPDM_CADConversion	Nemo CAD Conversion User					TRUE				
+FPDM_ITAdministrationUser	FPDM_ITAdministrationUser	IT Administration User					TRUE				
+FPDM_PSS_ProcessArchitect	FPDM_PSS_ProcessArchitect						FALSE	Organization			
+Integration Administrator	IEFAdmin	User has administrator access to Integration	Design Manager	PSS_Global_Administrator | VPLMProjectLeader			FALSE				
+Librarian	Librarian	Required role for creating and maintaining the taxonomy	Limited Author	Author | PSS_Global_Administrator | PSS_PLM_Support_Team | VPLMLeader			FALSE				
+MicrosoftOffice User	MicrosoftOffice User		Integration User	PSS_ASQ | PSS_CAD_Designer | PSS_CAE_Engineer | PSS_Change_Coordinator | PSS_Cost_Estimation_Engineer | PSS_Development_Engineer | PSS_GTS_Engineer | PSS_Geometry_Engineer | PSS_Global_Administrator | PSS_PCAndL | PSS_PLM_Support_Team | PSS_Plant_Launch_Team_Leader | PSS_Plant_Logistic | PSS_Plant_Process_Engineer | PSS_Plant_Quality | PSS_Process_Tool_Engineer | PSS_Product_Design_Engineer | PSS_Product_Development_Lead | PSS_Product_Engineer | PSS_Program_Buyer | PSS_Program_Controller | PSS_Program_Manager | PSS_Program_Manufacturing_Leader | PSS_Program_Quality_Leader | PSS_Program_Sales_Leader | PSS_Prototype_Coordinator | PSS_Raw_Material_Engineer | PSS_ReadAndApprove | PSS_SPDE_And_DL | PSS_TAndE_Buyer | PSS_Test_Engineer | VPLMViewer			FALSE				
+NX User	NX User	NX User	Integration User	PSS_CAD_Designer | PSS_CAE_Engineer | PSS_Development_Engineer | PSS_GTS_Engineer | PSS_Global_Administrator | PSS_PLM_Support_Team | PSS_Product_Design_Engineer | PSS_Product_Development_Lead | PSS_Product_Engineer | PSS_SPDE_And_DL			FALSE				
+PSS_ASQ	PSS_ASQ	ASQ	MicrosoftOffice User				FALSE	Organization			
+PSS_CAD_Designer	PSS_CAD_Designer	CAD designer	CATIA V5 Integration User | MicrosoftOffice User | NX User | ProENGINEER User | SolidWorks User				FALSE	Organization			
+PSS_CAD_Designer_JV	PSS_CAD_Designer_JV	CAD designer JV					FALSE	Organization			
+PSS_CAE_Engineer	PSS_CAE_Engineer	CAE engineer	CATIA V5 Integration User | MicrosoftOffice User | NX User | ProENGINEER User | SolidWorks User				FALSE	Organization			
+PSS_Change_Coordinator	PSS_Change_Coordinator	Change Coordinator	MicrosoftOffice User				FALSE	Organization			
+PSS_Change_Coordinator_JV	PSS_Change_Coordinator_JV	Change Coordinator JV					FALSE	Organization			
+PSS_Cost_Estimation_Engineer	PSS_Cost_Estimation_Engineer	Cost estimation engineer	MicrosoftOffice User				FALSE	Organization			
+PSS_Development_Engineer	PSS_Development_Engineer	Development engineer	CATIA V5 Integration User | MicrosoftOffice User | NX User | ProENGINEER User | SolidWorks User				FALSE	Organization			
+PSS_GTS_Engineer	PSS_GTS_Engineer	GTS engineer	CATIA V5 Integration User | MicrosoftOffice User | NX User | ProENGINEER User | SolidWorks User				FALSE	Organization			
+PSS_Geometry_Engineer	PSS_Geometry_Engineer	Geometry engineer	MicrosoftOffice User				FALSE	Organization			
+PSS_Global_Administrator	PSS_Global_Administrator	Global admniistrator	CATIA V5 Integration User | Integration Administrator | Librarian | MicrosoftOffice User | NX User | ProENGINEER User | SolidWorks User				FALSE	Organization			
+PSS_PCAndL	PSS_PCAndL	PC&L	MicrosoftOffice User				FALSE	Organization			
+PSS_PCAndL_JV	PSS_PCAndL_JV	PC&L JV					FALSE	Organization			
+PSS_PLM_Support_Team	PSS_PLM_Support_Team	PLM support team	CATIA V5 Integration User | Librarian | MicrosoftOffice User | NX User | ProENGINEER User | SolidWorks User				FALSE	Organization			
+PSS_Plant_Launch_Team_Leader	PSS_Plant_Launch_Team_Leader	Plant launch team leader	MicrosoftOffice User				FALSE	Organization			
+PSS_Plant_Launch_Team_Leader_JV	PSS_Plant_Launch_Team_Leader_JV	Plant launch team leader JV					FALSE	Organization			
+PSS_Plant_Logistic	PSS_Plant_Logistic	Plant logistic	MicrosoftOffice User				FALSE	Organization			
+PSS_Plant_Process_Engineer	PSS_Plant_Process_Engineer	Plant process engineer	MicrosoftOffice User				FALSE	Organization			
+PSS_Plant_Quality	PSS_Plant_Quality	Plant quality	MicrosoftOffice User				FALSE	Organization			
+PSS_Process_Tool_Engineer	PSS_Process_Tool_Engineer	Process tool engineer	MicrosoftOffice User				FALSE	Organization			
+PSS_Product_Design_Engineer	PSS_Product_Design_Engineer	Product design engineer (CAD)	CATIA V5 Integration User | MicrosoftOffice User | NX User | ProENGINEER User | SolidWorks User				FALSE	Organization			
+PSS_Product_Development_Lead	PSS_Product_Development_Lead	Product development leader (PDL)	CATIA V5 Integration User | MicrosoftOffice User | NX User | ProENGINEER User | SolidWorks User				FALSE	Organization			
+PSS_Product_Development_Lead_JV	PSS_Product_Development_Lead_JV	Product development leader (PDL) JV					FALSE	Organization			
+PSS_Product_Engineer	PSS_Product_Engineer	Product engineer (CAD)	CATIA V5 Integration User | MicrosoftOffice User | NX User | ProENGINEER User | SolidWorks User				FALSE	Organization			
+PSS_Program_Buyer	PSS_Program_Buyer	Program buyer	MicrosoftOffice User				FALSE	Organization			
+PSS_Program_Buyer_JV	PSS_Program_Buyer_JV	Program buyer JV					FALSE	Organization			
+PSS_Program_Controller	PSS_Program_Controller	Program controller	MicrosoftOffice User				FALSE	Organization			
+PSS_Program_Controller_JV	PSS_Program_Controller_JV	Program controller JV					FALSE	Organization			
+PSS_Program_Manager	PSS_Program_Manager	Program Manager/Assistant (PM)	MicrosoftOffice User				FALSE	Organization			
+PSS_Program_Manager_JV	PSS_Program_Manager_JV	Program Manager/Assistant (PM) JV					FALSE	Organization			
+PSS_Program_Manufacturing_Leader	PSS_Program_Manufacturing_Leader	Program manufacturing leader (PML)	CATIA V5 Integration User | MicrosoftOffice User				FALSE	Organization			
+PSS_Program_Manufacturing_Leader_JV	PSS_Program_Manufacturing_Leader_JV	Program manufacturing leader (PML) JV					FALSE	Organization			
+PSS_Program_Quality_Leader	PSS_Program_Quality_Leader	Program quality leader (PQL)	MicrosoftOffice User				FALSE	Organization			
+PSS_Program_Quality_Leader_JV	PSS_Program_Quality_Leader_JV	Program quality leader (PQL) JV					FALSE	Organization			
+PSS_Program_Sales_Leader	PSS_Program_Sales_Leader	Program sales leader	MicrosoftOffice User				FALSE	Organization			
+PSS_Program_Sales_Leader_JV	PSS_Program_Sales_Leader_JV	Program sales leader JV					FALSE	Organization			
+PSS_Prototype_Coordinator	PSS_Prototype_Coordinator	Prototype coordinator	MicrosoftOffice User				FALSE	Organization			
+PSS_Raw_Material_Engineer	PSS_Raw_Material_Engineer	Raw Material engineer	MicrosoftOffice User				FALSE	Organization			
+PSS_Read	PSS_Read	Read					FALSE				
+PSS_Read_JV	PSS_Read_JV	Read JV					FALSE				
+PSS_ReadAndApprove	PSS_ReadAndApprove	ReadAndApprove	MicrosoftOffice User				FALSE	Organization			
+PSS_SPDE_And_DL	PSS_SPDE_And_DL	SPDE/Design Leader	CATIA V5 Integration User | MicrosoftOffice User | NX User | ProENGINEER User | SolidWorks User				FALSE	Organization			
+PSS_SPDE_And_DL_JV	PSS_SPDE_And_DL_JV	SPDE/Design Leader JV					FALSE	Organization			
+PSS_TAndE_Buyer	PSS_TAndE_Buyer	Tool & equipment buyer	MicrosoftOffice User				FALSE	Organization			
+PSS_Test_Engineer	PSS_Test_Engineer	Test engineer	MicrosoftOffice User				FALSE	Organization			
+ProENGINEER User	ProENGINEER User	ProENGINEER User	Integration User	PSS_CAD_Designer | PSS_CAE_Engineer | PSS_Development_Engineer | PSS_GTS_Engineer | PSS_Global_Administrator | PSS_PLM_Support_Team | PSS_Product_Design_Engineer | PSS_Product_Development_Lead | PSS_Product_Engineer | PSS_SPDE_And_DL			FALSE				
+SolidWorks User	SolidWorks User	Has access to use SolidWorks integration	Integration User	PSS_CAD_Designer | PSS_CAE_Engineer | PSS_Development_Engineer | PSS_GTS_Engineer | PSS_Global_Administrator | PSS_PLM_Support_Team | PSS_Product_Design_Engineer | PSS_Product_Development_Lead | PSS_Product_Engineer | PSS_SPDE_And_DL | VPLMViewer			TRUE				

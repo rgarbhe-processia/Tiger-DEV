@@ -1,0 +1,528 @@
+State	User	Login(boolean)	Key	Revoke(boolean)	Read	Modify	Delete	Checkout	Checkin	Schedule	Lock	Unlock	Execute	Freeze	Thaw	Create	Revise	MajorRevise	Promote	Demote	Grant	Enable	Disable	Override	ChangeName	ChangeType	ChangeOwner	ChangePolicy	Revoke	ChangeVault	FromConnect	ToConnect	FromDisconnect	ToDisconnect	ViewForm	Modifyform	Show	Approve	Reject	Ignore	Reserve	Unreserve	Organization(any|single|ancestor|descendant)	Project(any|single|ancestor|descendant)	Owner	Reserve(Context)	Maturity	Category	Filter	LocalFilter	Branch State
+Complete	<<ECR Coordinator>>	FALSE		FALSE	-	-	-	Y	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	Y	-	Y	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	<<Employee>>	FALSE		FALSE	-	-	-	Y	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Complete	<<Global User>>	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	<<Grant>>	FALSE		FALSE	-	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	Y	any	any	any	any	any	any			
+Complete	<<Product Manager>>	FALSE		FALSE	-	-	-	Y	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	<<Public Inherited>>	FALSE		FALSE	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any	"to[Task Deliverable].from.current.access[read,show] == true"		
+Complete	<<Public>>	FALSE	ExtendedPublicReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	notprivate	any	expression[OrganizationPublicAccess]		
+Complete	<<System Engineer>>	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	<<VPLMLocalCrossOrgContextAccess>>	FALSE	ExtendedContextualPrivateReadAccess	FALSE	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	<<VPLMLocalCrossPrjContextAccess>>	FALSE	ExtendedPublicReadAccess	FALSE	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any	expression[OrganizationPublicAccess]		
+Complete	<<VPLMProjectLeader>>	TRUE	VPLMStrictOrgOwnershipIsFALSE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	<<VPLMProjectLeader>>	TRUE	VPLMStrictOrgOwnershipIsTRUE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any	(!expression[VPLMStrictOrgOwnership])		
+Complete	<<VPLMReleaseManager>>	TRUE	ExtendedModifyAccessForRelMgr	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	<<VPLMSecuredCrossAccess>>	FALSE	ExtendedReadAccessForPublicGuest	FALSE	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	Access Grantor	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Complete	Grant	FALSE	grant_key	FALSE	-	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	Y	any	any	any	any	any	any			
+Complete	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Complete	PSS_ASQ	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_ASQ	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_CAD_Designer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_CAD_Designer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_CAD_Designer_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_CAE_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_CAE_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Change_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Change_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Change_Coordinator_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_Cost_Estimation_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Cost_Estimation_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Development_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Development_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_GTS_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_GTS_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Geometry_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Geometry_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Global_Administrator	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	-	Y	-	Y	Y	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Complete	PSS_PCAndL	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_PCAndL	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_PCAndL_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_PLM_Support_Team	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	-	Y	-	Y	Y	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Complete	PSS_Plant_Launch_Team_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Plant_Launch_Team_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Plant_Launch_Team_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_Plant_Logistic	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Plant_Logistic	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Plant_Process_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Plant_Process_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Plant_Quality	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Plant_Quality	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Process_Tool_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Process_Tool_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Product_Design_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Product_Design_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Product_Development_Lead	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Complete	PSS_Product_Development_Lead	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Product_Development_Lead	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Product_Development_Lead_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_Product_Development_Lead_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_Product_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Product_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Program_Buyer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Program_Buyer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Program_Buyer_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_Program_Controller	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Program_Controller	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Program_Controller_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_Program_Manager	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Program_Manager	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Program_Manager_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_Program_Manufacturing_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Program_Manufacturing_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Program_Manufacturing_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_Program_Quality_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Program_Quality_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Program_Quality_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_Program_Sales_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Program_Sales_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Program_Sales_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_Prototype_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Prototype_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Raw_Material_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Raw_Material_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Read	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Read	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_ReadAndApprove	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_ReadAndApprove	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Complete	PSS_SPDE_And_DL	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_SPDE_And_DL	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_SPDE_And_DL_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Complete	PSS_TAndE_Buyer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_TAndE_Buyer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	PSS_Test_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Complete	PSS_Test_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Complete	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Complete	Public	TRUE	PSS_NotPrivateMaturityReadAccessForValidated	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any			
+Inactive	<<Access Grantor>>	FALSE	PSS_PrivateMaturityAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	<<ECR Coordinator>>	FALSE		FALSE	-	-	-	Y	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	<<Employee>>	FALSE		FALSE	-	-	-	Y	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	<<Global User>>	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	<<Grant>>	FALSE	PSS_PrivateMaturityAccess	FALSE	-	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	Y	descendant	single	any	any	public	any			
+Inactive	<<Owner>>	FALSE	PSS_PrivateMaturityAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+Inactive	<<Product Manager>>	FALSE		FALSE	-	-	-	Y	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	<<Public Inherited>>	FALSE		FALSE	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any	"to[Task Deliverable].from.current.access[read,show] == true"		
+Inactive	<<Public>>	FALSE	ExtendedPublicReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	notprivate	any	expression[OrganizationPublicAccess]		
+Inactive	<<System Engineer>>	FALSE		FALSE	-	-	-	Y	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	<<VPLMAdmin>>	TRUE	ExtendedCreateAccessForPLMAdmin	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	<<VPLMCreator>>	TRUE	ExtendedCreateAccessForPrivateAuthoring	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	context	any	public	any			
+Inactive	<<VPLMLocalCrossOrgContextAccess>>	FALSE	ExtendedContextualPrivateReadAccess	FALSE	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	<<VPLMLocalCrossPrjContextAccess>>	FALSE	ExtendedPublicReadAccess	FALSE	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any	expression[OrganizationPublicAccess]		
+Inactive	<<VPLMProjectLeader>>	TRUE	ExtendedCreateAccessForTechnicalLeader	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	<<VPLMProjectLeader>>	TRUE	VPLMStrictOrgOwnershipIsTRUE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	<<VPLMSecuredCrossAccess>>	FALSE	ExtendedReadAccessForPublicGuest	FALSE	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	Access Grantor	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	Grant	FALSE	grant_key	FALSE	-	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	Y	descendant	single	any	any	public	any			
+Inactive	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+Inactive	PSS_ASQ	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_ASQ	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_CAD_Designer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_CAD_Designer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_CAD_Designer_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Inactive	PSS_CAE_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_CAE_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Change_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Change_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Change_Coordinator_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Inactive	PSS_Cost_Estimation_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Cost_Estimation_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Development_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Development_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_GTS_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_GTS_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Geometry_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Geometry_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Global_Administrator	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Inactive	PSS_PCAndL	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_PCAndL	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_PCAndL_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Inactive	PSS_PLM_Support_Team	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Inactive	PSS_Plant_Launch_Team_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Plant_Launch_Team_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Plant_Launch_Team_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Inactive	PSS_Plant_Logistic	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Plant_Logistic	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Plant_Process_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Plant_Process_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Plant_Quality	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Plant_Quality	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Process_Tool_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Process_Tool_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Product_Design_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Product_Design_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Product_Development_Lead	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Product_Development_Lead	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Product_Development_Lead_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Inactive	PSS_Product_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Product_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Program_Buyer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Program_Buyer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Program_Buyer_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Inactive	PSS_Program_Controller	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Program_Controller	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Program_Controller_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Inactive	PSS_Program_Manager	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Program_Manager	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Program_Manager_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Inactive	PSS_Program_Manufacturing_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Program_Manufacturing_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Program_Manufacturing_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Inactive	PSS_Program_Quality_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Program_Quality_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Program_Quality_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Inactive	PSS_Program_Sales_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Program_Sales_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Program_Sales_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Inactive	PSS_Prototype_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Prototype_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Raw_Material_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Raw_Material_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Read	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Read	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_ReadAndApprove	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_ReadAndApprove	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Inactive	PSS_SPDE_And_DL	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_SPDE_And_DL	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_SPDE_And_DL_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Inactive	PSS_TAndE_Buyer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_TAndE_Buyer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	PSS_Test_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Inactive	PSS_Test_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Inactive	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Inactive	Public	TRUE	PSS_NotPrivateMaturityReadAccessForNotValidated	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any			
+Marketing	<<Access Grantor>>	FALSE	PSS_PrivateMaturityAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any			
+Marketing	<<Design Engineer>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	-	Y	-	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	any	any			
+Marketing	<<ECR Coordinator>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	-	Y	-	Y	Y	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+Marketing	<<Employee>>	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any			
+Marketing	<<Global User>>	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+Marketing	<<Grant>>	FALSE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	single	single	any	any	any	any			
+Marketing	<<Marketing Manager>>	FALSE		FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	any	any			
+Marketing	<<Owner>>	FALSE	PSS_PrivateMaturityAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+Marketing	<<Owner>>	TRUE	VPLMStrictOrgOwnershipIsFALSE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Marketing	<<Owner>>	TRUE	VPLMStrictOrgOwnershipIsTRUE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Marketing	<<Product Manager>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	any	any			
+Marketing	<<Public Inherited>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	any	any	any	any	"to[Task Deliverable].from.current.access[read,show] == true"		
+Marketing	<<Public>>	FALSE	ExtendedPublicReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any	expression[OrganizationPublicAccess]		
+Marketing	<<Senior Design Engineer>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	-	Y	-	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	any	any			
+Marketing	<<System Engineer>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	any	any			
+Marketing	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsFALSE1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOwnership_Definition]) && (!expression[VPLMStrictOrgOwnership])		
+Marketing	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsFALSE2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Marketing	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsTRUE1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any	(!expression[VPLMStrictOwnership_Definition])		
+Marketing	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsTRUE2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	any	any	any			
+Marketing	<<VPLMLocalCrossOrgContextAccess>>	FALSE	ExtendedContextualPrivateReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+Marketing	<<VPLMLocalCrossPrjContextAccess>>	FALSE	ExtendedPublicReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	expression[OrganizationPublicAccess]		
+Marketing	<<VPLMProjectAdministrator>>	TRUE	ExtendedModifyAccessForPrjAdmin	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any			
+Marketing	<<VPLMProjectLeader>>	TRUE	TechnicalLeader_VPLMStrictOrgOwnershipIsFALSE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Marketing	<<VPLMProjectLeader>>	TRUE	TechnicalLeader_VPLMStrictOrgOwnershipIsTRUE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Marketing	<<VPLMProjectLeader>>	TRUE	VPLMStrictOrgOwnershipIsFALSE	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Marketing	<<VPLMProjectLeader>>	TRUE	VPLMStrictOrgOwnershipIsTRUE	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Marketing	<<VPLMSecuredCrossAccess>>	FALSE	ExtendedReadAccessForPublicGuest	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Marketing	Access Grantor	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any			
+Marketing	Grant	FALSE	grant_key	FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	single	single	any	any	any	any			
+Marketing	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+Marketing	PSS_ASQ	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_ASQ	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_CAD_Designer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_CAD_Designer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_CAD_Designer_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_CAE_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_CAE_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Change_Coordinator	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Marketing	PSS_Change_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Change_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Change_Coordinator_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_Change_Coordinator_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_Cost_Estimation_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Cost_Estimation_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Development_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Development_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_GTS_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_GTS_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Geometry_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Geometry_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Global_Administrator	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Marketing	PSS_PCAndL	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_PCAndL	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_PCAndL_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_PLM_Support_Team	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Marketing	PSS_Plant_Launch_Team_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Plant_Launch_Team_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Plant_Launch_Team_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_Plant_Logistic	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Plant_Logistic	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Plant_Process_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Plant_Process_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Plant_Quality	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Plant_Quality	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Process_Tool_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Process_Tool_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Product_Design_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Product_Design_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Product_Development_Lead	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Marketing	PSS_Product_Development_Lead	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Product_Development_Lead	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Product_Development_Lead_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_Product_Development_Lead_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_Product_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Product_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Program_Buyer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Program_Buyer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Program_Buyer_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_Program_Controller	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Program_Controller	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Program_Controller_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_Program_Manager	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Marketing	PSS_Program_Manager	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Program_Manager	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Program_Manager_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_Program_Manager_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_Program_Manufacturing_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Program_Manufacturing_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Program_Manufacturing_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_Program_Quality_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Program_Quality_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Program_Quality_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_Program_Sales_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Program_Sales_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Program_Sales_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_Prototype_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Prototype_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Raw_Material_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Raw_Material_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Read	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Read	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_ReadAndApprove	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_ReadAndApprove	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Marketing	PSS_SPDE_And_DL	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_SPDE_And_DL	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_SPDE_And_DL_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Marketing	PSS_TAndE_Buyer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_TAndE_Buyer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	PSS_Test_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Marketing	PSS_Test_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Marketing	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Marketing	Public	TRUE	PSS_NotPrivateMaturityReadAccessForNotValidated	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any			
+Planned	<<Design Engineer>>	FALSE		FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	Y	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	ancestor	any	any	any	any			
+Planned	<<ECR Chairman>>	FALSE		FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	Y	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Planned	<<ECR Coordinator>>	FALSE		FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	Y	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Planned	<<Employee>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Planned	<<Global User>>	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Planned	<<Marketing Manager>>	FALSE		FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	ancestor	any	any	any	any			
+Planned	<<Owner>>	TRUE	VPLMStrictOrgOwnershipIsFALSE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Planned	<<Owner>>	TRUE	VPLMStrictOrgOwnershipIsTRUE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Planned	<<Product Manager>>	FALSE		FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	Y	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	ancestor	any	any	any	any			
+Planned	<<Public Inherited>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any	"to[Task Deliverable].from.current.access[read,show] == true"		
+Planned	<<Public>>	FALSE	ExtendedPublicReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any	expression[OrganizationPublicAccess]		
+Planned	<<Senior Design Engineer>>	FALSE		FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	Y	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	ancestor	any	any	any	any			
+Planned	<<System Engineer>>	FALSE		FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	Y	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	ancestor	any	any	any	any			
+Planned	<<VPLMAdmin>>	TRUE	ExtendedCreateAccessForPLMAdmin	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Planned	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsFALSE1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOwnership_Definition]) && (!expression[VPLMStrictOrgOwnership])		
+Planned	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsFALSE2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Planned	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsTRUE1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any	(!expression[VPLMStrictOwnership_Definition])		
+Planned	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsTRUE2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	any	any	any			
+Planned	<<VPLMCreator>>	TRUE	ExtendedCreateAccessForPrivateAuthoring	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	any	any	any			
+Planned	<<VPLMLocalCrossOrgContextAccess>>	FALSE	ExtendedContextualPrivateReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+Planned	<<VPLMLocalCrossPrjContextAccess>>	FALSE	ExtendedPublicReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	ancestor	any	any	any	public	any	expression[OrganizationPublicAccess]		
+Planned	<<VPLMProjectAdministrator>>	TRUE	ExtendedModifyAccessForPrjAdmin	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any			
+Planned	<<VPLMProjectLeader>>	TRUE	ExtendedCreateAccessForTechnicalLeader	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Planned	<<VPLMProjectLeader>>	TRUE	TechnicalLeader_VPLMStrictOrgOwnershipIsFALSE	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Planned	<<VPLMProjectLeader>>	TRUE	TechnicalLeader_VPLMStrictOrgOwnershipIsTRUE	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Planned	<<VPLMProjectLeader>>	TRUE	VPLMStrictOrgOwnershipIsFALSE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Planned	<<VPLMProjectLeader>>	TRUE	VPLMStrictOrgOwnershipIsTRUE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Planned	<<VPLMSecuredCrossAccess>>	FALSE	ExtendedReadAccessForPublicGuest	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Planned	Access Grantor	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Planned	Grant	FALSE	grant_key	FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	single	single	any	any	any	any			
+Planned	Owner	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Planned	PSS_ASQ	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_ASQ	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_CAD_Designer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_CAD_Designer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_CAD_Designer_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_CAE_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_CAE_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Change_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Change_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Change_Coordinator_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_Cost_Estimation_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Cost_Estimation_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Development_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Development_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_GTS_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_GTS_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Geometry_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Geometry_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Global_Administrator	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	Y	-	-	Y	Y	-	-	-	-	-	Y	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Planned	PSS_PCAndL	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_PCAndL	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_PCAndL_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_PLM_Support_Team	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	Y	-	-	Y	Y	-	-	-	-	-	Y	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Planned	PSS_Plant_Launch_Team_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Plant_Launch_Team_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Plant_Launch_Team_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_Plant_Logistic	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Plant_Logistic	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Plant_Process_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Plant_Process_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Plant_Quality	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Plant_Quality	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Process_Tool_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Process_Tool_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Product_Design_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Product_Design_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Product_Development_Lead	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Planned	PSS_Product_Development_Lead	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Product_Development_Lead	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Product_Development_Lead_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_Product_Development_Lead_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_Product_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Product_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Program_Buyer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Program_Buyer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Program_Buyer_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_Program_Controller	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Program_Controller	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Program_Controller_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_Program_Manager	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Program_Manager	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Program_Manager_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_Program_Manufacturing_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Program_Manufacturing_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Program_Manufacturing_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_Program_Quality_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Program_Quality_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Program_Quality_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_Program_Sales_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Program_Sales_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Program_Sales_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_Prototype_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Prototype_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Raw_Material_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Raw_Material_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_ReadAndApprove	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_ReadAndApprove	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Planned	PSS_SPDE_And_DL	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_SPDE_And_DL	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_SPDE_And_DL_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Planned	PSS_TAndE_Buyer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_TAndE_Buyer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	PSS_Test_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Planned	PSS_Test_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Planned	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Planned	Public	TRUE	PSS_NotPrivateMaturityReadAccessForNotValidated	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	public	any			
+Review	<<Design Engineer>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	Y	-	Y	-	-	-	-	-	ancestor	ancestor	any	any	any	any			
+Review	<<ECR Coordinator>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	-	Y	-	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Review	<<Employee>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Review	<<Owner>>	TRUE	VPLMStrictOrgOwnershipIsFALSE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Review	<<Owner>>	TRUE	VPLMStrictOrgOwnershipIsTRUE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Review	<<Product Manager>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	ancestor	any	any	any	any			
+Review	<<Public Inherited>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any	"to[Task Deliverable].from.current.access[read,show] == true"		
+Review	<<Public>>	FALSE	ExtendedPublicReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any	expression[OrganizationPublicAccess]		
+Review	<<Senior Design Engineer>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	Y	-	Y	-	-	-	-	-	ancestor	ancestor	any	any	any	any			
+Review	<<System Engineer>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	ancestor	any	any	any	any			
+Review	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsFALSE1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOwnership_Definition]) && (!expression[VPLMStrictOrgOwnership])		
+Review	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsFALSE2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Review	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsTRUE1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any	(!expression[VPLMStrictOwnership_Definition])		
+Review	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsTRUE2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	any	any	any			
+Review	<<VPLMLocalCrossOrgContextAccess>>	FALSE	ExtendedContextualPrivateReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+Review	<<VPLMLocalCrossPrjContextAccess>>	FALSE	ExtendedPublicReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	ancestor	any	any	any	public	any	expression[OrganizationPublicAccess]		
+Review	<<VPLMProjectAdministrator>>	TRUE	ExtendedModifyAccessForPrjAdmin	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any			
+Review	<<VPLMProjectLeader>>	TRUE	TechnicalLeader_VPLMStrictOrgOwnershipIsFALSE	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Review	<<VPLMProjectLeader>>	TRUE	TechnicalLeader_VPLMStrictOrgOwnershipIsTRUE	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Review	<<VPLMProjectLeader>>	TRUE	VPLMStrictOrgOwnershipIsFALSE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Review	<<VPLMProjectLeader>>	TRUE	VPLMStrictOrgOwnershipIsTRUE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Review	<<VPLMSecuredCrossAccess>>	FALSE	ExtendedReadAccessForPublicGuest	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Review	Access Grantor	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Review	Grant	FALSE	grant_key	FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	single	single	any	any	any	any			
+Review	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+Review	PSS_ASQ	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_ASQ	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_CAD_Designer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_CAD_Designer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_CAD_Designer_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_CAE_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_CAE_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Change_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Change_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Change_Coordinator_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_Cost_Estimation_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Cost_Estimation_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Development_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Development_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_GTS_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_GTS_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Geometry_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Geometry_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Global_Administrator	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Review	PSS_PCAndL	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_PCAndL	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_PCAndL_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_PLM_Support_Team	TRUE	PSS_AdminAccess	FALSE	Y	Y	-	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Review	PSS_Plant_Launch_Team_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Plant_Launch_Team_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Plant_Launch_Team_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_Plant_Logistic	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Plant_Logistic	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Plant_Process_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Plant_Process_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Plant_Quality	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Plant_Quality	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Process_Tool_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Process_Tool_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Product_Design_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Product_Design_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Product_Development_Lead	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Review	PSS_Product_Development_Lead	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Product_Development_Lead	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Product_Development_Lead_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_Product_Development_Lead_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_Product_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Product_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Program_Buyer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Program_Buyer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Program_Buyer_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_Program_Controller	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Program_Controller	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Program_Controller_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_Program_Manager	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Program_Manager	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Program_Manager_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_Program_Manufacturing_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Program_Manufacturing_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Program_Manufacturing_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_Program_Quality_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Program_Quality_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Program_Quality_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_Program_Sales_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Program_Sales_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Program_Sales_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_Prototype_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Prototype_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Raw_Material_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Raw_Material_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Read	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Read	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_ReadAndApprove	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_ReadAndApprove	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Review	PSS_SPDE_And_DL	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_SPDE_And_DL	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_SPDE_And_DL_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Review	PSS_TAndE_Buyer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_TAndE_Buyer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	PSS_Test_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Review	PSS_Test_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Review	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Review	Public	TRUE	PSS_NotPrivateMaturityReadAccessForNotValidated	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any			
+allstate	<<Global User>>	FALSE	SecuredGlobalUser	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+allstate	<<VPLMAdmin>>	TRUE	ExtendedModifyAccessForPLMAdmin	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+allstate	<<VPLMAdmin>>	TRUE	ExtendedPromoteAccessForPLMAdmin	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+allstate	<<VPLMAdmin>>	TRUE	ExtendedReadAccessForPLMAdmin	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+allstate	<<VPLMLocalCrossOrgContextAccess>>	FALSE	ExtendedOwnerReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	any	context	any	any	any			
+allstate	Owner	FALSE		FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+allstate	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+allstate	Public	TRUE	PSS_NotPrivateShowAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any			
+allstate	Public	TRUE	PSS_PrivateMaturityReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			

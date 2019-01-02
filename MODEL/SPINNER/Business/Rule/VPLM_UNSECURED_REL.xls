@@ -1,0 +1,48 @@
+Rule	User	Login(boolean)	Key	Revoke(boolean)	Read	Modify	Delete	Checkout	Checkin	Schedule	Lock	Unlock	Execute	Freeze	Thaw	Create	Revise	MajorRevise	Promote	Demote	Grant	Enable	Disable	Override	ChangeName	ChangeType	ChangeOwner	ChangePolicy	Revoke	ChangeVault	FromConnect	ToConnect	FromDisconnect	ToDisconnect	ViewForm	Modifyform	Show	Approve	Reject	Ignore	Reserve	Unreserve	Organization(any|single|ancestor|descendant)	Project(any|single|ancestor|descendant)	Owner	Reserve(Context)	Maturity	Category	Filter	LocalFilter
+VPLM_UNSECURED_REL	Grant	FALSE		FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	any	single	any	any	any	any		
+VPLM_UNSECURED_REL	Local Administrator	TRUE		FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any		
+VPLM_UNSECURED_REL	Owner	TRUE	PersonalSettingsAccess	FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	any	single	any	any	any	any		from.type == 'PLMPosSettingsRef'
+VPLM_UNSECURED_REL	PSS_ASQ	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_CAD_Designer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_CAE_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Change_Coordinator	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Cost_Estimation_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Development_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_GTS_Engineer	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Geometry_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Global_Administrator	FALSE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	Y	-	Y	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Global_Administrator	FALSE		FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_PCAndL	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_PLM_Support_Team	FALSE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	Y	-	Y	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Plant_Launch_Team_Leader	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Plant_Logistic	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Plant_Process_Engineer	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Plant_Quality	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Process_Tool_Engineer	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Product_Design_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Product_Development_Lead	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Product_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Program_Buyer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Program_Controller	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Program_Manager	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Program_Manufacturing_Leader	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Program_Quality_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Program_Sales_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Prototype_Coordinator	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Raw_Material_Engineer	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_ReadAndApprove	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_SPDE_And_DL	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_TAndE_Buyer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	PSS_Test_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any		
+VPLM_UNSECURED_REL	VPLMAdmin	FALSE		FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	VPLMDesigner	FALSE		FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	VPLMLeader	FALSE		FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	VPLMLocalCrossOrgContextAccess	TRUE		FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	VPLMLocalCrossPrjContextAccess	FALSE		FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	VPLMReviewer	FALSE		FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	VPLMSecuredCrossAccess	FALSE		FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any		
+VPLM_UNSECURED_REL	VPLMViewer	TRUE	k1	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any	(type != 'VPLMrel/PLMPort/V_Owner' && type != 'VPLMrel/PLMConnection/V_Owner')	
+VPLM_UNSECURED_REL	VPLMViewer	TRUE	k2	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any	(to.current.access[freeze] == TRUE)	
+VPLM_UNSECURED_REL	VPLMViewer	TRUE	k3	FALSE	-	Y	Y	-	Y	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	any	any	any	any	any	any		

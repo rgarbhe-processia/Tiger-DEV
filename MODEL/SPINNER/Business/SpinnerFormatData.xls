@@ -1,0 +1,19 @@
+Format Name	Registry Name	Description	Version	File Suffix	File Creator	File Type	Mime	Hidden (boolean)	Icon File
+PSS_Excel	PSS_Excel							FALSE	
+PSS_External_Decision	PSS_External_Decision							FALSE	
+PSS_HTML	PSS_HTML							FALSE	
+PSS_Internal	PSS_Internal							FALSE	
+PSS_Internal_Nego	PSS_Internal_Nego							FALSE	
+PSS_Official	PSS_Official							FALSE	
+PSS_Powerpoint	PSS_Powerpoint							FALSE	
+PSS_Problem	PSS_Problem							FALSE	
+PSS_SMG	PSS_SMG							FALSE	
+PSS_Solution	PSS_Solution							FALSE	
+PSS_Word	PSS_Word							FALSE	
+V5R18		V5R18 file format		.V5R18				FALSE	
+V5R19		V5R19 file format		.V5R19				FALSE	
+V5R20		V5R20 file format		.V5R20				FALSE	
+html	html	HyperText Markup Language		.html				FALSE	
+other	other							FALSE	
+xlsm	xlsm	MS Excel 2007 type file format with Macros		.xlsm				FALSE	
+xlsx	xlsx	MS Excel 2007 type file format		.xlsx				FALSE	

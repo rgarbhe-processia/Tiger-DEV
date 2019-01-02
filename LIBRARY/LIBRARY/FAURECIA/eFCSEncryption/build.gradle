@@ -1,0 +1,5 @@
+dependencies {
+    // from flatDir 3DEXPERIENCE
+    compile(group: 'enovia', name: 'eMatrixServletRMI', version: '2015XFD13.1')
+    compile(group: 'enovia', name: 'mx_jdom_1.0', version: '2015XFD13.1')
+}

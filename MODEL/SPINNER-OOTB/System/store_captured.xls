@@ -1,0 +1,4 @@
+name	Registry Name	description	type	filename	permission	protocol	port	host	path	user	password	location	fcs	hidden	multipledirectories	lock	icon
+Image Store	Image Store	this store is created for Image purposes	captured	hashed	RW,RW,RW	file		localhost	/appli/CCA_AS/3dspace/NODE01/3dspace-server/server/Apps/IMAGESTORE					nothidden	N/A	unlocked
+STORE	STORE	this store is created for DEMO purposes	captured	hashed	RW,RW,RW	file		localhost	/appli/CCA_AS/3dspace/NODE01/3dspace-server/server/Apps/STORE					nothidden	N/A	unlocked
+plmx			captured	hashed	RW,RW,RW	file		wwplmapp0773.dc.ege.ds	/appli/CCA_AS/3dspace/NODE01/3dspace-server/EVP/store/EVP					nothidden	N/A	unlocked

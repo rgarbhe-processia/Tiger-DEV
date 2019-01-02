@@ -1,0 +1,203 @@
+State	User	Login(boolean)	Key	Revoke(boolean)	Read	Modify	Delete	Checkout	Checkin	Schedule	Lock	Unlock	Execute	Freeze	Thaw	Create	Revise	MajorRevise	Promote	Demote	Grant	Enable	Disable	Override	ChangeName	ChangeType	ChangeOwner	ChangePolicy	Revoke	ChangeVault	FromConnect	ToConnect	FromDisconnect	ToDisconnect	ViewForm	Modifyform	Show	Approve	Reject	Ignore	Reserve	Unreserve	Organization(any|single|ancestor|descendant)	Project(any|single|ancestor|descendant)	Owner	Reserve(Context)	Maturity	Category	Filter	LocalFilter	Branch State
+Exists	<<Global User>>	FALSE	owner	FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	single	single	context	any	any	any			
+Exists	<<Owner>>	TRUE	VPLMStrictOrgOwnershipIsFALSE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Exists	<<Owner>>	TRUE	VPLMStrictOrgOwnershipIsTRUE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Exists	<<Public Delete>>	FALSE		FALSE	Y	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	any	any	any	any	any	last.to[Latest Version].from.current.access[delete] ~~ true		
+Exists	<<Public Modify>>	FALSE		FALSE	Y	Y	-	Y	Y	-	Y	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	any	any	any	any	any	(last.to[Latest Version].from.current.access[checkout] ~~ true) && (last.to[Latest Version].from.current.access[checkin] ~~ true)		
+Exists	<<Public Read>>	FALSE		FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any	last.to[Latest Version].from.current.access[checkout] ~~ true		
+Exists	<<Public Unlock>>	FALSE		FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any	locker == context.user		
+Exists	<<Public>>	FALSE	ExtendedPublicReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any	expression[OrganizationPublicAccess]		
+Exists	<<VPLMAdmin>>	FALSE		FALSE	Y	Y	Y	Y	Y	Y	Y	Y	-	-	-	Y	Y	-	-	-	-	-	-	-	Y	Y	Y	Y	-	Y	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	any	any			
+Exists	<<VPLMAdmin>>	TRUE	ExtendedCreateAccessForPLMAdmin	FALSE	-	-	Y	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Exists	<<VPLMCreator>>	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	any	any			
+Exists	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsFALSE1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOwnership_Definition]) && (!expression[VPLMStrictOrgOwnership])		
+Exists	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsFALSE2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Exists	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsTRUE1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any	(!expression[VPLMStrictOwnership_Definition])		
+Exists	<<VPLMCreator>>	TRUE	CollaborativeAuthoring_VPLMStrictOrgOwnershipIsTRUE2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	any	any	any			
+Exists	<<VPLMCreator>>	TRUE	ExtendedCreateAccessForPrivateAuthoring	FALSE	-	-	Y	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	any	any	any			
+Exists	<<VPLMLocalCrossOrgContextAccess>>	FALSE	ExtendedContextualPrivateReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+Exists	<<VPLMLocalCrossPrjContextAccess>>	FALSE	ExtendedPublicReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	ancestor	any	any	any	public	any	expression[OrganizationPublicAccess]		
+Exists	<<VPLMProjectAdministrator>>	TRUE	ExtendedModifyAccessForPrjAdmin	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any			
+Exists	<<VPLMProjectLeader>>	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	any	any			
+Exists	<<VPLMProjectLeader>>	TRUE	ExtendedCreateAccessForTechnicalLeader	FALSE	-	-	Y	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Exists	<<VPLMProjectLeader>>	TRUE	TechnicalLeader_VPLMStrictOrgOwnershipIsFALSE	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Exists	<<VPLMProjectLeader>>	TRUE	TechnicalLeader_VPLMStrictOrgOwnershipIsTRUE	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Exists	<<VPLMProjectLeader>>	TRUE	VPLMStrictOrgOwnershipIsFALSE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership])		
+Exists	<<VPLMProjectLeader>>	TRUE	VPLMStrictOrgOwnershipIsTRUE	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any			
+Exists	<<VPLMSecuredCrossAccess>>	FALSE	ExtendedReadAccessForPublicGuest	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Exists	<<VPLMViewer>>	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	single	single	any	any	any	any			
+Exists	Access Grantor	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	Y	-	-	-	Y	-	-	-	-	-	-	-	Y	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Exists	Grant	FALSE	grant_key	FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	-	-	-	Y	Y	any	single	any	any	any	any			
+Exists	Owner	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Exists	PSS_ASQ	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_ASQ	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_ASQ	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_ASQ	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_CAD_Designer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_CAD_Designer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_CAD_Designer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_CAD_Designer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_CAD_Designer_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_CAD_Designer_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_CAD_Designer_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_CAE_Engineer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_CAE_Engineer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_CAE_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_CAE_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Change_Coordinator	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Change_Coordinator	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Change_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Change_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Change_Coordinator_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Change_Coordinator_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Change_Coordinator_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Cost_Estimation_Engineer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Cost_Estimation_Engineer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Cost_Estimation_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Cost_Estimation_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Development_Engineer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Development_Engineer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Development_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Development_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_GTS_Engineer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_GTS_Engineer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_GTS_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_GTS_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Geometry_Engineer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Geometry_Engineer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Geometry_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Geometry_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Global_Administrator	TRUE	PSS_AdminAccess	FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Exists	PSS_PCAndL	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_PCAndL	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_PCAndL	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_PCAndL	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_PCAndL_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_PCAndL_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_PCAndL_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_PLM_Support_Team	TRUE	PSS_AdminAccess	FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Exists	PSS_Plant_Launch_Team_Leader	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Plant_Launch_Team_Leader	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Plant_Launch_Team_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Plant_Launch_Team_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Plant_Launch_Team_Leader_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Plant_Launch_Team_Leader_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Plant_Launch_Team_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Plant_Logistic	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Plant_Logistic	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Plant_Logistic	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Plant_Logistic	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Plant_Process_Engineer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Plant_Process_Engineer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Plant_Process_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Plant_Process_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Plant_Quality	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Plant_Quality	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Plant_Quality	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Plant_Quality	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Process_Tool_Engineer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Process_Tool_Engineer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Process_Tool_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Process_Tool_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Product_Design_Engineer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Product_Design_Engineer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Product_Design_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Product_Design_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Product_Development_Lead	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Product_Development_Lead	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Product_Development_Lead	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Product_Development_Lead	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Product_Development_Lead_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Product_Development_Lead_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Product_Development_Lead_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Product_Engineer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Product_Engineer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Product_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Product_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Program_Buyer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Program_Buyer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Program_Buyer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Program_Buyer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Program_Buyer_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Buyer_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Buyer_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Controller	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Program_Controller	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Program_Controller	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Program_Controller	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Program_Controller_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Controller_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Controller_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Manager	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Program_Manager	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Program_Manager	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Program_Manager	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Program_Manager_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Manager_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Manager_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Program_Manufacturing_Leader	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Program_Manufacturing_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Program_Manufacturing_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Manufacturing_Leader_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Manufacturing_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Quality_Leader	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Program_Quality_Leader	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Program_Quality_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Program_Quality_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Program_Quality_Leader_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Quality_Leader_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Quality_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Sales_Leader	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Program_Sales_Leader	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Program_Sales_Leader	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Program_Sales_Leader	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Program_Sales_Leader_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Sales_Leader_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Program_Sales_Leader_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_Prototype_Coordinator	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Prototype_Coordinator	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Prototype_Coordinator	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Prototype_Coordinator	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Raw_Material_Engineer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Raw_Material_Engineer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Raw_Material_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Raw_Material_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Read	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Read	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Read	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Read	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_ReadAndApprove	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_ReadAndApprove	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_ReadAndApprove	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_ReadAndApprove	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Exists	PSS_SPDE_And_DL	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_SPDE_And_DL	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_SPDE_And_DL	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_SPDE_And_DL	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_SPDE_And_DL_JV	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_SPDE_And_DL_JV	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_SPDE_And_DL_JV	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+Exists	PSS_TAndE_Buyer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_TAndE_Buyer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_TAndE_Buyer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_TAndE_Buyer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	PSS_Test_Engineer	FALSE	PSS_NotPrivateMaturityMultiContextAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Test_Engineer	TRUE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	any	any	any	public	any			
+Exists	PSS_Test_Engineer	TRUE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+Exists	PSS_Test_Engineer	TRUE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	-	-	-	-	Y	Y	Y	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	Y	Y	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+Exists	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+Exists	Public	TRUE	PSS_NotPrivateMaturityReadAccessForValidated	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	public	any			
+allstate	<<Global User>>	FALSE	SecuredGlobalUser	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+allstate	<<VPLMAdmin>>	TRUE	ExtendedModifyAccessForPLMAdmin	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+allstate	<<VPLMAdmin>>	TRUE	ExtendedPromoteAccessForPLMAdmin	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+allstate	<<VPLMAdmin>>	TRUE	ExtendedReadAccessForPLMAdmin	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+allstate	<<VPLMLocalCrossOrgContextAccess>>	FALSE	ExtendedOwnerReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	any	context	any	any	any			
+allstate	Owner	FALSE		FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+allstate	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+allstate	Public	TRUE	PSS_NotPrivateExtendedReadPublicAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	ancestor	any	any	public	any			
+allstate	Public	TRUE	PSS_NotPrivateShowAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any			
+allstate	Public	TRUE	PSS_PrivateMaturityReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			
+allstate	Public	TRUE	PSS_UnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	context	public	any			

@@ -1,0 +1,7 @@
+name	Registry Name	description	tablespace	indexspace	hidden	icon
+SIXW		Holds 6W entities created by the ENOVIA system	EN_DATA	EN_INDEX	FALSE
+eService Administration	eService Administration	this is where the business objects that support the application are stored	EN_DATA	EN_INDEX	FALSE
+eService Production	eService Production	this is where customers will create the objects.	EN_DATA	EN_INDEX	FALSE
+eService Sample	eService Sample	this is where the business objects that demo and test the application are stored	EN_DATA	EN_INDEX	FALSE
+vplm	vplm		EN_DATA	EN_INDEX	FALSE
+vplm_archive			EN_DATA	EN_INDEX	FALSE

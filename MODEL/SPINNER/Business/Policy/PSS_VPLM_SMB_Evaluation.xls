@@ -1,0 +1,60 @@
+State	User	Login(boolean)	Key	Revoke(boolean)	Read	Modify	Delete	Checkout	Checkin	Schedule	Lock	Unlock	Execute	Freeze	Thaw	Create	Revise	MajorRevise	Promote	Demote	Grant	Enable	Disable	Override	ChangeName	ChangeType	ChangeOwner	ChangePolicy	Revoke	ChangeVault	FromConnect	ToConnect	FromDisconnect	ToDisconnect	ViewForm	Modifyform	Show	Approve	Reject	Ignore	Reserve	Unreserve	Organization(any|single|ancestor|descendant)	Project(any|single|ancestor|descendant)	Owner	Reserve(Context)	Maturity	Category	Filter	LocalFilter	Branch State
+Approved	Owner	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Approved	PSS_Global_Administrator	TRUE	ToCancelled	FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Cancelled
+Approved	PSS_Global_Administrator	TRUE	ToReleased	FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Released
+Approved	PSS_PLM_Support_Team	TRUE	ToCancelled	FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Cancelled
+Approved	PSS_PLM_Support_Team	TRUE	ToReleased	FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Released
+Approved	PSS_Program_Manufacturing_Leader	TRUE	ToCancelled	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Cancelled
+Approved	PSS_Program_Manufacturing_Leader	TRUE	ToReleased	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Released
+Approved	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Approved	Public	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+Approved	Public	FALSE	ToCancelled	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			Cancelled
+Approved	Public	FALSE	ToReleased	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			Released
+Approved	Public	TRUE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Cancelled	Owner	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Cancelled	PSS_Global_Administrator	TRUE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Cancelled	PSS_PLM_Support_Team	TRUE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Cancelled	PSS_Program_Manufacturing_Leader	TRUE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Cancelled	PSS_Program_Manufacturing_Leader_JV	TRUE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+Cancelled	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Cancelled	Public	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+Cancelled	Public	TRUE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+InWork	Owner	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+InWork	PSS_Global_Administrator	TRUE	ToReview	FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Review
+InWork	PSS_PLM_Support_Team	TRUE	ToReview	FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Review
+InWork	PSS_Program_Manufacturing_Leader	TRUE	ToReview	FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	Y	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Review
+InWork	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+InWork	Public	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+InWork	Public	FALSE	ToReview	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			Review
+InWork	Public	TRUE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Obsolete	Owner	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Obsolete	PSS_Global_Administrator	TRUE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			
+Obsolete	PSS_PLM_Support_Team	TRUE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			
+Obsolete	PSS_Program_Manufacturing_Leader	TRUE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Obsolete	PSS_Program_Manufacturing_Leader_JV	TRUE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+Obsolete	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Obsolete	Public	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+Obsolete	Public	TRUE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Released	Owner	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Released	PSS_Global_Administrator	TRUE	ToObsolete	FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Obsolete
+Released	PSS_PLM_Support_Team	TRUE	ToObsolete	FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Obsolete
+Released	PSS_Program_Manufacturing_Leader	TRUE	ToObsolete	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Obsolete
+Released	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Released	Public	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+Released	Public	FALSE	ToObsolete	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			Obsolete
+Released	Public	TRUE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+Review	Owner	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+Review	PSS_Global_Administrator	TRUE	ToApproved	FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Approved
+Review	PSS_Global_Administrator	TRUE	ToInWork	FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			InWork
+Review	PSS_PLM_Support_Team	TRUE	ToApproved	FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Approved
+Review	PSS_PLM_Support_Team	TRUE	ToInWork	FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			InWork
+Review	PSS_Program_Manufacturing_Leader	TRUE	ToApproved	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			Approved
+Review	PSS_Program_Manufacturing_Leader	TRUE	ToInWork	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	Y	-	-	-	-	descendant	any	any	any	any	any			InWork
+Review	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+Review	Public	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+Review	Public	FALSE	ToApproved	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			Approved
+Review	Public	FALSE	ToInWork	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			InWork
+Review	Public	TRUE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+allstate	Owner	FALSE		FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+allstate	Public	TRUE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+allstate	Public	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			

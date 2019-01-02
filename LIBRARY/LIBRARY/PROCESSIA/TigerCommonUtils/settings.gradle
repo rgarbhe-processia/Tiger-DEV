@@ -1,0 +1,2 @@
+include 'TigerConstants'
+project(':TigerConstants').projectDir = new File('../TigerConstants')

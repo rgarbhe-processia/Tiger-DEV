@@ -1,0 +1,6 @@
+dependencies {
+    compile(group: 'enovia', name: 'framework', version: '2015XFD13.1')
+    compile(group: 'enovia', name: 'library', version: '2015XFD13.1')
+    compile(group: 'enovia', name: 'XPDMExtractor', version: '2015XFD13.1')
+    compile(group: 'enovia', name: 'eMatrixServletRMI', version: '2015XFD13.1')
+}

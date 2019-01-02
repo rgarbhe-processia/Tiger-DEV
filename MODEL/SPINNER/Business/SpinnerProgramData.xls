@@ -1,0 +1,21 @@
+Program Name	Registry Name	Description	Type (mql<default>/java/ekl/external)	Execute (immediate<default>/deferred)	Needs Bus Obj (boolean)	Downloadable (boolean)	Piped (boolean)	Pooled (boolean)	Hidden (boolean)	User	Icon File
+<<PSS_DECTGUtil>>											
+<<PSS_FPDMConstants>>											
+<<PSS_IEFListConnectedObject>>											
+<<PSS_MyEnoECMChangeRequestBase>>											
+<<PSS_XCADConstants>>											
+<<PSS_emxCommonCompleteTaskBase>>											
+<<PSS_emxCommonInitiateRouteBase>>											
+<<PSS_emxDnDBase>>											
+<<PSS_emxDomainAccessBase>>											
+<<PSS_emxFTRPartBase>>											
+<<PSS_emxInboxTaskBase>>											
+<<PSS_emxInboxTaskNotificationBase>>											
+<<PSS_emxMailUtilBase>>											
+<<PSS_enoECMChangeActionBase>>											
+<<PSS_enoECMChangeOrderBase>>											
+<<pss.document.PSS_PortfolioUtil>>											
+<<pss.ecm.PSS_enoECMChangeAssessmentBase>>											
+<<pss.ecm.impactanalysis.ImpactAnalysisXMLutil>>											
+<<pss.ecm.ui.MfgChangeOrderBase>>											
+dsecUIType-Custom.css		Custom style for Structure Browser	external	immediate	FALSE	FALSE	FALSE	FALSE	FALSE		

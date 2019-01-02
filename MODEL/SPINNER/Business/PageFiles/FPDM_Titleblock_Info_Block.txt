@@ -1,0 +1,8 @@
+:---------------------------
+: Titleblock_Info_Block.txt
+:---------------------------
+
+[INFO]
+POLT(2,2,1,0.25)
+TEXT(-1,-8,right,addv,<INFORMATION>)
+[END]

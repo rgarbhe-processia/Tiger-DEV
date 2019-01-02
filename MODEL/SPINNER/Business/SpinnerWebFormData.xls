@@ -1,0 +1,173 @@
+Name	Registry Name	Description	Hidden (boolean)	Types (use "|" delim)
+<<PSS_CreateIssue>>				
+<<PSS_IssueProperties>>				
+<<form_PSSCATransferOwnership>>				
+<<form_PSSCRSendToChangeManager>>				
+<<form_PSSCRTransferOwnership>>				
+<<type_CreateFPDM_ExcelReport>>				
+ENCClonePart	ENCClonePart		FALSE	
+FPDM_AssignPersonToNewSC	FPDM_AssignPersonToNewSC	Launched by the FPDM_AssignPersonToNewSC command from the Role category of a person	FALSE	
+FPDM_CNEditEffectivityDate	FPDM_CNEditEffectivityDate		FALSE	
+FPDM_ExcelReportCreateDefault	FPDM_ExcelReportCreateDefault	Create a report from the default template	FALSE	
+FPDM_type_RouteTemplate	FPDM_type_RouteTemplate		FALSE	
+FRCCreateMBOM			FALSE	
+FRCMBOMManufItemCreateAndPropertiesForm			FALSE	
+FRCMBOMResourceCreateAndPropertiesForm			FALSE	
+FRCMBOMResourceProperties			FALSE	
+MSFCreateForm	MSFCreateForm	Form to show additional attributes in Save as New panel while creating new object	FALSE	
+PSS_APPCreatePlant	PSS_APPCreatePlant		FALSE	
+PSS_APPInboxTaskChangeAssignee	PSS_APPInboxTaskChangeAssignee		FALSE	
+PSS_APPInboxTaskEditForm	PSS_APPInboxTaskEditForm		FALSE	
+PSS_APPInboxTaskEditWebForm	PSS_APPInboxTaskEditWebForm		FALSE	
+PSS_APPInboxTaskReassign	PSS_APPInboxTaskReassign		FALSE	
+PSS_AddExistingSymmetricalPartsForm	PSS_AddExistingSymmetricalPartsForm		FALSE	
+PSS_BillableCREdit	PSS_BillableCREdit		FALSE	
+PSS_CATransferOwnership	PSS_CATransferOwnership		FALSE	
+PSS_CRSendToChangeManager	PSS_CRSendToChangeManager		FALSE	
+PSS_CRTransferOwnership	PSS_CRTransferOwnership		FALSE	
+PSS_CRTransferOwnershipToInitiatorForm	PSS_CRTransferOwnershipToInitiatorForm		FALSE	
+PSS_CancelCNForm	PSS_CancelCNForm		FALSE	
+PSS_CancellationRequest	PSS_CancellationRequest		FALSE	
+PSS_ChangeNoticeCreate	PSS_ChangeNoticeCreate		FALSE	
+PSS_ChangeNoticeSummaryForm	PSS_ChangeNoticeSummaryForm		FALSE	
+PSS_CloneCR	PSS_CloneCR		FALSE	
+PSS_CloneIssue	PSS_CloneIssue		FALSE	
+PSS_Comments	PSS_Comments	The below Web Form page should be update comments of object	FALSE	
+PSS_CreateCOFromPartWithGoverningProject	PSS_CreateCOFromPartWithGoverningProject		FALSE	
+PSS_CreateEngine	PSS_CreateEngine		FALSE	
+PSS_CreateIssue	PSS_CreateIssue	Create Issue	FALSE	
+PSS_CreateMCOFromMBOM	PSS_CreateMCOFromMBOM		FALSE	
+PSS_CreateMCOSlidein	PSS_CreateMCOSlidein		FALSE	
+PSS_CreateMCOfromCRSlidein	PSS_CreateMCOfromCRSlidein		FALSE	
+PSS_CreateMaterialForm	PSS_CreateMaterialForm		FALSE	
+PSS_CreateProgramProject	PSS_CreateProgramProject		FALSE	
+PSS_CreateRA	PSS_CreateRA		FALSE	
+PSS_CreateRnDCenter	PSS_CreateRnDCenter	Below web form will be used to create a RnD Center.	FALSE	
+PSS_CreateSymmetricalPartsForm	PSS_CreateSymmetricalPartsForm		FALSE	
+PSS_CreateToolForm	PSS_CreateToolForm		FALSE	
+PSS_CreateULS	PSS_CreateULS		FALSE	
+PSS_CreateVehicle	PSS_CreateVehicle		FALSE	
+PSS_DestinationRegion	PSS_DestinationRegion		FALSE	
+PSS_Division	PSS_Division		FALSE	
+PSS_DocumentRevisionReason	PSS_DocumentRevisionReason	Document Revision Reason	false	
+PSS_ENCBOMGoToProduction	PSS_ENCBOMGoToProduction		FALSE	
+PSS_ENCBOMRepeatPart	PSS_ENCBOMRepeatPart		FALSE	
+PSS_ENCECToStandardReClassificationForm	PSS_ENCECToStandardReClassificationForm		FALSE
+PSS_ENCPartGoToProduction	PSS_ENCPartGoToProduction		FALSE	
+PSS_ENCStandardToECReClassificationForm	PSS_ENCStandardToECReClassificationForm	PSS_ENCStandardToECReClassificationForm	FALSE
+PSS_ENCTransferOwnership	PSS_ENCTransferOwnership		FALSE	
+PSS_Engine	PSS_Engine		FALSE	
+PSS_FCM_Summary	PSS_FCM_Summary		FALSE	
+PSS_FRCCreateMBOM	PSS_FRCCreateMBOM		FALSE	
+PSS_FRCMBOMColorName	PSS_FRCMBOMColorName		FALSE	
+PSS_FRCMBOMEquipmentCreate	PSS_FRCMBOMEquipmentCreate		FALSE	
+PSS_FRCMBOMEquipmentRequestCreate	PSS_FRCMBOMEquipmentRequestCreate		FALSE	
+PSS_FRCMBOMHarmonyCreate	PSS_FRCMBOMHarmonyCreate		FALSE	
+PSS_FRCMBOMHarmonyRequestCreate	PSS_FRCMBOMHarmonyRequestCreate		FALSE	
+PSS_FRCMBOMLineDataCreate			FALSE	
+PSS_FRCMBOMManufItemCreateAndPropertiesForm			FALSE	
+PSS_FRCMBOMManufItemCreateForm			FALSE	
+PSS_FRCMBOMOperationCreate	PSS_FRCMBOMOperationCreate		FALSE	
+PSS_FRCMBOMResourceProperties			FALSE	
+PSS_FRCMBOMToolCreate			FALSE	
+PSS_FRCMBOMToolEdit	PSS_FRCMBOMToolEdit		FALSE	
+PSS_FRCMBOMToolResourceProperties			FALSE	
+PSS_FTRBooleanCompatibilityRuleForm	PSS_FTRBooleanCompatibilityRuleForm		FALSE	
+PSS_IssueProperties	PSS_IssueProperties	Properties page of Issue	FALSE	
+PSS_IssueRejectComments	PSS_IssueRejectComments	The below Web Form page used for rejection comment sorage on notification	FALSE	
+PSS_LBCObjectClassificationEditAttributes	PSS_LBCObjectClassificationEditAttributes		FALSE	
+PSS_LBCObjectClassificationForm				
+PSS_MCOSummary	PSS_MCOSummary		FALSE	
+PSS_MaterialPropertiesPage	PSS_MaterialPropertiesPage		FALSE	
+PSS_OEM	PSS_OEM		FALSE	
+PSS_OEMGroup	PSS_OEMGroup		FALSE	
+PSS_Plant	PSS_Plant		FALSE	
+PSS_Platform	PSS_Platform		FALSE	
+PSS_PortfolioRevisionReason	PSS_PortfolioRevisionReason		FALSE	
+PSS_ProgramProject	PSS_ProgramProject		FALSE	
+PSS_PromoteCOToImplementForm	PSS_PromoteCOToImplementForm		FALSE	
+PSS_PromoteCRToCompleteForm	PSS_PromoteCRToCompleteForm		FALSE	
+PSS_QuantityOfInstance	PSS_QuantityOfInstance		FALSE	
+PSS_RejectMCO	PSS_RejectMCO	The below Web Form page should be displayed whenever user clicks on Reject MCO	FALSE	
+PSS_ReleasedMaterialForm	PSS_ReleasedMaterialForm		FALSE	
+PSS_RnDCenter	PSS_RnDCenter		FALSE	
+PSS_RoleAssessmentFCMView	PSS_RoleAssessmentFCMView		FALSE	
+PSS_RoleAssessmentProperties	PSS_RoleAssessmentProperties		FALSE	
+PSS_SLCCreateCO	PSS_SLCCreateCO		FALSE	
+PSS_SLCCreateCR	PSS_SLCCreateCR		FALSE	
+PSS_TMCSaveAsWorkspaceTemplate	PSS_TMCSaveAsWorkspaceTemplate	This webform displayed whenever user clicks on command Save As Template from Workspace.	FALSE	
+PSS_ToolPropertiesPage	PSS_ToolPropertiesPage		FALSE	
+PSS_Vehicle	PSS_Vehicle		FALSE	
+PSS_Workspace	PSS_Workspace		FALSE	
+PSS_createDocument	PSS_createDocument	create Documnet	FALSE	
+PSS_formDemoteCR			FALSE	
+PSS_type_CancelCR	PSS_type_CancelCR		FALSE	
+PSS_type_ChangeAction	PSS_type_ChangeAction		FALSE	
+PSS_type_ChangeOrder	PSS_type_ChangeOrder		FALSE	
+PSS_type_ChangeRequest	PSS_type_ChangeRequest		FALSE	
+PSS_type_ColorCatalogCreate	PSS_type_ColorCatalogCreate		FALSE	
+PSS_type_ColorCatalogProperties	PSS_type_ColorCatalogProperties		FALSE	
+PSS_type_ColorOptionCreate	PSS_type_ColorOptionCreate		FALSE	
+PSS_type_ColorOptionProperties	PSS_type_ColorOptionProperties		FALSE	
+PSS_type_ConfigurationFeatureCreate	PSS_type_ConfigurationFeatureCreate		FALSE	
+PSS_type_ConfigurationFeatureProperties	PSS_type_ConfigurationFeatureProperties		FALSE	
+PSS_type_ConfigurationOptionCreate	PSS_type_ConfigurationOptionCreate		FALSE	
+PSS_type_ConfigurationOptionProperties	PSS_type_ConfigurationOptionProperties		FALSE	
+PSS_type_CreateChangeOrder	PSS_type_CreateChangeOrder		FALSE	
+PSS_type_CreateChangeOrderGlobal	PSS_type_CreateChangeOrderGlobal		FALSE	
+PSS_type_CreateChangeRequest	PSS_type_CreateChangeRequest		FALSE	
+PSS_type_CreateModel	PSS_type_CreateModel		FALSE	
+PSS_type_CreatePart	PSS_type_CreatePart		FALSE	
+PSS_type_CreatePortfolio	PSS_type_CreatePortfolio		FALSE	
+PSS_type_CreateProduct	PSS_type_CreateProduct	Below web form is used to create a Product.	FALSE	
+PSS_type_CreateProductLine	PSS_type_CreateProductLine		FALSE	
+PSS_type_Model	PSS_type_Model		FALSE	
+PSS_type_Portfolio	PSS_type_Portfolio		FALSE	
+PSS_type_ProductLine	PSS_type_ProductLine		FALSE	
+PSS_type_Products	PSS_type_Products	Below web form is used to create a Product.	FALSE	
+type_DOCUMENTS	type_DOCUMENTS		FALSE	
+type_FPDM_ExcelReport	type_FPDM_ExcelReport	List and edit Excel Report	FALSE	
+type_FPDM_MBOMPart	type_FPDM_MBOMPart		FALSE	
+type_PSS_CATDrawing	type_PSS_CATDrawing		FALSE	
+type_PSS_CATIACGR	type_PSS_CATIACGR		FALSE	
+type_PSS_CATIADesignTable	type_PSS_CATIADesignTable		FALSE	
+type_PSS_CATIAEmbeddedComponent	type_PSS_CATIAEmbeddedComponent		FALSE	
+type_PSS_CATIAV4Model	type_PSS_CATIAV4Model		FALSE	
+type_PSS_CATPart	type_PSS_CATPart		FALSE	
+type_PSS_CATProduct	type_PSS_CATProduct		FALSE	
+type_PSS_CreateClass	type_PSS_CreateClass		FALSE	
+type_PSS_CreateListOfAssessor	type_PSS_CreateListOfAssessor		FALSE	
+type_PSS_CreatePart	type_PSS_CreatePart		FALSE	
+type_PSS_CreatePartFamily	type_PSS_CreatePartFamily		FALSE	
+type_PSS_CustomerExternalReference	type_PSS_CustomerExternalReference		FALSE	
+type_PSS_DOCUMENTS	type_PSS_DOCUMENTS		FALSE	
+type_PSS_EquipmentRequest	type_PSS_EquipmentRequest		FALSE	
+type_PSS_HarmonyRequest	type_PSS_HarmonyRequest		FALSE	
+type_PSS_IMDSExternalReference	type_PSS_IMDSExternalReference		FALSE	
+type_PSS_ImpactAnalysis	type_PSS_ImpactAnalysis		FALSE	
+type_PSS_LCCommonProperties	type_PSS_LCCommonProperties		FALSE	
+type_PSS_ListOfAssessors	type_PSS_ListOfAssessors		FALSE	
+type_PSS_MaterialRequest	type_PSS_MaterialRequest		FALSE	
+type_PSS_Part	type_PSS_Part		FALSE	
+type_PSS_PartFamily	type_PSS_PartFamily		FALSE	
+type_PSS_ProEAssembly	type_PSS_ProEAssembly		FALSE	
+type_PSS_ProEAssemblyFamilyTable	type_PSS_ProEAssemblyFamilyTable		FALSE	
+type_PSS_ProEAssemblyInstance	type_PSS_ProEAssemblyInstance		FALSE	
+type_PSS_ProEDrawing	type_PSS_ProEDrawing		FALSE	
+type_PSS_ProEFormat	type_PSS_ProEFormat		FALSE	
+type_PSS_ProEPart	type_PSS_ProEPart		FALSE	
+type_PSS_ProEPartFamilyTable	type_PSS_ProEPartFamilyTable		FALSE	
+type_PSS_ProEPartInstance	type_PSS_ProEPartInstance		FALSE	
+type_PSS_ProductConfiguration	type_PSS_ProductConfiguration		FALSE	
+type_PSS_RevisePart	type_PSS_RevisePart		FALSE	
+type_PSS_SWAssembly	type_PSS_SWAssembly		FALSE	
+type_PSS_SWAssemblyFamily	type_PSS_SWAssemblyFamily		FALSE	
+type_PSS_SWAssemblyInstance	type_PSS_SWAssemblyInstance		FALSE	
+type_PSS_SWComponent	type_PSS_SWComponent		FALSE	
+type_PSS_SWComponentFamily	type_PSS_SWComponentFamily		FALSE	
+type_PSS_SWComponentInstance	type_PSS_SWComponentInstance		FALSE	
+type_PSS_SWDrawing	type_PSS_SWDrawing		FALSE	
+type_PSS_SupplierExternalReference	type_PSS_SupplierExternalReference		FALSE	
+type_PSS_UGAssembly	type_PSS_UGAssembly		FALSE	
+type_PSS_UGDrawing	type_PSS_UGDrawing		FALSE	
+type_PSS_UGModel	type_PSS_UGModel		FALSE	

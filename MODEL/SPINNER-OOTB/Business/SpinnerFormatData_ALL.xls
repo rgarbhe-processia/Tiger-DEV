@@ -1,0 +1,85 @@
+Format Name	Registry Name	Description	Version	File Suffix	File Creator	File Type	Mime	Hidden (boolean)	Icon File
+0								FALSE
+1								FALSE
+2								FALSE
+3								FALSE
+3DMAP	3DMAP	Derived Output format for 3DMAP files						FALSE
+3DXML	3DXML	This saves a 3DXML file which is used in 3DXML player to show a 3D image						FALSE
+3DXMLCGR	3DXMLCGR	This saves a 3DXMLCGR file						FALSE
+4								FALSE
+5								FALSE
+6								FALSE
+7								FALSE
+8								FALSE
+9								FALSE
+Artwork	Artwork	Artwork data file format						FALSE
+Assembly Placement	Assembly Placement	Assembly Placement data file format						FALSE
+CATALOG	CATALOG	Derived Output format for CATALOG files						FALSE
+CGM	CGM	Derived Output format for CGM files						FALSE
+CGR	CGR	This saves a CGR file						FALSE
+DWG	DWG	Derived Output format for DWG files						FALSE
+DXF	DXF	Derived Output format for DXF files						FALSE
+Drill	Drill	Drilling data file format						FALSE
+EXE	EXE	Derived Output format for EXE files						FALSE
+GIF	GIF	Derived Output format for GIF files						FALSE
+GL2	GL2	Derived Output format for GL2 files						FALSE
+HCG	HCG	Derived Output format for HCG files						FALSE
+HPGL	HPGL	HPGL markup format.						FALSE
+HSF	HSF	Derived Output format for HSF files						FALSE
+HWF	HWF	format for attachment files						FALSE
+IG2	IG2	Derived Output format for IG2 files						FALSE
+IGES	IGES	IGES markup format.						FALSE
+Image	Image	Image format.						FALSE
+Input	Input	Input format.						FALSE
+JT	JT	JT Format						FALSE
+JView	JView	JView Format						FALSE
+Log	Log	format used to store log files.						FALSE
+MODEL	MODEL	Derived Output format for MODEL files						FALSE
+MSDS	MSDS	MSDS Format						FALSE
+Markup	Markup	Brava markup file.		*.mrk				FALSE
+Mill	Mill	Milling data file format						FALSE
+Output	Output	Output format.						FALSE
+PDF	PDF	PDF markup format.						FALSE
+PLT	PLT	Derived Output format for PLT files						FALSE
+PNG	PNG	This saves a PNG file						FALSE
+PS	PS	Derived Output format for Postscript files						FALSE
+STBOM	STBOM	Derived Output format for STBOM files						FALSE
+STEP	STEP	Derived Output format for STEP files						FALSE
+STEP AP203	STEP AP203	Derived Output format for STEP AP203 files						FALSE
+STEP203	STEP203	Derived Output format for STEP203 files						FALSE
+STL	STL	Derived Output format for STL files						FALSE
+SVG	SVG	Derived Output format for SVG files						FALSE
+Supplier PDF Content	Supplier PDF Content	Supplier PDF Content Format						FALSE
+THUMBNAIL	THUMBNAIL	This saves a THUMBNAIL						FALSE
+TIF	TIF	TIF markup format.						FALSE
+TXT	TXT	TXT markup format.						FALSE
+Test Method	Test Method	Test Method Format						FALSE
+VPS	VPS	Derived Output format for VPS files						FALSE
+WRL	WRL	Derived Output format for WRL files						FALSE
+XAS	XAS	This saves a TXT file						FALSE
+XML	XML	XML markup format.						FALSE
+XPR	XPR	This saves a TXT file						FALSE
+asm	asm	Assembly file format		.asm,.sldasm				FALSE
+bom	bom	BOM file format		.zip				FALSE
+dgm	dgm	ProE Diagram file format		.dgm				FALSE
+doc	doc	MS Word major type file format		.doc				FALSE
+dot	dot	MS Word minor type file format		.dot				FALSE
+drw	drw	Drawing file format		.drw				FALSE
+frm	frm	ProE Format file format		.frm				FALSE
+generic	generic	this format launches an application using file suffix mapping						FALSE
+idf	idf	idf file format		.idf				FALSE
+lay	lay	ProE Layout file format		.lay				FALSE
+mfg	mfg	ProE Manufacture file format		.mfg				FALSE
+msg	msg	MS Outlook major type file format		.msg				FALSE
+mxImage	mxImage	mxImage format.						FALSE
+mxLarge Image	mxLarge Image	mxLarge Image format.						FALSE
+mxMedium Image	mxMedium Image	mxMedium Image format.						FALSE
+mxSmall Image	mxSmall Image	mxSmall Image format.						FALSE
+mxThumbnail Image	mxThumbnail Image	mxThumbnail Image format.						FALSE
+obj	obj	format for attachment files						FALSE
+ppa	ppa	MS PPt minor type file format		.ppa				FALSE
+ppt	ppt	MS Powerpoint major type file format		.ppt				FALSE
+prt	prt	Component file format		.prt,.sldprt				FALSE
+xla	xla	MS Excel minor type file format		.xla				FALSE
+xls	xls	MS Excel major type file format		.xls				FALSE
+zip	zip	Zip file format		.zip				FALSE

@@ -1,0 +1,21 @@
+Page Name	Registry Name	Description	Mime Type	Hidden (boolean)	Icon File
+DomainAccess				FALSE
+ECMConfig				FALSE
+ENCImportBOMColumnMapping				FALSE
+GovMdlLoggingPreferences				FALSE
+MxCATIAV5		Page object for MxCATIAV5 data migration	text/plain	FALSE
+MxPRO		MxPRO integration page object for Data Migration	text/plain	FALSE
+MxUG		MxUG integration page object for Data Migration	text/plain	FALSE
+ParameterizationCentralConfiguration		Page for Parameterization Central Configuration	text/plain	FALSE
+SolidWorks		Page object for SolidWorks data migration	text/plain	FALSE
+UI_BPS_WIDGETS				FALSE
+UI_CSG_WIDGETS			text/plain	FALSE
+UI_ECM_WIDGETS				FALSE
+UI_ENG_WIDGETS		ENG UI Channel Widgets		FALSE
+UI_FTR_WIDGETS				FALSE
+UI_PLC_WIDGETS				FALSE
+UI__MASTER_WIDGETS				FALSE
+WhereUsedDefinition				FALSE
+e6w-master-services				FALSE
+e6w-widgetization-services				FALSE
+emxSystem_LBC.properties				FALSE

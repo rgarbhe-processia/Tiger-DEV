@@ -1,0 +1,6 @@
+dependencies {
+    // those will be included to compile the project (buildtime), but not in the distribution (runtime)
+    compileButExcludeFromDist group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
+
+    compile(group: 'enovia', name: 'eMatrixServletRMI', version: '2015XFD13.1')
+}

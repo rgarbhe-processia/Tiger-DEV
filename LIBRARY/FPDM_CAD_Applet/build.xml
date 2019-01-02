@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<project name="FPDM_CAD_Applet" default="compile">
+	<property name="BLversion" value="unfound" />
+	<property name="java.ver" value="1.7" />
+    <property name="JAVA_HOME" location="C:\Program Files\Java\jdk1.7.0_79" />
+    <property name="JAVAC" location="${JAVA_HOME}\bin\javac.exe" />
+
+	<!-- ***** Path to Clearcase Deliver  -->
+	<property name="CCdeploydir" value="C:\TEMP\BUILD" />
+
+	<!-- ***** Path to Clearcase Deliver  -->
+	<property name="Localdeploydir" location="BUILD" />
+
+	<!-- ***** Variables Global -->
+	<property name="commonlib" location="../LIBRARY/FAURECIA/FPDMCommon/FPDMCommon/FPDMcommon.jar" />
+	<property name="Certificateslib" location="../Certificates" />
+	<property name="compiledir" location="bin" />
+	<property name="sourcedir" location="src" />
+	<property name="commonsourcedir" location="../FPDM_COMMON_APPLET/src" />
+	<property name="static_DEV_Server" value="10.10.15.77" />
+	<property name="static_INT_Server" value="10.10.15.77" />
+	<property name="static_User" value="matrix" />
+	<property name="static_Password" value="db2" />
+	<property name="static_BeginOfPath" value="/appli/IBMHttpServer70/htdocs/en_US/" />
+	<property name="static_EndOfPath" value="/FPDMIntegrations/" />
+
+	<tstamp>
+		<format property="tstamp.date" pattern="yyyy-MM-dd" locale="en,US" />
+		<format property="tstamp.hour" pattern="HH" locale="en,US" />
+		<format property="tstamp.minutes" pattern="mm" locale="en,US" />
+	</tstamp>
+	<property name="compiledate" value="&lt;${tstamp.date}_${tstamp.hour}:${tstamp.minutes}&gt;" />
+
+	<path id="applet.classpath">
+		<pathelement location="lib/capsapi_classes.zip" />
+		<pathelement location="lib/ieapi_classes.zip" />
+		<pathelement location="${commonlib}" />
+	</path>
+
+	<!-- ***** compile the java files -->
+	<target name="_compile">
+		<delete dir="${compiledir}" />
+		<mkdir dir="${compiledir}" />
+		<javac fork="true" executable="${JAVAC}" taskname="${JAVAC}" debug="true" verbose="true" target="${java.ver}" sourcepath="" srcdir="${commonsourcedir}:${sourcedir}" destdir="${compiledir}" classpath="lib/capsapi_classes.zip:lib/ieapi_classes.zip:${commonlib}">
+			<include name="**/*.java" />
+		</javac>
+	</target>
+
+
+	<!-- ***** makes the target writable -->
+	<target name="checkout">
+		<cccheckout viewpath="${deploydir}/${ant.project.name}.jar" reserved="true" nowarn="true" />
+	</target>
+
+	<!-- ***** build and sign the jar, including the common classes -->
+	<target name="${ant.project.name}.jar" depends="_compile">
+		<unjar src="${commonlib}" dest="${compiledir}" />
+		<!-- <exec executable="${Certificateslib}/Sign_Applet.bat" dir="${Certificateslib}" failonerror="true" /> -->
+		<jar basedir="${compiledir}" destfile="${deploydir}/${ant.project.name}.jar">
+			<include name="**/*.class" />
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="BL-version" value="${BLversion}" />
+				<attribute name="Compile-date" value="${compiledate}" />
+				<attribute name="Caller-Allowable-Codebase" value="*" />
+				<attribute name="Application-Library-Allowable-Codebase" value="*" />
+				<attribute name="Application-Name" value="PLM" />
+				<attribute name="Permissions" value="all-permissions" />
+				<attribute name="Codebase" value="*" />
+				<attribute name="Trusted-Library" value="true" />
+			</manifest>
+		</jar>
+		<property name="signjar" location="../Certificates/signjar.bat" />
+		<property name="jarpath" location="${deploydir}/${ant.project.name}.jar" />
+		<!--<exec executable="cmd">
+			<arg value="/c" />
+			<arg value="${signjar}" />
+			<arg value="${jarpath}" />
+		</exec>-->
+	</target>
+
+	<!-- ***** deliver into ClearCase -->
+	<target name="init-deliver">
+		<property name="deploydir" location="${CCdeploydir}" />
+	</target>
+
+	<target name="deliver" depends="init-deliver,checkout,${ant.project.name}.jar">
+		<cccheckin viewpath="${deploydir}/${ant.project.name}.jar" nowarn="true" identical="true" />
+		<echo message="${ant.project.name}.jar has been generated and checked. Deleting temporary directory..." />
+		<delete dir="${compiledir}" />
+	</target>
+
+	<!-- ***** local compilation -->
+	<target name="init-compile">
+		<property name="deploydir" location="${Localdeploydir}" />
+		<delete dir="${Localdeploydir}" />
+		<mkdir dir="${Localdeploydir}" />
+	</target>
+
+	<target name="compile" depends="init-compile,${ant.project.name}.jar">
+		<echo message="${ant.project.name}.jar has been generated. Deleting temporary directory..." />
+		<delete dir="${compiledir}" />
+	</target>
+
+	<target name="int_as" depends="compile">
+		<property name="Platform" value="int_as" />
+		<antcall target="deploy_int" />
+	</target>
+	<target name="int_es" depends="compile">
+		<property name="Platform" value="int_es" />
+		<antcall target="deploy_int" />
+	</target>
+	<target name="int_is" depends="compile">
+		<property name="Platform" value="int_is" />
+		<antcall target="deploy_int" />
+	</target>
+	<target name="int_ms" depends="compile">
+		<property name="Platform" value="int_ms" />
+		<antcall target="deploy_int" />
+	</target>
+
+	<target name="int_all" depends="compile">
+		<antcall target="deploy_int">
+			<param name="Platform" value="int_as" />
+		</antcall>
+		<antcall target="deploy_int">
+			<param name="Platform" value="int_es" />
+		</antcall>
+		<antcall target="deploy_int">
+			<param name="Platform" value="int_is" />
+		</antcall>
+		<antcall target="deploy_int">
+			<param name="Platform" value="int_ms" />
+		</antcall>
+	</target>
+
+	<target name="deploy_int">
+		<echo message="transfer jar to server : ${static_INT_Server} to dir : ${static_BeginOfPath}${Platform}${static_EndOfPath} ..." />
+		<ftp server="${static_INT_Server}" remotedir="${static_BeginOfPath}${Platform}${static_EndOfPath}" userid="${static_User}" password="${static_Password}">
+			<fileset dir="${Localdeploydir}">
+				<include name="${ant.project.name}.jar" />
+			</fileset>
+		</ftp>
+	</target>
+
+	<target name="dev_as" depends="compile">
+		<property name="Platform" value="dev_as" />
+		<antcall target="deploy_dev" />
+	</target>
+	<target name="dev_es" depends="compile">
+		<property name="Platform" value="dev_es" />
+		<antcall target="deploy_dev" />
+	</target>
+	<target name="dev_is" depends="compile">
+		<property name="Platform" value="dev_is" />
+		<antcall target="deploy_dev" />
+	</target>
+	<target name="dev_ms" depends="compile">
+		<property name="Platform" value="dev_ms" />
+		<antcall target="deploy_dev" />
+	</target>
+
+	<target name="dev_all" depends="compile">
+		<antcall target="deploy_dev">
+			<param name="Platform" value="dev_as" />
+		</antcall>
+		<antcall target="deploy_dev">
+			<param name="Platform" value="dev_es" />
+		</antcall>
+		<antcall target="deploy_dev">
+			<param name="Platform" value="dev_is" />
+		</antcall>
+		<antcall target="deploy_dev">
+			<param name="Platform" value="dev_ms" />
+		</antcall>
+	</target>
+
+	<target name="deploy_dev">
+		<echo message="transfer jar to server : ${static_DEV_Server} to dir : ${static_BeginOfPath}${Platform}${static_EndOfPath} ..." />
+		<ftp server="${static_DEV_Server}" remotedir="${static_BeginOfPath}${Platform}${static_EndOfPath}" userid="${static_User}" password="${static_Password}">
+			<fileset dir="${Localdeploydir}">
+				<include name="${ant.project.name}.jar" />
+			</fileset>
+		</ftp>
+	</target>
+
+</project>
+

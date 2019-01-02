@@ -1,0 +1,52 @@
+Page Name	Registry Name	Description	Mime Type	Hidden (boolean)	Icon File
+<<FPDM_RoleProductsPage>>					
+ECMConfig	ECMConfig			FALSE	
+ECMOnlineImpactAnalysisConfiguration	ECMOnlineImpactAnalysisConfiguration			FALSE	
+ERC_FPDM_OnePartInterfacesAttributes.properties	ERC_FPDM_OnePartInterfacesAttributes.properties	Page for OnePart interfaces attributes indexation		FALSE	
+FPDM_EAI.properties		Page object for EAI		FALSE	
+FPDM_ExcelReportStringResource.properties	FPDM_ExcelReportStringResource.properties				
+FPDM_ExcelReportStringResource_en.properties	FPDM_ExcelReportStringResource_en.properties				
+FPDM_RoleGlobalRolesPage.properties		Page for Automatic global roles assignation		FALSE	
+FPDM_RoleProductsPage.properties		Page for Automatic Licenses assignation		FALSE	
+FPDM_SystemInformationsPage.properties		Page for FPDM System properties		FALSE	
+FPDM_Titleblock_Basis_Definition_Block.txt		TitleBlock Basis Definition block plot instructions used for CAD file creation		FALSE	
+FPDM_Titleblock_Basis_Definition_Block_For_UG.txt		TitleBlock Basis Definition block plot instructions used for UG CAD file creation		FALSE	
+FPDM_Titleblock_Basis_Info_Block.txt		TitleBlock related Basis Definition block plot instructions used for CAD file creation		FALSE	
+FPDM_Titleblock_Basis_Info_Block_For_UG.txt		TitleBlock related Basis Definition block plot instructions used for UG CAD file creation		FALSE	
+FPDM_Titleblock_ECO_Block.txt		TitleBlock ECO block plot instructions used for CAD file creation		FALSE	
+FPDM_Titleblock_ECO_Block_For_UG.txt		TitleBlock ECO block plot instructions used for UG CAD file creation		FALSE	
+FPDM_Titleblock_Info_Block.txt		TitleBlock information block plot instructions used for CAD file creation		FALSE	
+FPDM_Titleblock_Nissan_Renault.txt		TitleBlock Nissan-Renault dimensions plot instructions used for CAD file creation		FALSE	
+FPDM_Titleblock_Part_Info_Block.txt		TitleBlock Part info block plot instructions used for CAD file creation		FALSE	
+FPDM_Titleblock_Part_Info_Block_For_UG.txt		TitleBlock Part info block plot instructions used for UG CAD file creation		FALSE	
+FPDM_Titleblock_Plan_Block.txt		TitleBlock Plan block plot instructions used for CAD file creation		FALSE	
+FPDM_Titleblock_Plan_Block_Checkout.txt		TitleBlock Plan block plot instructions on checkout used for CAD file creation		FALSE	
+FPDM_Titleblock_Plan_Block_Checkout_For_UG.txt		TitleBlock Plan block plot instructions on checkout used for UG CAD file creation		FALSE	
+FPDM_Titleblock_Plan_Block_For_UG.txt		TitleBlock Plan block plot instructions used for UG CAD file creation		FALSE	
+FPDM_Titleblock_Translation.txt		TitleBlock translation file used for CAD file creation		FALSE	
+FRCMBOMTreeJS				FALSE	
+FRCPSTreeJS				FALSE	
+GNVObjectHistory				FALSE	
+PSS_NotificationConfig.properties	PSS_NotificationConfig.properties			FALSE	
+PSS_NotificationStyleSheet	PSS_NotificationStyleSheet			FALSE	
+PSS_TitleBlockConfig_BASISDEFINITION.properties	PSS_TitleBlockConfig_BASISDEFINITION.properties	Admin configuration file for BD TitleBlock		FALSE
+PSS_TitleBlockConfig_FASFAE.properties	PSS_TitleBlockConfig_FASFAE.properties	Admin configuration file for FAS TitleBlock		FALSE
+PSS_TitleBlockConfig_RENAULTNISSAN.properties	PSS_TitleBlockConfig_RENAULTNISSAN.properties	Admin configuration file for Renault Nissan TitleBlock		FALSE
+UM5AdvancedTableWdgConf		Page for dashboard customization.		FALSE	
+UM5TableWdgConf		Page for dashboard customization.		FALSE	
+WhereUsedDefinition	WhereUsedDefinition			FALSE	
+emxComponentsStringResource_en.properties				FALSE	
+emxEngineeringCentral.properties	emxEngineeringCentral.properties				
+emxEngineeringCentralStringResource.properties	emxEngineeringCentralStringResource.properties				
+emxEngineeringCentralStringResource_en.properties	emxEngineeringCentralStringResource_en.properties				
+emxEnterpriseChangeMgtStringResource.properties	emxEnterpriseChangeMgtStringResource.properties			FALSE	
+emxEnterpriseChangeMgtStringResource_en.properties	emxEnterpriseChangeMgtStringResource_en.properties			FALSE	
+emxFRCMBOMCentralStringResources_en.properties		Page object for MBOM		FALSE	
+emxFrameworkStringResource.properties	emxFrameworkStringResource.properties			FALSE	
+emxFrameworkStringResource_en.properties	emxFrameworkStringResource_en.properties			FALSE	
+emxIEFDesignCenterStringResource.properties	emxIEFDesignCenterStringResource.properties			FALSE
+emxIEFDesignCenterStringResource_en.properties	emxIEFDesignCenterStringResource_en.properties	Page object for Integrations		FALSE	
+emxSystem.properties	emxSystem.properties			FALSE	
+emxVPLMAdministrationStringResource_en.properties				FALSE	
+extractor.properties	extractor.properties			FALSE	
+i3DXAppsMngt.properties	i3DXAppsMngt.properties			FALSE	

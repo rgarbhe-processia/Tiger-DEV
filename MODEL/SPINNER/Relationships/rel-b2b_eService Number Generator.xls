@@ -1,0 +1,38 @@
+Rel Name	from.type	from.name	from.revision	to.type	to.name	to.revision	Override Settings	Create Trigger	Modify Trigger	Delete Trigger
+eService Number Generator	eService Object Generator	type_CADDrawing	FAURECIA	eService Number Generator	type_Part					
+eService Number Generator	eService Object Generator	type_CADModel	FAURECIA	eService Number Generator	type_Part					
+eService Number Generator	eService Object Generator	type_CreateAssembly	-	eService Number Generator	type_CreateAssembly	-								
+eService Number Generator	eService Object Generator	type_CreateAssembly	FAURECIA	eService Number Generator	type_Part					
+eService Number Generator	eService Object Generator	type_CreateKit	-	eService Number Generator	type_CreateAssembly	-				
+eService Number Generator	eService Object Generator	type_CreateKit	FAURECIA	eService Number Generator	type_Part					
+eService Number Generator	eService Object Generator	type_CreateMaterial	-	eService Number Generator	type_CreateAssembly	-								
+eService Number Generator	eService Object Generator	type_CreateMaterial	FAURECIA	eService Number Generator	type_Part					
+eService Number Generator	eService Object Generator	type_DrawingPrint	FAURECIA	eService Number Generator	type_Part					
+eService Number Generator	eService Object Generator	type_FPDM_ExcelReport		eService Number Generator	type_FPDM_ExcelReport					
+eService Number Generator	eService Object Generator	type_FPDM_ExcelReportParameter		eService Number Generator	type_FPDM_ExcelReportParameter					
+eService Number Generator	eService Object Generator	type_PSS_ChangeNotice		eService Number Generator	type_PSS_ChangeNotice					
+eService Number Generator	eService Object Generator	type_PSS_ColorCatalog		eService Number Generator	type_PSS_ColorCatalog					
+eService Number Generator	eService Object Generator	type_PSS_ColorOption		eService Number Generator	type_PSS_ColorOption					
+eService Number Generator	eService Object Generator	type_PSS_EquipmentRequest		eService Number Generator	type_PSS_EquipmentRequest					
+eService Number Generator	eService Object Generator	type_PSS_ExternalReference		eService Number Generator	type_PSS_ExternalReference					
+eService Number Generator	eService Object Generator	type_PSS_Harmony		eService Number Generator	type_PSS_Harmony					
+eService Number Generator	eService Object Generator	type_PSS_HarmonyRequest		eService Number Generator	type_PSS_HarmonyRequest					
+eService Number Generator	eService Object Generator	type_PSS_ImpactAnalysis		eService Number Generator	type_PSS_ImpactAnalysis					
+eService Number Generator	eService Object Generator	type_PSS_LineData		eService Number Generator	type_PSS_LineData					
+eService Number Generator	eService Object Generator	type_PSS_ListOfAssessors		eService Number Generator	type_PSS_ListOfAssessors					
+eService Number Generator	eService Object Generator	type_PSS_MBOMVariantAssembly		eService Number Generator	type_PSS_MBOMVariantAssembly					
+eService Number Generator	eService Object Generator	type_PSS_ManufacturingChangeAction		eService Number Generator	type_PSS_ManufacturingChangeAction					
+eService Number Generator	eService Object Generator	type_PSS_ManufacturingChangeOrder		eService Number Generator	type_PSS_ManufacturingChangeOrder					
+eService Number Generator	eService Object Generator	type_PSS_Material_Request		eService Number Generator	type_PSS_Material_Request					
+eService Number Generator	eService Object Generator	type_PSS_Operation		eService Number Generator	type_PSS_Operation					
+eService Number Generator	eService Object Generator	type_PSS_Portfolio		eService Number Generator	type_PSS_Portfolio					
+eService Number Generator	eService Object Generator	type_PSS_PublishControlObject		eService Number Generator	type_PSS_PublishControlObject					
+eService Number Generator	eService Object Generator	type_PSS_RoleAssessment		eService Number Generator	type_PSS_RoleAssessment					
+eService Number Generator	eService Object Generator	type_PSS_RoleAssessmentEvaluation		eService Number Generator	type_PSS_RoleAssessmentEvaluation					
+eService Number Generator	eService Object Generator	type_PSS_VariantAssembly		eService Number Generator	type_Part					
+eService Number Generator	eService Object Generator	type_Part		eService Number Generator	type_Part					
+eService Number Generator	eService Object Generator	type_ProcessContinuousCreateMaterial		eService Number Generator	type_ProcessContinuousProvide					
+eService Number Generator	eService Object Generator	type_ProcessContinuousProvide		eService Number Generator	type_ProcessContinuousProvide					
+eService Number Generator	eService Object Generator	type_ToolingPart		eService Number Generator	type_ToolingPart					
+eService Number Generator	eService Object Generator	type_VPMReference	PSS_Equipment	eService Number Generator	type_VPMReference	PSS_Equipment				
+eService Number Generator	eService Object Generator	type_VPMReference	PSS_Tool	eService Number Generator	type_VPMReference	PSS_Tool				

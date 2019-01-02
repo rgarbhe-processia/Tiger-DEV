@@ -1,0 +1,8 @@
+dependencies {
+    compile(group: 'org.apache.commons', name: 'commons-lang3', version: '3.1')
+    compile fileTree(dir: '../../08_CSR/3dspace/linux_a64/docs', include:'**/*.jar')
+    compile(group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.0')
+    compile(group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.0')
+    compile(group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.11.0')
+    compile project(':TigerConstants')
+}

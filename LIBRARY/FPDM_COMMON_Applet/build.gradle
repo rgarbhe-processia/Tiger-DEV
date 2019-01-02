@@ -1,0 +1,7 @@
+apply from : '../../applet.gradle'
+
+dist.distDirectory = 'WebClient'
+	
+dependencies {
+    compile ':FPDMCommon:'
+}

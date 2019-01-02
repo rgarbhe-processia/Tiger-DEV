@@ -1,0 +1,551 @@
+State	User	Login(boolean)	Key	Revoke(boolean)	Read	Modify	Delete	Checkout	Checkin	Schedule	Lock	Unlock	Execute	Freeze	Thaw	Create	Revise	MajorRevise	Promote	Demote	Grant	Enable	Disable	Override	ChangeName	ChangeType	ChangeOwner	ChangePolicy	Revoke	ChangeVault	FromConnect	ToConnect	FromDisconnect	ToDisconnect	ViewForm	Modifyform	Show	Approve	Reject	Ignore	Reserve	Unreserve	Organization(any|single|ancestor|descendant)	Project(any|single|ancestor|descendant)	Owner	Reserve(Context)	Maturity	Category	Filter	LocalFilter	Branch State
+FROZEN	FPDM_PSS_ProcessArchitect	FALSE		FALSE	Y	Y	-	Y	Y	-	Y	Y	-	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	Y	-	-	Y	Y	any	any	any	any	any	any			
+FROZEN	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_ASQ	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_CAD_Designer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_CAD_Designer_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_CAE_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Change_Coordinator	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Change_Coordinator_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_Cost_Estimation_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Development_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_GTS_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Geometry_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Global_Administrator	FALSE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Global_Administrator	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			RELEASED
+FROZEN	PSS_Global_Administrator	FALSE	UnFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+FROZEN	PSS_PCAndL	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_PCAndL_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_PLM_Support_Team	FALSE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_PLM_Support_Team	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			RELEASED
+FROZEN	PSS_PLM_Support_Team	FALSE	UnFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+FROZEN	PSS_Plant_Launch_Team_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Plant_Launch_Team_Leader_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_Plant_Logistic	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Plant_Process_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Plant_Quality	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Process_Tool_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Product_Design_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Product_Development_Lead	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Product_Development_Lead_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_Product_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Program_Buyer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Program_Buyer_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_Program_Controller	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Program_Controller_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_Program_Manager	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Program_Manager_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+FROZEN	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+FROZEN	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	single	any	any	public	any			
+FROZEN	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+FROZEN	PSS_Program_Manufacturing_Leader	FALSE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			
+FROZEN	PSS_Program_Manufacturing_Leader	FALSE	PSS_PrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+FROZEN	PSS_Program_Manufacturing_Leader	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			RELEASED
+FROZEN	PSS_Program_Manufacturing_Leader	FALSE	UnFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+FROZEN	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_Program_Quality_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Program_Quality_Leader_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_Program_Sales_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Program_Sales_Leader_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_Prototype_Coordinator	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Raw_Material_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_ReadAndApprove	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+FROZEN	PSS_SPDE_And_DL	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_SPDE_And_DL_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+FROZEN	PSS_TAndE_Buyer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	PSS_Test_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+FROZEN	VPLMAdmin	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			RELEASED
+FROZEN	VPLMAdmin	FALSE	UnFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+FROZEN	VPLMCreator	FALSE	ExtendedMultiCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+FROZEN	VPLMCreator	FALSE	UnFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+FROZEN	VPLMCreator	TRUE	ExtendedSingleCtxChangeOwnerAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	no	any	any	expression[VPLMTransferByOwner] && (!expression[VPLMStrictOrgOwnership])		
+FROZEN	VPLMCreator	TRUE	ExtendedSingleCtxChangeOwnerAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	no	any	any	expression[VPLMTransferByOwner]		
+FROZEN	VPLMCreator	TRUE	ExtendedSingleCtxPromoteAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+FROZEN	VPLMCreator	TRUE	ExtendedSingleCtxPromoteAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	inclusive	any	any			
+FROZEN	VPLMCreator	TRUE	ExtendedSingleCtxReviseAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+FROZEN	VPLMCreator	TRUE	ExtendedSingleCtxReviseAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any			
+FROZEN	VPLMCreator	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any			
+FROZEN	VPLMExperimenter	FALSE	ExtendedMultiCtxFromconnectAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	expression[MultiContextualAuthoringAbility] && (!expression[VPLMStrictOrgOwnership])		
+FROZEN	VPLMExperimenter	FALSE	ExtendedMultiCtxFromconnectAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+FROZEN	VPLMExperimenter	TRUE	ExtendedSingleCtxFromconnectAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+FROZEN	VPLMExperimenter	TRUE	ExtendedSingleCtxFromconnectAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any			
+FROZEN	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedContextualPrivateConnectAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess] && expression[MultiContextualPrivateApplicability]		
+FROZEN	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedContextualPrivateReadAccess_User	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess]		
+FROZEN	VPLMLocalCrossOrgContextAccess	TRUE	ExtendedContextualPrivateReadAccess_Login	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+FROZEN	VPLMLocalCrossPrjContextAccess	FALSE	ExtendedPublicReadAccess_AnyPrj	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	ancestor	any	any	any	public	any	expression[OrganizationPublicAccess]		
+FROZEN	VPLMLocalCrossPrjContextAccess	FALSE	ExtendedPublicReadAccess_SinglePrj	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any			
+FROZEN	VPLMProjectAdministrator	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			RELEASED
+FROZEN	VPLMProjectAdministrator	FALSE	UnFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			IN_WORK
+FROZEN	VPLMProjectAdministrator	TRUE	ExtendedSingleCtxModifyAccess	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any			
+FROZEN	VPLMProjectAdministrator	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any			
+FROZEN	VPLMProjectLeader	FALSE	ExtendedMultiCtxLockAccessOnAnyOrg	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+FROZEN	VPLMProjectLeader	FALSE	ExtendedMultiCtxLockAccessOnSingleOrg	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	single	single	any	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+FROZEN	VPLMProjectLeader	FALSE	ExtendedMultiCtxModifyAccessOnAnyOrg1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	context	any	any	expression[VPLMStrictLocking_Definition] && (!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+FROZEN	VPLMProjectLeader	FALSE	ExtendedMultiCtxModifyAccessOnAnyOrg2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictLocking_Definition]) && (!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+FROZEN	VPLMProjectLeader	FALSE	ExtendedMultiCtxModifyAccessOnSingleOrg1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	context	any	any	expression[VPLMStrictLocking_Definition] && expression[MultiContextualAuthoringAbility]		
+FROZEN	VPLMProjectLeader	FALSE	ExtendedMultiCtxModifyAccessOnSingleOrg2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any	(!expression[VPLMStrictLocking_Definition]) && expression[MultiContextualAuthoringAbility]		
+FROZEN	VPLMProjectLeader	FALSE	ExtendedMultiCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any	expression[MultiContextualAuthoringAbility]		
+FROZEN	VPLMProjectLeader	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			RELEASED
+FROZEN	VPLMProjectLeader	FALSE	UnFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+FROZEN	VPLMProjectLeader	TRUE	ExtendedSingleCtxLockAccessOnAnyOrg	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+FROZEN	VPLMProjectLeader	TRUE	ExtendedSingleCtxLockAccessOnSingleOrg	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	single	single	any	inclusive	any	any			
+FROZEN	VPLMProjectLeader	TRUE	ExtendedSingleCtxModifyAccessOnAnyOrg1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	context	any	any	expression[VPLMStrictLocking_Definition] && (!expression[VPLMStrictOrgOwnership])		
+FROZEN	VPLMProjectLeader	TRUE	ExtendedSingleCtxModifyAccessOnAnyOrg2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictLocking_Definition]) && (!expression[VPLMStrictOrgOwnership])		
+FROZEN	VPLMProjectLeader	TRUE	ExtendedSingleCtxModifyAccessOnSingleOrg1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	context	any	any	expression[VPLMStrictLocking_Definition]		
+FROZEN	VPLMProjectLeader	TRUE	ExtendedSingleCtxModifyAccessOnSingleOrg2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any	(!expression[VPLMStrictLocking_Definition])		
+FROZEN	VPLMProjectLeader	TRUE	ExtendedSingleCtxPromoteAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+FROZEN	VPLMProjectLeader	TRUE	ExtendedSingleCtxPromoteAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any			
+FROZEN	VPLMProjectLeader	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any			
+FROZEN	VPLMReleaseManager	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			RELEASED
+FROZEN	VPLMReleaseManager	FALSE	UnFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	any	any	any	any	any	any			IN_WORK
+FROZEN	VPLMReleaseManager	TRUE	ExtendedSingleCtxPromoteAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any			
+FROZEN	VPLMSecuredCrossAccess	FALSE	ExtendedReadAccessForPublicGuest	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+FROZEN	VPLMTeamManager	TRUE	ExtendedSingleCtxChangeOwnerAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	no	any	any			
+FROZEN	VPLMTeamManager	TRUE	ExtendedSingleCtxLockAccess	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	any	inclusive	any	any			
+FROZEN	VPLMTeamManager	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any			
+IN_WORK	FPDM_PSS_ProcessArchitect	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	Y	-	-	Y	Y	any	any	any	any	any	any			
+IN_WORK	Grant	FALSE	ExtendedTeamWkpWriteAccess	FALSE	-	Y	-	-	Y	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	single	single	any	inclusive	any	any			
+IN_WORK	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_ASQ	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_CAD_Designer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_CAD_Designer_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_CAE_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Change_Coordinator	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Change_Coordinator_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_Cost_Estimation_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Development_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_GTS_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Geometry_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Global_Administrator	FALSE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Global_Administrator	FALSE	Isolate	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			PRIVATE
+IN_WORK	PSS_Global_Administrator	FALSE	ToFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			FROZEN
+IN_WORK	PSS_Global_Administrator	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			RELEASED
+IN_WORK	PSS_PCAndL	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_PCAndL_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_PLM_Support_Team	FALSE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_PLM_Support_Team	FALSE	Isolate	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			PRIVATE
+IN_WORK	PSS_PLM_Support_Team	FALSE	ToFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			FROZEN
+IN_WORK	PSS_PLM_Support_Team	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			RELEASED
+IN_WORK	PSS_Plant_Launch_Team_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Plant_Launch_Team_Leader_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_Plant_Logistic	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Plant_Process_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Plant_Quality	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Process_Tool_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Product_Design_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Product_Development_Lead	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Product_Development_Lead_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_Product_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Program_Buyer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Program_Buyer_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_Program_Controller	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Program_Controller_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_Program_Manager	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Program_Manager_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_Program_Manufacturing_Leader	FALSE	Isolate	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			PRIVATE
+IN_WORK	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+IN_WORK	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+IN_WORK	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	descendant	single	any	any	public	any			
+IN_WORK	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+IN_WORK	PSS_Program_Manufacturing_Leader	FALSE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			
+IN_WORK	PSS_Program_Manufacturing_Leader	FALSE	PSS_PrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+IN_WORK	PSS_Program_Manufacturing_Leader	FALSE	ToFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			FROZEN
+IN_WORK	PSS_Program_Manufacturing_Leader	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			RELEASED
+IN_WORK	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_Program_Quality_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Program_Quality_Leader_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_Program_Sales_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Program_Sales_Leader_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_Prototype_Coordinator	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Raw_Material_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_ReadAndApprove	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+IN_WORK	PSS_SPDE_And_DL	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_SPDE_And_DL_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+IN_WORK	PSS_TAndE_Buyer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	PSS_Test_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+IN_WORK	VPLMAdmin	FALSE	Isolate	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			PRIVATE
+IN_WORK	VPLMAdmin	FALSE	ToFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			FROZEN
+IN_WORK	VPLMAdmin	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			RELEASED
+IN_WORK	VPLMCreator	FALSE	ExtendedConnectAccessForCreator	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess] && expression[MultiContextualPrivateApplicability]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxDeleteAccessOnAnyOrg	FALSE	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	inclusive	any	any	expression[MultiContextualAuthoringAbility] && (!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxDeleteAccessOnSingleOrg	FALSE	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxLockAccessOnAnyOrg1	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	context	inclusive	any	any	expression[VPLMStrictOwnership_Definition] && (!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxLockAccessOnAnyOrg2	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOwnership_Definition]) && (!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxLockAccessOnSingleOrg1	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	single	single	context	inclusive	any	any	expression[VPLMStrictOwnership_Definition] && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxLockAccessOnSingleOrg2	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	single	single	any	inclusive	any	any	(!expression[VPLMStrictOwnership_Definition]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxModifyAccessOnAnyOrg1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	inclusive	any	any	expression[VPLMStrictOwnership_Definition] && (!expression[VPLMStrictLocking_Definition]) && (!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxModifyAccessOnAnyOrg2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	context	any	any	expression[VPLMStrictLocking_Definition] && (!expression[VPLMStrictOwnership_Definition]) && (!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxModifyAccessOnAnyOrg3	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	context	any	any	expression[VPLMStrictLocking_Definition] && expression[VPLMStrictOwnership_Definition] && (!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxModifyAccessOnAnyOrg4	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOwnership_Definition]) && (!expression[VPLMStrictLocking_Definition]) && (!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxModifyAccessOnSingleOrg1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	inclusive	any	any	expression[VPLMStrictOwnership_Definition] && (!expression[VPLMStrictLocking_Definition]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxModifyAccessOnSingleOrg2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	context	any	any	expression[VPLMStrictLocking_Definition] && (!expression[VPLMStrictOwnership_Definition]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxModifyAccessOnSingleOrg3	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	context	any	any	expression[VPLMStrictLocking_Definition] && expression[VPLMStrictOwnership_Definition] && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxModifyAccessOnSingleOrg4	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any	(!expression[VPLMStrictOwnership_Definition]) && (!expression[VPLMStrictLocking_Definition]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedMultiCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMCreator	FALSE	ExtendedReadAccessForCreator_User	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess]		
+IN_WORK	VPLMCreator	FALSE	Isolate	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			PRIVATE
+IN_WORK	VPLMCreator	FALSE	ToFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			FROZEN
+IN_WORK	VPLMCreator	TRUE	ExtendedReadAccessForCreator_Login	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxChangeOwnerAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	no	any	any	expression[VPLMTransferByOwner] && (!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxChangeOwnerccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	no	any	any	expression[VPLMTransferByOwner]		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxDeleteAccessOnAnyOrg	FALSE	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxDeleteAccessOnSingleOrg	FALSE	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	inclusive	any	any			
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxLockAccessOnAnyOrg1	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	context	inclusive	any	any	expression[VPLMStrictOwnership_Definition] && (!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxLockAccessOnAnyOrg2	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOwnership_Definition]) && (!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxLockAccessOnSingleOrg1	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	single	single	context	inclusive	any	any	expression[VPLMStrictOwnership_Definition]		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxLockAccessOnSingleOrg2	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	single	single	any	inclusive	any	any	(!expression[VPLMStrictOwnership_Definition])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxModifyAccessOnAnyOrg1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	inclusive	any	any	expression[VPLMStrictOwnership_Definition] && (!expression[VPLMStrictLocking_Definition]) && (!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxModifyAccessOnAnyOrg2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	context	any	any	expression[VPLMStrictLocking_Definition] && (!expression[VPLMStrictOwnership_Definition]) && (!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxModifyAccessOnAnyOrg3	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	context	any	any	expression[VPLMStrictLocking_Definition] && expression[VPLMStrictOwnership_Definition] && (!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxModifyAccessOnAnyOrg4	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOwnership_Definition]) && (!expression[VPLMStrictLocking_Definition]) && (!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxModifyAccessOnSingleOrg1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	inclusive	any	any	expression[VPLMStrictOwnership_Definition] && (!expression[VPLMStrictLocking_Definition])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxModifyAccessOnSingleOrg2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	context	any	any	expression[VPLMStrictLocking_Definition] && (!expression[VPLMStrictOwnership_Definition])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxModifyAccessOnSingleOrg3	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	context	any	any	expression[VPLMStrictLocking_Definition] && expression[VPLMStrictOwnership_Definition]		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxModifyAccessOnSingleOrg4	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any	(!expression[VPLMStrictOwnership_Definition]) && (!expression[VPLMStrictLocking_Definition])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxReviseAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxReviseAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any			
+IN_WORK	VPLMCreator	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any			
+IN_WORK	VPLMExperimenter	FALSE	ExtendedMultiCtxFromconnectAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	expression[MultiContextualAuthoringAbility] && (!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMExperimenter	FALSE	ExtendedMultiCtxFromconnectAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMExperimenter	TRUE	ExtendedSingleCtxFromconnectAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMExperimenter	TRUE	ExtendedSingleCtxFromconnectAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any			
+IN_WORK	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedContextualPrivateConnectAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	any	single	any	any	any	any	expression[ExtendViewerOnInWork] && expression[MultiContextualPrivateReadAccess] && expression[MultiContextualPrivateApplicability]		
+IN_WORK	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedContextualPrivateReadAccess_User	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	any	any	any	any	expression[ExtendViewerOnInWork] && expression[MultiContextualPrivateReadAccess]		
+IN_WORK	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedContextualPublicReadAccess_User	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	public	any	expression[MultiContextualPrivateReadAccess]		
+IN_WORK	VPLMLocalCrossOrgContextAccess	TRUE	ExtendedContextualPrivateReadAccess_Login	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	any	any	expression[ExtendViewerOnInWork]		
+IN_WORK	VPLMLocalCrossOrgContextAccess	TRUE	ExtendedContextualPublicReadAccess_Login	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	public	any			
+IN_WORK	VPLMLocalCrossPrjContextAccess	FALSE	ExtendedPublicReadAccess_AnyPrj	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	ancestor	any	any	any	public	any	expression[OrganizationPublicAccess]		
+IN_WORK	VPLMLocalCrossPrjContextAccess	FALSE	ExtendedPublicReadAccess_SinglePrj	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any			
+IN_WORK	VPLMProjectAdministrator	FALSE	ExtendedConnectAccessForPrjAdmin	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess] && expression[MultiContextualPrivateApplicability]		
+IN_WORK	VPLMProjectAdministrator	FALSE	ExtendedReadAccessForPrjAdmin_User	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess]		
+IN_WORK	VPLMProjectAdministrator	FALSE	ToFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			FROZEN
+IN_WORK	VPLMProjectAdministrator	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			RELEASED
+IN_WORK	VPLMProjectAdministrator	TRUE	ExtendedReadAccessForPrjAdmin_Login	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+IN_WORK	VPLMProjectAdministrator	TRUE	ExtendedSingleCtxModifyAccess	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any			
+IN_WORK	VPLMProjectAdministrator	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any			
+IN_WORK	VPLMProjectLeader	FALSE	ExtendedMultiCtxLockAccessOnAnyOrg	FALSE	-	-	Y	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMProjectLeader	FALSE	ExtendedMultiCtxLockAccessOnSingleOrg	FALSE	-	-	Y	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	single	single	any	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMProjectLeader	FALSE	ExtendedMultiCtxModifyAccessOnAnyOrg1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	context	any	any	expression[VPLMStrictLocking_Definition] && (!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMProjectLeader	FALSE	ExtendedMultiCtxModifyAccessOnAnyOrg2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictLocking_Definition]) && (!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMProjectLeader	FALSE	ExtendedMultiCtxModifyAccessOnSingleOrg1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	context	any	any	expression[VPLMStrictLocking_Definition] && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMProjectLeader	FALSE	ExtendedMultiCtxModifyAccessOnSingleOrg2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any	(!expression[VPLMStrictLocking_Definition]) && expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMProjectLeader	FALSE	ExtendedMultiCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any	expression[MultiContextualAuthoringAbility]		
+IN_WORK	VPLMProjectLeader	FALSE	Isolate	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			PRIVATE
+IN_WORK	VPLMProjectLeader	FALSE	ToFreeze	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			FROZEN
+IN_WORK	VPLMProjectLeader	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			RELEASED
+IN_WORK	VPLMProjectLeader	TRUE	ExtendedSingleCtxLockAccessOnAnyOrg	FALSE	-	-	Y	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMProjectLeader	TRUE	ExtendedSingleCtxLockAccessOnSingleOrg	FALSE	-	-	Y	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	single	single	any	inclusive	any	any			
+IN_WORK	VPLMProjectLeader	TRUE	ExtendedSingleCtxModifyAccessOnAnyOrg1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	context	any	any	expression[VPLMStrictLocking_Definition] && (!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMProjectLeader	TRUE	ExtendedSingleCtxModifyAccessOnAnyOrg2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictLocking_Definition]) && (!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMProjectLeader	TRUE	ExtendedSingleCtxModifyAccessOnSingleOrg1	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	context	any	any	expression[VPLMStrictLocking_Definition]		
+IN_WORK	VPLMProjectLeader	TRUE	ExtendedSingleCtxModifyAccessOnSingleOrg2	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any	(!expression[VPLMStrictLocking_Definition])		
+IN_WORK	VPLMProjectLeader	TRUE	ExtendedSingleCtxPromoteAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+IN_WORK	VPLMProjectLeader	TRUE	ExtendedSingleCtxPromoteAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any			
+IN_WORK	VPLMProjectLeader	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any			
+IN_WORK	VPLMReleaseManager	FALSE	ToRelease	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			RELEASED
+IN_WORK	VPLMReleaseManager	TRUE	ExtendedSingleCtxPromoteAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any			
+IN_WORK	VPLMSecuredCrossAccess	FALSE	ExtendedReadAccessForPublicGuest	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+IN_WORK	VPLMTeamManager	TRUE	ExtendedSingleCtxChangeOwnerAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	no	any	any			
+IN_WORK	VPLMTeamManager	TRUE	ExtendedSingleCtxLockAccess	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	any	inclusive	any	any			
+IN_WORK	VPLMTeamManager	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any			
+OBSOLETE	FPDM_PSS_ProcessArchitect	FALSE		FALSE	Y	-	-	Y	-	-	-	Y	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	Y	any	any	any	any	any	any			
+OBSOLETE	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_ASQ	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_CAD_Designer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_CAD_Designer_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_CAE_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Change_Coordinator	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Change_Coordinator_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_Cost_Estimation_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Development_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_GTS_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Geometry_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Global_Administrator	FALSE		FALSE	Y	Y	Y	Y	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_PCAndL	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_PCAndL_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_PLM_Support_Team	FALSE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Plant_Launch_Team_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Plant_Launch_Team_Leader_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_Plant_Logistic	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Plant_Process_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Plant_Quality	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Process_Tool_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Product_Design_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Product_Development_Lead	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Product_Development_Lead_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_Product_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Program_Buyer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Program_Buyer_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_Program_Controller	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Program_Controller_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_Program_Manager	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Program_Manager_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+OBSOLETE	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+OBSOLETE	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	descendant	single	any	any	public	any			
+OBSOLETE	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+OBSOLETE	PSS_Program_Manufacturing_Leader	FALSE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			
+OBSOLETE	PSS_Program_Manufacturing_Leader	FALSE	PSS_PrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+OBSOLETE	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_Program_Quality_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Program_Quality_Leader_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_Program_Sales_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Program_Sales_Leader_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_Prototype_Coordinator	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Raw_Material_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_ReadAndApprove	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+OBSOLETE	PSS_SPDE_And_DL	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_SPDE_And_DL_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+OBSOLETE	PSS_TAndE_Buyer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	PSS_Test_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+OBSOLETE	VPLMCreator	FALSE	ExtendedMultiCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+OBSOLETE	VPLMCreator	TRUE	ExtendedSingleCtxChangeOwnerAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	no	any	any	expression[VPLMTransferByOwner] && (!expression[VPLMStrictOrgOwnership])		
+OBSOLETE	VPLMCreator	TRUE	ExtendedSingleCtxChangeOwnerAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	no	any	any	expression[VPLMTransferByOwner]		
+OBSOLETE	VPLMCreator	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any			
+OBSOLETE	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedContextualPrivateConnectAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess] && expression[MultiContextualPrivateApplicability]		
+OBSOLETE	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedContextualPrivateReadAccess_User	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess]		
+OBSOLETE	VPLMLocalCrossOrgContextAccess	TRUE	ExtendedContextualPrivateReadAccess_Login	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+OBSOLETE	VPLMLocalCrossPrjContextAccess	FALSE	ExtendedPublicReadAccess_AnyPrj	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	ancestor	any	any	any	notprivate	any	expression[OrganizationPublicAccess]		
+OBSOLETE	VPLMLocalCrossPrjContextAccess	FALSE	ExtendedPublicReadAccess_SinglePrj	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	notprivate	any			
+OBSOLETE	VPLMProjectAdministrator	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any			
+OBSOLETE	VPLMProjectLeader	FALSE	ExtendedMultiCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any	expression[MultiContextualAuthoringAbility]		
+OBSOLETE	VPLMProjectLeader	TRUE	ExtendedSingleCtxPromoteAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+OBSOLETE	VPLMProjectLeader	TRUE	ExtendedSingleCtxPromoteAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any			
+OBSOLETE	VPLMProjectLeader	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any			
+OBSOLETE	VPLMSecuredCrossAccess	FALSE	ExtendedReadAccessForPublicGuest	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	single	single	any	any	notprivate	any			
+OBSOLETE	VPLMTeamManager	TRUE	ExtendedSingleCtxChangeOwnerAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	no	any	any			
+OBSOLETE	VPLMTeamManager	TRUE	ExtendedSingleCtxLockAccess	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	any	inclusive	any	any			
+OBSOLETE	VPLMTeamManager	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any			
+PRIVATE	FPDM_PSS_ProcessArchitect	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	-	Y	-	-	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	Y	-	-	Y	Y	any	any	any	any	any	any			
+PRIVATE	Grant	FALSE	ExtendedTeamWkpWriteAccess	FALSE	-	Y	-	-	Y	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	single	single	any	inclusive	any	any			
+PRIVATE	Owner	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+PRIVATE	PSS_CAD_Designer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_CAD_Designer_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+PRIVATE	PSS_Development_Engineer	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_GTS_Engineer	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_Global_Administrator	FALSE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_Global_Administrator	FALSE	ShareWithinProject	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+PRIVATE	PSS_PLM_Support_Team	FALSE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_PLM_Support_Team	FALSE	ShareWithinProject	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+PRIVATE	PSS_Plant_Launch_Team_Leader	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_Plant_Launch_Team_Leader_JV	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+PRIVATE	PSS_Plant_Process_Engineer	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_Process_Tool_Engineer	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_Product_Design_Engineer	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_Product_Development_Lead	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_Product_Development_Lead_JV	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+PRIVATE	PSS_Product_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+PRIVATE	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+PRIVATE	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	descendant	single	any	any	public	any			
+PRIVATE	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+PRIVATE	PSS_Program_Manufacturing_Leader	FALSE	PSS_PrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			
+PRIVATE	PSS_Program_Manufacturing_Leader	FALSE	PSS_PrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+PRIVATE	PSS_Program_Manufacturing_Leader	FALSE	ShareWithinProject	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+PRIVATE	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+PRIVATE	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+PRIVATE	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityAccess	FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+PRIVATE	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+PRIVATE	PSS_Program_Quality_Leader	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_Program_Quality_Leader_JV	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+PRIVATE	PSS_Raw_Material_Engineer	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+PRIVATE	PSS_SPDE_And_DL	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+PRIVATE	PSS_SPDE_And_DL_JV	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+PRIVATE	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+PRIVATE	VPLMAdmin	FALSE	ShareWithinProject	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+PRIVATE	VPLMCreator	FALSE	ExtendedMultiCtxCreateAccessOnAnyOrg1	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualAuthoringAbility] && (!expression[VPLMStrictOrgOwnership]) && expression[VPLMStrictVersioning] && (program[TeamSecurityServices -method ExistInWorkRevision ${OBJECTID}] == false)		
+PRIVATE	VPLMCreator	FALSE	ExtendedMultiCtxCreateAccessOnAnyOrg2	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualAuthoringAbility] && (!expression[VPLMStrictOrgOwnership]) && (!expression[VPLMStrictVersioning])		
+PRIVATE	VPLMCreator	FALSE	ExtendedMultiCtxCreateAccessOnSingleOrg1	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any	expression[MultiContextualAuthoringAbility] && expression[VPLMStrictVersioning] && (program[TeamSecurityServices -method ExistInWorkRevision ${OBJECTID}] == false)		
+PRIVATE	VPLMCreator	FALSE	ExtendedMultiCtxCreateAccessOnSingleOrg2	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any	expression[MultiContextualAuthoringAbility] && (!expression[VPLMStrictVersioning])		
+PRIVATE	VPLMCreator	FALSE	ExtendedMultiCtxModifyAccessOnAnyOrg	FALSE	-	Y	Y	-	Y	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	context	inclusive	any	any	(!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+PRIVATE	VPLMCreator	FALSE	ExtendedMultiCtxModifyAccessOnSingleOrg	FALSE	-	Y	Y	-	Y	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	single	single	context	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+PRIVATE	VPLMCreator	FALSE	ExtendedMultiCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+PRIVATE	VPLMCreator	FALSE	ShareWithinProject	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+PRIVATE	VPLMCreator	TRUE	ExtendedSingleCtxChangeOwnerAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	no	any	any	expression[VPLMTransferByOwner] && (!expression[VPLMStrictOrgOwnership])		
+PRIVATE	VPLMCreator	TRUE	ExtendedSingleCtxChangeOwnerAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	no	any	any	expression[VPLMTransferByOwner]		
+PRIVATE	VPLMCreator	TRUE	ExtendedSingleCtxCreateAccessOnAnyOrg1	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership]) && expression[VPLMStrictVersioning] && (program[TeamSecurityServices -method ExistInWorkRevision ${OBJECTID}] == false)		
+PRIVATE	VPLMCreator	TRUE	ExtendedSingleCtxCreateAccessOnAnyOrg2	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	any	any	any	(!expression[VPLMStrictOrgOwnership]) && (!expression[VPLMStrictVersioning])		
+PRIVATE	VPLMCreator	TRUE	ExtendedSingleCtxCreateAccessOnSingleOrg1	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any	expression[VPLMStrictVersioning] && (program[TeamSecurityServices -method ExistInWorkRevision ${OBJECTID}] == false)		
+PRIVATE	VPLMCreator	TRUE	ExtendedSingleCtxCreateAccessOnSingleOrg2	FALSE	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	any	any	any	(!expression[VPLMStrictVersioning])		
+PRIVATE	VPLMCreator	TRUE	ExtendedSingleCtxModifyAccessOnAnyOrg	FALSE	-	Y	Y	-	Y	-	Y	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	context	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+PRIVATE	VPLMCreator	TRUE	ExtendedSingleCtxModifyAccessOnSingleOrg	FALSE	-	Y	Y	-	Y	-	Y	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	single	single	context	inclusive	any	any			
+PRIVATE	VPLMCreator	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any			
+PRIVATE	VPLMExperimenter	FALSE	ExtendedMultiCtxFromconnectAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	any	single	context	inclusive	any	any	expression[MultiContextualAuthoringAbility] && (!expression[VPLMStrictOrgOwnership])		
+PRIVATE	VPLMExperimenter	FALSE	ExtendedMultiCtxFromconnectAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	context	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+PRIVATE	VPLMExperimenter	TRUE	ExtendedSingleCtxFromconnectAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	any	single	context	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+PRIVATE	VPLMExperimenter	TRUE	ExtendedSingleCtxFromconnectAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	context	inclusive	any	any			
+PRIVATE	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedOwnerConnectAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	any	single	context	any	any	any	expression[MultiContextualPrivateReadAccess] && expression[MultiContextualPrivateApplicability]		
+PRIVATE	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedOwnerReadAccess_User	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	context	any	any	any	expression[MultiContextualPrivateReadAccess]		
+PRIVATE	VPLMLocalCrossOrgContextAccess	TRUE	ExtendedOwnerReadAccess_Login	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	context	any	any	any			
+PRIVATE	VPLMProjectAdministrator	FALSE	ExtendedConnectAccessForPrjAdmin	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess] && expression[MultiContextualPrivateApplicability]		
+PRIVATE	VPLMProjectAdministrator	FALSE	ExtendedReadAccessForPrjAdmin_User	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess]		
+PRIVATE	VPLMProjectAdministrator	TRUE	ExtendedReadAccessForPrjAdmin_Login	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+PRIVATE	VPLMProjectAdministrator	TRUE	ExtendedSingleCtxModifyAccess	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any			
+PRIVATE	VPLMProjectAdministrator	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any			
+PRIVATE	VPLMProjectLeader	FALSE	ShareWithinProject	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+PRIVATE	VPLMTeamManager	TRUE	ExtendedSingleCtxChangeOwnerAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	no	any	any			
+PRIVATE	VPLMTeamManager	TRUE	ExtendedSingleCtxLockAccess	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	any	inclusive	any	any			
+PRIVATE	VPLMTeamManager	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any			
+RELEASED	FPDM_PSS_ProcessArchitect	FALSE		FALSE	Y	-	-	Y	-	-	-	Y	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	Y	-	-	-	Y	any	any	any	any	any	any			
+RELEASED	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_ASQ	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_CAD_Designer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_CAD_Designer_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_CAE_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Change_Coordinator	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Change_Coordinator_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_Cost_Estimation_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Development_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_GTS_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Geometry_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Global_Administrator	FALSE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Global_Administrator	FALSE	OutDated	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			OBSOLETE
+RELEASED	PSS_PCAndL	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_PCAndL_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_PLM_Support_Team	FALSE		FALSE	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_PLM_Support_Team	FALSE	OutDated	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			OBSOLETE
+RELEASED	PSS_Plant_Launch_Team_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Plant_Launch_Team_Leader_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_Plant_Logistic	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Plant_Process_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Plant_Quality	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Process_Tool_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Product_Design_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Product_Development_Lead	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Product_Development_Lead_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_Product_Engineer	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Program_Buyer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Program_Buyer_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_Program_Controller	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Program_Controller_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_Program_Manager	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Program_Manager_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_Program_Manufacturing_Leader	FALSE	OutDated	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			OBSOLETE
+RELEASED	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+RELEASED	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+RELEASED	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	descendant	single	any	any	public	any			
+RELEASED	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+RELEASED	PSS_Program_Manufacturing_Leader	FALSE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			
+RELEASED	PSS_Program_Manufacturing_Leader	FALSE	PSS_PrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+RELEASED	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_Program_Quality_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Program_Quality_Leader_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_Program_Sales_Leader	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Program_Sales_Leader_JV	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_Prototype_Coordinator	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Raw_Material_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_ReadAndApprove	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+RELEASED	PSS_SPDE_And_DL	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_SPDE_And_DL_JV	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+RELEASED	PSS_TAndE_Buyer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	PSS_Test_Engineer	FALSE		FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	descendant	any	any	any	any			
+RELEASED	VPLMAdmin	FALSE	OutDated	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			OBSOLETE
+RELEASED	VPLMCreator	FALSE	ExtendedMultiCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+RELEASED	VPLMCreator	TRUE	ExtendedSingleCtxChangeOwnerAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	no	any	any	expression[VPLMTransferByOwner] && (!expression[VPLMStrictOrgOwnership])		
+RELEASED	VPLMCreator	TRUE	ExtendedSingleCtxChangeOwnerAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	no	any	any	expression[VPLMTransferByOwner]		
+RELEASED	VPLMCreator	TRUE	ExtendedSingleCtxReviseAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+RELEASED	VPLMCreator	TRUE	ExtendedSingleCtxReviseAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any			
+RELEASED	VPLMCreator	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any			
+RELEASED	VPLMExperimenter	FALSE	ExtendedMultiCtxFromconnectAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership]) && expression[ExtendExpOnReleased]		
+RELEASED	VPLMExperimenter	FALSE	ExtendedMultiCtxFromconnectAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any	expression[ExtendExpOnReleased]		
+RELEASED	VPLMExperimenter	TRUE	ExtendedSingleCtxFromconnectAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership]) && expression[ExtendExpOnReleased]		
+RELEASED	VPLMExperimenter	TRUE	ExtendedSingleCtxFromconnectAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any	expression[ExtendExpOnReleased]		
+RELEASED	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedContextualPrivateConnectAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess] && expression[MultiContextualPrivateApplicability]		
+RELEASED	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedContextualPrivateReadAccess_User	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess]		
+RELEASED	VPLMLocalCrossOrgContextAccess	TRUE	ExtendedContextualPrivateReadAccess_Login	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+RELEASED	VPLMLocalCrossPrjContextAccess	FALSE	ExtendedPublicReadAccess_AnyPrj	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	ancestor	any	any	any	notprivate	any	expression[OrganizationPublicAccess]		
+RELEASED	VPLMLocalCrossPrjContextAccess	FALSE	ExtendedPublicReadAccess_SinglePrj	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	notprivate	any			
+RELEASED	VPLMProjectAdministrator	FALSE	OutDated	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			OBSOLETE
+RELEASED	VPLMProjectAdministrator	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any			
+RELEASED	VPLMProjectLeader	FALSE	ExtendedMultiCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any	expression[MultiContextualAuthoringAbility]		
+RELEASED	VPLMProjectLeader	FALSE	OutDated	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			OBSOLETE
+RELEASED	VPLMProjectLeader	TRUE	ExtendedSingleCtxPromoteAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+RELEASED	VPLMProjectLeader	TRUE	ExtendedSingleCtxPromoteAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	any	inclusive	any	any			
+RELEASED	VPLMProjectLeader	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any			
+RELEASED	VPLMReleaseManager	TRUE	ExtendedSingleCtxModifyAccess	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any			
+RELEASED	VPLMSecuredCrossAccess	FALSE	ExtendedReadAccessForPublicGuest	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	single	single	any	any	notprivate	any			
+RELEASED	VPLMTeamManager	TRUE	ExtendedSingleCtxChangeOwnerAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	no	any	any			
+RELEASED	VPLMTeamManager	TRUE	ExtendedSingleCtxLockAccess	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	any	inclusive	any	any			
+RELEASED	VPLMTeamManager	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any			
+REMOVED	FPDM_PSS_ProcessArchitect	FALSE		FALSE	Y	Y	Y	Y	Y	-	Y	Y	-	-	-	-	-	Y	-	-	-	-	-	-	Y	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	Y	-	-	Y	Y	any	any	any	any	any	any			
+REMOVED	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+REMOVED	PSS_Global_Administrator	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+REMOVED	PSS_Global_Administrator	FALSE	Restore	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+REMOVED	PSS_PLM_Support_Team	FALSE		FALSE	Y	Y	Y	-	-	-	-	-	-	-	-	Y	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	descendant	any	any	any	any			
+REMOVED	PSS_PLM_Support_Team	FALSE	Restore	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+REMOVED	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	descendant	any	any	any	any	any			
+REMOVED	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+REMOVED	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	descendant	single	any	any	public	any			
+REMOVED	PSS_Program_Manufacturing_Leader	FALSE	PSS_NotPrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	public	any			
+REMOVED	PSS_Program_Manufacturing_Leader	FALSE	PSS_PrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	descendant	single	any	any	private	any			
+REMOVED	PSS_Program_Manufacturing_Leader	FALSE	PSS_PrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	single	any	any	private	any			
+REMOVED	PSS_Program_Manufacturing_Leader	FALSE	Restore	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+REMOVED	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+REMOVED	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateExtendedConnectDisconnectAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+REMOVED	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	ancestor	single	any	any	public	any	
+REMOVED	PSS_Program_Manufacturing_Leader_JV	FALSE	PSS_NotPrivateMaturityAccessNoAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	ancestor	single	any	any	public	any	
+REMOVED	PSS_Read_JV	TRUE	PSS_NotPrivateReadAccess	FALSE	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	Y	Y	Y	-	-	Y	-	-	-	-	-	single	single	any	any	public	any			
+REMOVED	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+REMOVED	VPLMAdmin	FALSE	Restore	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+REMOVED	VPLMCreator	FALSE	ExtendedMultiCtxModifyAccessOnAnyOrg	FALSE	-	Y	Y	-	Y	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	context	inclusive	any	any	(!expression[VPLMStrictOrgOwnership]) && expression[MultiContextualAuthoringAbility]		
+REMOVED	VPLMCreator	FALSE	ExtendedMultiCtxModifyAccessOnSingleOrg	FALSE	-	Y	Y	-	Y	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	single	single	context	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+REMOVED	VPLMCreator	FALSE	ExtendedMultiCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+REMOVED	VPLMCreator	FALSE	Restore	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+REMOVED	VPLMCreator	TRUE	ExtendedSingleCtxChangeOwnerAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	context	no	any	any	expression[VPLMTransferByOwner] && (!expression[VPLMStrictOrgOwnership])		
+REMOVED	VPLMCreator	TRUE	ExtendedSingleCtxChangeOwnerAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	single	single	context	no	any	any	expression[VPLMTransferByOwner]		
+REMOVED	VPLMCreator	TRUE	ExtendedSingleCtxModifyAccessOnAnyOrg	FALSE	-	Y	Y	-	Y	-	Y	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	context	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+REMOVED	VPLMCreator	TRUE	ExtendedSingleCtxModifyAccessOnSingleOrg	FALSE	-	Y	Y	-	Y	-	Y	-	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	single	single	context	inclusive	any	any			
+REMOVED	VPLMCreator	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any			
+REMOVED	VPLMExperimenter	FALSE	ExtendedMultiCtxFromconnectAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	any	single	context	inclusive	any	any	expression[MultiContextualAuthoringAbility] && (!expression[VPLMStrictOrgOwnership])		
+REMOVED	VPLMExperimenter	FALSE	ExtendedMultiCtxFromconnectAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	context	inclusive	any	any	expression[MultiContextualAuthoringAbility]		
+REMOVED	VPLMExperimenter	TRUE	ExtendedSingleCtxFromconnectAccessOnAnyOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	any	single	context	inclusive	any	any	(!expression[VPLMStrictOrgOwnership])		
+REMOVED	VPLMExperimenter	TRUE	ExtendedSingleCtxFromconnectAccessOnSingleOrg	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	-	single	single	context	inclusive	any	any			
+REMOVED	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedOwnerConnectAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	any	single	context	any	any	any	expression[MultiContextualPrivateReadAccess] && expression[MultiContextualPrivateApplicability]		
+REMOVED	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedOwnerReadAccess_User	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	context	any	any	any	expression[MultiContextualPrivateReadAccess]		
+REMOVED	VPLMLocalCrossOrgContextAccess	TRUE	ExtendedOwnerReadAccess_Login	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	context	any	any	any			
+REMOVED	VPLMProjectAdministrator	FALSE	ExtendedConnectAccessForPrjAdmin	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	-	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess] && expression[MultiContextualPrivateApplicability]		
+REMOVED	VPLMProjectAdministrator	FALSE	ExtendedReadAccessForPrjAdmin_User	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	any	any	any	any	expression[MultiContextualPrivateReadAccess]		
+REMOVED	VPLMProjectAdministrator	FALSE	Restore	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			IN_WORK
+REMOVED	VPLMProjectAdministrator	TRUE	ExtendedReadAccessForPrjAdmin_Login	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	single	any	any	any	any			
+REMOVED	VPLMProjectAdministrator	TRUE	ExtendedSingleCtxModifyAccess	FALSE	-	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	inclusive	any	any			
+REMOVED	VPLMProjectAdministrator	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	any	any	inclusive	any	any			
+REMOVED	VPLMProjectLeader	FALSE	Restore	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	any	any	any	any	any	any			IN_WORK
+REMOVED	VPLMTeamManager	TRUE	ExtendedSingleCtxChangeOwnerAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	single	any	no	any	any			
+REMOVED	VPLMTeamManager	TRUE	ExtendedSingleCtxLockAccess	FALSE	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	any	single	any	inclusive	any	any			
+REMOVED	VPLMTeamManager	TRUE	ExtendedSingleCtxUnlockAccess	FALSE	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	any	single	any	any	any	any			
+allstate	Grant	FALSE	ExtendedTeamWkpReadAccess	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	single	single	any	any	any	any			
+allstate	Owner	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	any	any	any	any	any	any			
+allstate	Owner	FALSE	DSCoreReservationCheck	TRUE	-	Y	Y	-	Y	-	Y	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	Y	-	any	any	any	any	any	any	(reserved == TRUE && reservedby != context.user)		
+allstate	Owner	FALSE	DSCoreSiteOwnershipCheck	TRUE	-	Y	Y	-	Y	-	Y	Y	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	Y	Y	any	any	any	any	any	any	attribute[RepoPrivilege].value==1		
+allstate	Public	FALSE		FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+allstate	Public	FALSE	DSCoreReservationCheck	TRUE	-	Y	Y	-	Y	-	Y	-	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	Y	-	descendant	any	any	any	any	any	(reserved == TRUE && reservedby != context.user)		
+allstate	Public	FALSE	DSCoreSiteOwnershipCheck	TRUE	-	Y	Y	-	Y	-	Y	Y	-	-	-	-	Y	Y	Y	Y	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	Y	-	-	Y	Y	descendant	any	any	any	any	any	attribute[RepoPrivilege].value==1		
+allstate	Public	FALSE	PublicRevokeDemoteAccess	TRUE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	descendant	any	any	any	any	any			
+allstate	Public	TRUE	PSS_NotPrivateShowAccess	FALSE	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	descendant	any	any	any	public	any			
+allstate	VPLMAdmin	TRUE	ExtendedModifyAccessForPLMAdmin	FALSE	-	Y	Y	Y	Y	-	Y	Y	-	-	-	-	-	-	Y	Y	-	-	-	-	Y	Y	Y	-	-	-	-	-	Y	-	-	-	-	-	-	-	Y	Y	any	any	any	any	any	any			
+allstate	VPLMAdmin	TRUE	ExtendedReadAccessForPLMAdmin	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	Y	-	-	Y	-	-	-	-	-	any	any	any	any	any	any			
+allstate	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedAggrObjectPrivateAccess	FALSE	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	Y	any	any	any	any	any	any		(to[VPMRepInstance].from.current.access[$ACCESS] == TRUE) && attribute[LPAbstractRepReference.V_isMandatory]	
+allstate	VPLMLocalCrossOrgContextAccess	FALSE	ExtendedCompObjectPrivateReadAccess_User	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	ancestor	single	any	any	any	any		(to[VPMRepInstance].from.current.access[$ACCESS] == TRUE) && attribute[PLMCoreRepReference.V_isOnceInstantiable] && expression[MultiContextualPrivateReadAccess]	
+allstate	VPLMLocalCrossOrgContextAccess	TRUE	ExtendedCompObjectPrivateReadAccess_Login	FALSE	Y	-	-	Y	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Y	-	-	-	-	-	any	single	any	any	any	any		(to[VPMRepInstance].from.current.access[$ACCESS] == TRUE) && attribute[PLMCoreRepReference.V_isOnceInstantiable]	

@@ -1,0 +1,455 @@
+///////////////////////////////////////////
+// COMMON JS Tree
+///////////////////////////////////////////
+
+EnoviaObject.sortFunction = function(a,b) {
+	ra = parseFloat( a.att['attribute[PLMInstance.V_TreeOrder].value']);
+	rb = parseFloat( b.att['attribute[PLMInstance.V_TreeOrder].value']);
+	
+	if( ra < rb)
+		return -1;
+	if( ra > rb)
+		return 1;
+	
+	return 0;
+};
+
+window.filterTree = function() {
+	if( tree)
+		tree.reloadWithCustomArg();
+};
+
+DSTree.getCustomArgs = function( tree) {
+	var filterOID = 'null';
+	 
+	var myFrame = top.findFrame(top, 'content');
+	if (myFrame && myFrame.savedValuesGB)  {
+		  filterOID = myFrame.savedValuesGB.FRCExpressionFilterInput_OID;
+	}
+	
+	if( filterOID && filterOID!="null" && filterOID!="undefined") {
+	    var myGBFrame = top.findFrame(top, 'FRCMBOMTreeCmd');
+		if (myGBFrame)
+			myGBFrame.jQuery("img[src='./img/iconActionFilter.png']").attr("src", "./img/iconActionFiltersApplied.png");
+		return { filterExpr : filterOID };	
+	}
+	else {
+		var myGBFrame = top.findFrame(top, 'FRCMBOMTreeCmd');
+		if (myGBFrame)
+			myGBFrame.jQuery("img[src='./img/iconActionFiltersApplied.png']").attr("src", "./img/iconActionFilter.png");
+		return {};
+	}
+};
+
+///////////////////////////////////////////
+// MBOM JS Tree
+///////////////////////////////////////////
+
+window.getPSTree = function( ) {
+	var frame = top.findFrame(top,'FRCPSTreeCmd');
+	if (frame && frame.tree) { // if GB tab not yet initialized, tree is undefined! 
+		return frame.tree;
+	}
+	return undefined;
+};
+
+/**
+ * BI Essential Functions
+ */
+ 
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Scope OK',
+	condition: function(node, data) {
+		if(node.id===1)window.launchMBOMLinksWhenOK();
+		if(node.isGroup()) return false;
+		
+		return ( data.scopeStatus==="scopeOK" );
+	},
+	css: 'rule-scopeOK'
+});
+
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Scope Broken',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		
+		return ( data.scopeStatus==="scopeBroken" );
+	},
+	css: 'rule-scopeBroken'
+});
+
+rules.addColorRule({
+	group: 'Default',
+	name: 'Implement KO',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		return (!data.scopeStatus && data.implStatus==="implAssignKO");
+	},
+	css: 'rule-noScopeAndImplementKO'
+});
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Implement LID',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		
+		return (!data.scopeStatus && data.implStatus==="implAssignLID");
+	},
+	css: 'rule-noScopeAndImplementLID'
+});
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Implement PID',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		
+		return (!data.scopeStatus && data.implStatus==="implAssignPID");
+	},
+	css: 'rule-noScopeAndImplementPID'
+});
+
+rules.addColorRule({
+	group: 'Default',
+	name: 'Implement KO and Scope',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		return (data.scopeStatus==="scopeOK" && data.implStatus==="implAssignKO");
+	},
+	css: 'rule-scopeOKAndImplementKO'
+});
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Implement LID and Scope',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		
+		return (data.scopeStatus==="scopeOK" && data.implStatus==="implAssignLID");
+	},
+	css: 'rule-scopeOKAndImplementLID'
+});
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Implement PID and Scope',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		
+		return (data.scopeStatus==="scopeOK" && data.implStatus==="implAssignPID");
+	},
+	css: 'rule-scopeOKAndImplementPID'
+});
+
+rules.addColorRule({
+	group: 'Default',
+	name: 'Implement KO and Broken Scope',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		return (data.scopeStatus==="scopeBroken" && data.implStatus==="implAssignKO");
+	},
+	css: 'rule-scopeBrokenAndImplementKO'
+});
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Implement LID and Broken Scope',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		
+		return (data.scopeStatus==="scopeBroken" && data.implStatus==="implAssignLID");
+	},
+	css: 'rule-scopeBrokenAndImplementLID'
+});
+rules.addColorRule( {
+	group: 'Default',
+	name: 'Implement PID and Broken Scope',
+	condition: function(node, data) {
+		if(node.isGroup()) return false;
+		
+		return (data.scopeStatus==="scopeBroken" && data.implStatus==="implAssignPID");
+	},
+	css: 'rule-scopeBrokenAndImplementPID'
+});
+
+/**
+ * CrossHighlight Functions
+ */
+ 
+crossHighlight.addCrossHighlightHandler(function(tree, node){
+	var isSelectedNow=node._isSelected();
+	var psTree = getPSTree();
+	if(psTree){
+		var pathMBOM=node.data.att.pathPID;
+		var pathPS=top.um5c06SyncInfos.mapMBOMPath2PSPath[pathMBOM];
+		if(typeof pathPS!=="undefined"){
+			var nodesPS=psTree.getNodesFromData('pathPID',pathPS);
+			for(var i=0;i<nodesPS.length;i++) {
+				var nodePSHere=nodesPS[i];
+				nodePSHere.getRep().isSelected = isSelectedNow;
+				if(isSelectedNow) {
+					nodePSHere._setAncestorsExpanded();
+				}
+			}
+			if(nodesPS.length>0){
+				var nodePSHere=nodesPS[0];
+				psTree.UpdateTree(true,nodePSHere);
+				if(nodePSHere._isExpanded() && isSelectedNow) {
+					psTree.focusOnNode(nodePSHere);
+				}
+			}
+		}
+	}
+});
+
+
+/**
+ * OTHER Functions
+ */
+
+window.clearAllLinks = function(){
+	top.um5c06SyncInfos = {
+		scopeLinks:[],
+		implementLinks:[],
+		mapScopePSPID2Link:{},
+		mapScopeMBOMPID2Link:{},
+		mapImplementPSPID2Link:{},
+		mapImplementMBOMPID2Link:{},
+		mapPSPath2MBOMPath:{},
+		mapMBOMPath2PSPath:{}
+	};
+	
+	for ( var i=0; i < tree.nDatabaseNodes.length; i++) {
+		//delete tree.nDatabaseNodes[i].data.scopeStatus;
+		//delete tree.nDatabaseNodes[i].data.implStatus;
+		tree.nDatabaseNodes[i].data.scopeStatus=null;
+		tree.nDatabaseNodes[i].data.implStatus=null;
+	}
+	var psTree = getPSTree();
+	for ( var i=0; i < psTree.nDatabaseNodes.length; i++) {
+		//delete psTree.nDatabaseNodes[i].data.scopeStatus;
+		//delete psTree.nDatabaseNodes[i].data.implStatus;
+		psTree.nDatabaseNodes[i].data.scopeStatus=null;
+		psTree.nDatabaseNodes[i].data.implStatus=null;
+	}
+};
+
+window.addScopeLink = function(mBOMItemId, scopeId, pSItemId, intermediateScope){
+	var newScope={"scopeId":scopeId,"mBOMItemId":mBOMItemId,"pSItemId":pSItemId,"intermediateScope":intermediateScope};
+	//Check scope array to avoid adding it twice
+	var arrayToSearch=top.um5c06SyncInfos.scopeLinks;
+	var res;
+	for(var i=0; i<arrayToSearch.length && !res; i++){
+		var objToCheck=arrayToSearch[i];
+		if(objToCheck.scopeId && objToCheck.scopeId===scopeId){
+			res=objToCheck;
+		}
+	}
+	if(!res){
+		top.um5c06SyncInfos.scopeLinks.push(newScope);
+		
+		top.um5c06SyncInfos.mapScopePSPID2Link[pSItemId]=newScope;
+		top.um5c06SyncInfos.mapScopeMBOMPID2Link[mBOMItemId]=newScope;
+		
+		//updatePSCompletionStatus(pSItemId);
+	}
+	return newScope;
+};
+window.addImplementLink = function(mBOMItemConnectionId, implementPathPIds, implementPathLIds, pSItemConnectionId){
+	var newImplement={"implementPathPIds":implementPathPIds,"implementPathLIds":implementPathLIds,"mBOMItemId":mBOMItemConnectionId,"pSItemId":pSItemConnectionId};
+	//Check scope array to avoid adding it twice
+	var arrayToSearch=top.um5c06SyncInfos.implementLinks;
+	var res;
+	for(var i=0; i<arrayToSearch.length && !res; i++){
+		var objToCheck=arrayToSearch[i];
+		if(objToCheck.implementPathPIds && objToCheck.implementPathPIds===implementPathPIds && objToCheck.mBOMItemConnectionId && objToCheck.mBOMItemId===mBOMItemConnectionId){
+			res=objToCheck;
+		}
+	}
+	if(!res){
+		top.um5c06SyncInfos.implementLinks.push(newImplement);
+
+		top.um5c06SyncInfos.mapImplementPSPID2Link[pSItemConnectionId]=newImplement;
+		top.um5c06SyncInfos.mapImplementMBOMPID2Link[mBOMItemConnectionId]=newImplement;
+		
+		//updatePSCompletionStatusInstance(pSItemConnectionId);
+	}
+	return newImplement;
+};
+
+window.treeReady = false;
+window.linksCalculated = false;
+window.launchMBOMLinksWhenOK = function(){
+	console.log("launchMBOMLinksWhenOK Called at "+new Date().getTime());
+	var psFrame = top.findFrame(top,'FRCPSTreeCmd');
+	if(!psFrame){
+		return;
+	}
+	
+	window.treeReady=true; //The other tree will be ready when this function is called the 2nd time
+	
+	if(window.treeReady && psFrame.treeReady && !window.linksCalculated){
+		window.linksCalculated=true;
+		window.refreshMBOMLinks();
+	}
+};
+
+window.refreshMBOMLinks = function(options){
+	console.log("refreshMBOMLinks Called at "+new Date().getTime());
+	var psTree = getPSTree();
+	
+	if(!psTree){
+		return;
+	}
+	
+	//Set option for rebuild View which is UpdateTree in the GB
+	if(typeof options==="undefined"){
+		options={
+			rebuildViewMBOM:true,
+			rebuildViewPS:true
+		};
+	}
+	if(typeof options.rebuildViewMBOM==="undefined")options.rebuildViewMBOM=true;
+	if(typeof options.rebuildViewPS==="undefined")options.rebuildViewPS=true;
+	
+	clearAllLinks();
+	
+	var mapMBOMPathToScopeLinkAndNode={};
+	
+	//Test Scopes and implement links in One Go
+	for(var i=0;i<tree.nDatabaseNodes.length;i++) {
+		var nodeMBOM=tree.nDatabaseNodes[i];
+		
+		var mbomPathPID=nodeMBOM.data.att.pathPID;
+		
+		//Test Scope
+		var scopeId=nodeMBOM.data.att.scopeId;
+		var scopeLink=null;
+		if(scopeId){
+			var manufItemRefID=nodeMBOM.data.att.manufItemRefID;
+			var productRefPID=nodeMBOM.data.att.productRefPID;
+			var intermediateScope=nodeMBOM.data.att.intermediateScope;
+			
+			scopeLink=addScopeLink(manufItemRefID, scopeId, productRefPID, intermediateScope);
+			
+			if(scopeLink.intermediateScope==="true" || nodeMBOM.id==="1"){//Scope Intermediate or Scope for root
+				mapMBOMPathToScopeLinkAndNode[mbomPathPID]={link:scopeLink,node:nodeMBOM};
+				nodeMBOM.data.scopeStatus="scopeBroken";//Will switch to scopeOK if implemnent Link is also OK or if we find the PS Item as Root
+			}//else it's the scope going with an implement link
+		}
+		
+		//Test Implement
+		var implementLink=null,pathPIDinPS=null,pathLIDinPS=null;
+		if( nodeMBOM.data.att.implEndPIDs){
+			var manuItemInstID = nodeMBOM.data.att.manufItemInstID;
+			var implemPathPIDS = nodeMBOM.data.att.implemPathPIDS;
+			var implemPathLIDS = nodeMBOM.data.att.implemPathLIDS;
+			var productInstPID = nodeMBOM.data.att.productInstPID;
+
+			implementLink = addImplementLink(manuItemInstID, implemPathPIDS, implemPathLIDS, productInstPID);
+			
+			nodeMBOM.data.implStatus="implAssignKO";//Will switch to the right status if we find item in PS
+			
+			//Determine the PS path
+			pathPIDinPS=nodeMBOM.data.att.implEndPIDs;
+			pathLIDinPS=nodeMBOM.data.att.implEndLIDs;
+			
+			//Go up in MBOM Path
+			var countParentToCheck=mbomPathPID.split("/").length-2;
+			var pathToCheck=mbomPathPID;
+
+			for(var cUp=0; cUp<countParentToCheck; cUp++){
+				pathToCheck=pathToCheck.substring(0,pathToCheck.lastIndexOf("/"));
+				
+				var infoScopeLink=mapMBOMPathToScopeLinkAndNode[pathToCheck];
+				if(infoScopeLink && infoScopeLink.link.intermediateScope==="true"){
+					var nodeMBOMHere=infoScopeLink.node;
+					if(nodeMBOMHere.data.att.implEndPIDs){
+						pathPIDinPS=nodeMBOMHere.data.att.implEndPIDs+pathPIDinPS;
+						pathLIDinPS=nodeMBOMHere.data.att.implEndLIDs+pathLIDinPS;
+					}
+				}
+			}
+		}
+		
+		if(scopeLink || implementLink){
+			//Go through the PS tree to find the right elements
+			var psItemFoundForImplement=false;
+			for(var j=0 ; j<psTree.nDatabaseNodes.length && (scopeLink || (implementLink && !psItemFoundForImplement) ) ; j++) {
+				var nodePS=psTree.nDatabaseNodes[j];
+				
+				
+				if(scopeLink){
+					if(nodePS.data.att.physicalid === scopeLink.pSItemId && scopeLink.intermediateScope==="true"){
+						nodePS.data.scopeStatus="scopeOK";
+						
+						if(nodePS.id===1){//Root Node in PS
+							nodeMBOM.data.scopeStatus="scopeOK";
+						}//else will be set depending on Implement Link
+					}
+				}
+				
+				if(implementLink && !psItemFoundForImplement){
+					if(nodePS.data.att.pathPID && nodePS.data.att.pathPID.endsWith(pathPIDinPS)){
+						nodeMBOM.data.implStatus="implAssignPID";
+						psItemFoundForImplement=true;
+						
+						//Fill maps
+						var fullPSPath=nodePS.data.att.pathPID;
+						top.um5c06SyncInfos.mapPSPath2MBOMPath[fullPSPath]=mbomPathPID;
+						top.um5c06SyncInfos.mapMBOMPath2PSPath[mbomPathPID]=fullPSPath;
+						
+						var doCheckChildrensInPS=true;
+						
+						if(nodePS.data.scopeStatus==="scopeOK"){
+							nodeMBOM.data.scopeStatus="scopeOK";
+							doCheckChildrensInPS=false;
+						}
+						
+						nodePS.data.implStatus="implAssignDirect";
+						
+						//Assign child nodes
+						if(doCheckChildrensInPS){
+							var checkChildsRecursively=function(node){
+								for(var k=0; k < node.nodeChildren.length; k++){
+									var nodePSChild=node.nodeChildren[k];
+									if(nodePSChild.data.scopeStatus && nodePSChild.data.scopeStatus==="scopeOK" && nodePSChild.data.implStatus){
+										//Stop recursivity
+									}else{
+										nodePSChild.data.implStatus="implAssignIndirect";
+										checkChildsRecursively(nodePSChild);
+									}
+								}
+							};
+							checkChildsRecursively(nodePS);
+						}
+						
+						//Assign parent nodes
+						var checkParentsRecursively=function(node){
+							var nodeParent=node.nodeParent;
+							if(nodeParent!=null && nodeParent.data && (!nodeParent.data.implStatus && (!nodeParent.data.scopeStatus  || nodeParent.data.scopeStatus!=="scopeOK"))){
+								var allChildAssigned=true;
+								for(var k=0; k < nodeParent.nodeChildren.length && allChildAssigned; k++){
+									var nodePSChild=nodeParent.nodeChildren[k];
+									if((!nodePSChild.data.scopeStatus || nodePSChild.data.scopeStatus!=="scopeOK") && !nodePSChild.data.implStatus){
+										allChildAssigned=false;
+									}
+								}
+								if(allChildAssigned){
+									nodeParent.data.implStatus="implAssignIndirect";
+									checkParentsRecursively(nodeParent);
+								}
+							}
+						};
+						checkParentsRecursively(nodePS);
+						
+					}else if(nodePS.data.att.pathLID && nodePS.data.att.pathLID.endsWith(pathLIDinPS)){
+						nodeMBOM.data.implStatus="implAssignLID";
+						psItemFoundForImplement=true;
+					}
+				}
+			}
+		}
+	}
+	
+	if(options.rebuildViewMBOM)tree.UpdateTree(true);
+	if(options.rebuildViewPS)psTree.UpdateTree(true);
+};

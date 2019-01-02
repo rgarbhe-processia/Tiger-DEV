@@ -1,0 +1,6 @@
+Manifest-Version: 2.0.7_S3
+Bundle-Version: 2.0.7
+Bundle-Name: TigerConstants
+Built-By: Processia Solutions
+Build-Jdk: 1.8.0_60 (Oracle Corporation)
+Build-Comments: Constants uppdated

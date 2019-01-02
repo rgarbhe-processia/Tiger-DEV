@@ -1,0 +1,2343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="urn:EnginFrameWS" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="urn:EnginFrameWS" xmlns:intf="urn:EnginFrameWS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<!--WSDL created by Apache Axis version: 1.4 Built on Jun 10, 2008 (11:51:46 UTC)-->
+
+  <wsdl:types>
+
+    <schema elementFormDefault="qualified" targetNamespace="urn:EnginFrameWS" xmlns="http://www.w3.org/2001/XMLSchema">
+
+      <element name="getAuthority">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sdfURL" type="xsd:string"/>
+
+            <element name="serviceID" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="getAuthorityResponse">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="getAuthorityReturn" type="impl:Authority"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <complexType name="Credentials">
+
+        <sequence>
+
+          <element name="description" nillable="true" type="xsd:string"/>
+
+          <element name="name" nillable="true" type="xsd:string"/>
+
+          <element name="type" nillable="true" type="xsd:string"/>
+
+          <element name="value" nillable="true" type="xsd:string"/>
+
+        </sequence>
+
+      </complexType>
+
+      <complexType name="Authority">
+
+        <sequence>
+
+          <element maxOccurs="unbounded" minOccurs="0" name="credentials" nillable="true" type="impl:Credentials"/>
+
+          <element name="description" nillable="true" type="xsd:string"/>
+
+          <element name="id" nillable="true" type="xsd:string"/>
+
+          <element name="name" nillable="true" type="xsd:string"/>
+
+        </sequence>
+
+      </complexType>
+
+      <complexType name="EnginFrameWSExceptionBase">
+
+        <sequence>
+
+          <element name="exceptionMessage" nillable="true" type="xsd:string"/>
+
+        </sequence>
+
+      </complexType>
+
+      <complexType name="InvalidSDF">
+
+        <complexContent>
+
+          <extension base="impl:EnginFrameWSExceptionBase">
+
+            <sequence>
+
+              <element name="sdfURL" nillable="true" type="xsd:string"/>
+
+            </sequence>
+
+          </extension>
+
+        </complexContent>
+
+      </complexType>
+
+      <element name="fault" type="impl:InvalidSDF"/>
+
+      <complexType name="InvalidServiceID">
+
+        <complexContent>
+
+          <extension base="impl:EnginFrameWSExceptionBase">
+
+            <sequence>
+
+              <element name="serviceID" nillable="true" type="xsd:string"/>
+
+            </sequence>
+
+          </extension>
+
+        </complexContent>
+
+      </complexType>
+
+      <element name="fault1" type="impl:InvalidServiceID"/>
+
+      <complexType name="EnginFrameInternalException">
+
+        <complexContent>
+
+          <extension base="impl:EnginFrameWSExceptionBase">
+
+            <sequence>
+
+              <element name="output" nillable="true" type="xsd:string"/>
+
+            </sequence>
+
+          </extension>
+
+        </complexContent>
+
+      </complexType>
+
+      <element name="fault2" type="impl:EnginFrameInternalException"/>
+
+      <element name="getService">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+            <element name="sdfURL" type="xsd:string"/>
+
+            <element name="serviceID" type="xsd:string"/>
+
+            <element name="rawService" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="getServiceResponse">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="getServiceReturn" type="impl:Service"/>
+
+            <element name="rawService" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <complexType name="Action">
+
+        <sequence>
+
+          <element name="encoding" nillable="true" type="xsd:string"/>
+
+          <element name="id" nillable="true" type="xsd:string"/>
+
+          <element name="label" nillable="true" type="xsd:string"/>
+
+          <element name="resultType" nillable="true" type="xsd:string"/>
+
+        </sequence>
+
+      </complexType>
+
+      <complexType name="ChoiceDescription">
+
+        <sequence>
+
+          <element name="label" nillable="true" type="xsd:string"/>
+
+          <element name="selected" type="xsd:boolean"/>
+
+          <element name="value" nillable="true" type="xsd:string"/>
+
+        </sequence>
+
+      </complexType>
+
+      <complexType name="OptionDescription">
+
+        <sequence>
+
+          <element maxOccurs="unbounded" minOccurs="0" name="choices" nillable="true" type="impl:ChoiceDescription"/>
+
+          <element name="defaultValue" nillable="true" type="xsd:string"/>
+
+          <element name="extra" nillable="true" type="xsd:string"/>
+
+          <element name="id" nillable="true" type="xsd:string"/>
+
+          <element name="label" nillable="true" type="xsd:string"/>
+
+          <element name="mode" type="xsd:int"/>
+
+          <element name="multi" type="xsd:boolean"/>
+
+          <element name="type" nillable="true" type="xsd:string"/>
+
+        </sequence>
+
+      </complexType>
+
+      <complexType name="Service">
+
+        <sequence>
+
+          <element maxOccurs="unbounded" minOccurs="0" name="actions" nillable="true" type="impl:Action"/>
+
+          <element name="description" nillable="true" type="xsd:string"/>
+
+          <element name="id" nillable="true" type="xsd:string"/>
+
+          <element name="name" nillable="true" type="xsd:string"/>
+
+          <element maxOccurs="unbounded" minOccurs="0" name="options" nillable="true" type="impl:OptionDescription"/>
+
+          <element name="sdf" nillable="true" type="xsd:string"/>
+
+        </sequence>
+
+      </complexType>
+
+      <complexType name="InvalidSession">
+
+        <complexContent>
+
+          <extension base="impl:EnginFrameWSExceptionBase">
+
+            <sequence>
+
+              <element name="sessionID" nillable="true" type="xsd:string"/>
+
+            </sequence>
+
+          </extension>
+
+        </complexContent>
+
+      </complexType>
+
+      <element name="fault3" type="impl:InvalidSession"/>
+
+      <element name="initSession">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sdfURL" type="xsd:string"/>
+
+            <element name="serviceID" type="xsd:string"/>
+
+            <element maxOccurs="unbounded" minOccurs="0" name="credentials" type="impl:Credentials"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="initSessionResponse">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="initSessionReturn" type="impl:Session"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <complexType name="Session">
+
+        <sequence>
+
+          <element name="id" nillable="true" type="xsd:string"/>
+
+          <element name="uploadURL" nillable="true" type="xsd:string"/>
+
+        </sequence>
+
+      </complexType>
+
+      <complexType name="InvalidCredentials">
+
+        <complexContent>
+
+          <extension base="impl:EnginFrameWSExceptionBase">
+
+            <sequence>
+
+              <element maxOccurs="unbounded" minOccurs="0" name="credentials" nillable="true" type="impl:Credentials"/>
+
+            </sequence>
+
+          </extension>
+
+        </complexContent>
+
+      </complexType>
+
+      <element name="fault4" type="impl:InvalidCredentials"/>
+
+      <element name="authenticate">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+            <element name="sdfURL" type="xsd:string"/>
+
+            <element name="serviceID" type="xsd:string"/>
+
+            <element maxOccurs="unbounded" minOccurs="0" name="credentials" type="impl:Credentials"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="authenticateResponse">
+
+        <complexType/>
+
+      </element>
+
+      <element name="isAuthenticated">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+            <element name="authorityID" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="isAuthenticatedResponse">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="isAuthenticatedReturn" type="xsd:boolean"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="getServices">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+            <element name="sdfURL" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="getServicesResponse">
+
+        <complexType>
+
+          <sequence>
+
+            <element maxOccurs="unbounded" minOccurs="0" name="getServicesReturn" type="impl:Service"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="getRawServices">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+            <element name="sdfURL" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="getRawServicesResponse">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="getRawServicesReturn" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="getFlows">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="getFlowsResponse">
+
+        <complexType>
+
+          <sequence>
+
+            <element maxOccurs="unbounded" minOccurs="0" name="getFlowsReturn" type="impl:Flow"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <complexType name="Flow">
+
+        <sequence>
+
+          <element name="creationTime" type="xsd:long"/>
+
+          <element name="expirationTime" type="xsd:long"/>
+
+          <element name="id" nillable="true" type="xsd:string"/>
+
+          <element name="name" nillable="true" type="xsd:string"/>
+
+        </sequence>
+
+      </complexType>
+
+      <element name="logout">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="logoutResponse">
+
+        <complexType/>
+
+      </element>
+
+      <element name="runService">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+            <element name="sdfURL" type="xsd:string"/>
+
+            <element name="serviceID" type="xsd:string"/>
+
+            <element maxOccurs="unbounded" minOccurs="0" name="options" type="impl:OptionValue"/>
+
+            <element name="rawStatus" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <complexType name="OptionValue">
+
+        <sequence>
+
+          <element name="attachment" type="xsd:boolean"/>
+
+          <element name="id" nillable="true" type="xsd:string"/>
+
+          <element maxOccurs="unbounded" minOccurs="0" name="values" nillable="true" type="xsd:string"/>
+
+        </sequence>
+
+      </complexType>
+
+      <element name="runServiceResponse">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="runServiceReturn" type="impl:Flow"/>
+
+            <element name="rawStatus" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <complexType name="InvalidServiceOption">
+
+        <complexContent>
+
+          <extension base="impl:EnginFrameWSExceptionBase">
+
+            <sequence>
+
+              <element name="invalidOption" nillable="true" type="impl:OptionValue"/>
+
+            </sequence>
+
+          </extension>
+
+        </complexContent>
+
+      </complexType>
+
+      <element name="fault5" type="impl:InvalidServiceOption"/>
+
+      <element name="runServiceAction">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+            <element name="sdfURL" type="xsd:string"/>
+
+            <element name="serviceID" type="xsd:string"/>
+
+            <element name="actionID" type="xsd:string"/>
+
+            <element maxOccurs="unbounded" minOccurs="0" name="options" type="impl:OptionValue"/>
+
+            <element name="rawStatus" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="runServiceActionResponse">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="runServiceActionReturn" type="impl:Flow"/>
+
+            <element name="rawStatus" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="getFlowStatus">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+            <element name="flowID" type="xsd:string"/>
+
+            <element name="rawStatus" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="getFlowStatusResponse">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="getFlowStatusReturn" type="xsd:int"/>
+
+            <element name="rawStatus" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <complexType name="InvalidFlowID">
+
+        <complexContent>
+
+          <extension base="impl:EnginFrameWSExceptionBase">
+
+            <sequence>
+
+              <element name="flowID" nillable="true" type="xsd:string"/>
+
+            </sequence>
+
+          </extension>
+
+        </complexContent>
+
+      </complexType>
+
+      <element name="fault6" type="impl:InvalidFlowID"/>
+
+      <element name="destroyFlow">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+            <element name="flowID" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="destroyFlowResponse">
+
+        <complexType/>
+
+      </element>
+
+      <element name="getFlowFiles">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+            <element name="flowID" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="getFlowFilesResponse">
+
+        <complexType>
+
+          <sequence>
+
+            <element maxOccurs="unbounded" minOccurs="0" name="getFlowFilesReturn" type="impl:FlowFile"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <complexType name="FlowFile">
+
+        <sequence>
+
+          <element name="name" nillable="true" type="xsd:string"/>
+
+          <element name="size" type="xsd:long"/>
+
+          <element name="timestamp" type="xsd:long"/>
+
+          <element name="url" nillable="true" type="xsd:string"/>
+
+        </sequence>
+
+      </complexType>
+
+      <element name="getFlowEntities">
+
+        <complexType>
+
+          <sequence>
+
+            <element name="sessionID" type="xsd:string"/>
+
+            <element name="flowID" type="xsd:string"/>
+
+            <element name="relativePath" type="xsd:string"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <element name="getFlowEntitiesResponse">
+
+        <complexType>
+
+          <sequence>
+
+            <element maxOccurs="unbounded" minOccurs="0" name="getFlowEntitiesReturn" type="impl:FlowEntity"/>
+
+          </sequence>
+
+        </complexType>
+
+      </element>
+
+      <complexType name="FlowEntity">
+
+        <complexContent>
+
+          <extension base="impl:FlowFile">
+
+            <sequence>
+
+              <element name="file" type="xsd:boolean"/>
+
+              <element name="path" nillable="true" type="xsd:string"/>
+
+            </sequence>
+
+          </extension>
+
+        </complexContent>
+
+      </complexType>
+
+    </schema>
+
+  </wsdl:types>
+
+
+    <wsdl:message name="EnginFrameInternalException">
+
+
+        <wsdl:part element="impl:fault2" name="fault"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="runServiceResponse">
+
+
+        <wsdl:part element="impl:runServiceResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="authenticateRequest">
+
+
+        <wsdl:part element="impl:authenticate" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getFlowsResponse">
+
+
+        <wsdl:part element="impl:getFlowsResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getAuthorityResponse">
+
+
+        <wsdl:part element="impl:getAuthorityResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getServicesRequest">
+
+
+        <wsdl:part element="impl:getServices" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="destroyFlowRequest">
+
+
+        <wsdl:part element="impl:destroyFlow" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getFlowStatusRequest">
+
+
+        <wsdl:part element="impl:getFlowStatus" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getFlowFilesResponse">
+
+
+        <wsdl:part element="impl:getFlowFilesResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="authenticateResponse">
+
+
+        <wsdl:part element="impl:authenticateResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="InvalidSDF">
+
+
+        <wsdl:part element="impl:fault" name="fault"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="InvalidCredentials">
+
+
+        <wsdl:part element="impl:fault4" name="fault"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getServiceRequest">
+
+
+        <wsdl:part element="impl:getService" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getRawServicesResponse">
+
+
+        <wsdl:part element="impl:getRawServicesResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="logoutRequest">
+
+
+        <wsdl:part element="impl:logout" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="InvalidServiceID">
+
+
+        <wsdl:part element="impl:fault1" name="fault"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getFlowStatusResponse">
+
+
+        <wsdl:part element="impl:getFlowStatusResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="initSessionRequest">
+
+
+        <wsdl:part element="impl:initSession" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="InvalidServiceOption">
+
+
+        <wsdl:part element="impl:fault5" name="fault"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getAuthorityRequest">
+
+
+        <wsdl:part element="impl:getAuthority" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="InvalidSession">
+
+
+        <wsdl:part element="impl:fault3" name="fault"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getFlowFilesRequest">
+
+
+        <wsdl:part element="impl:getFlowFiles" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="runServiceActionRequest">
+
+
+        <wsdl:part element="impl:runServiceAction" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getRawServicesRequest">
+
+
+        <wsdl:part element="impl:getRawServices" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getServicesResponse">
+
+
+        <wsdl:part element="impl:getServicesResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="runServiceRequest">
+
+
+        <wsdl:part element="impl:runService" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getServiceResponse">
+
+
+        <wsdl:part element="impl:getServiceResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="initSessionResponse">
+
+
+        <wsdl:part element="impl:initSessionResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="logoutResponse">
+
+
+        <wsdl:part element="impl:logoutResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="destroyFlowResponse">
+
+
+        <wsdl:part element="impl:destroyFlowResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="isAuthenticatedResponse">
+
+
+        <wsdl:part element="impl:isAuthenticatedResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="InvalidFlowID">
+
+
+        <wsdl:part element="impl:fault6" name="fault"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="isAuthenticatedRequest">
+
+
+        <wsdl:part element="impl:isAuthenticated" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getFlowsRequest">
+
+
+        <wsdl:part element="impl:getFlows" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="runServiceActionResponse">
+
+
+        <wsdl:part element="impl:runServiceActionResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+   
+    <wsdl:message name="getFlowEntitiesRequest">
+
+
+        <wsdl:part element="impl:getFlowEntities" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:message name="getFlowEntitiesResponse">
+
+
+        <wsdl:part element="impl:getFlowEntitiesResponse" name="parameters"/>
+
+
+    </wsdl:message>
+
+
+    <wsdl:portType name="EnginFrameWS">
+
+
+        <wsdl:operation name="getAuthority">
+
+
+            <wsdl:input message="impl:getAuthorityRequest" name="getAuthorityRequest"/>
+
+
+            <wsdl:output message="impl:getAuthorityResponse" name="getAuthorityResponse"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidServiceID" name="InvalidServiceID"/>
+
+
+            <wsdl:fault message="impl:InvalidSDF" name="InvalidSDF"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getService">
+
+
+            <wsdl:input message="impl:getServiceRequest" name="getServiceRequest"/>
+
+
+            <wsdl:output message="impl:getServiceResponse" name="getServiceResponse"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+            <wsdl:fault message="impl:InvalidServiceID" name="InvalidServiceID"/>
+
+
+            <wsdl:fault message="impl:InvalidSDF" name="InvalidSDF"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="initSession">
+
+
+            <wsdl:input message="impl:initSessionRequest" name="initSessionRequest"/>
+
+
+            <wsdl:output message="impl:initSessionResponse" name="initSessionResponse"/>
+
+
+            <wsdl:fault message="impl:InvalidCredentials" name="InvalidCredentials"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidServiceID" name="InvalidServiceID"/>
+
+
+            <wsdl:fault message="impl:InvalidSDF" name="InvalidSDF"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="authenticate">
+
+
+            <wsdl:input message="impl:authenticateRequest" name="authenticateRequest"/>
+
+
+            <wsdl:output message="impl:authenticateResponse" name="authenticateResponse"/>
+
+
+            <wsdl:fault message="impl:InvalidCredentials" name="InvalidCredentials"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+            <wsdl:fault message="impl:InvalidServiceID" name="InvalidServiceID"/>
+
+
+            <wsdl:fault message="impl:InvalidSDF" name="InvalidSDF"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="isAuthenticated">
+
+
+            <wsdl:input message="impl:isAuthenticatedRequest" name="isAuthenticatedRequest"/>
+
+
+            <wsdl:output message="impl:isAuthenticatedResponse" name="isAuthenticatedResponse"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getServices">
+
+
+            <wsdl:input message="impl:getServicesRequest" name="getServicesRequest"/>
+
+
+            <wsdl:output message="impl:getServicesResponse" name="getServicesResponse"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+            <wsdl:fault message="impl:InvalidSDF" name="InvalidSDF"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getRawServices">
+
+
+            <wsdl:input message="impl:getRawServicesRequest" name="getRawServicesRequest"/>
+
+
+            <wsdl:output message="impl:getRawServicesResponse" name="getRawServicesResponse"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+            <wsdl:fault message="impl:InvalidSDF" name="InvalidSDF"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getFlows">
+
+
+            <wsdl:input message="impl:getFlowsRequest" name="getFlowsRequest"/>
+
+
+            <wsdl:output message="impl:getFlowsResponse" name="getFlowsResponse"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="logout">
+
+
+            <wsdl:input message="impl:logoutRequest" name="logoutRequest"/>
+
+
+            <wsdl:output message="impl:logoutResponse" name="logoutResponse"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="runService">
+
+
+            <wsdl:input message="impl:runServiceRequest" name="runServiceRequest"/>
+
+
+            <wsdl:output message="impl:runServiceResponse" name="runServiceResponse"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+            <wsdl:fault message="impl:InvalidServiceID" name="InvalidServiceID"/>
+
+
+            <wsdl:fault message="impl:InvalidSDF" name="InvalidSDF"/>
+
+
+            <wsdl:fault message="impl:InvalidServiceOption" name="InvalidServiceOption"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="runServiceAction">
+
+
+            <wsdl:input message="impl:runServiceActionRequest" name="runServiceActionRequest"/>
+
+
+            <wsdl:output message="impl:runServiceActionResponse" name="runServiceActionResponse"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+            <wsdl:fault message="impl:InvalidServiceID" name="InvalidServiceID"/>
+
+
+            <wsdl:fault message="impl:InvalidSDF" name="InvalidSDF"/>
+
+
+            <wsdl:fault message="impl:InvalidServiceOption" name="InvalidServiceOption"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getFlowStatus">
+
+
+            <wsdl:input message="impl:getFlowStatusRequest" name="getFlowStatusRequest"/>
+
+
+            <wsdl:output message="impl:getFlowStatusResponse" name="getFlowStatusResponse"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+            <wsdl:fault message="impl:InvalidFlowID" name="InvalidFlowID"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="destroyFlow">
+
+
+            <wsdl:input message="impl:destroyFlowRequest" name="destroyFlowRequest"/>
+
+
+            <wsdl:output message="impl:destroyFlowResponse" name="destroyFlowResponse"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+            <wsdl:fault message="impl:InvalidFlowID" name="InvalidFlowID"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getFlowFiles">
+
+
+            <wsdl:input message="impl:getFlowFilesRequest" name="getFlowFilesRequest"/>
+
+
+            <wsdl:output message="impl:getFlowFilesResponse" name="getFlowFilesResponse"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+            <wsdl:fault message="impl:InvalidFlowID" name="InvalidFlowID"/>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getFlowEntities">
+
+
+            <wsdl:input message="impl:getFlowEntitiesRequest" name="getFlowEntitiesRequest"/>
+
+
+            <wsdl:output message="impl:getFlowEntitiesResponse" name="getFlowEntitiesResponse"/>
+
+
+            <wsdl:fault message="impl:EnginFrameInternalException" name="EnginFrameInternalException"/>
+
+
+            <wsdl:fault message="impl:InvalidSession" name="InvalidSession"/>
+
+
+            <wsdl:fault message="impl:InvalidFlowID" name="InvalidFlowID"/>
+
+
+        </wsdl:operation>
+
+
+    </wsdl:portType>
+
+
+    <wsdl:binding name="EnginFrameWSSoapBinding" type="impl:EnginFrameWS">
+
+
+        <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+
+        <wsdl:operation name="getAuthority">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="getAuthorityRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="getAuthorityResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidServiceID">
+
+
+                <wsdlsoap:fault name="InvalidServiceID" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSDF">
+
+
+                <wsdlsoap:fault name="InvalidSDF" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getService">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="getServiceRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="getServiceResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidServiceID">
+
+
+                <wsdlsoap:fault name="InvalidServiceID" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSDF">
+
+
+                <wsdlsoap:fault name="InvalidSDF" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="initSession">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="initSessionRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="initSessionResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="InvalidCredentials">
+
+
+                <wsdlsoap:fault name="InvalidCredentials" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidServiceID">
+
+
+                <wsdlsoap:fault name="InvalidServiceID" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSDF">
+
+
+                <wsdlsoap:fault name="InvalidSDF" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="authenticate">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="authenticateRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="authenticateResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="InvalidCredentials">
+
+
+                <wsdlsoap:fault name="InvalidCredentials" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidServiceID">
+
+
+                <wsdlsoap:fault name="InvalidServiceID" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSDF">
+
+
+                <wsdlsoap:fault name="InvalidSDF" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="isAuthenticated">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="isAuthenticatedRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="isAuthenticatedResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getServices">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="getServicesRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="getServicesResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSDF">
+
+
+                <wsdlsoap:fault name="InvalidSDF" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getRawServices">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="getRawServicesRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="getRawServicesResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSDF">
+
+
+                <wsdlsoap:fault name="InvalidSDF" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getFlows">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="getFlowsRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="getFlowsResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="logout">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="logoutRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="logoutResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="runService">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="runServiceRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="runServiceResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidServiceID">
+
+
+                <wsdlsoap:fault name="InvalidServiceID" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSDF">
+
+
+                <wsdlsoap:fault name="InvalidSDF" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidServiceOption">
+
+
+                <wsdlsoap:fault name="InvalidServiceOption" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="runServiceAction">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="runServiceActionRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="runServiceActionResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidServiceID">
+
+
+                <wsdlsoap:fault name="InvalidServiceID" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSDF">
+
+
+                <wsdlsoap:fault name="InvalidSDF" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidServiceOption">
+
+
+                <wsdlsoap:fault name="InvalidServiceOption" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getFlowStatus">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="getFlowStatusRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="getFlowStatusResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidFlowID">
+
+
+                <wsdlsoap:fault name="InvalidFlowID" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="destroyFlow">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="destroyFlowRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="destroyFlowResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidFlowID">
+
+
+                <wsdlsoap:fault name="InvalidFlowID" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getFlowFiles">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="getFlowFilesRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="getFlowFilesResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidFlowID">
+
+
+                <wsdlsoap:fault name="InvalidFlowID" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+        <wsdl:operation name="getFlowEntities">
+
+
+            <wsdlsoap:operation soapAction=""/>
+
+
+            <wsdl:input name="getFlowEntitiesRequest">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:input>
+
+
+            <wsdl:output name="getFlowEntitiesResponse">
+
+
+                <wsdlsoap:body use="literal"/>
+
+
+            </wsdl:output>
+
+
+            <wsdl:fault name="EnginFrameInternalException">
+
+
+                <wsdlsoap:fault name="EnginFrameInternalException" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidSession">
+
+
+                <wsdlsoap:fault name="InvalidSession" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+            <wsdl:fault name="InvalidFlowID">
+
+
+                <wsdlsoap:fault name="InvalidFlowID" use="literal"/>
+
+
+            </wsdl:fault>
+
+
+        </wsdl:operation>
+
+
+    </wsdl:binding>
+
+
+    <wsdl:service name="EnginFrameWSService">
+
+
+        <wsdl:port binding="impl:EnginFrameWSSoapBinding" name="EnginFrameWS">
+
+
+            <wsdlsoap:address location="http://frselctm0010.sel.fr.corp:8080/enginframe/efws/EnginFrameWS"/>
+
+
+        </wsdl:port>
+
+
+    </wsdl:service>
+
+
+</wsdl:definitions>

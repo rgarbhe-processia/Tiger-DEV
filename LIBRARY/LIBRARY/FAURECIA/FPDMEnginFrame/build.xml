@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project name="FPDMEnginFrame" default="BuildJar">
+
+	<property name="java.lib" location="../../08_CSR/3dspace/linux_a64/docs/java" />
+	<property name="javacommon.lib" location="../../08_CSR/3dspace/linux_a64/docs/javacommon" />
+	<property name="javaserver.lib" location="../../08_CSR/3dspace/linux_a64/docs/javaserver" />
+
+	<property name="wsdlName" value="EnginFrameWS.wsdl" />
+	<property name="package" value="com.enginframe.webservices.client.cad" />
+    
+	<property name="EnginFrameDir" location="com" />
+	<property name="EnginFrameSrc" location="com/enginframe/webservices/client/cad" />
+	<property name="compiledir" location="compiledir" />
+	
+    <path id="cpref">
+        <pathelement location="${java.lib}/mx_axis.jar" />
+        <pathelement location="${java.lib}/mail.jar" />
+        <pathelement location="${javacommon.lib}/activation.jar" />
+        <pathelement location="${javaserver.lib}/jdom.jar" />
+        <pathelement location="${javacommon.lib}/commons-logging-1.1.1.jar" />
+    </path>
+    
+	<property name="java.ver" value="1.7" />
+
+	<target name="generate_source">
+		<delete dir="${EnginFrameDir}" />
+		<java classname="org.apache.axis.wsdl.WSDL2Java" fork="true" failonerror="true" maxmemory="128m" classpathref="cpref">
+			<arg line="-p ${package} ${wsdlName}" />
+		</java>
+	</target>
+
+	<target name="compile" depends="generate_source">
+		<delete dir="${compiledir}" />
+		<mkdir dir="${compiledir}" />
+		<javac fork="true" debug="true" target="${java.ver}" source="${java.ver}" srcdir="${EnginFrameSrc}" destdir="${compiledir}" includeantruntime="false" classpathref="cpref" />
+	</target>
+
+	<target name="BuildJar" depends="compile">
+		<jar basedir="${compiledir}" destfile="${ant.project.name}.jar">
+			<include name="**/*.class" />
+		</jar>
+		<delete dir="${compiledir}" />
+	</target>
+
+</project>
