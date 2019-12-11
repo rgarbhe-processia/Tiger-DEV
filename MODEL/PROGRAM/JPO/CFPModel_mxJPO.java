@@ -8,7 +8,7 @@
 
 import com.matrixone.apps.domain.util.EnoviaResourceBundle;
 import matrix.db.Context;
-
+ New chnage 
 /**
  * This JPO class has some methods pertaining to Master Feature Extension.
  * @author IVU
@@ -51,4 +51,8 @@ public class CFPModel_mxJPO extends CFPModelBase_mxJPO {
         return 0;
     }
 
+
+
+
+New change 
 }
